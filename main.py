@@ -9,6 +9,7 @@ from hsts.sharia import ShariaScreeningEngine
 from hsts.regime import MarketRegimeEngine
 from hsts.scanner import TechnicalScanner
 from hsts.risk import RiskManagementEngine
+from hsts.journal import TradingJournal
 
 logger = logging.getLogger("hsts.main")
 
@@ -140,6 +141,83 @@ def scan(capital):
         print("\n--- SKIPPED STOCKS (DATA INCOMPLETE) ---")
         for stock in skipped_or_failed:
             print(f"- {stock['symbol']}: {stock['reason']}")
+
+@cli.command()
+def journal_init():
+    """Initialize the Google Sheets/Excel Trading Journal."""
+    try:
+        TradingJournal()
+        print("Trading Journal spreadsheet initialized successfully on Google Drive!")
+    except Exception as e:
+        print(f"Error initializing journal: {e}")
+
+@cli.command()
+@click.argument("symbol")
+@click.argument("qty", type=int)
+@click.argument("buy_price", type=float)
+@click.option("--notes", default="", help="Optional trade execution notes.")
+def journal_add(symbol, qty, buy_price, notes):
+    """Record a buy trade entry into the Ledger."""
+    try:
+        import datetime
+        # Load from universe to get name
+        universe_path = "data/universe.csv"
+        name = "Unknown Stock"
+        if os.path.exists(universe_path):
+            df = pd.read_csv(universe_path)
+            matched = df[df["symbol"] == symbol.upper()]
+            if not matched.empty:
+                name = matched.iloc[0]["name"]
+                
+        # Generate technical scanner values for comparison
+        scanner = TechnicalScanner()
+        analysis = scanner.analyze_stock(symbol.upper())
+        suggested_entry = analysis.get("close", buy_price)
+        suggested_sl = analysis.get("suggested_sl", buy_price * 0.95)
+        suggested_target = analysis.get("suggested_target", buy_price * 1.10)
+
+        entry_date = datetime.date.today().strftime("%Y-%m-%d")
+
+        journal = TradingJournal()
+        journal.add_trade(
+            symbol=symbol.upper(),
+            name=name,
+            entry_date=entry_date,
+            qty=qty,
+            buy_price=buy_price,
+            suggested_entry=suggested_entry,
+            target=suggested_target,
+            stop_loss=suggested_sl,
+            notes=notes
+        )
+        print(f"Successfully recorded buy entry for {symbol.upper()} ({qty} shares at INR {buy_price:.2f})")
+    except Exception as e:
+        print(f"Error adding trade: {e}")
+
+@cli.command()
+@click.argument("symbol")
+@click.argument("exit_price", type=float)
+@click.argument("status", type=click.Choice(["win", "loss", "WIN", "LOSS"]))
+@click.option("--notes", default="", help="Optional trade exit notes.")
+def journal_close(symbol, exit_price, status, notes):
+    """Close an open trade in the Ledger and record performance."""
+    try:
+        import datetime
+        exit_date = datetime.date.today().strftime("%Y-%m-%d")
+        journal = TradingJournal()
+        success = journal.close_trade(
+            symbol=symbol.upper(),
+            exit_date=exit_date,
+            exit_price=exit_price,
+            status=status,
+            notes=notes
+        )
+        if success:
+            print(f"Successfully closed trade for {symbol.upper()} at INR {exit_price:.2f} ({status.upper()})")
+        else:
+            print(f"Could not find an active open trade for {symbol.upper()} to close.")
+    except Exception as e:
+        print(f"Error closing trade: {e}")
 
 if __name__ == "__main__":
     cli()
