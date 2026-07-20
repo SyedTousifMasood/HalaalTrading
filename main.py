@@ -219,5 +219,29 @@ def journal_close(symbol, exit_price, status, notes):
     except Exception as e:
         print(f"Error closing trade: {e}")
 
+@cli.command()
+@click.argument("amount", type=float)
+@click.option("--notes", default="", help="Optional deposit notes.")
+def journal_deposit(amount, notes):
+    """Record a capital deposit (investment) into the account."""
+    try:
+        journal = TradingJournal()
+        journal.add_capital_transaction("DEPOSIT", amount, notes)
+        print(f"Successfully recorded deposit of INR {amount:,.2f} to Capital.")
+    except Exception as e:
+        print(f"Error logging deposit: {e}")
+
+@cli.command()
+@click.argument("amount", type=float)
+@click.option("--notes", default="", help="Optional withdrawal notes.")
+def journal_withdraw(amount, notes):
+    """Record a capital withdrawal from the account."""
+    try:
+        journal = TradingJournal()
+        journal.add_capital_transaction("WITHDRAWAL", amount, notes)
+        print(f"Successfully recorded withdrawal of INR {amount:,.2f} from Capital.")
+    except Exception as e:
+        print(f"Error logging withdrawal: {e}")
+
 if __name__ == "__main__":
     cli()

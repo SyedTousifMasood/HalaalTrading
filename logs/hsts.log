@@ -251,3 +251,13 @@
 2026-07-21 03:24:30,874 [INFO] hsts: HSTS Log Engine initialized successfully.
 2026-07-21 03:24:30,880 [INFO] hsts.journal: Trading Journal already exists. Initialized successfully.
 2026-07-21 03:24:30,924 [INFO] hsts.journal: Closed trade for TCS at Row 2 with status WIN
+2026-07-21 03:31:47,008 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 03:31:47,014 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 03:31:47,044 [INFO] hsts.journal: Upgrading Trading Journal: Adding Capital sheet...
+2026-07-21 03:31:47,179 [INFO] hsts.journal: Upgrade complete.
+2026-07-21 03:31:58,255 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 03:31:58,261 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 03:31:58,442 [INFO] hsts.journal: Capital Transaction: DEPOSIT of INR 100000.00 logged.
+2026-07-21 03:32:13,611 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 03:32:13,620 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 03:32:13,986 [INFO] hsts.journal: Capital Transaction: WITHDRAWAL of INR 5000.00 logged.

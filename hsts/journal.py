@@ -14,10 +14,24 @@ class TradingJournal:
 
     def initialize_journal(self):
         """
-        Creates and formats the Excel Workbook if it does not exist.
+        Creates, formats, or updates the Excel Workbook.
         """
+        wb = None
         if os.path.exists(self.file_path):
-            logger.info("Trading Journal already exists. Initialized successfully.")
+            logger.info("Trading Journal already exists. Checking for updates/missing sheets...")
+            wb = openpyxl.load_workbook(self.file_path)
+            
+            # Upgrade check: Add Capital sheet if missing
+            if "Capital" not in wb.sheetnames:
+                logger.info("Upgrading Trading Journal: Adding Capital sheet...")
+                ws_cap = wb.create_sheet(title="Capital")
+                self._setup_capital(ws_cap)
+                
+                # Re-setup dashboard to include new capital formulas
+                ws_dash = wb["Dashboard"]
+                self._setup_dashboard(ws_dash)
+                wb.save(self.file_path)
+                logger.info("Upgrade complete.")
             return
 
         logger.info(f"Creating a new Trading Journal at {self.file_path}...")
@@ -39,6 +53,10 @@ class TradingJournal:
         # 3. Setup Logs Sheet
         ws_logs = wb.create_sheet(title="Logs")
         self._setup_logs(ws_logs)
+
+        # 4. Setup Capital Sheet
+        ws_cap = wb.create_sheet(title="Capital")
+        self._setup_capital(ws_cap)
 
         wb.save(self.file_path)
         logger.info("Workbook created and formatted successfully.")
@@ -71,7 +89,9 @@ class TradingJournal:
 
         # Metrics rows
         metrics = [
+            ("Total Invested Capital", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C) - SUMIF(Capital!B:B, "WITHDRAWAL", Capital!C:C)'),
             ("Lifetime PnL", "=SUM(Ledger!L:L)"),
+            ("Current Account Balance", "=B4 + B5"),
             ("Win Rate", '=IF((COUNTIF(Ledger!K:K, "WIN")+COUNTIF(Ledger!K:K, "LOSS"))>0, COUNTIF(Ledger!K:K, "WIN")/(COUNTIF(Ledger!K:K, "WIN")+COUNTIF(Ledger!K:K, "LOSS")), 0)'),
             ("Total Completed Trades", '=COUNTIF(Ledger!K:K, "WIN") + COUNTIF(Ledger!K:K, "LOSS")'),
             ("Active Open Positions", '=COUNTIF(Ledger!K:K, "OPEN")'),
@@ -88,7 +108,7 @@ class TradingJournal:
             cell_val.font = font_regular
             if metric_name == "Win Rate":
                 cell_val.number_format = "0.0%"
-            elif metric_name == "Lifetime PnL":
+            elif metric_name in ["Total Invested Capital", "Lifetime PnL", "Current Account Balance"]:
                 cell_val.number_format = "INR #,##0.00"
 
         ws.column_dimensions["A"].width = 30
@@ -137,6 +157,44 @@ class TradingJournal:
         ws.column_dimensions["B"].width = 12
         ws.column_dimensions["C"].width = 80
 
+    def _setup_capital(self, ws):
+        ws.views.sheetView[0].showGridLines = True
+        font_header = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
+        fill_header = PatternFill(start_color="1B365D", end_color="1B365D", fill_type="solid")
+
+        headers = ["Date", "Type", "Amount", "Notes"]
+        for col_idx, text in enumerate(headers, 1):
+            cell = ws.cell(row=1, column=col_idx, value=text)
+            cell.font = font_header
+            cell.fill = fill_header
+            cell.alignment = Alignment(horizontal="center", vertical="center")
+
+        ws.column_dimensions["A"].width = 16
+        ws.column_dimensions["B"].width = 16
+        ws.column_dimensions["C"].width = 18
+        ws.column_dimensions["D"].width = 40
+
+    def add_capital_transaction(self, transaction_type, amount, notes=""):
+        """
+        Record a capital deposit or withdrawal.
+        """
+        wb = openpyxl.load_workbook(self.file_path)
+        ws = wb["Capital"]
+        row_idx = ws.max_row + 1
+        
+        date_str = datetime.date.today().strftime("%Y-%m-%d")
+        ws.cell(row=row_idx, column=1, value=date_str)
+        ws.cell(row=row_idx, column=2, value=transaction_type.upper())
+        ws.cell(row=row_idx, column=3, value=amount)
+        ws.cell(row=row_idx, column=4, value=notes)
+
+        # Format amount
+        ws.cell(row=row_idx, column=3).number_format = "INR #,##0.00"
+        
+        wb.save(self.file_path)
+        logger.info(f"Capital Transaction: {transaction_type.upper()} of INR {amount:.2f} logged.")
+        self.log_event(f"Capital Transaction: {transaction_type.upper()} of INR {amount:.2f} logged.")
+
     def add_trade(self, symbol, name, entry_date, qty, buy_price, suggested_entry, target, stop_loss, notes=""):
         """
         Record a new open trade to the ledger.
@@ -163,9 +221,7 @@ class TradingJournal:
         ws.cell(row=row_idx, column=10, value="")
         ws.cell(row=row_idx, column=11, value="")
         
-        # PnL Formula: =IF(K{row_idx}="WIN", (K{row_idx}-E{row_idx})*D{row_idx}, IF(K{row_idx}="LOSS", (K{row_idx}-E{row_idx})*D{row_idx}, 0))
-        # Better: =IF(K{row_idx}="OPEN", 0, (K{row_idx}-E{row_idx})*D{row_idx})
-        # Exit price is Col K (11), Buy Price is Col E (5), Qty is Col D (4)
+        # PnL Formula: =IF(M{row_idx}="OPEN", 0, (K{row_idx}-E{row_idx})*D{row_idx})
         pnl_formula = f'=IF(M{row_idx}="OPEN", 0, (K{row_idx}-E{row_idx})*D{row_idx})'
         ws.cell(row=row_idx, column=12, value=pnl_formula)
         
