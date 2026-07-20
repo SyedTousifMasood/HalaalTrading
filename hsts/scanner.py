@@ -20,7 +20,10 @@ class TechnicalScanner:
         try:
             ticker = yf.Ticker(ticker_symbol)
             df = ticker.history(period="6mo")
-            if df.empty or len(df) < 50:
+            if df.empty:
+                return None
+            df = df.dropna(subset=["Close"])
+            if len(df) < 50:
                 return None
 
             # 1. Moving Averages

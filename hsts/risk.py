@@ -16,6 +16,12 @@ class RiskManagementEngine:
         """
         Calculate stock quantity and trade risk parameters.
         """
+        import math
+        
+        if math.isnan(entry_price) or math.isnan(stop_loss_price):
+            logger.error("Entry price or stop loss is NaN.")
+            return None
+
         if entry_price <= stop_loss_price:
             logger.error("Entry price must be greater than stop loss price for a long trade.")
             return None
@@ -25,6 +31,9 @@ class RiskManagementEngine:
         
         # Risk per share
         risk_per_share = entry_price - stop_loss_price
+        if math.isnan(risk_per_share) or risk_per_share <= 0:
+            logger.error("Invalid risk per share calculated.")
+            return None
 
         # Quantity to purchase
         quantity = int(max_loss_amount // risk_per_share)

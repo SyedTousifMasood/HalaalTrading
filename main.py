@@ -47,7 +47,7 @@ def scan(capital):
     # 3. Screen and scan stock list
     df_universe = pd.read_csv(universe_path)
     
-    buy_setups = []
+    all_compliant_analyses = []
     skipped_or_failed = []
     non_compliant = []
     
@@ -78,30 +78,17 @@ def scan(capital):
             skipped_or_failed.append({"symbol": symbol, "reason": analysis["reason"]})
             continue
 
-        # 3. If BUY signal and not in strict capital preservation (BEARISH)
-        if analysis["signal"] == "BUY" and regime != "BEARISH":
-            # Run Risk position sizing
-            pos_size = risk_engine.calculate_position_size(
-                total_capital=capital,
-                entry_price=analysis["close"],
-                stop_loss_price=analysis["suggested_sl"]
-            )
-            
-            if pos_size and pos_size["quantity"] > 0:
-                buy_setups.append({
-                    "symbol": symbol,
-                    "name": name,
-                    "close": analysis["close"],
-                    "rsi": analysis["rsi"],
-                    "suggested_sl": analysis["suggested_sl"],
-                    "suggested_target": analysis["suggested_target"],
-                    "quantity": pos_size["quantity"],
-                    "investment": pos_size["total_investment"],
-                    "pct_portfolio": pos_size["pct_of_portfolio"] * 100
-                })
-        else:
-            # Other signals (HOLD / WAIT)
-            logger.info(f"Analyzed {symbol}: Signal = {analysis['signal']} (Score: {analysis.get('score', 0):.0f})")
+        # Collect all compliant stocks for ranking
+        all_compliant_analyses.append({
+            "symbol": symbol,
+            "name": name,
+            "close": analysis["close"],
+            "rsi": analysis["rsi"],
+            "score": analysis["score"],
+            "signal": analysis["signal"],
+            "suggested_sl": analysis["suggested_sl"],
+            "suggested_target": analysis["suggested_target"]
+        })
 
     # 4. Display Results
     print("\n--- SHARIA NON-COMPLIANT STOCKS ---")
@@ -111,21 +98,43 @@ def scan(capital):
     else:
         print("None")
 
-    print("\n--- DETECTED BUY SETUPS ---")
-    if buy_setups:
-        df_buys = pd.DataFrame(buy_setups)
-        # Format table
-        print(df_buys.to_string(index=False, formatters={
-            "close": "{:,.2f}".format,
-            "rsi": "{:,.1f}".format,
-            "suggested_sl": "{:,.2f}".format,
-            "suggested_target": "{:,.2f}".format,
-            "quantity": "{:,}".format,
-            "investment": "₹{:,.2f}".format,
-            "pct_portfolio": "{:,.2f}%".format
-        }))
+    # Rank and display top 5 stocks by technical momentum score
+    print("\n=========================================")
+    print("TOP 5 COMPLIANT STOCKS BY MOMENTUM SCORE")
+    print("=========================================")
+    if all_compliant_analyses:
+        df_all = pd.DataFrame(all_compliant_analyses)
+        df_top5 = df_all.sort_values(by="score", ascending=False).head(5)
+        
+        # Calculate mock position size for top 5 for illustration
+        buy_setups = []
+        for _, row in df_top5.iterrows():
+            pos_size = risk_engine.calculate_position_size(
+                total_capital=capital,
+                entry_price=row["close"],
+                stop_loss_price=row["suggested_sl"]
+            )
+            buy_setups.append({
+                "Symbol": row["symbol"],
+                "Name": row["name"],
+                "Close": row["close"],
+                "Score": f"{row['score']:.0f}/100",
+                "Signal": row["signal"],
+                "Stop Loss": row["suggested_sl"],
+                "Target": row["suggested_target"],
+                "Qty": pos_size["quantity"] if pos_size else 0,
+                "Allocation": f"INR {pos_size['total_investment']:,.2f}" if pos_size else "INR 0.00"
+            })
+        
+        df_display = pd.DataFrame(buy_setups)
+        print(df_display.to_string(index=False))
+        
+        if regime == "BEARISH":
+            print("\n> [!WARNING]")
+            print("> Market regime is BEARISH. These setups are for informational/monitoring purposes only.")
+            print("> Under HSTS rule-based guidelines, trading these is strictly not recommended today.")
     else:
-        print("No BUY setups detected for the current parameters.")
+        print("No compliant stocks analyzed.")
 
     if skipped_or_failed:
         print("\n--- SKIPPED STOCKS (DATA INCOMPLETE) ---")
