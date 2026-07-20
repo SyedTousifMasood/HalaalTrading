@@ -1,0 +1,16 @@
+# Windows / Google Drive temporary files
+Thumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+*.tmp
+*.lnk
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
