@@ -12,6 +12,14 @@ class TradingJournal:
         self.file_path = file_path
         self.initialize_journal()
 
+    def _get_true_max_row(self, ws):
+        """Find the actual last populated row in Column A to prevent writing 1000 rows down."""
+        for r in range(ws.max_row, 0, -1):
+            val = ws.cell(row=r, column=1).value
+            if val is not None and str(val).strip() != "":
+                return r
+        return 1
+
     def initialize_journal(self):
         """
         Creates, formats, or updates the Excel Workbook.
@@ -37,7 +45,6 @@ class TradingJournal:
                 wb.save(self.file_path)
 
             wb.close()
-            # Upgrade check: Add Risk-to-Reward Ratio columns if missing
             self._upgrade_rr_ratio_columns()
             return
 
@@ -73,9 +80,6 @@ class TradingJournal:
         logger.info("Workbook created and formatted successfully.")
 
     def _upgrade_rr_ratio_columns(self):
-        """
-        Inserts and calculates Risk-to-Reward Ratio columns for existing recommendations and trades.
-        """
         wb = openpyxl.load_workbook(self.file_path)
         font_header = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
         fill_header_recs = PatternFill(start_color="2B6CB0", end_color="2B6CB0", fill_type="solid")
@@ -93,8 +97,8 @@ class TradingJournal:
                 cell.alignment = Alignment(horizontal="center", vertical="center")
                 ws.column_dimensions["H"].width = 22
 
-                # Calculate R:R for existing rows
-                for r in range(2, ws.max_row + 1):
+                true_max = self._get_true_max_row(ws)
+                for r in range(2, true_max + 1):
                     entry = ws.cell(row=r, column=5).value
                     sl = ws.cell(row=r, column=6).value
                     target = ws.cell(row=r, column=7).value
@@ -119,8 +123,8 @@ class TradingJournal:
                 cell.alignment = Alignment(horizontal="center", vertical="center")
                 ws.column_dimensions["J"].width = 22
 
-                # Calculate R:R and update PnL formula for existing rows
-                for r in range(2, ws.max_row + 1):
+                true_max = self._get_true_max_row(ws)
+                for r in range(2, true_max + 1):
                     buy_price = ws.cell(row=r, column=5).value
                     target = ws.cell(row=r, column=8).value
                     sl = ws.cell(row=r, column=9).value
@@ -133,11 +137,9 @@ class TradingJournal:
                     else:
                         ws.cell(row=r, column=10, value="1:2.0")
                     
-                    # Update PnL formula (Exit Price is now Col L=12, Buy Price is Col E=5, Qty is Col D=4, Status is Col N=14)
                     pnl_formula = f'=IF(N{r}="OPEN", 0, (L{r}-E{r})*D{r})'
                     ws.cell(row=r, column=13, value=pnl_formula)
 
-        # 3. Update Dashboard formulas to reflect modified columns
         ws_dash = wb["Dashboard"]
         self._setup_dashboard(ws_dash)
 
@@ -284,12 +286,9 @@ class TradingJournal:
         ws.column_dimensions["C"].width = 80
 
     def add_recommendation(self, symbol, name, score, target_entry, stop_loss, profit_target, qty, allocation, status="PENDING", notes=""):
-        """
-        Record a system trade recommendation with R:R ratio for tracking & comparison.
-        """
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Recommendations"]
-        row_idx = ws.max_row + 1
+        row_idx = self._get_true_max_row(ws) + 1
         
         date_str = datetime.date.today().strftime("%Y-%m-%d")
 
@@ -311,7 +310,6 @@ class TradingJournal:
         ws.cell(row=row_idx, column=11, value=status)
         ws.cell(row=row_idx, column=12, value=notes)
 
-        # Formats
         ws.cell(row=row_idx, column=5).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=6).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=7).number_format = "INR #,##0.00"
@@ -323,7 +321,7 @@ class TradingJournal:
     def add_capital_transaction(self, transaction_type, amount, notes=""):
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Capital"]
-        row_idx = ws.max_row + 1
+        row_idx = self._get_true_max_row(ws) + 1
         
         date_str = datetime.date.today().strftime("%Y-%m-%d")
         ws.cell(row=row_idx, column=1, value=date_str)
@@ -340,9 +338,16 @@ class TradingJournal:
     def add_trade(self, symbol, name, entry_date, qty, buy_price, suggested_entry, target, stop_loss, notes=""):
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Ledger"]
-        row_idx = ws.max_row + 1
-        slippage = buy_price - suggested_entry
+        row_idx = self._get_true_max_row(ws) + 1
+        
+        # Prevent duplicate entries for same symbol/date
+        for r in range(2, row_idx):
+            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=3).value == entry_date and ws.cell(row=r, column=14).value == "OPEN":
+                logger.info(f"Trade for {symbol} on {entry_date} already exists at Row {r}. Skipping duplicate.")
+                wb.close()
+                return
 
+        slippage = buy_price - suggested_entry
         risk = buy_price - stop_loss
         reward = target - buy_price
         rr_val = (reward / risk) if risk > 0 else 2.0
@@ -381,7 +386,8 @@ class TradingJournal:
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Ledger"]
         found = False
-        for r in range(2, ws.max_row + 1):
+        true_max = self._get_true_max_row(ws)
+        for r in range(2, true_max + 1):
             if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=14).value == "OPEN":
                 ws.cell(row=r, column=11, value=exit_date)
                 ws.cell(row=r, column=12, value=exit_price)
@@ -404,7 +410,7 @@ class TradingJournal:
     def log_event(self, message, level="INFO"):
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Logs"]
-        row_idx = ws.max_row + 1
+        row_idx = self._get_true_max_row(ws) + 1
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         ws.cell(row=row_idx, column=1, value=timestamp)
         ws.cell(row=row_idx, column=2, value=level.upper())

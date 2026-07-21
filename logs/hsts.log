@@ -406,3 +406,67 @@
 2026-07-21 12:40:03,246 [INFO] hsts.journal: Recorded open trade for SUNPHARMA to Ledger (Row 1001)
 2026-07-21 12:40:14,233 [INFO] hsts.journal: Recorded open trade for JSWSTEEL to Ledger (Row 1002)
 2026-07-21 12:40:24,116 [INFO] hsts.journal: Recorded open trade for TECHM to Ledger (Row 1003)
+2026-07-21 12:48:24,660 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 12:48:24,667 [INFO] hsts.journal: Creating a new Trading Journal at G:/My Drive/HalaalTrading/Trading_Journal.xlsx...
+2026-07-21 12:48:24,940 [INFO] hsts.journal: Workbook created and formatted successfully.
+2026-07-21 12:48:38,744 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 12:48:39,098 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-21 12:48:39,807 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': 'dJjPKrCNkfFati5XT4HAvCZOY3C27ne7CN0BCCAaWvk5VFnaElUjaySihcmInLhA', 'twofa_type': 'totp', 'twofa_types': ['totp', 'app_code'], 'twofa_status': 'active', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-07-21 12:48:39,871 [INFO] hsts.broker.zerodha_free: Zerodha Free Authentication successful! enctoken extracted.
+2026-07-21 12:48:39,917 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 12:48:41,217 [INFO] hsts.journal: Recorded open trade for SUNPHARMA to Ledger (Row 2)
+2026-07-21 12:48:41,985 [INFO] hsts.journal: Recorded open trade for JSWSTEEL to Ledger (Row 3)
+2026-07-21 12:48:42,793 [INFO] hsts.journal: Recorded open trade for TECHM to Ledger (Row 4)
+2026-07-21 12:48:55,825 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 12:48:55,828 [INFO] hsts.main: Starting HSTS scanner run...
+2026-07-21 12:48:55,848 [INFO] hsts.regime: Evaluating market regime using index ^NSEI...
+2026-07-21 12:48:56,691 [INFO] hsts.regime: Market regime identified as BEARISH (Close: 24172.20, 50 EMA: 23992.11, 200 EMA: 24478.02)
+2026-07-21 12:48:56,693 [WARNING] hsts.main: Market is BEARISH. Capital preservation mode active. No new momentum entries allowed.
+2026-07-21 12:48:56,704 [INFO] hsts.sharia: TCS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:48:57,058 [INFO] hsts.sharia: INFY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:48:57,388 [INFO] hsts.sharia: RELIANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:48:57,954 [INFO] hsts.sharia: HINDUNILVR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:48:58,288 [INFO] hsts.sharia: SUNPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:48:58,677 [INFO] hsts.sharia: HCLTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:48:59,008 [INFO] hsts.sharia: ASIANPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:48:59,339 [INFO] hsts.sharia: NESTLEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:48:59,658 [INFO] hsts.sharia: ULTRACEMCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:48:59,993 [INFO] hsts.sharia: ONGC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:00,307 [INFO] hsts.sharia: CIPLA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:00,741 [INFO] hsts.sharia: TECHM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:01,158 [INFO] hsts.sharia: GRASIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:01,465 [INFO] hsts.sharia: HEROMOTOCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:01,803 [INFO] hsts.sharia: BRITANNIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:02,125 [INFO] hsts.sharia: WIPRO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:02,432 [INFO] hsts.sharia: APOLLOHOSP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:03,021 [INFO] hsts.sharia: DIVISLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:03,347 [INFO] hsts.sharia: COALINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:03,668 [INFO] hsts.sharia: TATASTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:04,007 [INFO] hsts.sharia: HINDALCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:04,485 [INFO] hsts.sharia: JSWSTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 12:49:04,916 [INFO] hsts.sharia: Running programmatic screen for HDFCBANK...
+2026-07-21 12:49:05,276 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 12:49:05,280 [INFO] hsts.sharia: Running programmatic screen for ITC...
+2026-07-21 12:49:05,524 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
+2026-07-21 12:49:05,527 [INFO] hsts.sharia: Running programmatic screen for TATAMOTORS...
+2026-07-21 12:49:06,223 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-07-21 12:49:06,379 [WARNING] hsts.sharia: Could not retrieve info for TATAMOTORS. Stock skipped.
+2026-07-21 12:49:06,385 [INFO] hsts.sharia: Running programmatic screen for LT...
+2026-07-21 12:49:08,423 [INFO] hsts.sharia: Running programmatic screen for MUTHOOTFIN...
+2026-07-21 12:49:08,769 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 12:49:08,776 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 12:49:08,777 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 12:49:08,779 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 13
+2026-07-21 12:49:08,781 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 15
+2026-07-21 12:49:08,782 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 10
+2026-07-21 12:49:08,795 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 12:49:08,955 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 12:49:09,113 [INFO] hsts.journal: Logged recommendation for ULTRACEMCO to Recommendations sheet (Row 2)
+2026-07-21 12:49:09,115 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 12:49:09,254 [INFO] hsts.journal: Logged recommendation for HEROMOTOCO to Recommendations sheet (Row 3)
+2026-07-21 12:49:09,255 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 13
+2026-07-21 12:49:09,391 [INFO] hsts.journal: Logged recommendation for NESTLEIND to Recommendations sheet (Row 4)
+2026-07-21 12:49:09,392 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 15
+2026-07-21 12:49:09,544 [INFO] hsts.journal: Logged recommendation for JSWSTEEL to Recommendations sheet (Row 5)
+2026-07-21 12:49:09,545 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 10
+2026-07-21 12:49:09,678 [INFO] hsts.journal: Logged recommendation for SUNPHARMA to Recommendations sheet (Row 6)
