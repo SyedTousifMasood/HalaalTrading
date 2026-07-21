@@ -47,6 +47,7 @@ class ZerodhaFreeBroker(BaseBroker):
 
             request_id = res1_json["data"]["request_id"]
             available_2fa_types = res1_json["data"].get("twofa_types", ["totp"])
+            logger.info(f"Zerodha Login Response Data: {res1_json['data']}")
             chosen_2fa_type = available_2fa_types[0] if available_2fa_types else "totp"
 
             # Step 2: Generate TOTP code
@@ -123,6 +124,21 @@ class ZerodhaFreeBroker(BaseBroker):
         except Exception as e:
             logger.error(f"Error fetching positions: {e}")
             return None
+
+    def get_orders(self):
+        """Fetch today's orders list from Zerodha OMS."""
+        url = f"{self.base_url}/oms/orders"
+        try:
+            res = self.session.get(url)
+            data = res.json()
+            if data.get("status") == "success":
+                return data.get("data", [])
+            else:
+                logger.error(f"Error fetching orders: {data.get('message')}")
+                return []
+        except Exception as e:
+            logger.error(f"Error fetching orders: {e}")
+            return []
 
     def place_order(self, symbol, qty, transaction_type="BUY", order_type="LIMIT", price=0.0, trigger_price=0.0):
         """

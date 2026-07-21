@@ -305,5 +305,97 @@ def connect_zerodha():
     except Exception as e:
         print(f"[ERROR] Exception while connecting to Zerodha: {e}")
 
+@cli.command()
+def sync_zerodha_orders():
+    """Fetch today's Zerodha orders and sync them with the Trading Journal Ledger."""
+    try:
+        import datetime
+        from dotenv import load_dotenv
+        from hsts.broker.zerodha_free import ZerodhaFreeBroker
+        
+        load_dotenv()
+        user_id = os.getenv("ZERODHA_USER_ID")
+        password = os.getenv("ZERODHA_PASSWORD")
+        totp_secret = os.getenv("ZERODHA_TOTP_SECRET")
+        
+        if not user_id or not password or not totp_secret:
+            print("[ERROR] Zerodha credentials missing in .env file!")
+            return
+
+        broker = ZerodhaFreeBroker(user_id=user_id, password=password, totp_secret=totp_secret)
+        if not broker.authenticate():
+            print("[FAILED] Authentication to Zerodha failed.")
+            return
+
+        orders = broker.get_orders()
+        print(f"\n=========================================")
+        print(f"FETCHED TODAY'S ZERODHA ORDERS ({len(orders)} total)")
+        print(f"=========================================")
+
+        if not orders:
+            print("No orders were placed today in your Zerodha account.")
+            return
+
+        journal = TradingJournal()
+        scanner = TechnicalScanner()
+
+        synced_count = 0
+        order_list = []
+        for order in orders:
+            symbol = order.get("tradingsymbol", "UNKNOWN")
+            status = order.get("status", "UNKNOWN")
+            tx_type = order.get("transaction_type", "BUY")
+            qty = order.get("quantity", 0)
+            avg_price = order.get("average_price", 0.0) or order.get("price", 0.0)
+            order_time = order.get("order_timestamp", "")
+
+            order_list.append({
+                "Symbol": symbol,
+                "Type": tx_type,
+                "Qty": qty,
+                "Price": avg_price,
+                "Status": status,
+                "Timestamp": order_time
+            })
+
+            # Auto-sync completed orders to Journal
+            if status == "COMPLETE":
+                if tx_type == "BUY":
+                    # Fetch scanner values for comparison
+                    analysis = scanner.analyze_stock(symbol)
+                    suggested_entry = analysis.get("close", avg_price)
+                    suggested_sl = analysis.get("suggested_sl", avg_price * 0.95)
+                    suggested_target = analysis.get("suggested_target", avg_price * 1.10)
+                    
+                    journal.add_trade(
+                        symbol=symbol,
+                        name=symbol,
+                        entry_date=datetime.date.today().strftime("%Y-%m-%d"),
+                        qty=qty,
+                        buy_price=avg_price,
+                        suggested_entry=suggested_entry,
+                        target=suggested_target,
+                        stop_loss=suggested_sl,
+                        notes="Auto-synced from Zerodha account"
+                    )
+                    synced_count += 1
+
+                elif tx_type == "SELL":
+                    journal.close_trade(
+                        symbol=symbol,
+                        exit_date=datetime.date.today().strftime("%Y-%m-%d"),
+                        exit_price=avg_price,
+                        status="WIN",
+                        notes="Auto-synced sell from Zerodha account"
+                    )
+                    synced_count += 1
+
+        df_orders = pd.DataFrame(order_list)
+        print(df_orders.to_string(index=False))
+        print(f"\n[SUCCESS] Synced {synced_count} completed trade(s) to Trading Journal Ledger!")
+
+    except Exception as e:
+        print(f"[ERROR] Exception while syncing Zerodha orders: {e}")
+
 if __name__ == "__main__":
     cli()

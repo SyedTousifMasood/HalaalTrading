@@ -376,3 +376,33 @@
 2026-07-21 11:45:46,385 [INFO] hsts: HSTS Log Engine initialized successfully.
 2026-07-21 11:45:46,511 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
 2026-07-21 11:45:47,137 [ERROR] hsts.broker.zerodha_free: Zerodha 2FA failed: Invalid App Code. 3 attempt(s) remain before the account is locked.
+2026-07-21 11:48:58,179 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 11:48:58,396 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-21 11:48:59,049 [ERROR] hsts.broker.zerodha_free: Zerodha 2FA failed: Invalid App Code. 2 attempt(s) remain before the account is locked.
+2026-07-21 11:55:13,737 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 11:55:13,891 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-21 11:55:14,658 [ERROR] hsts.broker.zerodha_free: Zerodha 2FA failed: Invalid App Code. 4 attempt(s) remain before the account is locked.
+2026-07-21 11:55:31,066 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 11:55:31,244 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-21 11:55:31,881 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': 'WHh52I9A3PXvA0BUkaS56GDSdf6gCuPFzEYzPe6mTVYfwagKkCtgtB02TN9k0zQx', 'twofa_type': 'app_code', 'twofa_types': ['app_code', 'sms'], 'twofa_status': 'new', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-07-21 11:55:32,235 [ERROR] hsts.broker.zerodha_free: Zerodha 2FA failed: Invalid App Code. 3 attempt(s) remain before the account is locked.
+2026-07-21 11:57:33,303 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 11:57:33,375 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-21 11:57:33,826 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': 'DvKWMo8xsgTZB2cXtcUADbHzZfNkgCfClPmdvGElYMt61n8ThCXM3D2hJW7FLbCQ', 'twofa_type': 'app_code', 'twofa_types': ['app_code', 'sms'], 'twofa_status': 'new', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-07-21 11:57:33,896 [ERROR] hsts.broker.zerodha_free: Zerodha 2FA failed: Invalid App Code. 1 attempt(s) remain before the account is locked.
+2026-07-21 12:00:55,399 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 12:00:55,667 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-21 12:00:56,240 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': 'H6PBmmFF1vrJiPSS6P2CnCr7oDkJ5ailDBSjRpJzTiPMPfIbHLJAvUxrhNWW6LeO', 'twofa_type': 'app_code', 'twofa_types': ['app_code', 'sms'], 'twofa_status': 'new', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-07-21 12:00:56,311 [ERROR] hsts.broker.zerodha_free: Zerodha 2FA failed: Your account is locked after multiple failed login attempts. Please use the 'forgot password' option to do a reset.
+2026-07-21 12:16:53,385 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 12:16:53,474 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-21 12:16:54,026 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': '7evIviT4avDgPKfXQdO1YIerizBFOez8BKQaPekkrNjvYK38pVmEDZBLNYXoQy5b', 'twofa_type': 'totp', 'twofa_types': ['totp', 'app_code'], 'twofa_status': 'active', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-07-21 12:16:54,084 [INFO] hsts.broker.zerodha_free: Zerodha Free Authentication successful! enctoken extracted.
+2026-07-21 12:39:46,607 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 12:39:47,054 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-21 12:39:47,846 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': '0xlav2rpleg0R0bEXGQXzJG7WiLmVK1vmTT2BCH0YX4pRHuL2eUeBYTQlg8OXuy7', 'twofa_type': 'totp', 'twofa_types': ['totp', 'app_code'], 'twofa_status': 'active', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-07-21 12:39:47,915 [INFO] hsts.broker.zerodha_free: Zerodha Free Authentication successful! enctoken extracted.
+2026-07-21 12:39:47,977 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 12:40:03,246 [INFO] hsts.journal: Recorded open trade for SUNPHARMA to Ledger (Row 1001)
+2026-07-21 12:40:14,233 [INFO] hsts.journal: Recorded open trade for JSWSTEEL to Ledger (Row 1002)
+2026-07-21 12:40:24,116 [INFO] hsts.journal: Recorded open trade for TECHM to Ledger (Row 1003)
