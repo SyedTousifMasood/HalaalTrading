@@ -1559,3 +1559,12 @@
 2026-07-21 15:21:11,342 [INFO] hsts.journal: Logged recommendation for MANKIND to Recommendations sheet (Row 10)
 2026-07-21 15:21:11,343 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
 2026-07-21 15:21:11,930 [INFO] hsts.journal: Logged recommendation for HAL to Recommendations sheet (Row 11)
+2026-07-21 15:33:30,805 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 15:33:31,021 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-21 15:33:31,590 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': 'VGHP6JnXFB82zxUzLKDWyEmJ8AL4rKQI6oJgocV7DL4yYr0O61pOPUEwoNAaPWZD', 'twofa_type': 'totp', 'twofa_types': ['totp', 'app_code'], 'twofa_status': 'active', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-07-21 15:33:31,652 [INFO] hsts.broker.zerodha_free: Zerodha Free Authentication successful! enctoken extracted.
+2026-07-21 15:33:31,703 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 15:33:32,980 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-07-21 15:33:34,449 [INFO] hsts.journal: Trade for SUNPHARMA on 2026-07-21 already exists at Row 2. Skipping duplicate.
+2026-07-21 15:33:35,035 [INFO] hsts.journal: Trade for JSWSTEEL on 2026-07-21 already exists at Row 3. Skipping duplicate.
+2026-07-21 15:33:35,820 [INFO] hsts.journal: Trade for TECHM on 2026-07-21 already exists at Row 4. Skipping duplicate.
