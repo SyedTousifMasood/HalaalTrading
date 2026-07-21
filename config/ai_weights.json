@@ -1,0 +1,13 @@
+{
+    "last_trained_timestamp": "2026-07-21 14:50:38",
+    "training_samples_count": 287,
+    "win_rate_trained": 52.613240418118465,
+    "category_weights": {
+        "trend": 0.2459,
+        "momentum": 0.2541,
+        "volatility": 0.1557,
+        "volume": 0.1639,
+        "levels": 0.1803
+    },
+    "min_composite_threshold": 80.0
+}

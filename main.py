@@ -437,5 +437,35 @@ def backtest(period, capital, risk, ignore_regime, start_date, end_date):
     except Exception as e:
         print(f"[ERROR] Exception during backtesting: {e}")
 
+@cli.command()
+@click.option("--period", default="1y", help="Historical training period (e.g. 1y, 2y).")
+@click.option("--start-date", default=None, help="Custom start date (YYYY-MM-DD).")
+@click.option("--end-date", default=None, help="Custom end date (YYYY-MM-DD).")
+def optimize_ai(period, start_date, end_date):
+    """Train the Self-Learning AI Engine to optimize category indicator weights."""
+    try:
+        from hsts.ai_optimizer import AIOptimizerEngine
+        optimizer = AIOptimizerEngine()
+        config = optimizer.train_from_backtest(period=period, start_date=start_date, end_date=end_date)
+        
+        if not config:
+            print("[ERROR] AI Optimization training failed.")
+            return
+
+        print("\n=========================================")
+        print("HSTS SELF-LEARNING AI OPTIMIZATION REPORT")
+        print("=========================================")
+        print(f"Training Samples:        {config['training_samples_count']} historical trades")
+        print(f"Last Trained:            {config['last_trained_timestamp']}")
+        print(f"Historical Win Rate:     {config['win_rate_trained']:.1f}%")
+        print("\n--- AI OPTIMIZED CATEGORY WEIGHTS ---")
+        for cat, weight in config['category_weights'].items():
+            print(f"  - {cat.capitalize():<12}: {weight*100:.1f}% (Weight multiplier: {weight:.4f})")
+            
+        print("\n[SUCCESS] AI Policy saved to config/ai_weights.json. Scanner will now use these refined weights!")
+
+    except Exception as e:
+        print(f"[ERROR] Exception during AI optimization: {e}")
+
 if __name__ == "__main__":
     cli()

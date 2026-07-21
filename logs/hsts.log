@@ -1124,3 +1124,256 @@
 2026-07-21 14:02:06,115 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
 2026-07-21 14:02:06,178 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
 2026-07-21 14:02:06,185 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:10,316 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 14:50:10,443 [INFO] hsts.ai_optimizer: Gathering training data from historical simulation (period=1y, start_date=None, end_date=None)...
+2026-07-21 14:50:10,471 [INFO] hsts.backtest: Starting historical backtest (start_date=None, end_date=None, period=1y, ignore_regime=True)...
+2026-07-21 14:50:11,737 [INFO] hsts.sharia: TCS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:12,537 [INFO] hsts.sharia: INFY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:13,453 [INFO] hsts.sharia: RELIANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:14,274 [INFO] hsts.sharia: HINDUNILVR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:15,052 [INFO] hsts.sharia: SUNPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:15,825 [INFO] hsts.sharia: HCLTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:16,463 [INFO] hsts.sharia: ASIANPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:17,075 [INFO] hsts.sharia: NESTLEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:17,716 [INFO] hsts.sharia: ULTRACEMCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:18,386 [INFO] hsts.sharia: ONGC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:19,678 [INFO] hsts.sharia: CIPLA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:20,353 [INFO] hsts.sharia: TECHM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:21,100 [INFO] hsts.sharia: GRASIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:21,952 [INFO] hsts.sharia: HEROMOTOCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:22,719 [INFO] hsts.sharia: BRITANNIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:23,568 [INFO] hsts.sharia: WIPRO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:24,496 [INFO] hsts.sharia: APOLLOHOSP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:25,814 [INFO] hsts.sharia: DIVISLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:26,785 [INFO] hsts.sharia: COALINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:27,588 [INFO] hsts.sharia: TATASTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:28,304 [INFO] hsts.sharia: HINDALCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:28,971 [INFO] hsts.sharia: JSWSTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 14:50:29,732 [INFO] hsts.sharia: Running programmatic screen for HDFCBANK...
+2026-07-21 14:50:30,320 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 14:50:30,324 [INFO] hsts.sharia: Running programmatic screen for ITC...
+2026-07-21 14:50:30,610 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
+2026-07-21 14:50:30,612 [INFO] hsts.sharia: Running programmatic screen for TATAMOTORS...
+2026-07-21 14:50:31,106 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-07-21 14:50:31,375 [WARNING] hsts.sharia: Could not retrieve info for TATAMOTORS. Stock skipped.
+2026-07-21 14:50:31,378 [INFO] hsts.sharia: Running programmatic screen for LT...
+2026-07-21 14:50:32,788 [INFO] hsts.sharia: Running programmatic screen for MUTHOOTFIN...
+2026-07-21 14:50:33,244 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 14:50:33,452 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:33,458 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:33,463 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 16
+2026-07-21 14:50:33,464 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 8
+2026-07-21 14:50:33,501 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:33,598 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 25
+2026-07-21 14:50:33,612 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:33,647 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 20
+2026-07-21 14:50:33,675 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 26
+2026-07-21 14:50:33,697 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 46
+2026-07-21 14:50:33,746 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:33,770 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 10
+2026-07-21 14:50:33,777 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 42
+2026-07-21 14:50:33,803 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 9
+2026-07-21 14:50:33,818 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 15
+2026-07-21 14:50:33,847 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:33,852 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 44
+2026-07-21 14:50:33,854 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:33,867 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:33,871 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 14
+2026-07-21 14:50:33,961 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 25
+2026-07-21 14:50:33,974 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:33,998 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:34,002 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 9
+2026-07-21 14:50:34,012 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 39
+2026-07-21 14:50:34,033 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 43
+2026-07-21 14:50:34,045 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:34,072 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 11
+2026-07-21 14:50:34,113 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:34,127 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 8
+2026-07-21 14:50:34,136 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:34,153 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 39
+2026-07-21 14:50:34,190 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:34,192 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:34,198 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 23
+2026-07-21 14:50:34,216 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:34,220 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:34,225 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:34,238 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:34,241 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:34,243 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:34,245 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:34,275 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:34,298 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 24
+2026-07-21 14:50:34,314 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:34,317 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:34,319 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:34,322 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 24
+2026-07-21 14:50:34,327 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:34,330 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 27
+2026-07-21 14:50:34,370 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:34,385 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,391 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:34,394 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:34,397 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:34,414 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:34,416 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:34,438 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:34,456 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 12
+2026-07-21 14:50:34,474 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 42
+2026-07-21 14:50:34,510 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:34,530 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:34,534 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 58
+2026-07-21 14:50:34,545 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:34,547 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,550 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:34,552 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:34,572 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:34,580 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:34,592 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:34,595 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 28
+2026-07-21 14:50:34,603 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 14
+2026-07-21 14:50:34,646 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,680 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:34,682 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,693 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:34,707 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:34,710 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,760 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,793 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,799 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 26
+2026-07-21 14:50:34,831 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,851 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:34,863 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 11
+2026-07-21 14:50:34,873 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:34,886 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:34,891 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,915 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,931 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:34,934 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:34,953 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 23
+2026-07-21 14:50:34,995 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 26
+2026-07-21 14:50:34,998 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 9
+2026-07-21 14:50:35,010 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:35,016 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:35,031 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,039 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 46
+2026-07-21 14:50:35,043 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:35,076 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:35,094 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 34
+2026-07-21 14:50:35,113 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:35,149 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 11
+2026-07-21 14:50:35,167 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:35,169 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:35,175 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:35,181 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:35,183 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 13
+2026-07-21 14:50:35,203 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,215 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,224 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 16
+2026-07-21 14:50:35,257 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:35,261 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 44
+2026-07-21 14:50:35,280 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,297 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 44
+2026-07-21 14:50:35,303 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 9
+2026-07-21 14:50:35,306 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:35,326 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:35,331 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:35,335 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:35,339 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 17
+2026-07-21 14:50:35,361 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:35,370 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:35,374 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 10
+2026-07-21 14:50:35,394 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:35,400 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 35
+2026-07-21 14:50:35,413 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,416 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,420 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,422 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:35,426 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:35,444 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,448 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:35,464 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 9
+2026-07-21 14:50:35,480 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:35,504 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 10
+2026-07-21 14:50:35,506 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:35,514 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 63
+2026-07-21 14:50:35,517 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:35,531 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:35,534 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 29
+2026-07-21 14:50:35,564 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,567 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:35,571 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:35,575 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 14
+2026-07-21 14:50:35,627 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 9
+2026-07-21 14:50:35,634 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 54
+2026-07-21 14:50:35,635 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 8
+2026-07-21 14:50:35,637 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:35,648 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:35,652 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 32
+2026-07-21 14:50:35,722 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:35,730 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 30
+2026-07-21 14:50:35,733 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:35,737 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:35,798 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:35,852 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:35,858 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 9
+2026-07-21 14:50:35,865 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:35,895 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:35,970 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:36,131 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:36,203 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:36,270 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:36,313 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:36,318 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:36,337 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 8
+2026-07-21 14:50:36,341 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:36,346 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 32
+2026-07-21 14:50:36,354 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 16
+2026-07-21 14:50:36,359 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:36,431 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:36,519 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 14:50:36,562 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:36,896 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:36,921 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 8
+2026-07-21 14:50:36,925 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 18
+2026-07-21 14:50:36,946 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:36,949 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 26
+2026-07-21 14:50:36,967 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 22
+2026-07-21 14:50:36,983 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:36,990 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:37,033 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:37,056 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:37,081 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:37,091 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:37,117 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 43
+2026-07-21 14:50:37,167 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:37,206 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:37,241 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:37,259 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 50
+2026-07-21 14:50:37,297 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 14:50:37,382 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:37,395 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 11
+2026-07-21 14:50:37,436 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 14:50:37,463 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 8
+2026-07-21 14:50:37,466 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:37,497 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:37,547 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:37,568 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:37,571 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:37,573 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:37,588 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:37,598 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:37,614 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 14:50:37,616 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:37,663 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:37,675 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 8
+2026-07-21 14:50:37,712 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:37,735 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:37,751 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:37,797 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 6
+2026-07-21 14:50:37,812 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 5
+2026-07-21 14:50:37,826 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:37,829 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 14:50:37,832 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 0
+2026-07-21 14:50:37,934 [INFO] hsts.ai_optimizer: Extracted 287 historical trade samples for AI learning.
+2026-07-21 14:50:38,194 [WARNING] hsts.ai_optimizer: scikit-learn not installed. Using native numpy variance-weighted optimization fallback.
+2026-07-21 14:50:38,313 [INFO] hsts.ai_optimizer: AI Model training complete! Optimized weights saved to config/ai_weights.json

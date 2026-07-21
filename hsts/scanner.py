@@ -7,8 +7,31 @@ import math
 logger = logging.getLogger("hsts.scanner")
 
 class TechnicalScanner:
-    def __init__(self):
-        pass
+    def __init__(self, config_path="config/ai_weights.json"):
+        self.config_path = config_path
+        self.weights = {
+            "trend": 0.25,
+            "momentum": 0.25,
+            "volatility": 0.15,
+            "volume": 0.15,
+            "levels": 0.20
+        }
+        self.min_threshold = 80.0
+        self._load_ai_weights()
+
+    def _load_ai_weights(self):
+        import os, json
+        if os.path.exists(self.config_path):
+            try:
+                with open(self.config_path, "r") as f:
+                    cfg = json.load(f)
+                    if "category_weights" in cfg:
+                        self.weights = cfg["category_weights"]
+                        logger.info(f"Loaded AI Adaptive Category Weights: {self.weights}")
+                    if "min_composite_threshold" in cfg:
+                        self.min_threshold = cfg["min_composite_threshold"]
+            except Exception as e:
+                logger.warning(f"Could not load AI weights file: {e}")
 
     def get_technical_data(self, symbol):
         """
@@ -296,19 +319,25 @@ class TechnicalScanner:
         if close > latest["Fib_50"]: levels_score += 40
         if latest["Hammer"] == 1 or latest["Doji"] == 1: levels_score += 20
 
-        # Composite Score (out of 100)
+        # Composite Score (out of 100) using AI Adaptive Weights
+        w_trend = self.weights.get("trend", 0.25)
+        w_mom = self.weights.get("momentum", 0.25)
+        w_vol = self.weights.get("volatility", 0.15)
+        w_vlm = self.weights.get("volume", 0.15)
+        w_lvl = self.weights.get("levels", 0.20)
+
         composite_score = (
-            (trend_score * 0.25) + 
-            (momentum_score * 0.25) + 
-            (volatility_score * 0.15) + 
-            (volume_score * 0.15) + 
-            (levels_score * 0.20)
+            (trend_score * w_trend) + 
+            (momentum_score * w_mom) + 
+            (volatility_score * w_vol) + 
+            (volume_score * w_vlm) + 
+            (levels_score * w_lvl)
         )
 
         # Output Signal
-        if composite_score >= 80:
+        if composite_score >= self.min_threshold:
             signal = "BUY"
-            reason = "Excellent trend alignment, high volume momentum, and positive level-breaks."
+            reason = f"AI-optimized indicator alignment (Score: {composite_score:.0f}/100)."
         elif close < latest["EMA_21"]:
             signal = "SELL"
             reason = "Price closed below short-term 21 EMA support."
