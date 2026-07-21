@@ -46,9 +46,12 @@ class ZerodhaFreeBroker(BaseBroker):
                 return False
 
             request_id = res1_json["data"]["request_id"]
+            available_2fa_types = res1_json["data"].get("twofa_types", ["totp"])
+            chosen_2fa_type = available_2fa_types[0] if available_2fa_types else "totp"
 
             # Step 2: Generate TOTP code
-            totp = pyotp.TOTP(self.totp_secret)
+            secret_clean = self.totp_secret.replace(" ", "").strip().upper()
+            totp = pyotp.TOTP(secret_clean)
             totp_code = totp.now()
 
             # Step 3: 2FA request
@@ -57,13 +60,26 @@ class ZerodhaFreeBroker(BaseBroker):
                 "user_id": self.user_id,
                 "request_id": request_id,
                 "twofa_value": totp_code,
-                "twofa_type": "totp"
+                "twofa_type": chosen_2fa_type
             }
             res2 = self.session.post(twofa_url, data=twofa_payload)
-            
-            # Step 4: Extract enctoken from cookies
-            if "enctoken" in res2.cookies:
-                self.enctoken = res2.cookies["enctoken"]
+            res2_json = res2.json()
+
+            if res2_json.get("status") != "success":
+                logger.error(f"Zerodha 2FA failed: {res2_json.get('message')}")
+                return False
+
+            # Step 4: Extract enctoken from cookies or headers
+            enctoken = res2.cookies.get("enctoken")
+            if not enctoken and "set-cookie" in res2.headers:
+                # Fallback header parsing
+                for cookie_str in res2.headers.get("set-cookie", "").split(";"):
+                    if "enctoken=" in cookie_str:
+                        enctoken = cookie_str.split("enctoken=")[-1].strip()
+                        break
+
+            if enctoken:
+                self.enctoken = enctoken
                 self.session.headers.update({
                     "Authorization": f"enctoken {self.enctoken}",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -71,7 +87,7 @@ class ZerodhaFreeBroker(BaseBroker):
                 logger.info("Zerodha Free Authentication successful! enctoken extracted.")
                 return True
             else:
-                logger.error("Failed to extract enctoken from response cookies.")
+                logger.error(f"Failed to extract enctoken. Response Status: {res2_json.get('status')}, Cookies: {list(res2.cookies.keys())}")
                 return False
 
         except Exception as e:
