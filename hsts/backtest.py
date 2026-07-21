@@ -27,14 +27,17 @@ class BacktestEngine:
         self.completed_trades = []
         self.equity_curve = []
 
-    def run_backtest(self, universe_path="data/universe.csv", period="1y"):
+    def run_backtest(self, universe_path="data/universe.csv", period="1y", ignore_regime=False, start_date=None, end_date=None):
         """
-        Run a historical backtest over the specified period (e.g. '1y', '2y').
+        Run a historical backtest over a specified period or custom date range (e.g. start_date='2023-01-01', end_date='2024-01-01').
         """
-        logger.info(f"Starting historical backtest for period={period} with Initial Capital = INR {self.initial_capital:,.2f}...")
+        logger.info(f"Starting historical backtest (start_date={start_date}, end_date={end_date}, period={period}, ignore_regime={ignore_regime})...")
         
         # 1. Download Nifty 50 Index history for Market Regime
-        nifty = yf.Ticker("^NSEI").history(period=period)
+        if start_date and end_date:
+            nifty = yf.Ticker("^NSEI").history(start=start_date, end=end_date)
+        else:
+            nifty = yf.Ticker("^NSEI").history(period=period)
         if nifty.empty:
             logger.error("Failed to fetch Nifty 50 historical data for backtesting.")
             return None
@@ -55,7 +58,10 @@ class BacktestEngine:
                 continue
                 
             ticker_sym = f"{sym}.NS"
-            df = yf.Ticker(ticker_sym).history(period=period)
+            if start_date and end_date:
+                df = yf.Ticker(ticker_sym).history(start=start_date, end=end_date)
+            else:
+                df = yf.Ticker(ticker_sym).history(period=period)
             if not df.empty and len(df) >= 50:
                 df = df.dropna(subset=["Close"])
                 df = self.scanner._add_trend_indicators(df)
@@ -123,8 +129,8 @@ class BacktestEngine:
             
             self.open_trades = still_open
 
-            # Step B: Enter New Positions (If Regime is NOT BEARISH)
-            if regime != "BEARISH":
+            # Step B: Enter New Positions (If Regime is NOT BEARISH or ignore_regime is True)
+            if ignore_regime or regime != "BEARISH":
                 for sym, df in stock_data.items():
                     # Skip if already holding this symbol
                     if any(t["symbol"] == sym for t in self.open_trades):

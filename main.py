@@ -401,12 +401,15 @@ def sync_zerodha_orders():
 @click.option("--period", default="1y", help="Historical simulation period (e.g. 6mo, 1y, 2y).")
 @click.option("--capital", default=100000.0, help="Initial simulation capital.")
 @click.option("--risk", default=0.01, help="Max portfolio risk per trade (e.g. 0.01 for 1%).")
-def backtest(period, capital, risk):
+@click.option("--ignore-regime", is_flag=True, help="Disable market regime filter and trade all setups regardless of market trend.")
+@click.option("--start-date", default=None, help="Custom start date (YYYY-MM-DD).")
+@click.option("--end-date", default=None, help="Custom end date (YYYY-MM-DD).")
+def backtest(period, capital, risk, ignore_regime, start_date, end_date):
     """Run historical backtest simulation of HSTS v1.0 strategy."""
     try:
         from hsts.backtest import BacktestEngine
         engine = BacktestEngine(initial_capital=capital, max_risk_per_trade=risk)
-        results = engine.run_backtest(period=period)
+        results = engine.run_backtest(period=period, ignore_regime=ignore_regime, start_date=start_date, end_date=end_date)
         
         if not results:
             print("[ERROR] Backtest run failed or no data available.")
