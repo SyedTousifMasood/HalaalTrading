@@ -254,6 +254,44 @@ class TradingJournal:
         ws.column_dimensions["K"].width = 24
         ws.column_dimensions["L"].width = 30
 
+    def get_available_capital(self, default_capital=100000.0):
+        """Calculates Capital Available for Trading dynamically from the Journal."""
+        if not os.path.exists(self.file_path):
+            return default_capital
+        try:
+            wb = openpyxl.load_workbook(self.file_path, data_only=True)
+            ws_cap = wb["Capital"]
+            deposits = 0.0
+            for r in range(2, self._get_true_max_row(ws_cap) + 1):
+                t_type = str(ws_cap.cell(row=r, column=2).value or "").strip().upper()
+                amt = float(ws_cap.cell(row=r, column=3).value or 0.0)
+                if t_type == "DEPOSIT":
+                    deposits += amt
+                elif t_type == "WITHDRAWAL":
+                    deposits -= amt
+            if deposits <= 0.0:
+                deposits = default_capital
+
+            ws_ledg = wb["Ledger"]
+            deployed = 0.0
+            realized_pnl = 0.0
+            for r in range(2, self._get_true_max_row(ws_ledg) + 1):
+                status = str(ws_ledg.cell(row=r, column=14).value or "").strip().upper()
+                qty = float(ws_ledg.cell(row=r, column=4).value or 0.0)
+                price = float(ws_ledg.cell(row=r, column=5).value or 0.0)
+                pnl = float(ws_ledg.cell(row=r, column=11).value or 0.0)
+                if status == "OPEN":
+                    deployed += (qty * price)
+                elif status == "CLOSED":
+                    realized_pnl += pnl
+
+            wb.close()
+            avail = deposits + realized_pnl - deployed
+            return avail if avail > 0 else default_capital
+        except Exception as e:
+            logger.error(f"Error reading available capital from journal: {e}")
+            return default_capital
+
     def _setup_capital(self, ws):
         ws.views.sheetView[0].showGridLines = True
         font_header = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")

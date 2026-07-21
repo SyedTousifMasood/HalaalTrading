@@ -19,13 +19,13 @@ def cli():
     setup_logging()
 
 @cli.command()
-@click.option("--capital", default=100000.0, help="Total available portfolio capital in INR.")
+@click.option("--capital", default=None, type=float, help="Total available portfolio capital in INR. Defaults to Journal available capital.")
 @click.option("--save-journal", is_flag=True, help="Save top recommendations to Google Sheets journal upon confirmation.")
 def scan(capital, save_journal):
     """Scan stock universe for Sharia compliance and swing trading entries."""
     logger.info("Starting HSTS scanner run...")
     
-    # 1. Load universe
+    # 1. Load universe & Journal Capital
     universe_path = "data/universe.csv"
     if not os.path.exists(universe_path):
         logger.error(f"Stock universe file not found at {universe_path}")
@@ -35,10 +35,18 @@ def scan(capital, save_journal):
     regime_engine = MarketRegimeEngine()
     scanner = TechnicalScanner()
     risk_engine = RiskManagementEngine()
+    journal = TradingJournal()
+
+    # Dynamic Capital Allocation from Trading Journal if not explicitly provided
+    if capital is None:
+        capital = journal.get_available_capital()
+        print(f"\n[CAPITAL CONTROL] Capital Available for Trading (from Trading Journal): INR {capital:,.2f}")
+    else:
+        print(f"\n[CAPITAL CONTROL] User Specified Capital: INR {capital:,.2f}")
 
     # 2. Check Market Regime
     regime, regime_metrics = regime_engine.get_market_regime()
-    print(f"\n=========================================")
+    print(f"=========================================")
     print(f"BROADER MARKET REGIME: {regime}")
     print(f"=========================================\n")
 
@@ -108,7 +116,7 @@ def scan(capital, save_journal):
         df_all = pd.DataFrame(all_compliant_analyses)
         df_top5 = df_all.sort_values(by="score", ascending=False).head(5)
         
-        # Calculate mock position size for top 5 for illustration
+        # Calculate position size based on available capital
         buy_setups = []
         for _, row in df_top5.iterrows():
             pos_size = risk_engine.calculate_position_size(
@@ -120,7 +128,7 @@ def scan(capital, save_journal):
                 "Symbol": row["symbol"],
                 "Name": row["name"],
                 "Close": row["close"],
-                "Score": f"{row['score']:.0f}/100",
+                "Composite Score": f"{row['score']:.0f}/100",
                 "Signal": row["signal"],
                 "Stop Loss": row["suggested_sl"],
                 "Target": row["suggested_target"],
