@@ -16,7 +16,6 @@ class TradingJournal:
         """
         Creates, formats, or updates the Excel Workbook.
         """
-        wb = None
         if os.path.exists(self.file_path):
             logger.info("Trading Journal already exists. Checking for updates/missing sheets...")
             wb = openpyxl.load_workbook(self.file_path)
@@ -26,12 +25,17 @@ class TradingJournal:
                 logger.info("Upgrading Trading Journal: Adding Capital sheet...")
                 ws_cap = wb.create_sheet(title="Capital")
                 self._setup_capital(ws_cap)
-                
-                # Re-setup dashboard to include new capital formulas
                 ws_dash = wb["Dashboard"]
                 self._setup_dashboard(ws_dash)
                 wb.save(self.file_path)
-                logger.info("Upgrade complete.")
+
+            # Upgrade check: Add Recommendations sheet if missing
+            if "Recommendations" not in wb.sheetnames:
+                logger.info("Upgrading Trading Journal: Adding Recommendations sheet...")
+                ws_recs = wb.create_sheet(title="Recommendations")
+                self._setup_recommendations(ws_recs)
+                wb.save(self.file_path)
+
             return
 
         logger.info(f"Creating a new Trading Journal at {self.file_path}...")
@@ -50,22 +54,23 @@ class TradingJournal:
         ws_ledg = wb.create_sheet(title="Ledger")
         self._setup_ledger(ws_ledg)
 
-        # 3. Setup Logs Sheet
-        ws_logs = wb.create_sheet(title="Logs")
-        self._setup_logs(ws_logs)
+        # 3. Setup Recommendations Sheet
+        ws_recs = wb.create_sheet(title="Recommendations")
+        self._setup_recommendations(ws_recs)
 
         # 4. Setup Capital Sheet
         ws_cap = wb.create_sheet(title="Capital")
         self._setup_capital(ws_cap)
 
+        # 5. Setup Logs Sheet
+        ws_logs = wb.create_sheet(title="Logs")
+        self._setup_logs(ws_logs)
+
         wb.save(self.file_path)
         logger.info("Workbook created and formatted successfully.")
 
     def _setup_dashboard(self, ws):
-        # Disable Gridlines setting
         ws.views.sheetView[0].showGridLines = True
-
-        # Styles
         font_title = Font(name="Segoe UI", size=16, bold=True, color="1B365D")
         font_header = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
         font_bold = Font(name="Segoe UI", size=11, bold=True)
@@ -73,12 +78,10 @@ class TradingJournal:
         fill_header = PatternFill(start_color="1B365D", end_color="1B365D", fill_type="solid")
         fill_metric = PatternFill(start_color="F2F4F7", end_color="F2F4F7", fill_type="solid")
 
-        # Title block
         ws["A1"] = "HSTS v1.0 Trading Dashboard"
         ws["A1"].font = font_title
         ws.row_dimensions[1].height = 30
 
-        # Stats Table Headers
         headers = ["Metric", "Value"]
         for col_idx, text in enumerate(headers, 1):
             cell = ws.cell(row=3, column=col_idx, value=text)
@@ -87,7 +90,6 @@ class TradingJournal:
             cell.alignment = Alignment(horizontal="center", vertical="center")
         ws.row_dimensions[3].height = 24
 
-        # Metrics rows
         metrics = [
             ("Total Invested Capital", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C) - SUMIF(Capital!B:B, "WITHDRAWAL", Capital!C:C)'),
             ("Lifetime PnL", "=SUM(Ledger!L:L)"),
@@ -134,28 +136,42 @@ class TradingJournal:
         
         ws.row_dimensions[1].height = 28
 
-        # Set default widths
         for col_idx in range(1, len(headers) + 1):
             col_letter = get_column_letter(col_idx)
             ws.column_dimensions[col_letter].width = 16
-        ws.column_dimensions["B"].width = 25  # Name column
-        ws.column_dimensions["N"].width = 30  # Notes column
+        ws.column_dimensions["B"].width = 25
+        ws.column_dimensions["N"].width = 30
 
-    def _setup_logs(self, ws):
+    def _setup_recommendations(self, ws):
         ws.views.sheetView[0].showGridLines = True
         font_header = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
-        fill_header = PatternFill(start_color="4A5568", end_color="4A5568", fill_type="solid")
+        fill_header = PatternFill(start_color="2B6CB0", end_color="2B6CB0", fill_type="solid")
 
-        headers = ["Timestamp", "Level", "Message"]
+        headers = [
+            "Date", "Symbol", "Name", "Composite Score", 
+            "Target Entry Price", "Initial Stop-Loss", "Profit Target", 
+            "Recommended Qty", "Recommended Allocation", "Execution Status", "Notes"
+        ]
+
         for col_idx, text in enumerate(headers, 1):
             cell = ws.cell(row=1, column=col_idx, value=text)
             cell.font = font_header
             cell.fill = fill_header
             cell.alignment = Alignment(horizontal="center", vertical="center")
 
-        ws.column_dimensions["A"].width = 22
-        ws.column_dimensions["B"].width = 12
-        ws.column_dimensions["C"].width = 80
+        ws.row_dimensions[1].height = 28
+
+        ws.column_dimensions["A"].width = 14
+        ws.column_dimensions["B"].width = 14
+        ws.column_dimensions["C"].width = 25
+        ws.column_dimensions["D"].width = 18
+        ws.column_dimensions["E"].width = 18
+        ws.column_dimensions["F"].width = 18
+        ws.column_dimensions["G"].width = 18
+        ws.column_dimensions["H"].width = 18
+        ws.column_dimensions["I"].width = 22
+        ws.column_dimensions["J"].width = 24
+        ws.column_dimensions["K"].width = 30
 
     def _setup_capital(self, ws):
         ws.views.sheetView[0].showGridLines = True
@@ -174,10 +190,54 @@ class TradingJournal:
         ws.column_dimensions["C"].width = 18
         ws.column_dimensions["D"].width = 40
 
+    def _setup_logs(self, ws):
+        ws.views.sheetView[0].showGridLines = True
+        font_header = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
+        fill_header = PatternFill(start_color="4A5568", end_color="4A5568", fill_type="solid")
+
+        headers = ["Timestamp", "Level", "Message"]
+        for col_idx, text in enumerate(headers, 1):
+            cell = ws.cell(row=1, column=col_idx, value=text)
+            cell.font = font_header
+            cell.fill = fill_header
+            cell.alignment = Alignment(horizontal="center", vertical="center")
+
+        ws.column_dimensions["A"].width = 22
+        ws.column_dimensions["B"].width = 12
+        ws.column_dimensions["C"].width = 80
+
+    def add_recommendation(self, symbol, name, score, target_entry, stop_loss, profit_target, qty, allocation, status="PENDING", notes=""):
+        """
+        Record a system trade recommendation for tracking & comparison.
+        """
+        wb = openpyxl.load_workbook(self.file_path)
+        ws = wb["Recommendations"]
+        row_idx = ws.max_row + 1
+        
+        date_str = datetime.date.today().strftime("%Y-%m-%d")
+        
+        ws.cell(row=row_idx, column=1, value=date_str)
+        ws.cell(row=row_idx, column=2, value=symbol)
+        ws.cell(row=row_idx, column=3, value=name)
+        ws.cell(row=row_idx, column=4, value=f"{score:.0f}/100")
+        ws.cell(row=row_idx, column=5, value=target_entry)
+        ws.cell(row=row_idx, column=6, value=stop_loss)
+        ws.cell(row=row_idx, column=7, value=profit_target)
+        ws.cell(row=row_idx, column=8, value=qty)
+        ws.cell(row=row_idx, column=9, value=allocation)
+        ws.cell(row=row_idx, column=10, value=status)
+        ws.cell(row=row_idx, column=11, value=notes)
+
+        # Formats
+        ws.cell(row=row_idx, column=5).number_format = "INR #,##0.00"
+        ws.cell(row=row_idx, column=6).number_format = "INR #,##0.00"
+        ws.cell(row=row_idx, column=7).number_format = "INR #,##0.00"
+        ws.cell(row=row_idx, column=9).number_format = "INR #,##0.00"
+
+        wb.save(self.file_path)
+        logger.info(f"Logged recommendation for {symbol} to Recommendations sheet (Row {row_idx})")
+
     def add_capital_transaction(self, transaction_type, amount, notes=""):
-        """
-        Record a capital deposit or withdrawal.
-        """
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Capital"]
         row_idx = ws.max_row + 1
@@ -188,7 +248,6 @@ class TradingJournal:
         ws.cell(row=row_idx, column=3, value=amount)
         ws.cell(row=row_idx, column=4, value=notes)
 
-        # Format amount
         ws.cell(row=row_idx, column=3).number_format = "INR #,##0.00"
         
         wb.save(self.file_path)
@@ -196,15 +255,9 @@ class TradingJournal:
         self.log_event(f"Capital Transaction: {transaction_type.upper()} of INR {amount:.2f} logged.")
 
     def add_trade(self, symbol, name, entry_date, qty, buy_price, suggested_entry, target, stop_loss, notes=""):
-        """
-        Record a new open trade to the ledger.
-        """
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Ledger"]
-        
         row_idx = ws.max_row + 1
-        
-        # Calculate initial slippage/deviation
         slippage = buy_price - suggested_entry
 
         ws.cell(row=row_idx, column=1, value=symbol)
@@ -217,19 +270,13 @@ class TradingJournal:
         ws.cell(row=row_idx, column=8, value=target)
         ws.cell(row=row_idx, column=9, value=stop_loss)
         
-        # Exit fields (Blank initially)
         ws.cell(row=row_idx, column=10, value="")
         ws.cell(row=row_idx, column=11, value="")
-        
-        # PnL Formula: =IF(M{row_idx}="OPEN", 0, (K{row_idx}-E{row_idx})*D{row_idx})
         pnl_formula = f'=IF(M{row_idx}="OPEN", 0, (K{row_idx}-E{row_idx})*D{row_idx})'
         ws.cell(row=row_idx, column=12, value=pnl_formula)
-        
-        # Status (Col M)
         ws.cell(row=row_idx, column=13, value="OPEN")
         ws.cell(row=row_idx, column=14, value=notes)
 
-        # Formats
         ws.cell(row=row_idx, column=5).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=6).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=7).number_format = "INR #,##0.00"
@@ -242,26 +289,18 @@ class TradingJournal:
         self.log_event(f"Recorded buy order: {qty} shares of {symbol} at {buy_price}")
 
     def close_trade(self, symbol, exit_date, exit_price, status, notes=""):
-        """
-        Close an existing open trade for a symbol in the Ledger.
-        """
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Ledger"]
-        
-        # Find open trade
         found = False
         for r in range(2, ws.max_row + 1):
             if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=13).value == "OPEN":
                 ws.cell(row=r, column=10, value=exit_date)
                 ws.cell(row=r, column=11, value=exit_price)
-                ws.cell(row=r, column=13, value=status.upper())  # WIN or LOSS
+                ws.cell(row=r, column=13, value=status.upper())
                 if notes:
                     ws.cell(row=r, column=14, value=f"{ws.cell(row=r, column=14).value} | {notes}".strip(" |"))
-                
-                # Format exit price
                 ws.cell(row=r, column=11).number_format = "INR #,##0.00"
                 found = True
-                logger.info(f"Closed trade for {symbol} at Row {r} with status {status}")
                 break
 
         if not found:
@@ -274,16 +313,11 @@ class TradingJournal:
         return True
 
     def log_event(self, message, level="INFO"):
-        """
-        Append system events to the Logs sheet.
-        """
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Logs"]
         row_idx = ws.max_row + 1
-        
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         ws.cell(row=row_idx, column=1, value=timestamp)
         ws.cell(row=row_idx, column=2, value=level.upper())
         ws.cell(row=row_idx, column=3, value=message)
-        
         wb.save(self.file_path)

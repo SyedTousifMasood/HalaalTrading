@@ -261,3 +261,99 @@
 2026-07-21 03:32:13,611 [INFO] hsts: HSTS Log Engine initialized successfully.
 2026-07-21 03:32:13,620 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
 2026-07-21 03:32:13,986 [INFO] hsts.journal: Capital Transaction: WITHDRAWAL of INR 5000.00 logged.
+2026-07-21 09:15:35,197 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 09:15:35,235 [INFO] hsts.main: Starting HSTS scanner run...
+2026-07-21 09:15:35,269 [INFO] hsts.regime: Evaluating market regime using index ^NSEI...
+2026-07-21 09:15:36,381 [INFO] hsts.regime: Market regime identified as BEARISH (Close: 24258.65, 50 EMA: 23995.50, 200 EMA: 24478.88)
+2026-07-21 09:15:36,382 [WARNING] hsts.main: Market is BEARISH. Capital preservation mode active. No new momentum entries allowed.
+2026-07-21 09:15:36,393 [INFO] hsts.sharia: TCS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:36,820 [INFO] hsts.sharia: INFY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:37,290 [INFO] hsts.sharia: RELIANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:37,705 [INFO] hsts.sharia: HINDUNILVR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:38,149 [INFO] hsts.sharia: SUNPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:38,877 [INFO] hsts.sharia: HCLTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:39,314 [INFO] hsts.sharia: ASIANPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:39,855 [INFO] hsts.sharia: NESTLEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:40,304 [INFO] hsts.sharia: ULTRACEMCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:40,688 [INFO] hsts.sharia: ONGC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:41,402 [INFO] hsts.sharia: CIPLA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:41,872 [INFO] hsts.sharia: TECHM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:42,288 [INFO] hsts.sharia: GRASIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:42,894 [INFO] hsts.sharia: HEROMOTOCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:43,262 [INFO] hsts.sharia: BRITANNIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:43,622 [INFO] hsts.sharia: WIPRO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:44,188 [INFO] hsts.sharia: APOLLOHOSP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:44,571 [INFO] hsts.sharia: DIVISLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:45,071 [INFO] hsts.sharia: COALINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:45,522 [INFO] hsts.sharia: TATASTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:46,234 [INFO] hsts.sharia: HINDALCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:46,626 [INFO] hsts.sharia: JSWSTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 09:15:47,033 [INFO] hsts.sharia: Running programmatic screen for HDFCBANK...
+2026-07-21 09:15:47,473 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 09:15:47,476 [INFO] hsts.sharia: Running programmatic screen for ITC...
+2026-07-21 09:15:47,837 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
+2026-07-21 09:15:47,841 [INFO] hsts.sharia: Running programmatic screen for TATAMOTORS...
+2026-07-21 09:15:48,563 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-07-21 09:15:48,721 [WARNING] hsts.sharia: Could not retrieve info for TATAMOTORS. Stock skipped.
+2026-07-21 09:15:48,724 [INFO] hsts.sharia: Running programmatic screen for LT...
+2026-07-21 09:15:50,162 [INFO] hsts.sharia: Running programmatic screen for MUTHOOTFIN...
+2026-07-21 09:15:50,405 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 09:15:50,410 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 13
+2026-07-21 09:15:50,411 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 2
+2026-07-21 09:15:50,413 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 3
+2026-07-21 09:15:50,414 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 09:15:50,415 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 10
+2026-07-21 10:10:24,131 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 10:10:24,143 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 10:10:24,664 [INFO] hsts.journal: Upgrading Trading Journal: Adding Recommendations sheet...
+2026-07-21 10:10:39,371 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 10:10:39,377 [INFO] hsts.main: Starting HSTS scanner run...
+2026-07-21 10:10:39,413 [INFO] hsts.regime: Evaluating market regime using index ^NSEI...
+2026-07-21 10:10:40,540 [INFO] hsts.regime: Market regime identified as BEARISH (Close: 24224.85, 50 EMA: 23994.17, 200 EMA: 24478.54)
+2026-07-21 10:10:40,542 [WARNING] hsts.main: Market is BEARISH. Capital preservation mode active. No new momentum entries allowed.
+2026-07-21 10:10:40,552 [INFO] hsts.sharia: TCS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:40,924 [INFO] hsts.sharia: INFY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:41,316 [INFO] hsts.sharia: RELIANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:41,709 [INFO] hsts.sharia: HINDUNILVR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:42,164 [INFO] hsts.sharia: SUNPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:42,684 [INFO] hsts.sharia: HCLTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:43,098 [INFO] hsts.sharia: ASIANPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:43,608 [INFO] hsts.sharia: NESTLEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:44,007 [INFO] hsts.sharia: ULTRACEMCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:44,342 [INFO] hsts.sharia: ONGC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:44,745 [INFO] hsts.sharia: CIPLA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:45,379 [INFO] hsts.sharia: TECHM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:46,069 [INFO] hsts.sharia: GRASIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:46,429 [INFO] hsts.sharia: HEROMOTOCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:46,766 [INFO] hsts.sharia: BRITANNIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:47,171 [INFO] hsts.sharia: WIPRO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:47,630 [INFO] hsts.sharia: APOLLOHOSP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:47,964 [INFO] hsts.sharia: DIVISLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:48,359 [INFO] hsts.sharia: COALINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:48,859 [INFO] hsts.sharia: TATASTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:49,393 [INFO] hsts.sharia: HINDALCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:49,784 [INFO] hsts.sharia: JSWSTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 10:10:50,161 [INFO] hsts.sharia: Running programmatic screen for HDFCBANK...
+2026-07-21 10:10:50,448 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 10:10:50,452 [INFO] hsts.sharia: Running programmatic screen for ITC...
+2026-07-21 10:10:50,853 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
+2026-07-21 10:10:50,857 [INFO] hsts.sharia: Running programmatic screen for TATAMOTORS...
+2026-07-21 10:10:51,589 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-07-21 10:10:51,933 [WARNING] hsts.sharia: Could not retrieve info for TATAMOTORS. Stock skipped.
+2026-07-21 10:10:51,937 [INFO] hsts.sharia: Running programmatic screen for LT...
+2026-07-21 10:10:53,042 [INFO] hsts.sharia: Running programmatic screen for MUTHOOTFIN...
+2026-07-21 10:10:53,379 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 10:10:53,386 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 10:10:53,388 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 10
+2026-07-21 10:10:53,389 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 10:10:53,390 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 15
+2026-07-21 10:10:53,403 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 10:10:53,571 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 10:10:54,081 [INFO] hsts.journal: Logged recommendation for ULTRACEMCO to Recommendations sheet (Row 2)
+2026-07-21 10:10:54,084 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 10
+2026-07-21 10:10:54,556 [INFO] hsts.journal: Logged recommendation for SUNPHARMA to Recommendations sheet (Row 3)
+2026-07-21 10:10:54,558 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 4
+2026-07-21 10:10:55,022 [INFO] hsts.journal: Logged recommendation for HEROMOTOCO to Recommendations sheet (Row 4)
+2026-07-21 10:10:55,023 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 15
+2026-07-21 10:10:55,512 [INFO] hsts.journal: Logged recommendation for JSWSTEEL to Recommendations sheet (Row 5)
+2026-07-21 10:10:55,994 [INFO] hsts.journal: Logged recommendation for TECHM to Recommendations sheet (Row 6)
