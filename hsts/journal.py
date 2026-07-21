@@ -279,10 +279,19 @@ class TradingJournal:
                 status = str(ws_ledg.cell(row=r, column=14).value or "").strip().upper()
                 qty = float(ws_ledg.cell(row=r, column=4).value or 0.0)
                 price = float(ws_ledg.cell(row=r, column=5).value or 0.0)
-                pnl = float(ws_ledg.cell(row=r, column=11).value or 0.0)
+                
+                # Column 13 is Realized PnL (Formula or float)
+                pnl_val = ws_ledg.cell(row=r, column=13).value
+                if isinstance(pnl_val, (int, float)):
+                    pnl = float(pnl_val)
+                else:
+                    # Calculate manually if formula string
+                    exit_p = float(ws_ledg.cell(row=r, column=12).value or price)
+                    pnl = (exit_p - price) * qty
+
                 if status == "OPEN":
                     deployed += (qty * price)
-                elif status == "CLOSED":
+                elif status in ["CLOSED", "WIN", "LOSS"]:
                     realized_pnl += pnl
 
             wb.close()

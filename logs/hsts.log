@@ -1932,3 +1932,523 @@
 2026-07-21 16:18:15,194 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 15
 2026-07-21 16:18:15,195 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
 2026-07-21 16:18:15,196 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 16:22:46,160 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 16:22:46,165 [INFO] hsts.main: Starting HSTS scanner run...
+2026-07-21 16:22:46,198 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-07-21 16:22:46,201 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 16:22:47,456 [ERROR] hsts.journal: Error reading available capital from journal: could not convert string to float: '2026-07-21'
+2026-07-21 16:22:47,458 [INFO] hsts.regime: Evaluating market regime using index ^NSEI...
+2026-07-21 16:22:48,357 [INFO] hsts.regime: Market regime identified as BEARISH (Close: 24187.70, 50 EMA: 23992.72, 200 EMA: 24478.17)
+2026-07-21 16:22:48,357 [WARNING] hsts.main: Market is BEARISH. Capital preservation mode active. No new momentum entries allowed.
+2026-07-21 16:22:48,371 [INFO] hsts.sharia: TCS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:48,761 [INFO] hsts.sharia: INFY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:49,144 [INFO] hsts.sharia: RELIANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:49,536 [INFO] hsts.sharia: HINDUNILVR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:49,941 [INFO] hsts.sharia: SUNPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:50,328 [INFO] hsts.sharia: HCLTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:50,727 [INFO] hsts.sharia: ASIANPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:51,118 [INFO] hsts.sharia: NESTLEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:51,568 [INFO] hsts.sharia: ULTRACEMCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:52,193 [INFO] hsts.sharia: ONGC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:52,776 [INFO] hsts.sharia: CIPLA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:53,216 [INFO] hsts.sharia: TECHM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:53,579 [INFO] hsts.sharia: GRASIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:53,963 [INFO] hsts.sharia: HEROMOTOCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:54,478 [INFO] hsts.sharia: BRITANNIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:54,885 [INFO] hsts.sharia: WIPRO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:55,659 [INFO] hsts.sharia: APOLLOHOSP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:56,281 [INFO] hsts.sharia: DIVISLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:56,920 [INFO] hsts.sharia: COALINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:57,323 [INFO] hsts.sharia: TATASTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:57,860 [INFO] hsts.sharia: HINDALCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:58,277 [INFO] hsts.sharia: JSWSTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:58,864 [INFO] hsts.sharia: TITAN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:59,401 [INFO] hsts.sharia: MARUTI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:22:59,815 [INFO] hsts.sharia: BAJAJ-AUTO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:00,339 [INFO] hsts.sharia: EICHERMOT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:00,791 [INFO] hsts.sharia: PIDILITIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:01,142 [INFO] hsts.sharia: SIEMENS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:01,494 [INFO] hsts.sharia: BEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:01,854 [INFO] hsts.sharia: HAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:02,164 [INFO] hsts.sharia: TRENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:02,541 [INFO] hsts.sharia: ADANIPORTS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:02,902 [INFO] hsts.sharia: TATAELXSI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:03,272 [INFO] hsts.sharia: BOSCHLTD is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:03,600 [INFO] hsts.sharia: COLPAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:03,914 [INFO] hsts.sharia: DABUR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:04,295 [INFO] hsts.sharia: GODREJCP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:04,684 [INFO] hsts.sharia: BERGEPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:05,089 [INFO] hsts.sharia: TATACHEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:05,569 [INFO] hsts.sharia: VOLTAS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:05,942 [INFO] hsts.sharia: LTIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:07,644 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+2026-07-21 16:23:08,768 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-21 16:23:08,775 [INFO] hsts.sharia: PERSISTENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:09,123 [INFO] hsts.sharia: COFORGE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:09,536 [INFO] hsts.sharia: MPHASIS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:09,963 [INFO] hsts.sharia: OBEROIREAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:11,008 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OBEROIREAL.NS"}}}
+2026-07-21 16:23:11,608 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-21 16:23:11,614 [INFO] hsts.sharia: DLF is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:11,943 [INFO] hsts.sharia: GODREJPROP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:12,242 [INFO] hsts.sharia: LUPIN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:12,566 [INFO] hsts.sharia: ALKEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:12,886 [INFO] hsts.sharia: TORNTPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:13,217 [INFO] hsts.sharia: MANKIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:13,507 [INFO] hsts.sharia: ZYDUSLIFE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:13,846 [INFO] hsts.sharia: ABB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:14,174 [INFO] hsts.sharia: CGPOWER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:14,543 [INFO] hsts.sharia: POLYCAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:14,860 [INFO] hsts.sharia: KEI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:15,233 [INFO] hsts.sharia: DIXON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:15,553 [INFO] hsts.sharia: ASTRAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:15,874 [INFO] hsts.sharia: SUPREMEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:16,257 [INFO] hsts.sharia: PIIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:16,572 [INFO] hsts.sharia: COROMANDEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:16,907 [INFO] hsts.sharia: DEEPAKNTR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:17,291 [INFO] hsts.sharia: SRF is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:17,616 [INFO] hsts.sharia: GUJGASLTD is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:17,756 [INFO] hsts.sharia: IGL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:18,065 [INFO] hsts.sharia: MGL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:18,416 [INFO] hsts.sharia: SOLARINDS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:18,747 [INFO] hsts.sharia: BHARATFORG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:19,265 [INFO] hsts.sharia: CUMMINSIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:19,628 [INFO] hsts.sharia: MAZDOCK is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:19,956 [INFO] hsts.sharia: COCHINSHIP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:20,396 [INFO] hsts.sharia: FACT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:20,751 [INFO] hsts.sharia: UPL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:21,058 [INFO] hsts.sharia: DRREDDY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:21,398 [INFO] hsts.sharia: LAURUSLABS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:21,707 [INFO] hsts.sharia: BIOCON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:22,153 [INFO] hsts.sharia: SYNGENE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:22,456 [INFO] hsts.sharia: GLENMARK is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:22,776 [INFO] hsts.sharia: IPCALAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:23,109 [INFO] hsts.sharia: AUROPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:23,447 [INFO] hsts.sharia: GRANULES is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:24,118 [INFO] hsts.sharia: NATCOPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:24,445 [INFO] hsts.sharia: AJANTPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:24,923 [INFO] hsts.sharia: ERIS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:25,440 [INFO] hsts.sharia: JBCHEPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:26,050 [INFO] hsts.sharia: POLYMED is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:26,408 [INFO] hsts.sharia: KPITTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:26,807 [INFO] hsts.sharia: CYIENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:27,382 [INFO] hsts.sharia: TATACOMM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:27,734 [INFO] hsts.sharia: OFSS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:28,157 [INFO] hsts.sharia: HAPPSTMNDS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:28,538 [INFO] hsts.sharia: SONACOMS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:29,042 [INFO] hsts.sharia: ZENSARTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:29,538 [INFO] hsts.sharia: BIRLASOFT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:30,807 [ERROR] yfinance: $BIRLASOFT.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-21 16:23:30,816 [INFO] hsts.sharia: MASTEK is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:31,393 [INFO] hsts.sharia: NEWGEN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:31,907 [INFO] hsts.sharia: BALKRISIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:32,407 [INFO] hsts.sharia: UNOMINDA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:32,762 [INFO] hsts.sharia: TIINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:33,144 [INFO] hsts.sharia: SCHAEFFLER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:33,574 [INFO] hsts.sharia: Running programmatic screen for TIMKEN...
+2026-07-21 16:23:34,702 [INFO] hsts.sharia: ENDURANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:35,105 [INFO] hsts.sharia: MOTHERSON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:35,673 [INFO] hsts.sharia: EXIDEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:36,094 [INFO] hsts.sharia: MARICO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:36,470 [INFO] hsts.sharia: VBL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:36,797 [INFO] hsts.sharia: KALYANKJIL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:37,207 [INFO] hsts.sharia: METROPOLIS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:37,507 [INFO] hsts.sharia: LALPATHLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:37,841 [INFO] hsts.sharia: BATAINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:38,161 [INFO] hsts.sharia: RELAXO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:38,529 [INFO] hsts.sharia: DEVYANI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:38,868 [INFO] hsts.sharia: BHEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:39,258 [INFO] hsts.sharia: GRINDWELL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:39,624 [INFO] hsts.sharia: CARBORUNIV is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:39,952 [INFO] hsts.sharia: THERMAX is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:40,325 [INFO] hsts.sharia: SUZLON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:40,629 [INFO] hsts.sharia: KEC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:41,042 [INFO] hsts.sharia: SCHNEIDER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:41,440 [INFO] hsts.sharia: AIAENG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:41,852 [INFO] hsts.sharia: NMDC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:42,219 [INFO] hsts.sharia: MOIL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:42,574 [INFO] hsts.sharia: JSL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:42,921 [INFO] hsts.sharia: JINDALSTEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:43,276 [INFO] hsts.sharia: AMBUJACEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:43,692 [INFO] hsts.sharia: ACC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:44,108 [INFO] hsts.sharia: DALBHARAT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:44,492 [INFO] hsts.sharia: SHREECEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:44,962 [INFO] hsts.sharia: HEG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:45,326 [INFO] hsts.sharia: GRAPHITE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:45,705 [INFO] hsts.sharia: RATNAMANI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:46,268 [INFO] hsts.sharia: ATUL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:46,613 [INFO] hsts.sharia: AARTIIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:47,133 [INFO] hsts.sharia: VINATIORGA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:47,607 [INFO] hsts.sharia: NAVINFLUOR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:48,136 [INFO] hsts.sharia: LINDEINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:48,477 [INFO] hsts.sharia: SUMICHEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:48,794 [INFO] hsts.sharia: CLEAN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:49,115 [INFO] hsts.sharia: FINEORG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:49,448 [INFO] hsts.sharia: PHOENIXLTD is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:49,785 [INFO] hsts.sharia: PRESTIGE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:50,155 [INFO] hsts.sharia: BRIGADE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:50,482 [INFO] hsts.sharia: SOBHA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:51,048 [INFO] hsts.sharia: ADANIGREEN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:51,435 [INFO] hsts.sharia: ADANIENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:51,881 [INFO] hsts.sharia: ADANIPOWER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:52,181 [INFO] hsts.sharia: TATAPOWER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:52,510 [INFO] hsts.sharia: CESC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:52,951 [INFO] hsts.sharia: NHPC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:53,799 [INFO] hsts.sharia: SJVN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:23:54,270 [INFO] hsts.sharia: Running programmatic screen for HDFCBANK...
+2026-07-21 16:23:54,705 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 16:23:54,707 [INFO] hsts.sharia: Running programmatic screen for ITC...
+2026-07-21 16:23:54,995 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
+2026-07-21 16:23:54,998 [INFO] hsts.sharia: Running programmatic screen for LT...
+2026-07-21 16:23:56,695 [INFO] hsts.sharia: Running programmatic screen for MUTHOOTFIN...
+2026-07-21 16:23:57,070 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 16:23:57,080 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 15
+2026-07-21 16:23:57,081 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 7
+2026-07-21 16:23:57,082 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 16:30:11,938 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 16:30:11,950 [INFO] hsts.main: Starting HSTS scanner run...
+2026-07-21 16:30:11,990 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-07-21 16:30:11,994 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 16:30:13,258 [INFO] hsts.regime: Evaluating market regime using index ^NSEI...
+2026-07-21 16:30:14,070 [INFO] hsts.regime: Market regime identified as BEARISH (Close: 24187.70, 50 EMA: 23992.72, 200 EMA: 24478.17)
+2026-07-21 16:30:14,072 [WARNING] hsts.main: Market is BEARISH. Capital preservation mode active. No new momentum entries allowed.
+2026-07-21 16:30:14,082 [INFO] hsts.sharia: TCS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:14,504 [INFO] hsts.sharia: INFY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:14,884 [INFO] hsts.sharia: RELIANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:15,304 [INFO] hsts.sharia: HINDUNILVR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:15,659 [INFO] hsts.sharia: SUNPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:16,022 [INFO] hsts.sharia: HCLTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:16,406 [INFO] hsts.sharia: ASIANPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:16,762 [INFO] hsts.sharia: NESTLEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:17,238 [INFO] hsts.sharia: ULTRACEMCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:17,638 [INFO] hsts.sharia: ONGC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:18,011 [INFO] hsts.sharia: CIPLA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:18,657 [INFO] hsts.sharia: TECHM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:19,264 [INFO] hsts.sharia: GRASIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:19,759 [INFO] hsts.sharia: HEROMOTOCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:20,173 [INFO] hsts.sharia: BRITANNIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:20,614 [INFO] hsts.sharia: WIPRO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:21,143 [INFO] hsts.sharia: APOLLOHOSP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:21,676 [INFO] hsts.sharia: DIVISLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:22,707 [INFO] hsts.sharia: COALINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:23,884 [INFO] hsts.sharia: TATASTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:24,876 [INFO] hsts.sharia: HINDALCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:25,287 [INFO] hsts.sharia: JSWSTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:25,746 [INFO] hsts.sharia: TITAN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:26,116 [INFO] hsts.sharia: MARUTI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:26,428 [INFO] hsts.sharia: BAJAJ-AUTO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:26,830 [INFO] hsts.sharia: EICHERMOT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:27,174 [INFO] hsts.sharia: PIDILITIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:27,563 [INFO] hsts.sharia: SIEMENS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:28,110 [INFO] hsts.sharia: BEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:29,112 [INFO] hsts.sharia: HAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:29,505 [INFO] hsts.sharia: TRENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:29,972 [INFO] hsts.sharia: ADANIPORTS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:30,298 [INFO] hsts.sharia: TATAELXSI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:30,883 [INFO] hsts.sharia: BOSCHLTD is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:31,191 [INFO] hsts.sharia: COLPAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:31,596 [INFO] hsts.sharia: DABUR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:31,948 [INFO] hsts.sharia: GODREJCP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:32,361 [INFO] hsts.sharia: BERGEPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:32,748 [INFO] hsts.sharia: TATACHEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:33,118 [INFO] hsts.sharia: VOLTAS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:33,492 [INFO] hsts.sharia: LTIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:34,722 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+2026-07-21 16:30:35,923 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-21 16:30:35,926 [INFO] hsts.sharia: PERSISTENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:36,338 [INFO] hsts.sharia: COFORGE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:36,663 [INFO] hsts.sharia: MPHASIS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:36,998 [INFO] hsts.sharia: OBEROIREAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:38,024 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OBEROIREAL.NS"}}}
+2026-07-21 16:30:38,711 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-21 16:30:38,715 [INFO] hsts.sharia: DLF is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:39,083 [INFO] hsts.sharia: GODREJPROP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:39,466 [INFO] hsts.sharia: LUPIN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:39,819 [INFO] hsts.sharia: ALKEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:40,125 [INFO] hsts.sharia: TORNTPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:40,447 [INFO] hsts.sharia: MANKIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:40,788 [INFO] hsts.sharia: ZYDUSLIFE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:41,087 [INFO] hsts.sharia: ABB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:41,476 [INFO] hsts.sharia: CGPOWER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:41,878 [INFO] hsts.sharia: POLYCAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:42,220 [INFO] hsts.sharia: KEI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:42,637 [INFO] hsts.sharia: DIXON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:43,014 [INFO] hsts.sharia: ASTRAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:43,303 [INFO] hsts.sharia: SUPREMEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:43,609 [INFO] hsts.sharia: PIIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:43,913 [INFO] hsts.sharia: COROMANDEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:44,293 [INFO] hsts.sharia: DEEPAKNTR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:44,692 [INFO] hsts.sharia: SRF is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:45,058 [INFO] hsts.sharia: GUJGASLTD is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:45,175 [INFO] hsts.sharia: IGL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:45,478 [INFO] hsts.sharia: MGL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:45,752 [INFO] hsts.sharia: SOLARINDS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:46,135 [INFO] hsts.sharia: BHARATFORG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:46,548 [INFO] hsts.sharia: CUMMINSIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:46,905 [INFO] hsts.sharia: MAZDOCK is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:47,300 [INFO] hsts.sharia: COCHINSHIP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:48,014 [INFO] hsts.sharia: FACT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:48,651 [INFO] hsts.sharia: UPL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:49,334 [INFO] hsts.sharia: DRREDDY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:50,207 [INFO] hsts.sharia: LAURUSLABS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:50,812 [INFO] hsts.sharia: BIOCON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:51,558 [INFO] hsts.sharia: SYNGENE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:52,173 [INFO] hsts.sharia: GLENMARK is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:53,051 [INFO] hsts.sharia: IPCALAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:54,044 [INFO] hsts.sharia: AUROPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:54,701 [INFO] hsts.sharia: GRANULES is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:55,198 [INFO] hsts.sharia: NATCOPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:55,690 [INFO] hsts.sharia: AJANTPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:56,153 [INFO] hsts.sharia: ERIS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:56,523 [INFO] hsts.sharia: JBCHEPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:56,883 [INFO] hsts.sharia: POLYMED is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:57,361 [INFO] hsts.sharia: KPITTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:57,776 [INFO] hsts.sharia: CYIENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:58,139 [INFO] hsts.sharia: TATACOMM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:58,477 [INFO] hsts.sharia: OFSS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:58,792 [INFO] hsts.sharia: HAPPSTMNDS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:59,086 [INFO] hsts.sharia: SONACOMS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:59,385 [INFO] hsts.sharia: ZENSARTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:30:59,719 [INFO] hsts.sharia: BIRLASOFT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:01,000 [ERROR] yfinance: $BIRLASOFT.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-21 16:31:01,003 [INFO] hsts.sharia: MASTEK is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:01,602 [INFO] hsts.sharia: NEWGEN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:01,960 [INFO] hsts.sharia: BALKRISIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:02,350 [INFO] hsts.sharia: UNOMINDA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:02,790 [INFO] hsts.sharia: TIINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:03,111 [INFO] hsts.sharia: SCHAEFFLER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:03,443 [INFO] hsts.sharia: Running programmatic screen for TIMKEN...
+2026-07-21 16:31:04,564 [INFO] hsts.sharia: ENDURANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:04,869 [INFO] hsts.sharia: MOTHERSON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:05,236 [INFO] hsts.sharia: EXIDEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:05,818 [INFO] hsts.sharia: MARICO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:06,399 [INFO] hsts.sharia: VBL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:06,802 [INFO] hsts.sharia: KALYANKJIL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:07,161 [INFO] hsts.sharia: METROPOLIS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:07,546 [INFO] hsts.sharia: LALPATHLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:07,931 [INFO] hsts.sharia: BATAINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:08,252 [INFO] hsts.sharia: RELAXO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:08,544 [INFO] hsts.sharia: DEVYANI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:08,826 [INFO] hsts.sharia: BHEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:09,160 [INFO] hsts.sharia: GRINDWELL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:09,541 [INFO] hsts.sharia: CARBORUNIV is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:09,866 [INFO] hsts.sharia: THERMAX is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:10,271 [INFO] hsts.sharia: SUZLON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:10,590 [INFO] hsts.sharia: KEC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:11,029 [INFO] hsts.sharia: SCHNEIDER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:11,317 [INFO] hsts.sharia: AIAENG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:11,821 [INFO] hsts.sharia: NMDC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:12,141 [INFO] hsts.sharia: MOIL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:12,468 [INFO] hsts.sharia: JSL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:12,817 [INFO] hsts.sharia: JINDALSTEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:13,168 [INFO] hsts.sharia: AMBUJACEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:13,538 [INFO] hsts.sharia: ACC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:13,869 [INFO] hsts.sharia: DALBHARAT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:14,306 [INFO] hsts.sharia: SHREECEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:14,631 [INFO] hsts.sharia: HEG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:15,074 [INFO] hsts.sharia: GRAPHITE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:15,447 [INFO] hsts.sharia: RATNAMANI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:15,764 [INFO] hsts.sharia: ATUL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:16,166 [INFO] hsts.sharia: AARTIIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:16,665 [INFO] hsts.sharia: VINATIORGA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:17,130 [INFO] hsts.sharia: NAVINFLUOR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:17,506 [INFO] hsts.sharia: LINDEINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:17,840 [INFO] hsts.sharia: SUMICHEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:18,221 [INFO] hsts.sharia: CLEAN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:18,550 [INFO] hsts.sharia: FINEORG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:18,989 [INFO] hsts.sharia: PHOENIXLTD is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:19,352 [INFO] hsts.sharia: PRESTIGE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:19,651 [INFO] hsts.sharia: BRIGADE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:20,141 [INFO] hsts.sharia: SOBHA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:20,472 [INFO] hsts.sharia: ADANIGREEN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:20,847 [INFO] hsts.sharia: ADANIENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:21,186 [INFO] hsts.sharia: ADANIPOWER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:21,474 [INFO] hsts.sharia: TATAPOWER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:21,847 [INFO] hsts.sharia: CESC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:22,189 [INFO] hsts.sharia: NHPC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:22,646 [INFO] hsts.sharia: SJVN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:31:23,000 [INFO] hsts.sharia: Running programmatic screen for HDFCBANK...
+2026-07-21 16:31:23,247 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 16:31:23,251 [INFO] hsts.sharia: Running programmatic screen for ITC...
+2026-07-21 16:31:23,698 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
+2026-07-21 16:31:23,701 [INFO] hsts.sharia: Running programmatic screen for LT...
+2026-07-21 16:31:24,973 [INFO] hsts.sharia: Running programmatic screen for MUTHOOTFIN...
+2026-07-21 16:31:25,235 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 16:31:25,243 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 16:37:02,422 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 16:37:02,438 [INFO] hsts.main: Starting HSTS scanner run...
+2026-07-21 16:37:02,476 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-07-21 16:37:02,480 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 16:37:03,811 [INFO] hsts.regime: Evaluating market regime using index ^NSEI...
+2026-07-21 16:37:04,744 [INFO] hsts.regime: Market regime identified as BEARISH (Close: 24187.70, 50 EMA: 23992.72, 200 EMA: 24478.17)
+2026-07-21 16:37:04,747 [WARNING] hsts.main: Market is BEARISH. Capital preservation mode active. No new momentum entries allowed.
+2026-07-21 16:37:04,765 [INFO] hsts.sharia: TCS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:05,156 [INFO] hsts.sharia: INFY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:05,528 [INFO] hsts.sharia: RELIANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:05,983 [INFO] hsts.sharia: HINDUNILVR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:06,402 [INFO] hsts.sharia: SUNPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:06,857 [INFO] hsts.sharia: HCLTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:07,286 [INFO] hsts.sharia: ASIANPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:07,699 [INFO] hsts.sharia: NESTLEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:08,192 [INFO] hsts.sharia: ULTRACEMCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:08,746 [INFO] hsts.sharia: ONGC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:10,304 [INFO] hsts.sharia: CIPLA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:10,701 [INFO] hsts.sharia: TECHM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:11,066 [INFO] hsts.sharia: GRASIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:11,425 [INFO] hsts.sharia: HEROMOTOCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:11,783 [INFO] hsts.sharia: BRITANNIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:12,212 [INFO] hsts.sharia: WIPRO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:12,587 [INFO] hsts.sharia: APOLLOHOSP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:13,297 [INFO] hsts.sharia: DIVISLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:13,742 [INFO] hsts.sharia: COALINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:14,138 [INFO] hsts.sharia: TATASTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:14,501 [INFO] hsts.sharia: HINDALCO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:14,855 [INFO] hsts.sharia: JSWSTEEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:15,222 [INFO] hsts.sharia: TITAN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:15,729 [INFO] hsts.sharia: MARUTI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:16,165 [INFO] hsts.sharia: BAJAJ-AUTO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:16,726 [INFO] hsts.sharia: EICHERMOT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:18,298 [INFO] hsts.sharia: PIDILITIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:18,806 [INFO] hsts.sharia: SIEMENS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:19,159 [INFO] hsts.sharia: BEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:19,502 [INFO] hsts.sharia: HAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:19,820 [INFO] hsts.sharia: TRENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:20,133 [INFO] hsts.sharia: ADANIPORTS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:20,450 [INFO] hsts.sharia: TATAELXSI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:20,790 [INFO] hsts.sharia: BOSCHLTD is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:21,110 [INFO] hsts.sharia: COLPAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:21,425 [INFO] hsts.sharia: DABUR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:21,739 [INFO] hsts.sharia: GODREJCP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:22,129 [INFO] hsts.sharia: BERGEPAINT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:22,471 [INFO] hsts.sharia: TATACHEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:22,797 [INFO] hsts.sharia: VOLTAS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:23,158 [INFO] hsts.sharia: LTIM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:24,225 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+2026-07-21 16:37:25,062 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-21 16:37:25,066 [INFO] hsts.sharia: PERSISTENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:25,424 [INFO] hsts.sharia: COFORGE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:25,759 [INFO] hsts.sharia: MPHASIS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:26,089 [INFO] hsts.sharia: OBEROIREAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:27,153 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OBEROIREAL.NS"}}}
+2026-07-21 16:37:28,121 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-21 16:37:28,124 [INFO] hsts.sharia: DLF is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:28,424 [INFO] hsts.sharia: GODREJPROP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:28,770 [INFO] hsts.sharia: LUPIN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:29,114 [INFO] hsts.sharia: ALKEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:29,422 [INFO] hsts.sharia: TORNTPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:29,759 [INFO] hsts.sharia: MANKIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:30,281 [INFO] hsts.sharia: ZYDUSLIFE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:30,626 [INFO] hsts.sharia: ABB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:30,950 [INFO] hsts.sharia: CGPOWER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:31,265 [INFO] hsts.sharia: POLYCAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:31,693 [INFO] hsts.sharia: KEI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:32,028 [INFO] hsts.sharia: DIXON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:32,417 [INFO] hsts.sharia: ASTRAL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:32,753 [INFO] hsts.sharia: SUPREMEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:33,144 [INFO] hsts.sharia: PIIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:33,500 [INFO] hsts.sharia: COROMANDEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:33,832 [INFO] hsts.sharia: DEEPAKNTR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:34,178 [INFO] hsts.sharia: SRF is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:34,512 [INFO] hsts.sharia: GUJGASLTD is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:34,806 [INFO] hsts.sharia: IGL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:35,134 [INFO] hsts.sharia: MGL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:35,543 [INFO] hsts.sharia: SOLARINDS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:35,857 [INFO] hsts.sharia: BHARATFORG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:36,317 [INFO] hsts.sharia: CUMMINSIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:36,620 [INFO] hsts.sharia: MAZDOCK is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:36,913 [INFO] hsts.sharia: COCHINSHIP is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:37,250 [INFO] hsts.sharia: FACT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:37,565 [INFO] hsts.sharia: UPL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:38,148 [INFO] hsts.sharia: DRREDDY is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:38,907 [INFO] hsts.sharia: LAURUSLABS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:39,296 [INFO] hsts.sharia: BIOCON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:39,626 [INFO] hsts.sharia: SYNGENE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:39,987 [INFO] hsts.sharia: GLENMARK is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:40,382 [INFO] hsts.sharia: IPCALAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:40,712 [INFO] hsts.sharia: AUROPHARMA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:41,088 [INFO] hsts.sharia: GRANULES is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:41,512 [INFO] hsts.sharia: NATCOPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:42,053 [INFO] hsts.sharia: AJANTPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:42,546 [INFO] hsts.sharia: ERIS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:43,227 [INFO] hsts.sharia: JBCHEPHARM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:43,769 [INFO] hsts.sharia: POLYMED is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:44,268 [INFO] hsts.sharia: KPITTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:46,117 [INFO] hsts.sharia: CYIENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:48,418 [INFO] hsts.sharia: TATACOMM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:49,036 [INFO] hsts.sharia: OFSS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:49,452 [INFO] hsts.sharia: HAPPSTMNDS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:49,932 [INFO] hsts.sharia: SONACOMS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:50,256 [INFO] hsts.sharia: ZENSARTECH is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:50,657 [INFO] hsts.sharia: BIRLASOFT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:53,011 [ERROR] yfinance: $BIRLASOFT.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-21 16:37:53,015 [INFO] hsts.sharia: MASTEK is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:54,271 [INFO] hsts.sharia: NEWGEN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:54,895 [INFO] hsts.sharia: BALKRISIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:55,500 [INFO] hsts.sharia: UNOMINDA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:55,837 [INFO] hsts.sharia: TIINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:56,134 [INFO] hsts.sharia: SCHAEFFLER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:56,469 [INFO] hsts.sharia: Running programmatic screen for TIMKEN...
+2026-07-21 16:37:58,031 [INFO] hsts.sharia: ENDURANCE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:58,388 [INFO] hsts.sharia: MOTHERSON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:58,696 [INFO] hsts.sharia: EXIDEIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:59,021 [INFO] hsts.sharia: MARICO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:59,356 [INFO] hsts.sharia: VBL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:37:59,716 [INFO] hsts.sharia: KALYANKJIL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:00,180 [INFO] hsts.sharia: METROPOLIS is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:01,250 [INFO] hsts.sharia: LALPATHLAB is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:01,549 [INFO] hsts.sharia: BATAINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:02,043 [INFO] hsts.sharia: RELAXO is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:02,431 [INFO] hsts.sharia: DEVYANI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:02,738 [INFO] hsts.sharia: BHEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:06,356 [INFO] hsts.sharia: GRINDWELL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:07,050 [INFO] hsts.sharia: CARBORUNIV is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:07,494 [INFO] hsts.sharia: THERMAX is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:07,895 [INFO] hsts.sharia: SUZLON is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:08,306 [INFO] hsts.sharia: KEC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:08,845 [INFO] hsts.sharia: SCHNEIDER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:09,146 [INFO] hsts.sharia: AIAENG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:09,634 [INFO] hsts.sharia: NMDC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:09,977 [INFO] hsts.sharia: MOIL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:11,025 [INFO] hsts.sharia: JSL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:11,493 [INFO] hsts.sharia: JINDALSTEL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:11,927 [INFO] hsts.sharia: AMBUJACEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:12,508 [INFO] hsts.sharia: ACC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:13,335 [INFO] hsts.sharia: DALBHARAT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:13,688 [INFO] hsts.sharia: SHREECEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:14,029 [INFO] hsts.sharia: HEG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:14,480 [INFO] hsts.sharia: GRAPHITE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:14,903 [INFO] hsts.sharia: RATNAMANI is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:15,202 [INFO] hsts.sharia: ATUL is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:15,538 [INFO] hsts.sharia: AARTIIND is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:15,890 [INFO] hsts.sharia: VINATIORGA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:16,205 [INFO] hsts.sharia: NAVINFLUOR is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:16,621 [INFO] hsts.sharia: LINDEINDIA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:16,985 [INFO] hsts.sharia: SUMICHEM is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:17,379 [INFO] hsts.sharia: CLEAN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:17,661 [INFO] hsts.sharia: FINEORG is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:18,082 [INFO] hsts.sharia: PHOENIXLTD is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:18,402 [INFO] hsts.sharia: PRESTIGE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:18,733 [INFO] hsts.sharia: BRIGADE is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:19,064 [INFO] hsts.sharia: SOBHA is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:19,544 [INFO] hsts.sharia: ADANIGREEN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:20,098 [INFO] hsts.sharia: ADANIENT is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:20,600 [INFO] hsts.sharia: ADANIPOWER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:21,373 [INFO] hsts.sharia: TATAPOWER is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:21,807 [INFO] hsts.sharia: CESC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:22,115 [INFO] hsts.sharia: NHPC is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:22,410 [INFO] hsts.sharia: SJVN is pre-screened (Nifty Shariah). Automatically compliant.
+2026-07-21 16:38:22,756 [INFO] hsts.sharia: Running programmatic screen for HDFCBANK...
+2026-07-21 16:38:23,192 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 16:38:23,199 [INFO] hsts.sharia: Running programmatic screen for ITC...
+2026-07-21 16:38:24,002 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
+2026-07-21 16:38:24,011 [INFO] hsts.sharia: Running programmatic screen for LT...
+2026-07-21 16:38:25,846 [INFO] hsts.sharia: Running programmatic screen for MUTHOOTFIN...
+2026-07-21 16:38:26,266 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-21 16:38:26,281 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 16:38:26,295 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-07-21 16:38:27,494 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 1
+2026-07-21 16:38:28,035 [INFO] hsts.journal: Logged recommendation for JSWSTEEL to Recommendations sheet (Row 2)
+2026-07-21 16:38:28,533 [INFO] hsts.journal: Logged recommendation for LUPIN to Recommendations sheet (Row 3)
+2026-07-21 16:38:29,118 [INFO] hsts.journal: Logged recommendation for ULTRACEMCO to Recommendations sheet (Row 4)
+2026-07-21 16:38:29,670 [INFO] hsts.journal: Logged recommendation for NAVINFLUOR to Recommendations sheet (Row 5)
+2026-07-21 16:38:30,126 [INFO] hsts.journal: Logged recommendation for ERIS to Recommendations sheet (Row 6)
