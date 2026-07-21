@@ -470,3 +470,5 @@
 2026-07-21 12:49:09,544 [INFO] hsts.journal: Logged recommendation for JSWSTEEL to Recommendations sheet (Row 5)
 2026-07-21 12:49:09,545 [INFO] hsts.risk: Position size capped to 20% max allocation limit. New quantity: 10
 2026-07-21 12:49:09,678 [INFO] hsts.journal: Logged recommendation for SUNPHARMA to Recommendations sheet (Row 6)
+2026-07-21 12:56:35,609 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-21 12:56:35,618 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...

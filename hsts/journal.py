@@ -33,17 +33,17 @@ class TradingJournal:
                 logger.info("Upgrading Trading Journal: Adding Capital sheet...")
                 ws_cap = wb.create_sheet(title="Capital")
                 self._setup_capital(ws_cap)
-                ws_dash = wb["Dashboard"]
-                self._setup_dashboard(ws_dash)
-                wb.save(self.file_path)
 
             # Upgrade check: Add Recommendations sheet if missing
             if "Recommendations" not in wb.sheetnames:
                 logger.info("Upgrading Trading Journal: Adding Recommendations sheet...")
                 ws_recs = wb.create_sheet(title="Recommendations")
                 self._setup_recommendations(ws_recs)
-                wb.save(self.file_path)
 
+            ws_dash = wb["Dashboard"]
+            self._setup_dashboard(ws_dash)
+
+            wb.save(self.file_path)
             wb.close()
             self._upgrade_rr_ratio_columns()
             return
@@ -167,9 +167,11 @@ class TradingJournal:
         ws.row_dimensions[3].height = 24
 
         metrics = [
-            ("Total Invested Capital", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C) - SUMIF(Capital!B:B, "WITHDRAWAL", Capital!C:C)'),
-            ("Lifetime PnL", "=SUM(Ledger!M:M)"),
-            ("Current Account Balance", "=B4 + B5"),
+            ("Total Net Capital Deposited", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C) - SUMIF(Capital!B:B, "WITHDRAWAL", Capital!C:C)'),
+            ("Lifetime Realized PnL", "=SUM(Ledger!M:M)"),
+            ("Current Total Portfolio Value", "=B4 + B5"),
+            ("Capital Deployed in Open Trades", '=SUMPRODUCT((Ledger!N2:N500="OPEN")*(Ledger!E2:E500)*(Ledger!D2:D500))'),
+            ("Capital Available for Trading", "=B6 - B7"),
             ("Win Rate", '=IF((COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS"))>0, COUNTIF(Ledger!N:N, "WIN")/(COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS")), 0)'),
             ("Total Completed Trades", '=COUNTIF(Ledger!N:N, "WIN") + COUNTIF(Ledger!N:N, "LOSS")'),
             ("Active Open Positions", '=COUNTIF(Ledger!N:N, "OPEN")'),
@@ -186,11 +188,11 @@ class TradingJournal:
             cell_val.font = font_regular
             if metric_name == "Win Rate":
                 cell_val.number_format = "0.0%"
-            elif metric_name in ["Total Invested Capital", "Lifetime PnL", "Current Account Balance"]:
+            elif metric_name in ["Total Net Capital Deposited", "Lifetime Realized PnL", "Current Total Portfolio Value", "Capital Deployed in Open Trades", "Capital Available for Trading"]:
                 cell_val.number_format = "INR #,##0.00"
 
-        ws.column_dimensions["A"].width = 30
-        ws.column_dimensions["B"].width = 20
+        ws.column_dimensions["A"].width = 34
+        ws.column_dimensions["B"].width = 22
 
     def _setup_ledger(self, ws):
         ws.views.sheetView[0].showGridLines = True
