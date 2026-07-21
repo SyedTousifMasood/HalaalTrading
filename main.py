@@ -397,5 +397,42 @@ def sync_zerodha_orders():
     except Exception as e:
         print(f"[ERROR] Exception while syncing Zerodha orders: {e}")
 
+@cli.command()
+@click.option("--period", default="1y", help="Historical simulation period (e.g. 6mo, 1y, 2y).")
+@click.option("--capital", default=100000.0, help="Initial simulation capital.")
+@click.option("--risk", default=0.01, help="Max portfolio risk per trade (e.g. 0.01 for 1%).")
+def backtest(period, capital, risk):
+    """Run historical backtest simulation of HSTS v1.0 strategy."""
+    try:
+        from hsts.backtest import BacktestEngine
+        engine = BacktestEngine(initial_capital=capital, max_risk_per_trade=risk)
+        results = engine.run_backtest(period=period)
+        
+        if not results:
+            print("[ERROR] Backtest run failed or no data available.")
+            return
+
+        print("\n=========================================")
+        print(f"HSTS v1.0 HISTORICAL BACKTEST PERFORMANCE ({period.upper()})")
+        print("=========================================")
+        print(f"Initial Capital:         INR {results['initial_capital']:,.2f}")
+        print(f"Final Equity:            INR {results['final_equity']:,.2f}")
+        print(f"Net Profit / Loss:       INR {results['net_profit']:,.2f}")
+        print(f"HSTS Strategy Return:    {results['total_return_pct']:.2f}%")
+        print(f"Nifty 50 Benchmark:      {results['benchmark_return_pct']:.2f}%")
+        print(f"Max Drawdown:            {results['max_drawdown_pct']:.2f}%")
+        print(f"Sharpe Ratio:            {results['sharpe_ratio']:.2f}")
+        print(f"Win Rate:                {results['win_rate_pct']:.1f}% ({results['win_count']} Wins / {results['loss_count']} Losses)")
+        print(f"Profit Factor:           {results['profit_factor']:.2f}")
+        print(f"Total Completed Trades:  {results['total_trades']}")
+        
+        if results['completed_trades']:
+            print("\n--- SAMPLE RECENT COMPLETED TRADES ---")
+            df_trades = pd.DataFrame(results['completed_trades']).tail(5)
+            print(df_trades[["symbol", "entry_date", "entry_price", "exit_date", "exit_price", "pnl", "status"]].to_string(index=False))
+
+    except Exception as e:
+        print(f"[ERROR] Exception during backtesting: {e}")
+
 if __name__ == "__main__":
     cli()
