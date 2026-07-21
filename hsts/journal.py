@@ -36,6 +36,9 @@ class TradingJournal:
                 self._setup_recommendations(ws_recs)
                 wb.save(self.file_path)
 
+            wb.close()
+            # Upgrade check: Add Risk-to-Reward Ratio columns if missing
+            self._upgrade_rr_ratio_columns()
             return
 
         logger.info(f"Creating a new Trading Journal at {self.file_path}...")
@@ -69,6 +72,77 @@ class TradingJournal:
         wb.save(self.file_path)
         logger.info("Workbook created and formatted successfully.")
 
+    def _upgrade_rr_ratio_columns(self):
+        """
+        Inserts and calculates Risk-to-Reward Ratio columns for existing recommendations and trades.
+        """
+        wb = openpyxl.load_workbook(self.file_path)
+        font_header = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
+        fill_header_recs = PatternFill(start_color="2B6CB0", end_color="2B6CB0", fill_type="solid")
+        fill_header_ledg = PatternFill(start_color="1B365D", end_color="1B365D", fill_type="solid")
+
+        # 1. Recommendations Sheet Upgrade
+        if "Recommendations" in wb.sheetnames:
+            ws = wb["Recommendations"]
+            if ws.cell(row=1, column=8).value != "Risk-to-Reward Ratio":
+                logger.info("Upgrading Recommendations sheet: Adding Risk-to-Reward Ratio column...")
+                ws.insert_cols(8)
+                cell = ws.cell(row=1, column=8, value="Risk-to-Reward Ratio")
+                cell.font = font_header
+                cell.fill = fill_header_recs
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                ws.column_dimensions["H"].width = 22
+
+                # Calculate R:R for existing rows
+                for r in range(2, ws.max_row + 1):
+                    entry = ws.cell(row=r, column=5).value
+                    sl = ws.cell(row=r, column=6).value
+                    target = ws.cell(row=r, column=7).value
+                    
+                    if isinstance(entry, (int, float)) and isinstance(sl, (int, float)) and isinstance(target, (int, float)):
+                        risk = entry - sl
+                        reward = target - entry
+                        rr_val = (reward / risk) if risk > 0 else 2.0
+                        ws.cell(row=r, column=8, value=f"1:{rr_val:.1f}")
+                    else:
+                        ws.cell(row=r, column=8, value="1:2.0")
+
+        # 2. Ledger Sheet Upgrade
+        if "Ledger" in wb.sheetnames:
+            ws = wb["Ledger"]
+            if ws.cell(row=1, column=10).value != "Risk-to-Reward Ratio":
+                logger.info("Upgrading Ledger sheet: Adding Risk-to-Reward Ratio column...")
+                ws.insert_cols(10)
+                cell = ws.cell(row=1, column=10, value="Risk-to-Reward Ratio")
+                cell.font = font_header
+                cell.fill = fill_header_ledg
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                ws.column_dimensions["J"].width = 22
+
+                # Calculate R:R and update PnL formula for existing rows
+                for r in range(2, ws.max_row + 1):
+                    buy_price = ws.cell(row=r, column=5).value
+                    target = ws.cell(row=r, column=8).value
+                    sl = ws.cell(row=r, column=9).value
+                    
+                    if isinstance(buy_price, (int, float)) and isinstance(sl, (int, float)) and isinstance(target, (int, float)):
+                        risk = buy_price - sl
+                        reward = target - buy_price
+                        rr_val = (reward / risk) if risk > 0 else 2.0
+                        ws.cell(row=r, column=10, value=f"1:{rr_val:.1f}")
+                    else:
+                        ws.cell(row=r, column=10, value="1:2.0")
+                    
+                    # Update PnL formula (Exit Price is now Col L=12, Buy Price is Col E=5, Qty is Col D=4, Status is Col N=14)
+                    pnl_formula = f'=IF(N{r}="OPEN", 0, (L{r}-E{r})*D{r})'
+                    ws.cell(row=r, column=13, value=pnl_formula)
+
+        # 3. Update Dashboard formulas to reflect modified columns
+        ws_dash = wb["Dashboard"]
+        self._setup_dashboard(ws_dash)
+
+        wb.save(self.file_path)
+
     def _setup_dashboard(self, ws):
         ws.views.sheetView[0].showGridLines = True
         font_title = Font(name="Segoe UI", size=16, bold=True, color="1B365D")
@@ -92,13 +166,13 @@ class TradingJournal:
 
         metrics = [
             ("Total Invested Capital", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C) - SUMIF(Capital!B:B, "WITHDRAWAL", Capital!C:C)'),
-            ("Lifetime PnL", "=SUM(Ledger!L:L)"),
+            ("Lifetime PnL", "=SUM(Ledger!M:M)"),
             ("Current Account Balance", "=B4 + B5"),
-            ("Win Rate", '=IF((COUNTIF(Ledger!K:K, "WIN")+COUNTIF(Ledger!K:K, "LOSS"))>0, COUNTIF(Ledger!K:K, "WIN")/(COUNTIF(Ledger!K:K, "WIN")+COUNTIF(Ledger!K:K, "LOSS")), 0)'),
-            ("Total Completed Trades", '=COUNTIF(Ledger!K:K, "WIN") + COUNTIF(Ledger!K:K, "LOSS")'),
-            ("Active Open Positions", '=COUNTIF(Ledger!K:K, "OPEN")'),
-            ("Win Trades", '=COUNTIF(Ledger!K:K, "WIN")'),
-            ("Loss Trades", '=COUNTIF(Ledger!K:K, "LOSS")'),
+            ("Win Rate", '=IF((COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS"))>0, COUNTIF(Ledger!N:N, "WIN")/(COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS")), 0)'),
+            ("Total Completed Trades", '=COUNTIF(Ledger!N:N, "WIN") + COUNTIF(Ledger!N:N, "LOSS")'),
+            ("Active Open Positions", '=COUNTIF(Ledger!N:N, "OPEN")'),
+            ("Win Trades", '=COUNTIF(Ledger!N:N, "WIN")'),
+            ("Loss Trades", '=COUNTIF(Ledger!N:N, "LOSS")'),
         ]
 
         for i, (metric_name, formula) in enumerate(metrics, 4):
@@ -124,8 +198,8 @@ class TradingJournal:
         headers = [
             "Symbol", "Name", "Entry Date", "Qty", "Buy Price", 
             "Suggested Entry", "Slippage/Deviation", "Target Price", 
-            "Stop Loss", "Exit Date", "Exit Price", "Realized PnL", 
-            "Status", "Notes"
+            "Stop Loss", "Risk-to-Reward Ratio", "Exit Date", "Exit Price", 
+            "Realized PnL", "Status", "Notes"
         ]
 
         for col_idx, text in enumerate(headers, 1):
@@ -140,7 +214,8 @@ class TradingJournal:
             col_letter = get_column_letter(col_idx)
             ws.column_dimensions[col_letter].width = 16
         ws.column_dimensions["B"].width = 25
-        ws.column_dimensions["N"].width = 30
+        ws.column_dimensions["J"].width = 22
+        ws.column_dimensions["O"].width = 30
 
     def _setup_recommendations(self, ws):
         ws.views.sheetView[0].showGridLines = True
@@ -150,7 +225,8 @@ class TradingJournal:
         headers = [
             "Date", "Symbol", "Name", "Composite Score", 
             "Target Entry Price", "Initial Stop-Loss", "Profit Target", 
-            "Recommended Qty", "Recommended Allocation", "Execution Status", "Notes"
+            "Risk-to-Reward Ratio", "Recommended Qty", "Recommended Allocation", 
+            "Execution Status", "Notes"
         ]
 
         for col_idx, text in enumerate(headers, 1):
@@ -168,10 +244,11 @@ class TradingJournal:
         ws.column_dimensions["E"].width = 18
         ws.column_dimensions["F"].width = 18
         ws.column_dimensions["G"].width = 18
-        ws.column_dimensions["H"].width = 18
-        ws.column_dimensions["I"].width = 22
-        ws.column_dimensions["J"].width = 24
-        ws.column_dimensions["K"].width = 30
+        ws.column_dimensions["H"].width = 22
+        ws.column_dimensions["I"].width = 18
+        ws.column_dimensions["J"].width = 22
+        ws.column_dimensions["K"].width = 24
+        ws.column_dimensions["L"].width = 30
 
     def _setup_capital(self, ws):
         ws.views.sheetView[0].showGridLines = True
@@ -208,14 +285,19 @@ class TradingJournal:
 
     def add_recommendation(self, symbol, name, score, target_entry, stop_loss, profit_target, qty, allocation, status="PENDING", notes=""):
         """
-        Record a system trade recommendation for tracking & comparison.
+        Record a system trade recommendation with R:R ratio for tracking & comparison.
         """
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Recommendations"]
         row_idx = ws.max_row + 1
         
         date_str = datetime.date.today().strftime("%Y-%m-%d")
-        
+
+        risk = target_entry - stop_loss
+        reward = profit_target - target_entry
+        rr_val = (reward / risk) if risk > 0 else 2.0
+        rr_ratio_str = f"1:{rr_val:.1f}"
+
         ws.cell(row=row_idx, column=1, value=date_str)
         ws.cell(row=row_idx, column=2, value=symbol)
         ws.cell(row=row_idx, column=3, value=name)
@@ -223,16 +305,17 @@ class TradingJournal:
         ws.cell(row=row_idx, column=5, value=target_entry)
         ws.cell(row=row_idx, column=6, value=stop_loss)
         ws.cell(row=row_idx, column=7, value=profit_target)
-        ws.cell(row=row_idx, column=8, value=qty)
-        ws.cell(row=row_idx, column=9, value=allocation)
-        ws.cell(row=row_idx, column=10, value=status)
-        ws.cell(row=row_idx, column=11, value=notes)
+        ws.cell(row=row_idx, column=8, value=rr_ratio_str)
+        ws.cell(row=row_idx, column=9, value=qty)
+        ws.cell(row=row_idx, column=10, value=allocation)
+        ws.cell(row=row_idx, column=11, value=status)
+        ws.cell(row=row_idx, column=12, value=notes)
 
         # Formats
         ws.cell(row=row_idx, column=5).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=6).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=7).number_format = "INR #,##0.00"
-        ws.cell(row=row_idx, column=9).number_format = "INR #,##0.00"
+        ws.cell(row=row_idx, column=10).number_format = "INR #,##0.00"
 
         wb.save(self.file_path)
         logger.info(f"Logged recommendation for {symbol} to Recommendations sheet (Row {row_idx})")
@@ -260,6 +343,11 @@ class TradingJournal:
         row_idx = ws.max_row + 1
         slippage = buy_price - suggested_entry
 
+        risk = buy_price - stop_loss
+        reward = target - buy_price
+        rr_val = (reward / risk) if risk > 0 else 2.0
+        rr_ratio_str = f"1:{rr_val:.1f}"
+
         ws.cell(row=row_idx, column=1, value=symbol)
         ws.cell(row=row_idx, column=2, value=name)
         ws.cell(row=row_idx, column=3, value=entry_date)
@@ -269,20 +357,21 @@ class TradingJournal:
         ws.cell(row=row_idx, column=7, value=slippage)
         ws.cell(row=row_idx, column=8, value=target)
         ws.cell(row=row_idx, column=9, value=stop_loss)
+        ws.cell(row=row_idx, column=10, value=rr_ratio_str)
         
-        ws.cell(row=row_idx, column=10, value="")
         ws.cell(row=row_idx, column=11, value="")
-        pnl_formula = f'=IF(M{row_idx}="OPEN", 0, (K{row_idx}-E{row_idx})*D{row_idx})'
-        ws.cell(row=row_idx, column=12, value=pnl_formula)
-        ws.cell(row=row_idx, column=13, value="OPEN")
-        ws.cell(row=row_idx, column=14, value=notes)
+        ws.cell(row=row_idx, column=12, value="")
+        pnl_formula = f'=IF(N{row_idx}="OPEN", 0, (L{row_idx}-E{row_idx})*D{row_idx})'
+        ws.cell(row=row_idx, column=13, value=pnl_formula)
+        ws.cell(row=row_idx, column=14, value="OPEN")
+        ws.cell(row=row_idx, column=15, value=notes)
 
         ws.cell(row=row_idx, column=5).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=6).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=7).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=8).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=9).number_format = "INR #,##0.00"
-        ws.cell(row=row_idx, column=12).number_format = "INR #,##0.00"
+        ws.cell(row=row_idx, column=13).number_format = "INR #,##0.00"
 
         wb.save(self.file_path)
         logger.info(f"Recorded open trade for {symbol} to Ledger (Row {row_idx})")
@@ -293,13 +382,13 @@ class TradingJournal:
         ws = wb["Ledger"]
         found = False
         for r in range(2, ws.max_row + 1):
-            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=13).value == "OPEN":
-                ws.cell(row=r, column=10, value=exit_date)
-                ws.cell(row=r, column=11, value=exit_price)
-                ws.cell(row=r, column=13, value=status.upper())
+            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=14).value == "OPEN":
+                ws.cell(row=r, column=11, value=exit_date)
+                ws.cell(row=r, column=12, value=exit_price)
+                ws.cell(row=r, column=14, value=status.upper())
                 if notes:
-                    ws.cell(row=r, column=14, value=f"{ws.cell(row=r, column=14).value} | {notes}".strip(" |"))
-                ws.cell(row=r, column=11).number_format = "INR #,##0.00"
+                    ws.cell(row=r, column=15, value=f"{ws.cell(row=r, column=15).value} | {notes}".strip(" |"))
+                ws.cell(row=r, column=12).number_format = "INR #,##0.00"
                 found = True
                 break
 
