@@ -272,5 +272,38 @@ def journal_withdraw(amount, notes):
     except Exception as e:
         print(f"Error logging withdrawal: {e}")
 
+@cli.command()
+def connect_zerodha():
+    """Connect to Zerodha Kite account using credentials from .env file."""
+    try:
+        from dotenv import load_dotenv
+        from hsts.broker.zerodha_free import ZerodhaFreeBroker
+        
+        load_dotenv()
+        user_id = os.getenv("ZERODHA_USER_ID")
+        password = os.getenv("ZERODHA_PASSWORD")
+        totp_secret = os.getenv("ZERODHA_TOTP_SECRET")
+        
+        if not user_id or not password or not totp_secret:
+            print("[ERROR] Zerodha credentials missing in .env file!")
+            print("Please edit d:\\HalalTrading\\.env and populate:")
+            print("  ZERODHA_USER_ID=your_id")
+            print("  ZERODHA_PASSWORD=your_password")
+            print("  ZERODHA_TOTP_SECRET=your_totp_secret")
+            return
+
+        broker = ZerodhaFreeBroker(user_id=user_id, password=password, totp_secret=totp_secret)
+        success = broker.authenticate()
+        if success:
+            print("\n[SUCCESS] Connected to Zerodha Kite account successfully!")
+            margins = broker.get_margins()
+            if margins:
+                equity = margins.get("equity", {}).get("net", 0.0)
+                print(f"Available Trading Margin: INR {equity:,.2f}")
+        else:
+            print("[FAILED] Zerodha connection failed. Check your User ID, Password, or TOTP Secret.")
+    except Exception as e:
+        print(f"[ERROR] Exception while connecting to Zerodha: {e}")
+
 if __name__ == "__main__":
     cli()

@@ -1,16 +1,15 @@
-# Windows / Google Drive temporary files
-Thumbs.db
-Desktop.ini
-desktop.ini
-$RECYCLE.BIN/
-*.tmp
-*.lnk
+# Environment variables & credentials
+.env
 
-# IDEs and editors
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
+# Python cache & build outputs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Log files
+logs/
+*.log
+
+# Temp files
+scratch/
