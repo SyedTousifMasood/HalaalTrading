@@ -20,7 +20,8 @@ def cli():
 
 @cli.command()
 @click.option("--capital", default=100000.0, help="Total available portfolio capital in INR.")
-def scan(capital):
+@click.option("--save-journal", is_flag=True, help="Save top recommendations to Google Sheets journal upon confirmation.")
+def scan(capital, save_journal):
     """Scan stock universe for Sharia compliance and swing trading entries."""
     logger.info("Starting HSTS scanner run...")
     
@@ -135,34 +136,38 @@ def scan(capital):
             print("> Market regime is BEARISH. These setups are for informational/monitoring purposes only.")
             print("> Under HSTS rule-based guidelines, trading these is strictly not recommended today.")
 
-        # Log recommendations to Google Sheets Trading Journal
-        try:
-            journal = TradingJournal()
-            for _, row in df_top5.iterrows():
-                pos_size = risk_engine.calculate_position_size(
-                    total_capital=capital,
-                    entry_price=row["close"],
-                    stop_loss_price=row["suggested_sl"]
-                )
-                qty = pos_size["quantity"] if pos_size else 0
-                alloc = pos_size["total_investment"] if pos_size else 0.0
-                exec_status = "SKIPPED_BEARISH_REGIME" if regime == "BEARISH" else "PENDING"
-                
-                journal.add_recommendation(
-                    symbol=row["symbol"],
-                    name=row["name"],
-                    score=row["score"],
-                    target_entry=row["close"],
-                    stop_loss=row["suggested_sl"],
-                    profit_target=row["suggested_target"],
-                    qty=qty,
-                    allocation=alloc,
-                    status=exec_status,
-                    notes=f"Scanned under {regime} regime"
-                )
-            print("\nSuccessfully logged top recommendations to Google Sheets journal!")
-        except Exception as e:
-            logger.error(f"Error logging recommendations to journal: {e}")
+        # Log recommendations to Google Sheets Trading Journal ONLY if save_journal is True
+        if save_journal:
+            try:
+                journal = TradingJournal()
+                for _, row in df_top5.iterrows():
+                    pos_size = risk_engine.calculate_position_size(
+                        total_capital=capital,
+                        entry_price=row["close"],
+                        stop_loss_price=row["suggested_sl"]
+                    )
+                    qty = pos_size["quantity"] if pos_size else 0
+                    alloc = pos_size["total_investment"] if pos_size else 0.0
+                    exec_status = "SKIPPED_BEARISH_REGIME" if regime == "BEARISH" else "PENDING"
+                    
+                    journal.add_recommendation(
+                        symbol=row["symbol"],
+                        name=row["name"],
+                        score=row["score"],
+                        target_entry=row["close"],
+                        stop_loss=row["suggested_sl"],
+                        profit_target=row["suggested_target"],
+                        qty=qty,
+                        allocation=alloc,
+                        status=exec_status,
+                        notes=f"Scanned under {regime} regime"
+                    )
+                print("\n[SUCCESS] Saved top recommendations to Google Sheets journal!")
+            except Exception as e:
+                logger.error(f"Error logging recommendations to journal: {e}")
+        else:
+            print("\n> Note: Recommendations were NOT saved to Google Sheets journal.")
+            print("> Run 'py main.py scan --save-journal' if you want to confirm and record recommendations.")
     else:
         print("No compliant stocks analyzed.")
 
