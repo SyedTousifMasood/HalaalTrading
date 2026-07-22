@@ -3165,3 +3165,11 @@
 2026-07-22 12:50:28,966 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
 2026-07-22 12:51:02,778 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
 2026-07-22 12:52:01,307 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:54:17,127 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TEAM24.BO"}}}
+2026-07-22 12:54:26,759 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:57:09,800 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ZSVTRADI.BO"}}}
+2026-07-22 12:57:24,161 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: UNIJOLL.BO"}}}
+2026-07-22 12:57:31,592 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: HEALINV.BO"}}}
+2026-07-22 12:57:33,841 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SHRENTI.BO"}}}
+2026-07-22 12:58:29,935 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: RIDHISYN.BO"}}}
+2026-07-22 12:58:34,104 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ARDIALL.BO"}}}
