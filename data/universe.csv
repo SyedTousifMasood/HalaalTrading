@@ -1,155 +1,335 @@
-symbol,name,source
-TCS,Tata Consultancy Services,nifty_shariah
-INFY,Infosys Limited,nifty_shariah
-RELIANCE,Reliance Industries Limited,nifty_shariah
-HINDUNILVR,Hindustan Unilever Limited,nifty_shariah
-SUNPHARMA,Sun Pharmaceutical Industries Limited,nifty_shariah
-HCLTECH,HCL Technologies Limited,nifty_shariah
-ASIANPAINT,Asian Paints Limited,nifty_shariah
-NESTLEIND,Nestle India Limited,nifty_shariah
-ULTRACEMCO,UltraTech Cement Limited,nifty_shariah
-ONGC,Oil and Natural Gas Corporation Limited,nifty_shariah
-CIPLA,Cipla Limited,nifty_shariah
-TECHM,Tech Mahindra Limited,nifty_shariah
-GRASIM,Grasim Industries Limited,nifty_shariah
-HEROMOTOCO,Hero MotoCorp Limited,nifty_shariah
-BRITANNIA,Britannia Industries Limited,nifty_shariah
-WIPRO,Wipro Limited,nifty_shariah
-APOLLOHOSP,Apollo Hospitals Enterprise Limited,nifty_shariah
-DIVISLAB,Divi's Laboratories Limited,nifty_shariah
-COALINDIA,Coal India Limited,nifty_shariah
-TATASTEEL,Tata Steel Limited,nifty_shariah
-HINDALCO,Hindalco Industries Limited,nifty_shariah
-JSWSTEEL,JSW Steel Limited,nifty_shariah
-TITAN,Titan Company Limited,nifty_shariah
-MARUTI,Maruti Suzuki India Limited,nifty_shariah
-BAJAJ-AUTO,Bajaj Auto Limited,nifty_shariah
-EICHERMOT,Eicher Motors Limited,nifty_shariah
-PIDILITIND,Pidilite Industries Limited,nifty_shariah
-SIEMENS,Siemens Limited,nifty_shariah
-BEL,Bharat Electronics Limited,nifty_shariah
-HAL,Hindustan Aeronautics Limited,nifty_shariah
-TRENT,Trent Limited,nifty_shariah
-ADANIPORTS,Adani Ports and Special Economic Zone Limited,nifty_shariah
-TATAELXSI,Tata Elxsi Limited,nifty_shariah
-BOSCHLTD,Bosch Limited,nifty_shariah
-COLPAL,Colgate-Palmolive (India) Limited,nifty_shariah
-DABUR,Dabur India Limited,nifty_shariah
-GODREJCP,Godrej Consumer Products Limited,nifty_shariah
-BERGEPAINT,Berger Paints India Limited,nifty_shariah
-TATACHEM,Tata Chemicals Limited,nifty_shariah
-VOLTAS,Voltas Limited,nifty_shariah
-LTIM,LTIMindtree Limited,nifty_shariah
-PERSISTENT,Persistent Systems Limited,nifty_shariah
-COFORGE,Coforge Limited,nifty_shariah
-MPHASIS,Mphasis Limited,nifty_shariah
-OBEROIREAL,Oberoi Realty Limited,nifty_shariah
-DLF,DLF Limited,nifty_shariah
-GODREJPROP,Godrej Properties Limited,nifty_shariah
-LUPIN,Lupin Limited,nifty_shariah
-ALKEM,Alkem Laboratories Limited,nifty_shariah
-TORNTPHARM,Torrent Pharmaceuticals Limited,nifty_shariah
-MANKIND,Mankind Pharma Limited,nifty_shariah
-ZYDUSLIFE,Zydus Lifesciences Limited,nifty_shariah
-ABB,ABB India Limited,nifty_shariah
-CGPOWER,CG Power and Industrial Solutions Limited,nifty_shariah
-POLYCAB,Polycab India Limited,nifty_shariah
-KEI,KEI Industries Limited,nifty_shariah
-DIXON,Dixon Technologies (India) Limited,nifty_shariah
-ASTRAL,Astral Limited,nifty_shariah
-SUPREMEIND,Supreme Industries Limited,nifty_shariah
-PIIND,PI Industries Limited,nifty_shariah
-COROMANDEL,Coromandel International Limited,nifty_shariah
-DEEPAKNTR,Deepak Nitrite Limited,nifty_shariah
-SRF,SRF Limited,nifty_shariah
-GUJGASLTD,Gujarat Gas Limited,nifty_shariah
-IGL,Indraprastha Gas Limited,nifty_shariah
-MGL,Mahanagar Gas Limited,nifty_shariah
-SOLARINDS,Solar Industries India Limited,nifty_shariah
-BHARATFORG,Bharat Forge Limited,nifty_shariah
-CUMMINSIND,Cummins India Limited,nifty_shariah
-MAZDOCK,Mazagon Dock Shipbuilders Limited,nifty_shariah
-COCHINSHIP,Cochin Shipyard Limited,nifty_shariah
-FACT,Fertilisers And Chemicals Travancore Limited,nifty_shariah
-UPL,UPL Limited,nifty_shariah
-DRREDDY,Dr. Reddy's Laboratories Limited,nifty_shariah
-LAURUSLABS,Laurus Labs Limited,nifty_shariah
-BIOCON,Biocon Limited,nifty_shariah
-SYNGENE,Syngene International Limited,nifty_shariah
-GLENMARK,Glenmark Pharmaceuticals Limited,nifty_shariah
-IPCALAB,IPCA Laboratories Limited,nifty_shariah
-AUROPHARMA,Aurobindo Pharma Limited,nifty_shariah
-GRANULES,Granules India Limited,nifty_shariah
-NATCOPHARM,Natco Pharma Limited,nifty_shariah
-AJANTPHARM,Ajanta Pharma Limited,nifty_shariah
-ERIS,Eris Lifesciences Limited,nifty_shariah
-JBCHEPHARM,J.B. Chemicals & Pharmaceuticals Limited,nifty_shariah
-POLYMED,Poly Medicure Limited,nifty_shariah
-KPITTECH,KPIT Technologies Limited,nifty_shariah
-CYIENT,Cyient Limited,nifty_shariah
-TATACOMM,Tata Communications Limited,nifty_shariah
-OFSS,Oracle Financial Services Software Limited,nifty_shariah
-HAPPSTMNDS,Happiest Minds Technologies Limited,nifty_shariah
-SONACOMS,Sona BLW Precision Forgings Limited,nifty_shariah
-ZENSARTECH,Zensar Technologies Limited,nifty_shariah
-BIRLASOFT,Birlasoft Limited,nifty_shariah
-MASTEK,Mastek Limited,nifty_shariah
-NEWGEN,Newgen Software Technologies Limited,nifty_shariah
-BALKRISIND,Balkrishna Industries Limited,nifty_shariah
-UNOMINDA,Uno Minda Limited,nifty_shariah
-TIINDIA,Tube Investments of India Limited,nifty_shariah
-SCHAEFFLER,Schaeffler India Limited,nifty_shariah
-TIMKEN,Timken India Limited,nifty_sharlight
-ENDURANCE,Endurance Technologies Limited,nifty_shariah
-MOTHERSON,Samvardhana Motherson International Limited,nifty_shariah
-EXIDEIND,Exide Industries Limited,nifty_shariah
-MARICO,Marico Limited,nifty_shariah
-VBL,Varun Beverages Limited,nifty_shariah
-KALYANKJIL,Kalyan Jewellers India Limited,nifty_shariah
-METROPOLIS,Metropolis Healthcare Limited,nifty_shariah
-LALPATHLAB,Dr. Lal PathLab Limited,nifty_shariah
-BATAINDIA,Bata India Limited,nifty_shariah
-RELAXO,Relaxo Footwears Limited,nifty_shariah
-DEVYANI,Devyani International Limited,nifty_shariah
-BHEL,Bharat Heavy Electricals Limited,nifty_shariah
-GRINDWELL,Grindwell Norton Limited,nifty_shariah
-CARBORUNIV,Carborundum Universal Limited,nifty_shariah
-THERMAX,Thermax Limited,nifty_shariah
-SUZLON,Suzlon Energy Limited,nifty_shariah
-KEC,KEC International Limited,nifty_shariah
-SCHNEIDER,Schneider Electric Infrastructure Limited,nifty_shariah
-AIAENG,AIA Engineering Limited,nifty_shariah
-NMDC,NMDC Limited,nifty_shariah
-MOIL,MOIL Limited,nifty_shariah
-JSL,Jindal Stainless Limited,nifty_shariah
-JINDALSTEL,Jindal Steel & Power Limited,nifty_shariah
-AMBUJACEM,Ambuja Cements Limited,nifty_shariah
-ACC,ACC Limited,nifty_shariah
-DALBHARAT,Dalmia Bharat Limited,nifty_shariah
-SHREECEM,Shree Cement Limited,nifty_shariah
-HEG,HEG Limited,nifty_shariah
-GRAPHITE,Graphite India Limited,nifty_shariah
-RATNAMANI,Ratnamani Metals & Tubes Limited,nifty_shariah
-ATUL,Atul Limited,nifty_shariah
-AARTIIND,Aarti Industries Limited,nifty_shariah
-VINATIORGA,Vinati Organics Limited,nifty_shariah
-NAVINFLUOR,Navin Fluorine International Limited,nifty_shariah
-LINDEINDIA,Linde India Limited,nifty_shariah
-SUMICHEM,Sumitomo Chemical India Limited,nifty_shariah
-CLEAN,Clean Science and Technology Limited,nifty_shariah
-FINEORG,Fine Organic Industries Limited,nifty_shariah
-PHOENIXLTD,The Phoenix Mills Limited,nifty_shariah
-PRESTIGE,Prestige Estates Projects Limited,nifty_shariah
-BRIGADE,Brigade Enterprises Limited,nifty_shariah
-SOBHA,Sobha Limited,nifty_shariah
-ADANIGREEN,Adani Green Energy Limited,nifty_shariah
-ADANIENT,Adani Enterprises Limited,nifty_shariah
-ADANIPOWER,Adani Power Limited,nifty_shariah
-TATAPOWER,Tata Power Company Limited,nifty_shariah
-CESC,CESC Limited,nifty_shariah
-NHPC,NHPC Limited,nifty_shariah
-SJVN,SJVN Limited,nifty_shariah
-HDFCBANK,HDFC Bank Limited,general_market
-ITC,ITC Limited,general_market
-LT,Larsen & Toubro Limited,general_market
-MUTHOOTFIN,Muthoot Finance Limited,general_market
+symbol,name,source,sharia_screened
+TCS,Tata Consultancy Services,nifty_shariah,
+INFY,Infosys Limited,nifty_shariah,
+RELIANCE,Reliance Industries Limited,nifty_shariah,
+HINDUNILVR,Hindustan Unilever Limited,nifty_shariah,
+SUNPHARMA,Sun Pharmaceutical Industries Limited,nifty_shariah,
+HCLTECH,HCL Technologies Limited,nifty_shariah,
+ASIANPAINT,Asian Paints Limited,nifty_shariah,
+NESTLEIND,Nestle India Limited,nifty_shariah,
+ULTRACEMCO,UltraTech Cement Limited,nifty_shariah,
+ONGC,Oil and Natural Gas Corporation Limited,nifty_shariah,
+CIPLA,Cipla Limited,nifty_shariah,
+TECHM,Tech Mahindra Limited,nifty_shariah,
+GRASIM,Grasim Industries Limited,nifty_shariah,
+HEROMOTOCO,Hero MotoCorp Limited,nifty_shariah,
+BRITANNIA,Britannia Industries Limited,nifty_shariah,
+WIPRO,Wipro Limited,nifty_shariah,
+APOLLOHOSP,Apollo Hospitals Enterprise Limited,nifty_shariah,
+DIVISLAB,Divi's Laboratories Limited,nifty_shariah,
+COALINDIA,Coal India Limited,nifty_shariah,
+TATASTEEL,Tata Steel Limited,nifty_shariah,
+HINDALCO,Hindalco Industries Limited,nifty_shariah,
+JSWSTEEL,JSW Steel Limited,nifty_shariah,
+TITAN,Titan Company Limited,nifty_shariah,
+MARUTI,Maruti Suzuki India Limited,nifty_shariah,
+BAJAJ-AUTO,Bajaj Auto Limited,nifty_shariah,
+EICHERMOT,Eicher Motors Limited,nifty_shariah,
+PIDILITIND,Pidilite Industries Limited,nifty_shariah,
+SIEMENS,Siemens Limited,nifty_shariah,
+BEL,Bharat Electronics Limited,nifty_shariah,
+HAL,Hindustan Aeronautics Limited,nifty_shariah,
+TRENT,Trent Limited,nifty_shariah,
+ADANIPORTS,Adani Ports and Special Economic Zone Limited,nifty_shariah,
+TATAELXSI,Tata Elxsi Limited,nifty_shariah,
+BOSCHLTD,Bosch Limited,nifty_shariah,
+COLPAL,Colgate-Palmolive (India) Limited,nifty_shariah,
+DABUR,Dabur India Limited,nifty_shariah,
+GODREJCP,Godrej Consumer Products Limited,nifty_shariah,
+BERGEPAINT,Berger Paints India Limited,nifty_shariah,
+TATACHEM,Tata Chemicals Limited,nifty_shariah,
+VOLTAS,Voltas Limited,nifty_shariah,
+LTIM,LTIMindtree Limited,nifty_shariah,
+PERSISTENT,Persistent Systems Limited,nifty_shariah,
+COFORGE,Coforge Limited,nifty_shariah,
+MPHASIS,Mphasis Limited,nifty_shariah,
+OBEROIREAL,Oberoi Realty Limited,nifty_shariah,
+DLF,DLF Limited,nifty_shariah,
+GODREJPROP,Godrej Properties Limited,nifty_shariah,
+LUPIN,Lupin Limited,nifty_shariah,
+ALKEM,Alkem Laboratories Limited,nifty_shariah,
+TORNTPHARM,Torrent Pharmaceuticals Limited,nifty_shariah,
+MANKIND,Mankind Pharma Limited,nifty_shariah,
+ZYDUSLIFE,Zydus Lifesciences Limited,nifty_shariah,
+ABB,ABB India Limited,nifty_shariah,
+CGPOWER,CG Power and Industrial Solutions Limited,nifty_shariah,
+POLYCAB,Polycab India Limited,nifty_shariah,
+KEI,KEI Industries Limited,nifty_shariah,
+DIXON,Dixon Technologies (India) Limited,nifty_shariah,
+ASTRAL,Astral Limited,nifty_shariah,
+SUPREMEIND,Supreme Industries Limited,nifty_shariah,
+PIIND,PI Industries Limited,nifty_shariah,
+COROMANDEL,Coromandel International Limited,nifty_shariah,
+DEEPAKNTR,Deepak Nitrite Limited,nifty_shariah,
+SRF,SRF Limited,nifty_shariah,
+GUJGASLTD,Gujarat Gas Limited,nifty_shariah,
+IGL,Indraprastha Gas Limited,nifty_shariah,
+MGL,Mahanagar Gas Limited,nifty_shariah,
+SOLARINDS,Solar Industries India Limited,nifty_shariah,
+BHARATFORG,Bharat Forge Limited,nifty_shariah,
+CUMMINSIND,Cummins India Limited,nifty_shariah,
+MAZDOCK,Mazagon Dock Shipbuilders Limited,nifty_shariah,
+COCHINSHIP,Cochin Shipyard Limited,nifty_shariah,
+FACT,Fertilisers And Chemicals Travancore Limited,nifty_shariah,
+UPL,UPL Limited,nifty_shariah,
+DRREDDY,Dr. Reddy's Laboratories Limited,nifty_shariah,
+LAURUSLABS,Laurus Labs Limited,nifty_shariah,
+BIOCON,Biocon Limited,nifty_shariah,
+SYNGENE,Syngene International Limited,nifty_shariah,
+GLENMARK,Glenmark Pharmaceuticals Limited,nifty_shariah,
+IPCALAB,IPCA Laboratories Limited,nifty_shariah,
+AUROPHARMA,Aurobindo Pharma Limited,nifty_shariah,
+GRANULES,Granules India Limited,nifty_shariah,
+NATCOPHARM,Natco Pharma Limited,nifty_shariah,
+AJANTPHARM,Ajanta Pharma Limited,nifty_shariah,
+ERIS,Eris Lifesciences Limited,nifty_shariah,
+JBCHEPHARM,J.B. Chemicals & Pharmaceuticals Limited,nifty_shariah,
+POLYMED,Poly Medicure Limited,nifty_shariah,
+KPITTECH,KPIT Technologies Limited,nifty_shariah,
+CYIENT,Cyient Limited,nifty_shariah,
+TATACOMM,Tata Communications Limited,nifty_shariah,
+OFSS,Oracle Financial Services Software Limited,nifty_shariah,
+HAPPSTMNDS,Happiest Minds Technologies Limited,nifty_shariah,
+SONACOMS,Sona BLW Precision Forgings Limited,nifty_shariah,
+ZENSARTECH,Zensar Technologies Limited,nifty_shariah,
+BIRLASOFT,Birlasoft Limited,nifty_shariah,
+MASTEK,Mastek Limited,nifty_shariah,
+NEWGEN,Newgen Software Technologies Limited,nifty_shariah,
+BALKRISIND,Balkrishna Industries Limited,nifty_shariah,
+UNOMINDA,Uno Minda Limited,nifty_shariah,
+TIINDIA,Tube Investments of India Limited,nifty_shariah,
+SCHAEFFLER,Schaeffler India Limited,nifty_shariah,
+TIMKEN,Timken India Limited,nifty_sharlight,
+ENDURANCE,Endurance Technologies Limited,nifty_shariah,
+MOTHERSON,Samvardhana Motherson International Limited,nifty_shariah,
+EXIDEIND,Exide Industries Limited,nifty_shariah,
+MARICO,Marico Limited,nifty_shariah,
+VBL,Varun Beverages Limited,nifty_shariah,
+KALYANKJIL,Kalyan Jewellers India Limited,nifty_shariah,
+METROPOLIS,Metropolis Healthcare Limited,nifty_shariah,
+LALPATHLAB,Dr. Lal PathLab Limited,nifty_shariah,
+BATAINDIA,Bata India Limited,nifty_shariah,
+RELAXO,Relaxo Footwears Limited,nifty_shariah,
+DEVYANI,Devyani International Limited,nifty_shariah,
+BHEL,Bharat Heavy Electricals Limited,nifty_shariah,
+GRINDWELL,Grindwell Norton Limited,nifty_shariah,
+CARBORUNIV,Carborundum Universal Limited,nifty_shariah,
+THERMAX,Thermax Limited,nifty_shariah,
+SUZLON,Suzlon Energy Limited,nifty_shariah,
+KEC,KEC International Limited,nifty_shariah,
+SCHNEIDER,Schneider Electric Infrastructure Limited,nifty_shariah,
+AIAENG,AIA Engineering Limited,nifty_shariah,
+NMDC,NMDC Limited,nifty_shariah,
+MOIL,MOIL Limited,nifty_shariah,
+JSL,Jindal Stainless Limited,nifty_shariah,
+JINDALSTEL,Jindal Steel & Power Limited,nifty_shariah,
+AMBUJACEM,Ambuja Cements Limited,nifty_shariah,
+ACC,ACC Limited,nifty_shariah,
+DALBHARAT,Dalmia Bharat Limited,nifty_shariah,
+SHREECEM,Shree Cement Limited,nifty_shariah,
+HEG,HEG Limited,nifty_shariah,
+GRAPHITE,Graphite India Limited,nifty_shariah,
+RATNAMANI,Ratnamani Metals & Tubes Limited,nifty_shariah,
+ATUL,Atul Limited,nifty_shariah,
+AARTIIND,Aarti Industries Limited,nifty_shariah,
+VINATIORGA,Vinati Organics Limited,nifty_shariah,
+NAVINFLUOR,Navin Fluorine International Limited,nifty_shariah,
+LINDEINDIA,Linde India Limited,nifty_shariah,
+SUMICHEM,Sumitomo Chemical India Limited,nifty_shariah,
+CLEAN,Clean Science and Technology Limited,nifty_shariah,
+FINEORG,Fine Organic Industries Limited,nifty_shariah,
+PHOENIXLTD,The Phoenix Mills Limited,nifty_shariah,
+PRESTIGE,Prestige Estates Projects Limited,nifty_shariah,
+BRIGADE,Brigade Enterprises Limited,nifty_shariah,
+SOBHA,Sobha Limited,nifty_shariah,
+ADANIGREEN,Adani Green Energy Limited,nifty_shariah,
+ADANIENT,Adani Enterprises Limited,nifty_shariah,
+ADANIPOWER,Adani Power Limited,nifty_shariah,
+TATAPOWER,Tata Power Company Limited,nifty_shariah,
+CESC,CESC Limited,nifty_shariah,
+NHPC,NHPC Limited,nifty_shariah,
+SJVN,SJVN Limited,nifty_shariah,
+HDFCBANK,HDFC Bank Limited,general_market,
+ITC,ITC Limited,general_market,
+LT,Larsen & Toubro Limited,general_market,
+MUTHOOTFIN,Muthoot Finance Limited,general_market,
+3MINDIA,3M India Limited,programmatic,True
+APLAPOLLO,APL Apollo Tubes Limited,programmatic,True
+ACE,Action Construction Equipment Limited,programmatic,True
+ACUTAAS,Acutaas Chemicals Limited,programmatic,True
+ATGL,Adani Total Gas Limited,programmatic,True
+ABFRL,Aditya Birla Fashion and Retail Limited,programmatic,True
+ABLBL,ABLBL,programmatic,True
+ABREL,Aditya Birla Real Estate Limited,programmatic,True
+CPPLUS,CPPLUS,programmatic,True
+AEGISLOG,AEGISLOG,programmatic,True
+AEGISVOPAK,AEGISVOPAK,programmatic,True
+AFCONS,AFCONS,programmatic,True
+ARE&M,Amara Raja Energy & Mobility Limited,programmatic,True
+AMBER,Amber Enterprises India Limited,programmatic,True
+ANANTRAJ,Anant Raj Limited,programmatic,True
+ANTHEM,ANTHEM,programmatic,True
+ANURAS,Anupam Rasayan India Ltd,programmatic,True
+APARINDS,APAR Industries Limited,programmatic,True
+APOLLOTYRE,Apollo Tyres Limited,programmatic,True
+ASAHIINDIA,Asahi India Glass Limited,programmatic,True
+ASTERDM,Aster DM Quality Care Limited,programmatic,True
+DMART,Avenue Supermarts Limited,programmatic,True
+BEML,BEML Limited,programmatic,True
+BAYERCROP,Bayer CropScience Limited,programmatic,True
+BELRISE,BELRISE,programmatic,True
+BPCL,Bharat Petroleum Corporation Limited,programmatic,True
+BHARTIARTL,Bharti Airtel Limited,programmatic,True
+BHARTIHEXA,BHARTIHEXA,programmatic,True
+BIKAJI,Bikaji Foods International Limited,programmatic,True
+BLUEDART,Blue Dart Express Limited,programmatic,True
+BLUEJET,Blue Jet Healthcare Limited,programmatic,True
+BLUESTARCO,Blue Star Limited,programmatic,True
+BBTC,The Bombay Burmah Trading Corporation Limited,programmatic,True
+FIRSTCRY,FIRSTCRY,programmatic,True
+MAPMYINDIA,C. E. Info Systems Limited,programmatic,True
+CCL,CCL Products (India) Limited,programmatic,True
+CIEINDIA,CIE Automotive India Limited,programmatic,True
+CAPLIPOINT,Caplin Point Laboratories Limited,programmatic,True
+CEATLTD,CEAT Limited,programmatic,True
+CEMPRO,Cemindia Projects Limited,programmatic,True
+CHALET,Chalet Hotels Limited,programmatic,True
+CHAMBLFERT,Chambal Fertilisers and Chemicals Limited,programmatic,True
+CHENNPETRO,Chennai Petroleum Corporation Limited,programmatic,True
+COHANCE,COHANCE,programmatic,True
+CONCORDBIO,Concord Biotech Limited,programmatic,True
+CONCOR,Container Corporation of India Limited,programmatic,True
+CROMPTON,Crompton Greaves Consumer Electricals Limited,programmatic,True
+DCMSHRIRAM,DCM Shriram Limited,programmatic,True
+DOMS,DOMS Industries Limited,programmatic,True
+DATAPATTNS,Data Patterns (India) Limited,programmatic,True
+DELHIVERY,Delhivery Limited,programmatic,True
+EIHOTEL,EIH Limited,programmatic,True
+ELECON,Elecon Engineering Company Limited,programmatic,True
+ELGIEQUIP,Elgi Equipments Limited,programmatic,True
+EMAMILTD,Emami Limited,programmatic,True
+EMCURE,EMCURE,programmatic,True
+EMMVEE,EMMVEE,programmatic,True
+ETERNAL,Eternal Limited,programmatic,True
+NYKAA,FSN E-Commerce Ventures Limited,programmatic,True
+FINCABLES,Finolex Cables Limited,programmatic,True
+FSL,Firstsource Solutions Limited,programmatic,True
+FORTIS,Fortis Healthcare Limited,programmatic,True
+GAIL,GAIL (India) Limited,programmatic,True
+GVT&D,GE Vernova T&D India Ltd,programmatic,True
+GABRIEL,Gabriel India Limited,programmatic,True
+GALLANTT,Gallantt Ispat Limited,programmatic,True
+GILLETTE,Gillette India Limited,programmatic,True
+GLAND,Gland Pharma Limited,programmatic,True
+MEDANTA,Global Health Limited,programmatic,True
+GPIL,Godawari Power & Ispat Limited,programmatic,True
+GRAVITA,Gravita India Limited,programmatic,True
+FLUOROCHEM,Gujarat Fluorochemicals Limited,programmatic,True
+GMDCLTD,Gujarat Mineral Development Corporation Limited,programmatic,True
+HBLENGINE,HBLENGINE,programmatic,True
+HFCL,HFCL Limited,programmatic,True
+HAVELLS,Havells India Limited,programmatic,True
+HEXT,Hexaware Technologies Limited,programmatic,True
+HSCL,Himadri Speciality Chemical Limited,programmatic,True
+HINDCOPPER,Hindustan Copper Limited,programmatic,True
+HINDPETRO,Hindustan Petroleum Corporation Limited,programmatic,True
+HINDZINC,Hindustan Zinc Limited,programmatic,True
+HONASA,Honasa Consumer Limited,programmatic,True
+HYUNDAI,HYUNDAI,programmatic,True
+ITCHOTELS,ITCHOTELS,programmatic,True
+ITI,ITI Limited,programmatic,True
+INDGN,INDGN,programmatic,True
+INDIACEM,The India Cements Limited,programmatic,True
+INDHOTEL,The Indian Hotels Company Limited,programmatic,True
+IOC,Indian Oil Corporation Limited,programmatic,True
+INDUSTOWER,Indus Towers Limited,programmatic,True
+NAUKRI,Info Edge (India) Limited,programmatic,True
+INOXWIND,Inox Wind Limited,programmatic,True
+INTELLECT,Intellect Design Arena Limited,programmatic,True
+IKS,IKS,programmatic,True
+JKCEMENT,J.K. Cement Limited,programmatic,True
+JKTYRE,JK Tyre & Industries Limited,programmatic,True
+JSWCEMENT,JSWCEMENT,programmatic,True
+JSWINFRA,JSW Infrastructure Limited,programmatic,True
+JPPOWER,Jaiprakash Power Ventures Limited,programmatic,True
+JINDALSAW,Jindal Saw Limited,programmatic,True
+JUBLFOOD,Jubilant FoodWorks Limited,programmatic,True
+JUBLINGREA,Jubilant Ingrevia Limited,programmatic,True
+JUBLPHARMA,Jubilant Pharmova Limited,programmatic,True
+JWL,Jupiter Wagons Limited,programmatic,True
+JYOTICNC,Jyoti CNC Automation Limited,programmatic,True
+KPRMILL,K.P.R. Mill Limited,programmatic,True
+KAJARIACER,Kajaria Ceramics Limited,programmatic,True
+KPIL,Kalpataru Projects International Limited,programmatic,True
+KAYNES,Kaynes Technology India Limited,programmatic,True
+KFINTECH,KFin Technologies Limited,programmatic,True
+LTTS,L&T Technology Services Limited,programmatic,True
+LTFOODS,LT Foods Limited,programmatic,True
+THELEELA,Leela Palaces Hotels & Resorts Limited,programmatic,True
+LENSKART,LENSKART,programmatic,True
+LODHA,Lodha Developers Limited,programmatic,True
+MRF,MRF Limited,programmatic,True
+MRPL,Mangalore Refinery and Petrochemicals Limited,programmatic,True
+MAXHEALTH,Max Healthcare Institute Limited,programmatic,True
+MINDACORP,Minda Corporation Limited,programmatic,True
+MSUMI,Motherson Sumi Wiring India Limited,programmatic,True
+NCC,NCC Limited,programmatic,True
+NSLNISP,NMDC Steel Limited,programmatic,True
+NATIONALUM,National Aluminium Company Limited,programmatic,True
+NAVA,Nava Limited,programmatic,True
+NETWEB,Netweb Technologies India Limited,programmatic,True
+NEULANDLAB,Neuland Laboratories Limited,programmatic,True
+NUVOCO,Nuvoco Vistas Corporation Limited,programmatic,True
+OBEROIRLTY,Oberoi Realty Limited,programmatic,True
+OIL,Oil India Limited,programmatic,True
+OLAELEC,OLAELEC,programmatic,True
+OLECTRA,Olectra Greentech Limited,programmatic,True
+ONESOURCE,ONESOURCE,programmatic,True
+PGEL,PG Electroplast Limited,programmatic,True
+PTCIL,PTC Industries Limited,programmatic,True
+PVRINOX,PVR INOX Limited,programmatic,True
+PAGEIND,Page Industries Limited,programmatic,True
+PATANJALI,Patanjali Foods Limited,programmatic,True
+PPLPHARMA,Piramal Pharma Limited,programmatic,True
+RRKABEL,R R Kabel Limited,programmatic,True
+RHIM,RHI Magnesita India Limited,programmatic,True
+RVNL,Rail Vikas Nigam Limited,programmatic,True
+RAILTEL,RailTel Corporation of India Limited,programmatic,True
+RAINBOW,Rainbow Children's Medicare Limited,programmatic,True
+RKFORGE,Ramkrishna Forgings Limited,programmatic,True
+REDINGTON,Redington Limited,programmatic,True
+SAGILITY,Sagility Limited,programmatic,True
+SAILIFE,SAILIFE,programmatic,True
+SAPPHIRE,Sapphire Foods India Limited,programmatic,True
+SARDAEN,Sarda Energy & Minerals Limited,programmatic,True
+SAREGAMA,Saregama India Limited,programmatic,True
+SCI,The Shipping Corporation of India Limited,programmatic,True
+SHYAMMETL,Shyam Metalics and Energy Limited,programmatic,True
+SIGNATURE,Signatureglobal (India) Limited,programmatic,True
+SONATSOFTW,Sonata Software Limited,programmatic,True
+SAIL,Steel Authority of India Limited,programmatic,True
+SPLPETRO,Supreme Petrochem Limited,programmatic,True
+SWANCORP,Swan Corp Limited,programmatic,True
+SYRMA,Syrma SGS Technology Limited,programmatic,True
+TBOTEK,TBOTEK,programmatic,True
+TATACONSUM,Tata Consumer Products Limited,programmatic,True
+TMCV,TMCV,programmatic,True
+TMPV,Tata Motors Passenger Vehicles Limited,programmatic,True
+TATATECH,Tata Technologies Limited,programmatic,True
+TENNIND,TENNIND,programmatic,True
+RAMCOCEM,The Ramco Cements Limited,programmatic,True
+TITAGARH,Titagarh Rail Systems Limited,programmatic,True
+TORNTPOWER,Torrent Power Limited,programmatic,True
+TARIL,TARIL,programmatic,True
+TRIDENT,Trident Limited,programmatic,True
+USHAMART,Usha Martin Limited,programmatic,True
+VTL,Vardhman Textiles Limited,programmatic,True
+VEDL,Vedanta Limited,programmatic,True
+VIJAYA,Vijaya Diagnostic Centre Limited,programmatic,True
+VMM,VMM,programmatic,True
+WAAREEENER,WAAREEENER,programmatic,True
+WELCORP,Welspun Corp Limited,programmatic,True
+WELSPUNLIV,Welspun Living Limited,programmatic,True
+WOCKPHARMA,Wockhardt Limited,programmatic,True
+ZEEL,Zee Entertainment Enterprises Limited,programmatic,True
+ZYDUSWELL,Zydus Wellness Limited,programmatic,True
