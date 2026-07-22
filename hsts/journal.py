@@ -367,6 +367,24 @@ class TradingJournal:
         wb.save(self.file_path)
         logger.info(f"Logged recommendation for {symbol} to Recommendations sheet (Row {row_idx})")
 
+    def capital_transaction_exists(self, notes):
+        """Checks if a capital transaction with the exact notes already exists to prevent duplicate charges."""
+        if not os.path.exists(self.file_path):
+            return False
+        try:
+            wb = openpyxl.load_workbook(self.file_path, data_only=True)
+            ws = wb["Capital"]
+            for r in range(2, self._get_true_max_row(ws) + 1):
+                val = ws.cell(row=r, column=4).value
+                if val == notes:
+                    wb.close()
+                    return True
+            wb.close()
+            return False
+        except Exception as e:
+            logger.error(f"Error checking capital transaction existence: {e}")
+            return False
+
     def add_capital_transaction(self, transaction_type, amount, notes=""):
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Capital"]

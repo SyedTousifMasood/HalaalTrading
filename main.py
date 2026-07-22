@@ -393,6 +393,13 @@ def sync_zerodha_orders():
                     )
                     synced_count += 1
 
+                    # Log buy-side commission/taxes to Capital sheet
+                    buy_charges = round(qty * avg_price * 0.0012, 2)
+                    charge_notes = f"Brokerage & taxes on {symbol} BUY ({qty} qty @ {avg_price:.2f})"
+                    if not journal.capital_transaction_exists(charge_notes):
+                        journal.add_capital_transaction("WITHDRAWAL", buy_charges, notes=charge_notes)
+                        print(f"Logged buy charges for {symbol}: INR {buy_charges:.2f}")
+
                 elif tx_type == "SELL":
                     journal.close_trade(
                         symbol=symbol,
@@ -402,6 +409,13 @@ def sync_zerodha_orders():
                         notes="Auto-synced sell from Zerodha account"
                     )
                     synced_count += 1
+
+                    # Log sell-side commission/taxes to Capital sheet
+                    sell_charges = round((qty * avg_price * 0.00104) + 15.93, 2)
+                    charge_notes = f"Brokerage & taxes on {symbol} SELL ({qty} qty @ {avg_price:.2f})"
+                    if not journal.capital_transaction_exists(charge_notes):
+                        journal.add_capital_transaction("WITHDRAWAL", sell_charges, notes=charge_notes)
+                        print(f"Logged sell charges for {symbol}: INR {sell_charges:.2f}")
 
         df_orders = pd.DataFrame(order_list)
         print(df_orders.to_string(index=False))
