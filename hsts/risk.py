@@ -12,7 +12,7 @@ class RiskManagementEngine:
         self.max_portfolio_risk_per_trade = max_portfolio_risk_per_trade
         self.min_risk_reward_ratio = min_risk_reward_ratio
 
-    def calculate_position_size(self, total_capital, entry_price, stop_loss_price):
+    def calculate_position_size(self, total_capital, entry_price, stop_loss_price, max_allocation_pct=0.20):
         """
         Calculate stock quantity and trade risk parameters.
         """
@@ -41,12 +41,12 @@ class RiskManagementEngine:
         # Capital allocation for this position
         total_investment = quantity * entry_price
 
-        # Safeguard: Never allocate more than 20% of total capital to a single stock
-        max_allocation = total_capital * 0.20
+        # Safeguard: Never allocate more than allowed limit (e.g. 20% or 10%) of total capital to a single stock
+        max_allocation = total_capital * max_allocation_pct
         if total_investment > max_allocation:
             quantity = int(max_allocation // entry_price)
             total_investment = quantity * entry_price
-            logger.info(f"Position size capped to 20% max allocation limit. New quantity: {quantity}")
+            logger.info(f"Position size capped to {max_allocation_pct:.0%} max allocation limit. New quantity: {quantity}")
 
         return {
             "quantity": quantity,

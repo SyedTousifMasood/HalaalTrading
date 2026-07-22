@@ -116,13 +116,15 @@ def scan(capital, save_journal):
         df_all = pd.DataFrame(all_compliant_analyses)
         df_top5 = df_all.sort_values(by="score", ascending=False).head(5)
         
-        # Calculate position size based on available capital
+        # Calculate position size based on available capital and regime allocation limits
         buy_setups = []
+        alloc_cap_pct = regime_metrics.get("allocation_cap", 0.20)
         for _, row in df_top5.iterrows():
             pos_size = risk_engine.calculate_position_size(
                 total_capital=capital,
                 entry_price=row["close"],
-                stop_loss_price=row["suggested_sl"]
+                stop_loss_price=row["suggested_sl"],
+                max_allocation_pct=alloc_cap_pct
             )
             buy_setups.append({
                 "Symbol": row["symbol"],
@@ -139,10 +141,17 @@ def scan(capital, save_journal):
         df_display = pd.DataFrame(buy_setups)
         print(df_display.to_string(index=False))
         
-        if regime == "BEARISH":
+        if regime == "STATE 4: Cash Only":
             print("\n> [!WARNING]")
-            print("> Market regime is BEARISH. These setups are for informational/monitoring purposes only.")
-            print("> Under HSTS rule-based guidelines, trading these is strictly not recommended today.")
+            print("> Market regime is Cash Only. Capital preservation mode active.")
+            print("> Under HSTS rule-based guidelines, trading is strictly not recommended today.")
+        elif regime in ["STATE 2: Bear Relief Rally", "STATE 3: Capitulation Bottom"]:
+            print(f"\n> [!TIP]")
+            print(f"> Market is in {regime}.")
+            print(f"> Tactical swing trading is PERMITTED today with scaled-down position sizes (10% allocation cap).")
+        else:
+            print(f"\n> [!NOTE]")
+            print(f"> Market is in {regime}. Full swing trading parameters active (20% allocation cap).")
 
         # Log recommendations to Google Sheets Trading Journal ONLY if save_journal is True
         if save_journal:
@@ -152,11 +161,12 @@ def scan(capital, save_journal):
                     pos_size = risk_engine.calculate_position_size(
                         total_capital=capital,
                         entry_price=row["close"],
-                        stop_loss_price=row["suggested_sl"]
+                        stop_loss_price=row["suggested_sl"],
+                        max_allocation_pct=alloc_cap_pct
                     )
                     qty = pos_size["quantity"] if pos_size else 0
                     alloc = pos_size["total_investment"] if pos_size else 0.0
-                    exec_status = "SKIPPED_BEARISH_REGIME" if regime == "BEARISH" else "PENDING"
+                    exec_status = "SKIPPED_BEARISH_REGIME" if regime == "STATE 4: Cash Only" else "PENDING"
                     
                     journal.add_recommendation(
                         symbol=row["symbol"],
