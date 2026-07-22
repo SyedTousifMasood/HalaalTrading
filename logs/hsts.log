@@ -3156,3 +3156,12 @@
 2026-07-22 12:38:49,057 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
 2026-07-22 12:39:32,858 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
 2026-07-22 12:40:35,926 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:49:30,274 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-22 12:49:30,407 [INFO] bseindia.libutil: Get BSE listed securities
+2026-07-22 12:49:50,850 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:49:55,876 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:50:23,111 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:50:27,498 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:50:28,966 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:51:02,778 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:52:01,307 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
