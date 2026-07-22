@@ -2925,3 +2925,234 @@
 2026-07-22 11:39:52,769 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
 2026-07-22 11:39:53,057 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
 2026-07-22 11:40:05,304 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:44:22,570 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-22 11:44:27,219 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:44:32,186 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:44:38,306 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:44:39,817 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:44:40,557 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:44:42,943 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:45:17,787 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:45:26,453 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:45:38,324 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:46:06,273 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-22 11:46:12,214 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:46:22,571 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:46:34,283 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:46:37,205 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:46:38,679 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:46:42,515 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:47:42,792 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:47:56,777 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:48:16,988 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:48:44,626 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:48:46,833 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:48:47,567 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:49:07,690 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:49:15,570 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:49:24,066 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:50:15,146 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:50:38,886 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:50:40,120 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:50:44,114 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:50:55,853 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:50:58,162 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:50:58,880 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:51:04,326 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:51:10,990 [INFO] hsts.sharia: Rejected: Haram keyword 'liquor' found in business summary
+2026-07-22 11:51:12,616 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:51:18,977 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:51:44,529 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-22 11:51:54,210 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:52:01,127 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:52:12,696 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:52:16,525 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:52:18,034 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:52:21,938 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:53:10,187 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:53:22,746 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:53:43,232 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:54:14,592 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:54:17,115 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:54:19,026 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:54:41,608 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:54:53,574 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:55:05,936 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:55:57,313 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:56:26,396 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:56:27,342 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:56:32,390 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:56:49,825 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:56:54,033 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:56:55,260 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:57:00,145 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:57:08,534 [INFO] hsts.sharia: Rejected: Haram keyword 'liquor' found in business summary
+2026-07-22 11:57:10,303 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:57:18,090 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:57:22,046 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:57:23,005 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:57:40,568 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 11:58:02,676 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 11:59:46,823 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:00:07,778 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:00:08,510 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:00:09,254 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:00:37,000 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:00:46,780 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:00:48,517 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:00:57,467 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:01:07,162 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:01:07,914 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:01:08,663 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:01:09,473 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:01:43,533 [INFO] hsts.sharia: Rejected: Haram keyword 'casino' found in business summary
+2026-07-22 12:01:53,213 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: CPL.NS"}}}
+2026-07-22 12:01:58,782 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:02:02,225 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:02:09,423 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:02:16,877 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:02:26,186 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:02:26,927 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:02:43,719 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:03:01,374 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:03:04,515 [INFO] hsts.sharia: Rejected: Haram keyword 'casino' found in business summary
+2026-07-22 12:03:13,200 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:03:13,924 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:03:48,359 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:04:07,703 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:04:32,832 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:04:37,102 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:05:14,371 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:05:38,918 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:05:41,613 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:06:15,660 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:06:16,405 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:06:25,741 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:06:31,160 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:06:47,655 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:06:48,398 [INFO] hsts.sharia: Rejected: Haram keyword 'liquor' found in business summary
+2026-07-22 12:07:14,617 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:07:24,827 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:07:31,657 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:07:33,286 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:07:49,634 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:08:11,191 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:08:11,928 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
+2026-07-22 12:08:13,610 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:08:16,997 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:08:54,577 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:09:11,830 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:09:19,780 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:09:47,929 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:09:48,693 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:09:49,410 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:28,926 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:38,035 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:44,468 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:45,203 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:45,939 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:46,734 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:49,921 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:55,009 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:55,741 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:10:59,042 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:11:07,359 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:11:08,107 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:11:22,261 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:11:23,736 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:11:29,095 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:11:38,435 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:11:47,089 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:11:48,598 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:11:53,458 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:11:54,933 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:12:11,905 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:12:26,869 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:12:28,054 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:12:47,929 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:13:25,001 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:13:37,855 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:13:42,335 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:14:21,130 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:15:07,381 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:15:26,223 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:16:14,379 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:16:42,369 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:16:52,630 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:16:54,128 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:17:26,420 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:17:38,573 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:17:48,472 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:18:09,870 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:18:10,675 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:18:31,502 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:18:33,058 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:18:51,968 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:19:11,311 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:19:49,305 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:19:56,251 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:20:09,281 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:20:29,418 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:20:41,774 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:21:32,340 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:21:55,057 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:22:01,683 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:22:18,485 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:22:54,628 [INFO] hsts.sharia: Rejected: Haram keyword 'liquor' found in business summary
+2026-07-22 12:23:13,354 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:23:18,697 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:24:24,148 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:24:28,858 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:24:33,101 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:24:41,641 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:24:51,546 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:24:52,266 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:24:53,228 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:25:03,386 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:25:07,226 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:25:55,594 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:26:29,536 [INFO] hsts.sharia: Rejected: Haram keyword 'liquor' found in business summary
+2026-07-22 12:27:06,936 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:27:11,751 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:27:16,951 [INFO] hsts.sharia: Rejected: Haram keyword 'liquor' found in business summary
+2026-07-22 12:27:20,101 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:27:23,060 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:27:23,854 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:29:14,028 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:29:30,040 [INFO] hsts.sharia: Rejected: Haram keyword 'liquor' found in business summary
+2026-07-22 12:29:38,467 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:29:45,448 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:29:46,939 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:29:48,385 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:29:49,136 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:29:55,779 [INFO] hsts.sharia: Rejected: Haram keyword 'liquor' found in business summary
+2026-07-22 12:30:16,050 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:30:36,695 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:31:17,057 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:32:01,754 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:32:09,683 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:32:20,147 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:32:24,015 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:32:51,496 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:33:26,544 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:34:02,038 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:34:46,225 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:34:47,004 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:35:25,420 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:35:43,791 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:36:01,149 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:36:29,779 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:36:32,757 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:36:34,227 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:36:57,249 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:36:58,850 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:37:08,328 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:37:09,070 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:37:21,598 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:37:24,328 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:37:46,727 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:37:47,681 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
+2026-07-22 12:37:55,071 [INFO] hsts.sharia: Rejected: Haram keyword 'tobacco' found in business summary
+2026-07-22 12:38:49,057 [INFO] hsts.sharia: Rejected: Haram keyword 'alcohol' found in business summary
+2026-07-22 12:39:32,858 [INFO] hsts.sharia: Rejected: Non-permissible industry 'Tobacco'
+2026-07-22 12:40:35,926 [INFO] hsts.sharia: Rejected: Non-permissible sector 'Financial Services'
