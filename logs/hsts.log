@@ -4456,3 +4456,11 @@
 2026-07-24 08:21:31,761 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
 2026-07-24 08:21:55,555 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
 2026-07-24 08:21:57,443 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-24 08:32:50,201 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-24 08:32:50,334 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-24 08:32:50,983 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': '2S38BPS3gkR1RYIi0luuNX0LwKDwIFOktNRk2NWQ75I8F4O6C66zNSReBIlJinSy', 'twofa_type': 'totp', 'twofa_types': ['totp', 'app_code'], 'twofa_status': 'active', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-07-24 08:32:51,052 [INFO] hsts.broker.zerodha_free: Zerodha Free Authentication successful! enctoken extracted.
+2026-07-24 08:33:09,946 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-24 08:33:09,983 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-07-24 08:33:10,500 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': 'BHW9kzDYV3MrYILd8OnvQzz4i8NkSZjf0tuU0xgbytXIHo8qZu2nH63ULxPbckf8', 'twofa_type': 'totp', 'twofa_types': ['totp', 'app_code'], 'twofa_status': 'active', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-07-24 08:33:10,549 [INFO] hsts.broker.zerodha_free: Zerodha Free Authentication successful! enctoken extracted.
