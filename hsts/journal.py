@@ -137,7 +137,7 @@ class TradingJournal:
                     else:
                         ws.cell(row=r, column=10, value="1:2.0")
                     
-                    pnl_formula = f'=IF(N{r}="OPEN", 0, (L{r}-E{r})*D{r})'
+                    pnl_formula = f'=IF(OR(N{r}="WIN", N{r}="LOSS"), (L{r}-E{r})*D{r}, 0)'
                     ws.cell(row=r, column=13, value=pnl_formula)
 
         ws_dash = wb["Dashboard"]
@@ -433,7 +433,7 @@ class TradingJournal:
         
         ws.cell(row=row_idx, column=11, value="")
         ws.cell(row=row_idx, column=12, value="")
-        pnl_formula = f'=IF(N{row_idx}="OPEN", 0, (L{row_idx}-E{row_idx})*D{row_idx})'
+        pnl_formula = f'=IF(OR(N{row_idx}="WIN", N{row_idx}="LOSS"), (L{row_idx}-E{row_idx})*D{row_idx}, 0)'
         ws.cell(row=row_idx, column=13, value=pnl_formula)
         ws.cell(row=row_idx, column=14, value="OPEN")
         ws.cell(row=row_idx, column=15, value=notes)
