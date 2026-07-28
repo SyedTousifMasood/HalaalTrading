@@ -4527,3 +4527,147 @@
 2026-07-27 10:14:09,490 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
 2026-07-27 10:14:15,936 [INFO] hsts.journal: Recorded open trade for TECHM to Ledger (Row 7)
 2026-07-27 10:14:24,442 [INFO] hsts.journal: Capital Transaction: WITHDRAWAL of INR 1.89 logged.
+2026-07-27 11:18:57,698 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-27 11:18:57,860 [INFO] hsts.regime: Evaluating market regime using index ^NSEI and universe data/universe.csv...
+2026-07-27 11:19:07,030 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OBEROIREAL.NS"}}}
+2026-07-27 11:19:08,187 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:19:09,487 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+2026-07-27 11:19:10,771 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:19:10,779 [ERROR] yfinance: 
+2 Failed downloads:
+2026-07-27 11:19:10,781 [ERROR] yfinance: ['OBEROIREAL.NS', 'LTIM.NS']: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:19:11,016 [INFO] hsts.regime: Market regime identified as STATE 4: Cash Only (Close: 23935.80, RSI: 38.6, Breadth: 60.4%)
+2026-07-27 11:19:11,033 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-07-27 11:19:16,398 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:19:17,027 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:19:17,736 [ERROR] yfinance: 
+2 Failed downloads:
+2026-07-27 11:19:17,737 [ERROR] yfinance: ['OBEROIREAL.NS', 'LTIM.NS']: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:19:19,944 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:31,942 [ERROR] yfinance: $BIRLASOFT.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:19:31,951 [ERROR] yfinance: 
+1 Failed download:
+2026-07-27 11:19:31,953 [ERROR] yfinance: ['BIRLASOFT.NS']: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:19:33,724 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:34,199 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:35,547 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:36,310 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:37,052 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:50,035 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:50,630 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:51,810 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:52,368 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:52,872 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:54,367 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:55,086 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:55,792 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:19:59,826 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:00,374 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:01,023 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:01,572 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:17,199 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:18,454 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:20,190 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:21,590 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:24,118 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:35,256 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:35,821 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:36,409 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:39,897 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:44,506 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:45,058 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:58,326 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:58,847 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:59,295 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:20:59,749 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:02,842 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:03,294 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:04,203 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:05,343 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:05,831 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:07,266 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:08,261 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:14,301 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:14,764 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:15,366 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:16,632 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:23,193 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:23,702 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:24,968 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:25,612 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:27,009 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:27,487 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:28,022 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:30,341 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:33,043 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:40,014 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:41,918 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:43,247 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:44,151 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:44,578 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:46,440 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:46,906 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:47,797 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:48,246 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:48,753 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:50,282 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:52,487 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:55,595 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:21:56,068 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:04,531 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:08,212 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:09,098 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:10,044 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:10,935 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:13,502 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:15,331 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:15,882 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:17,326 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:18,342 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:20,328 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:20,839 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:22,162 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:23,531 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:23,974 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:31,479 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:32,532 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:33,267 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:34,958 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:35,227 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:36,303 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:37,111 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:37,960 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:38,270 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:38,626 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:39,235 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:40,418 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:41,739 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:47,981 [ERROR] yfinance: $SPICEJET.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:22:47,990 [ERROR] yfinance: 
+1 Failed download:
+2026-07-27 11:22:47,991 [ERROR] yfinance: ['SPICEJET.NS']: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-27 11:22:48,923 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:49,381 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:50,737 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:51,622 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:52,494 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:53,363 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:57,071 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:57,542 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:58,513 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:22:58,961 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:23:00,800 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-27 11:23:02,175 [INFO] hsts.risk: Position size capped to 0% max allocation limit. New quantity: 0
+2026-07-28 09:05:05,119 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-28 09:05:05,271 [INFO] hsts.regime: Evaluating market regime using index ^NSEI and universe data/universe.csv...
+2026-07-28 09:05:14,642 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OBEROIREAL.NS"}}}
+2026-07-28 09:05:16,329 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-28 09:05:16,741 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+2026-07-28 09:05:17,652 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-28 09:05:17,655 [ERROR] yfinance: 
+2 Failed downloads:
+2026-07-28 09:05:17,657 [ERROR] yfinance: ['OBEROIREAL.NS', 'LTIM.NS']: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-28 09:05:17,778 [INFO] hsts.regime: Market regime identified as STATE 4: Cash Only (Close: 23995.95, RSI: 40.4, Breadth: 58.3%)
+2026-07-28 09:05:17,806 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-07-28 09:05:43,439 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-28 09:05:45,863 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
