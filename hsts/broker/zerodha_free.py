@@ -186,3 +186,48 @@ class ZerodhaFreeBroker(BaseBroker):
         except Exception as e:
             logger.error(f"Exception while cancelling order: {e}")
             return False
+
+    def place_gtt(self, symbol, qty, trigger_type, trigger_values, limit_prices, last_price):
+        """
+        Place a GTT order (single or two-leg/oco).
+        """
+        import json
+        url = f"{self.base_url}/oms/gtt/triggers"
+        
+        condition = {
+            "exchange": "NSE",
+            "tradingsymbol": symbol,
+            "trigger_values": trigger_values,
+            "last_price": last_price
+        }
+        
+        orders = []
+        for trigger_val, limit_price in zip(trigger_values, limit_prices):
+            orders.append({
+                "exchange": "NSE",
+                "tradingsymbol": symbol,
+                "transaction_type": "SELL",
+                "quantity": qty,
+                "product": "CNC",
+                "order_type": "LIMIT",
+                "price": limit_price
+            })
+            
+        payload = {
+            "type": trigger_type,
+            "condition": json.dumps(condition),
+            "orders": json.dumps(orders)
+        }
+        try:
+            res = self.session.post(url, data=payload)
+            data = res.json()
+            if data.get("status") == "success":
+                trigger_id = data["data"]["trigger_id"]
+                logger.info(f"GTT trigger placed successfully! ID: {trigger_id}")
+                return {"trigger_id": trigger_id, "status": "COMPLETE"}
+            else:
+                logger.error(f"GTT trigger failed: {data.get('message')}")
+                return {"status": "FAILED", "reason": data.get("message")}
+        except Exception as e:
+            logger.error(f"Exception placing GTT: {e}")
+            return {"status": "FAILED", "reason": str(e)}

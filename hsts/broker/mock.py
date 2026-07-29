@@ -81,3 +81,7 @@ class MockBroker(BaseBroker):
     def cancel_order(self, order_id):
         logger.info(f"Mock order {order_id} cancelled.")
         return True
+
+    def place_gtt(self, symbol, qty, trigger_type, trigger_values, limit_prices, last_price):
+        logger.info(f"MOCK GTT PLACED: {symbol} OCO triggers at {trigger_values} with limit prices {limit_prices}")
+        return {"trigger_id": 999999, "status": "COMPLETE"}

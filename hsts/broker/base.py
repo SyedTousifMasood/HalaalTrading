@@ -29,6 +29,11 @@ class BaseBroker(ABC):
         pass
 
     @abstractmethod
+    def place_gtt(self, symbol, qty, trigger_type, trigger_values, limit_prices, last_price):
+        """Place a GTT order trigger (single or OCO/two-leg)."""
+        pass
+
+    @abstractmethod
     def cancel_order(self, order_id):
         """Cancel an existing open order."""
         pass
