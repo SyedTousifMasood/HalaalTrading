@@ -24,7 +24,7 @@ class BaseBroker(ABC):
         pass
 
     @abstractmethod
-    def place_order(self, symbol, qty, transaction_type="BUY", order_type="LIMIT", price=0.0, trigger_price=0.0):
+    def place_order(self, symbol, qty, transaction_type="BUY", order_type="LIMIT", price=0.0, trigger_price=0.0, variety="regular"):
         """Place a new trade order."""
         pass
 

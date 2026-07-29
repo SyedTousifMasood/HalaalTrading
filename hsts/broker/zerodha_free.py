@@ -140,11 +140,11 @@ class ZerodhaFreeBroker(BaseBroker):
             logger.error(f"Error fetching orders: {e}")
             return []
 
-    def place_order(self, symbol, qty, transaction_type="BUY", order_type="LIMIT", price=0.0, trigger_price=0.0):
+    def place_order(self, symbol, qty, transaction_type="BUY", order_type="LIMIT", price=0.0, trigger_price=0.0, variety="regular"):
         """
         Place an order via Zerodha OMS endpoints.
         """
-        url = f"{self.base_url}/oms/orders/regular"
+        url = f"{self.base_url}/oms/orders/{variety}"
         payload = {
             "tradingsymbol": symbol,
             "exchange": "NSE",

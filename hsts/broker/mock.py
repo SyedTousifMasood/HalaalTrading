@@ -31,7 +31,7 @@ class MockBroker(BaseBroker):
     def get_positions(self):
         return self.positions
 
-    def place_order(self, symbol, qty, transaction_type="BUY", order_type="LIMIT", price=0.0, trigger_price=0.0):
+    def place_order(self, symbol, qty, transaction_type="BUY", order_type="LIMIT", price=0.0, trigger_price=0.0, variety="regular"):
         order_id = str(uuid.uuid4())[:8]
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
