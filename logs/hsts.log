@@ -4671,3 +4671,18 @@
 2026-07-28 09:05:17,806 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
 2026-07-28 09:05:43,439 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
 2026-07-28 09:05:45,863 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-29 19:11:47,405 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-29 19:11:47,668 [INFO] hsts.regime: Evaluating market regime using index ^NSEI and universe data/universe.csv...
+2026-07-29 19:12:08,655 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-29 19:12:08,921 [INFO] hsts.regime: Evaluating market regime using index ^NSEI and universe data/universe.csv...
+2026-07-29 19:12:26,671 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+2026-07-29 19:12:28,095 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OBEROIREAL.NS"}}}
+2026-07-29 19:12:28,097 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-29 19:12:29,171 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-29 19:12:29,178 [ERROR] yfinance: 
+2 Failed downloads:
+2026-07-29 19:12:29,181 [ERROR] yfinance: ['LTIM.NS', 'OBEROIREAL.NS']: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-29 19:12:29,886 [INFO] hsts.regime: Market regime identified as STATE 2: Bear Relief Rally (Close: 24250.20, RSI: 58.1, Breadth: 77.1%)
+2026-07-29 19:12:29,973 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-07-29 19:13:30,932 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-29 19:13:36,217 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
