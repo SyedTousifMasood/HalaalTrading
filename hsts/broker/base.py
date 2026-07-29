@@ -37,3 +37,13 @@ class BaseBroker(ABC):
     def cancel_order(self, order_id):
         """Cancel an existing open order."""
         pass
+
+    @abstractmethod
+    def get_gtts(self):
+        """Retrieve all active GTT triggers."""
+        pass
+
+    @abstractmethod
+    def delete_gtt(self, gtt_id):
+        """Delete an active GTT trigger by ID."""
+        pass

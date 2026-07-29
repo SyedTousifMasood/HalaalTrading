@@ -85,3 +85,10 @@ class MockBroker(BaseBroker):
     def place_gtt(self, symbol, qty, trigger_type, trigger_values, limit_prices, last_price):
         logger.info(f"MOCK GTT PLACED: {symbol} OCO triggers at {trigger_values} with limit prices {limit_prices}")
         return {"trigger_id": 999999, "status": "COMPLETE"}
+
+    def get_gtts(self):
+        return []
+
+    def delete_gtt(self, gtt_id):
+        logger.info(f"MOCK GTT trigger {gtt_id} deleted.")
+        return True

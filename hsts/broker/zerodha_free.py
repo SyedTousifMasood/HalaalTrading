@@ -231,3 +231,34 @@ class ZerodhaFreeBroker(BaseBroker):
         except Exception as e:
             logger.error(f"Exception placing GTT: {e}")
             return {"status": "FAILED", "reason": str(e)}
+
+    def get_gtts(self):
+        """Retrieve all active GTT triggers."""
+        url = f"{self.base_url}/oms/gtt/triggers"
+        try:
+            res = self.session.get(url)
+            data = res.json()
+            if data.get("status") == "success":
+                return data.get("data", [])
+            else:
+                logger.error(f"Failed to fetch GTT triggers: {data.get('message')}")
+                return []
+        except Exception as e:
+            logger.error(f"Exception while fetching GTT triggers: {e}")
+            return []
+
+    def delete_gtt(self, gtt_id):
+        """Delete an active GTT trigger by ID."""
+        url = f"{self.base_url}/oms/gtt/triggers/{gtt_id}"
+        try:
+            res = self.session.delete(url)
+            data = res.json()
+            if data.get("status") == "success":
+                logger.info(f"GTT trigger {gtt_id} deleted successfully.")
+                return True
+            else:
+                logger.error(f"Failed to delete GTT trigger {gtt_id}: {data.get('message')}")
+                return False
+        except Exception as e:
+            logger.error(f"Exception while deleting GTT trigger: {e}")
+            return False
