@@ -4686,3 +4686,16 @@
 2026-07-29 19:12:29,973 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
 2026-07-29 19:13:30,932 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
 2026-07-29 19:13:36,217 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-30 22:34:45,183 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-07-30 22:34:45,299 [INFO] hsts.regime: Evaluating market regime using index ^NSEI and universe data/universe.csv...
+2026-07-30 22:34:55,967 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+2026-07-30 22:34:57,379 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-30 22:34:57,453 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OBEROIREAL.NS"}}}
+2026-07-30 22:34:58,375 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-30 22:34:58,386 [ERROR] yfinance: 
+2 Failed downloads:
+2026-07-30 22:34:58,387 [ERROR] yfinance: ['LTIM.NS', 'OBEROIREAL.NS']: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-30 22:34:58,626 [INFO] hsts.regime: Market regime identified as STATE 2: Bear Relief Rally (Close: 24317.15, RSI: 53.5, Breadth: 77.1%)
+2026-07-30 22:34:58,660 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-07-30 22:35:32,589 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
+2026-07-30 22:35:35,382 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=6mo) (Yahoo error = "No data found, symbol may be delisted")
