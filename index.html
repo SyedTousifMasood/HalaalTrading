@@ -23,6 +23,10 @@
             --glow-blue: rgba(59, 130, 246, 0.15);
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -64,6 +68,25 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-emerald);
         }
 
         .logo {
@@ -495,6 +518,12 @@
                     <div class="logo-icon">H</div>
                     <span>HSTS</span>
                 </a>
+                <ul class="nav-links">
+                    <li><a href="#philosophy">Core Philosophy</a></li>
+                    <li><a href="#regime-model">Regimes & Risk</a></li>
+                    <li><a href="#comparison">Global Comparison</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
             </div>
         </div>
     </header>
