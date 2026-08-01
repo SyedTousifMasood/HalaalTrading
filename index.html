@@ -188,23 +188,42 @@
         }
 
         .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
         }
 
         .card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 16px;
-            padding: 2.5rem;
+            padding: 2rem 2.5rem;
             backdrop-filter: blur(8px);
             transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
             position: relative;
             overflow: hidden;
+        }
+
+        .card-body-wrapper {
+            display: flex;
+            gap: 3rem;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .card-left {
+            flex: 1.2 1 400px;
+        }
+
+        .card-right {
+            flex: 1 1 350px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.04);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
         }
 
         .card:hover {
@@ -595,50 +614,68 @@
             <div class="grid-2">
                 <!-- Pillar 1: Sharia Compliance -->
                 <div class="card" id="pillar-sharia">
-                    <div>
-                        <div class="card-icon">🕌</div>
-                        <h3>AAOIFI Sharia Compliance</h3>
-                        <p>We actively filter out companies involved in unethical industries or those burdened by heavy interest-based debt. This ensures our capital grows on pure, real-world productivity rather than financial speculation.</p>
+                    <div class="card-body-wrapper">
+                        <!-- Left Side: Conceptual / Explanatory -->
+                        <div class="card-left">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <div class="card-icon" style="margin-bottom: 0;">🕌</div>
+                                <h3 style="margin-bottom: 0;">AAOIFI Sharia Compliance</h3>
+                            </div>
+                            <p style="margin-bottom: 1rem;">We actively filter out companies involved in unethical industries or those burdened by heavy interest-based debt. This ensures our capital grows on pure, real-world productivity rather than financial speculation.</p>
+                            
+                            <p style="font-size: 0.9rem; color: var(--accent-emerald); font-weight: 600; margin-bottom: 0.5rem;">Quality Over Quantity — Filter for Strong Businesses:</p>
+                            <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0;">
+                                Due to strict ethical filters, we focus on approximately <strong>1/3rd of the total stocks</strong> listed in the market. Rather than a restriction, this acts as a powerful quality filter—automatically concentrating our capital in asset-rich, fundamentally sound companies with low debt profiles. We completely avoid highly volatile Futures & Options (F&O) and rumors-based speculative trading, ensuring our trades are backed by actual, productive business operations.
+                            </p>
+                        </div>
                         
-                        <p style="font-size: 0.9rem; color: var(--accent-emerald); font-weight: 600; margin-bottom: 1rem;">Quality Over Quantity — Filter for Strong Businesses:</p>
-                        <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
-                            Due to strict ethical filters, we focus on approximately <strong>1/3rd of the total stocks</strong> listed in the market. Rather than a restriction, this acts as a powerful quality filter—automatically concentrating our capital in asset-rich, fundamentally sound companies with low debt profiles. We completely avoid highly volatile Futures & Options (F&O) and rumors-based speculative trading, ensuring our trades are backed by actual, productive business operations.
-                        </p>
+                        <!-- Right Side: Actionable Checklist -->
+                        <div class="card-right">
+                            <ul class="card-list">
+                                <li><strong>Complete Exclusions of Unethical Sectors:</strong>
+                                    <ul class="sub-bullet-list">
+                                        <li>Conventional Banking & NBFCs (e.g., HDFC Bank, SBI, Bajaj Finance)</li>
+                                        <li>Liquor, Pubs, Breweries, and Distilleries (e.g., United Breweries)</li>
+                                        <li>Gambling, Casinos, Hotels with gaming, and Tobacco (e.g., ITC)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Rigorous Financial Ratios:</strong>
+                                    <ul class="sub-bullet-list">
+                                        <li>Interest-based income must be under 5% of total revenue</li>
+                                        <li>Interest-bearing debt must be under 33% of total assets</li>
+                                        <li>Cash and liquid deposits must be under 33% of total assets</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <ul class="card-list">
-                        <li><strong>Complete Exclusions of Unethical Sectors:</strong>
-                            <ul class="sub-bullet-list">
-                                <li>Conventional Banking & NBFCs (e.g., HDFC Bank, SBI, Bajaj Finance)</li>
-                                <li>Liquor, Pubs, Breweries, and Distilleries (e.g., United Breweries)</li>
-                                <li>Gambling, Casinos, Hotels with gaming, and Tobacco (e.g., ITC)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Rigorous Financial Ratios:</strong>
-                            <ul class="sub-bullet-list">
-                                <li>Interest-based income must be under 5% of total revenue</li>
-                                <li>Interest-bearing debt must be under 33% of total assets</li>
-                                <li>Cash and liquid deposits must be under 33% of total assets</li>
-                            </ul>
-                        </li>
-                    </ul>
                 </div>
                 
                 <!-- Pillar 2: Simplified Momentum -->
                 <div class="card" id="pillar-momentum">
-                    <div>
-                        <div class="card-icon">📈</div>
-                        <h3>Smart Trend-Following</h3>
-                        <p>Instead of guessing when a stock will rise or fall, our system uses simple mathematical checks to detect when a stock is entering a strong, steady upward trend. We only buy stocks that are already showing clear signs of strength and demand.</p>
+                    <div class="card-body-wrapper">
+                        <!-- Left Side: Conceptual / Explanatory -->
+                        <div class="card-left">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <div class="card-icon" style="margin-bottom: 0;">📈</div>
+                                <h3 style="margin-bottom: 0;">Smart Trend-Following</h3>
+                            </div>
+                            <p style="margin-bottom: 1rem;">Instead of guessing when a stock will rise or fall, our system uses simple mathematical checks to detect when a stock is entering a strong, steady upward trend. We only buy stocks that are already showing clear signs of strength and demand.</p>
+                            <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0;">
+                                By removing emotional decisions, the system only enters trades that have statistical probability in their favor. If the market shifts or the momentum fades, the capital protection rules trigger automatically to keep our cash safe.
+                            </p>
+                        </div>
                         
-                        <p style="font-size: 0.9rem; color: var(--accent-blue); font-weight: 600; margin-bottom: 1rem;">How the scanning logic works in plain language:</p>
+                        <!-- Right Side: Actionable Checklist -->
+                        <div class="card-right">
+                            <p style="font-size: 0.9rem; color: var(--accent-blue); font-weight: 600; margin-bottom: 1rem;">How the scanning logic works in plain language:</p>
+                            <ul class="card-list">
+                                <li><strong>Trend Confirmation:</strong> We only look at stocks whose short-term average price is trading comfortably above their long-term average price, confirming the buyers are in control.</li>
+                                <li><strong>Strength Scoring:</strong> A specialized scoring model measures how fast the price is rising compared to normal, ranking stocks on a scale of 0 to 100. We only buy top-ranked setups (Score > 80).</li>
+                                <li><strong>Automatic Planning:</strong> The system automatically calculates a safe entry point, a protection line (Stop-Loss) to exit if the trade goes wrong, and a profit goal (Target) where we happily cash out.</li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <ul class="card-list">
-                        <li><strong>Trend Confirmation:</strong> We only look at stocks whose short-term average price is trading comfortably above their long-term average price, confirming the buyers are in control.</li>
-                        <li><strong>Strength Scoring:</strong> A specialized scoring model measures how fast the price is rising compared to normal, ranking stocks on a scale of 0 to 100. We only buy top-ranked setups (Score > 80).</li>
-                        <li><strong>Automatic Planning:</strong> The system automatically calculates a safe entry point, a protection line (Stop-Loss) to exit if the trade goes wrong, and a profit goal (Target) where we happily cash out.</li>
-                    </ul>
                 </div>
             </div>
         </div>
