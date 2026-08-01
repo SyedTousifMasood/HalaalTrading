@@ -491,6 +491,87 @@
             font-size: 1.1rem;
             color: var(--text-secondary);
             line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        /* --- Contact Form styles --- */
+        .contact-form-container {
+            max-width: 600px;
+            margin: 3rem auto 0;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            backdrop-filter: blur(12px);
+            text-align: left;
+        }
+
+        .contact-form-title {
+            font-size: 1.5rem;
+            font-family: 'Outfit', sans-serif;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 0.85rem 1rem;
+            color: #fff;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-emerald);
+            box-shadow: 0 0 12px var(--glow-emerald);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: linear-gradient(135deg, var(--accent-emerald), var(--accent-blue));
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+            margin-top: 0.5rem;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
         }
 
         /* --- Footer --- */
@@ -578,6 +659,23 @@
             color: var(--accent-emerald);
         }
 
+        .comp-icon {
+            font-size: 1.25rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .comp-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-emerald);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            text-transform: uppercase;
+        }
+
         /* --- Chart Container --- */
         .chart-container {
             margin: 3rem auto 1rem;
@@ -596,32 +694,6 @@
             color: #fff;
         }
 
-        /* --- CTA button --- */
-        .cta-container {
-            margin-top: 2.5rem;
-        }
-        
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            background: linear-gradient(135deg, var(--accent-emerald), var(--accent-blue));
-            color: #fff;
-            padding: 1rem 2.5rem;
-            border-radius: 9999px;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(16, 185, 129, 0.4);
-        }
-
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .hero-title {
@@ -632,6 +704,10 @@
             }
             .risk-protection {
                 grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
             }
         }
     </style>
@@ -755,20 +831,20 @@
                             <div class="metric-grid">
                                 <div class="metric-badge-card blue-metric">
                                     <div class="metric-value">01</div>
-                                    <div class="metric-label">Confirm Trend</div>
+                                    <div class="metric-label">Rising Trend</div>
                                 </div>
                                 <div class="metric-badge-card blue-metric">
                                     <div class="metric-value">&gt; 80</div>
-                                    <div class="metric-label">Trend Score</div>
+                                    <div class="metric-label">Strength Score</div>
                                 </div>
                                 <div class="metric-badge-card blue-metric">
                                     <div class="metric-value">03</div>
-                                    <div class="metric-label">Auto Limits</div>
+                                    <div class="metric-label">Safe Exit Plan</div>
                                 </div>
                             </div>
                             
                             <div style="font-size: 0.8rem; color: var(--text-secondary); background: rgba(59, 130, 246, 0.04); border: 1px solid rgba(59,130,246,0.1); border-radius: 8px; padding: 0.75rem; text-align: center;">
-                                🎯 Exact limits automatically calculated & pushed to exchange
+                                🎯 Limits automatically placed (e.g. SL & Target) to avoid emotional holding
                             </div>
                         </div>
                     </div>
@@ -910,29 +986,29 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Trend Following & Momentum</strong></td>
+                            <td><span class="comp-icon">📈</span> <strong>Trend Following & Momentum</strong></td>
                             <td>Practiced by AQR Capital & quantitative CTA funds to capture asset premium increases.</td>
-                            <td>Our mathematical momentum engine ranks and targets breakouts, entering only when a strong upward trend is verified.</td>
+                            <td>Our mathematical momentum engine ranks and targets breakouts, entering only when a strong upward trend is verified. <span class="comp-badge">Score &gt; 80</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Balance Sheet Quality Filtering</strong></td>
+                            <td><span class="comp-icon">🛡️</span> <strong>Balance Sheet Quality</strong></td>
                             <td>Warren Buffett's "Moat/Quality" filter to screen out high-risk or bankrupt-prone companies.</td>
-                            <td>Sharia screening restricts our universe to low-debt, high-liquidity companies, filtering out credit-bubble risks.</td>
+                            <td>Sharia screening restricts our universe to low-debt, high-liquidity companies, filtering out credit-bubble risks. <span class="comp-badge">Debt &lt; 33%</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Dynamic Volatility Sizing</strong></td>
+                            <td><span class="comp-icon">📊</span> <strong>Dynamic Sizing</strong></td>
                             <td>Bridgewater's "Risk Parity" model which shifts capital sizes based on systemic market risk.</td>
-                            <td>Our 4-regime model shifts allocations from 20% down to 0% cash, automatically preserving capital during market drawdowns.</td>
+                            <td>Our 4-regime model shifts allocations from 20% down to 0% cash, automatically preserving capital during market drawdowns. <span class="comp-badge">4 states</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Hard Stop Execution</strong></td>
+                            <td><span class="comp-icon">🛑</span> <strong>Hard Stop Execution</strong></td>
                             <td>The legendary "Turtle Traders" rules of strictly cutting losses on the broker level.</td>
-                            <td>Every filled trade automatically places server-side OCO GTT orders, neutralizing human hesitation or emotional holding.</td>
+                            <td>Every filled trade automatically places server-side OCO GTT orders, neutralizing human hesitation or emotional holding. <span class="comp-badge">Auto OCO</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Zero-Leverage Safety</strong></td>
+                            <td><span class="comp-icon">🔒</span> <strong>Zero-Leverage Safety</strong></td>
                             <td>Avoiding borrow-induced blowups that ruined massive funds (like LTCM).</td>
-                            <td>Cash delivery swing-trading only. No F&O leverage, ensuring zero margin call or liquidation threat.</td>
+                            <td>Cash delivery swing-trading only. No F&O leverage, ensuring zero margin call or liquidation threat. <span class="comp-badge">Cash Only</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -949,11 +1025,29 @@
                 <p class="conclusion-text">
                     By combining the moral boundary of Sharia-compliant screening with the objective execution of mathematical momentum, HSTS eliminates the two biggest killers of retail portfolios: emotional bias and excessive leverage. We do not chase hype, gamble on rumors, or trade during unsafe market regimes. We protect cash first, harvest steady swings second, and let compound interest do the rest.
                 </p>
-                <div class="cta-container">
-                    <a href="https://github.com/SyedTousifMasood/HalaalTrading" target="_blank" class="cta-button">
-                        🚀 Access HSTS Github Repository
-                    </a>
+                
+                <!-- Contact Us Form (CTA) -->
+                <div class="contact-form-container">
+                    <h3 class="contact-form-title">✉️ Get in Touch / Contact Us</h3>
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.'); this.reset();">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" class="form-control" placeholder="Enter name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Email</label>
+                                <input type="email" class="form-control" placeholder="name@domain.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label>Message / Inquiries</label>
+                            <textarea class="form-control" rows="4" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit Inquiry</button>
+                    </form>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -968,7 +1062,7 @@
                 <a href="#comparison">Global Comparison</a>
                 <a href="#conclusion">Conclusion</a>
             </div>
-            <p class="footer-disclaimer">Disclaimer: Algorithmic trading and equities investments are subject to market risks. The contents of this portal are for informational and operational log reference only and do not constitute financial advice. Past performance is not indicative of future results.</p>
+            <p class="footer-disclaimer">Disclaimer: Algorithmic trading and equities investments are subject to market risks. The contents of this portal are for operational log reference only and do not constitute financial advice. Past performance is not indicative of future results.</p>
             <p class="copyright">&copy; 2026 Syed Tousif Masood - HalaalTrading. All rights reserved.</p>
         </div>
     </footer>
