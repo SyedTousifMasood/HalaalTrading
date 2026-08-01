@@ -441,6 +441,48 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* --- Comparison Table --- */
+        .comparison {
+            padding: 5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comp-table-wrapper {
+            overflow-x: auto;
+            margin-top: 3rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            backdrop-filter: blur(8px);
+        }
+
+        .comp-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .comp-table th, .comp-table td {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comp-table th {
+            background: rgba(255, 255, 255, 0.03);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .comp-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comp-table td strong {
+            color: var(--accent-emerald);
+        }
     </style>
 </head>
 <body>
@@ -598,6 +640,55 @@
                         <p>We restrict each stock position to fit within the regime's allocation cap. High-priced stocks are automatically skipped or limited to 1 share to prevent a single trade from consuming too much capital.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2>At Par with the World's Best</h2>
+                <p>How HSTS stack rules compare directly with elite institutional hedge fund and risk models.</p>
+            </div>
+            
+            <div class="comp-table-wrapper">
+                <table class="comp-table">
+                    <thead>
+                        <tr>
+                            <th>Institutional Strategy</th>
+                            <th>Hedge Fund Paradigm</th>
+                            <th>How HSTS Performs at Par</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Trend Following & Momentum</strong></td>
+                            <td>Practiced by AQR Capital & quantitative CTA funds to capture asset premium increases.</td>
+                            <td>Our mathematical momentum engine ranks and targets breakouts, entering only when a strong upward trend is verified.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Balance Sheet Quality Filtering</strong></td>
+                            <td>Warren Buffett's "Moat/Quality" filter to screen out high-risk or bankrupt-prone companies.</td>
+                            <td>Sharia screening restricts our universe to low-debt, high-liquidity companies, filtering out credit-bubble risks.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dynamic Volatility Sizing</strong></td>
+                            <td>Bridgewater's "Risk Parity" model which shifts capital sizes based on systemic market risk.</td>
+                            <td>Our 4-regime model shifts allocations from 20% down to 0% cash, automatically preserving capital during market drawdowns.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hard Stop Execution</strong></td>
+                            <td>The legendary "Turtle Traders" rules of strictly cutting losses on the broker level.</td>
+                            <td>Every filled trade automatically places server-side OCO GTT orders, neutralizing human hesitation or emotional holding.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Zero-Leverage Safety</strong></td>
+                            <td>Avoiding borrow-induced blowups that ruined massive funds (like LTCM).</td>
+                            <td>Cash delivery swing-trading only. No F&O leverage, ensuring zero margin call or liquidation threat.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
