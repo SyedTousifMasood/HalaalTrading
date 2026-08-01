@@ -506,6 +506,50 @@
         .comp-table td strong {
             color: var(--accent-emerald);
         }
+
+        /* --- Chart Container --- */
+        .chart-container {
+            margin: 3rem auto 1rem;
+            max-width: 800px;
+            background: rgba(20, 24, 33, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .chart-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        /* --- CTA button --- */
+        .cta-container {
+            margin-top: 2.5rem;
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, var(--accent-emerald), var(--accent-blue));
+            color: #fff;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(16, 185, 129, 0.4);
+        }
     </style>
 </head>
 <body>
@@ -652,6 +696,47 @@
                 </div>
             </div>
 
+            <!-- Visual Chart representing Dynamic Exposure Curve -->
+            <div class="chart-container">
+                <div class="chart-title">📈 Dynamic Risk Allocation Curve by Market Regime</div>
+                <svg viewBox="0 0 600 220" width="100%" height="auto" style="overflow: visible;">
+                    <!-- Grid Lines -->
+                    <line x1="50" y1="20" x2="550" y2="20" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
+                    <line x1="50" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
+                    <line x1="50" y1="180" x2="550" y2="180" stroke="rgba(255,255,255,0.1)" />
+                    
+                    <!-- Axis Labels Y -->
+                    <text x="40" y="25" fill="#9ca3af" font-size="10" text-anchor="end">20% Exposure</text>
+                    <text x="40" y="105" fill="#9ca3af" font-size="10" text-anchor="end">10% Exposure</text>
+                    <text x="40" y="185" fill="#9ca3af" font-size="10" text-anchor="end">0% Cash</text>
+                    
+                    <!-- Axis Labels X -->
+                    <text x="100" y="200" fill="#f43f5e" font-size="11" text-anchor="middle">State 4 (Risk-Off)</text>
+                    <text x="233" y="200" fill="#f59e0b" font-size="11" text-anchor="middle">State 3 (Capitulation)</text>
+                    <text x="366" y="200" fill="#3b82f6" font-size="11" text-anchor="middle">State 2 (Relief Rally)</text>
+                    <text x="500" y="200" fill="#10b981" font-size="11" text-anchor="middle">State 1 (Bullish)</text>
+                    
+                    <!-- Line Gradient Definition -->
+                    <defs>
+                        <linearGradient id="chart-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#f43f5e" />
+                            <stop offset="30%" stop-color="#f59e0b" />
+                            <stop offset="60%" stop-color="#3b82f6" />
+                            <stop offset="100%" stop-color="#10b981" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Glowing Curve Line -->
+                    <path d="M 100 180 Q 170 180 233 100 T 366 100 Q 433 20 500 20" fill="none" stroke="url(#chart-grad)" stroke-width="4" stroke-linecap="round" />
+                    
+                    <!-- Value Nodes (Dots) -->
+                    <circle cx="100" cy="180" r="6" fill="#f43f5e" />
+                    <circle cx="233" cy="100" r="6" fill="#f59e0b" />
+                    <circle cx="366" cy="100" r="6" fill="#3b82f6" />
+                    <circle cx="500" cy="20" r="6" fill="#10b981" />
+                </svg>
+            </div>
+
             <!-- Risk Protections -->
             <div class="risk-protection">
                 <div class="risk-item">
@@ -731,6 +816,11 @@
                 <p class="conclusion-text">
                     By combining the moral boundary of Sharia-compliant screening with the objective execution of mathematical momentum, HSTS eliminates the two biggest killers of retail portfolios: emotional bias and excessive leverage. We do not chase hype, gamble on rumors, or trade during unsafe market regimes. We protect cash first, harvest steady swings second, and let compound interest do the rest.
                 </p>
+                <div class="cta-container">
+                    <a href="https://github.com/SyedTousifMasood/HalaalTrading" target="_blank" class="cta-button">
+                        🚀 Access HSTS Github Repository
+                    </a>
+                </div>
             </div>
         </div>
     </section>
