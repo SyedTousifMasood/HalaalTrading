@@ -226,6 +226,71 @@
             justify-content: center;
         }
 
+        /* --- Metrics & Badges Grid --- */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-badge-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1rem 0.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .metric-badge-card:hover {
+            border-color: var(--accent-emerald);
+            box-shadow: 0 4px 12px var(--glow-emerald);
+            transform: translateY(-2px);
+        }
+
+        .metric-badge-card.blue-metric:hover {
+            border-color: var(--accent-blue);
+            box-shadow: 0 4px 12px var(--glow-blue);
+        }
+
+        .metric-value {
+            font-size: 1.35rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+            color: var(--accent-emerald);
+            margin-bottom: 0.25rem;
+        }
+
+        .blue-metric .metric-value {
+            color: var(--accent-blue);
+        }
+
+        .metric-label {
+            font-size: 0.725rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            line-height: 1.2;
+        }
+
+        .tag-list {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .tag {
+            background: rgba(244, 63, 94, 0.08);
+            color: var(--accent-rose);
+            border: 1px solid rgba(244, 63, 94, 0.15);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
         .card:hover {
             transform: translateY(-5px);
             border-color: rgba(16, 185, 129, 0.3);
@@ -471,19 +536,6 @@
             color: #4b5563;
         }
 
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.5rem;
-            }
-            .hero {
-                padding: 4rem 0 2.5rem;
-            }
-            .risk-protection {
-                grid-template-columns: 1fr;
-            }
-        }
-
         /* --- Comparison Table --- */
         .comparison {
             padding: 5rem 0;
@@ -569,6 +621,19 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 30px rgba(16, 185, 129, 0.4);
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .hero {
+                padding: 4rem 0 2.5rem;
+            }
+            .risk-protection {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -621,32 +686,44 @@
                                 <div class="card-icon" style="margin-bottom: 0;">🕌</div>
                                 <h3 style="margin-bottom: 0;">AAOIFI Sharia Compliance</h3>
                             </div>
-                            <p style="margin-bottom: 1rem;">We actively filter out companies involved in unethical industries or those burdened by heavy interest-based debt. This ensures our capital grows on pure, real-world productivity rather than financial speculation.</p>
-                            
-                            <p style="font-size: 0.9rem; color: var(--accent-emerald); font-weight: 600; margin-bottom: 0.5rem;">Quality Over Quantity — Filter for Strong Businesses:</p>
-                            <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0;">
-                                Due to strict ethical filters, we focus on approximately <strong>1/3rd of the total stocks</strong> listed in the market. Rather than a restriction, this acts as a powerful quality filter—automatically concentrating our capital in asset-rich, fundamentally sound companies with low debt profiles. We completely avoid highly volatile Futures & Options (F&O) and rumors-based speculative trading, ensuring our trades are backed by actual, productive business operations.
+                            <p style="margin-bottom: 1.25rem; font-size: 0.95rem;">
+                                We filter out companies involved in unethical industries or interest-heavy operations. 
+                                This focuses our capital on <strong>1/3rd of the market</strong>, acting as a powerful quality filter to concentrate funds on stable, asset-backed businesses.
+                            </p>
+                            <p style="font-size: 0.85rem; color: var(--accent-emerald); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">
+                                🛡️ Capital Preservation Advantage
+                            </p>
+                            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5;">
+                                By avoiding highly leveraged entities and conventional financial groups, we shield ourselves from credit bubble collapses and deep drawdowns. We do not run F&O or rumor-based speculative trades.
                             </p>
                         </div>
                         
-                        <!-- Right Side: Actionable Checklist -->
+                        <!-- Right Side: Visual Badges & Excluded Tags -->
                         <div class="card-right">
-                            <ul class="card-list">
-                                <li><strong>Complete Exclusions of Unethical Sectors:</strong>
-                                    <ul class="sub-bullet-list">
-                                        <li>Conventional Banking & NBFCs (e.g., HDFC Bank, SBI, Bajaj Finance)</li>
-                                        <li>Liquor, Pubs, Breweries, and Distilleries (e.g., United Breweries)</li>
-                                        <li>Gambling, Casinos, Hotels with gaming, and Tobacco (e.g., ITC)</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Rigorous Financial Ratios:</strong>
-                                    <ul class="sub-bullet-list">
-                                        <li>Interest-based income must be under 5% of total revenue</li>
-                                        <li>Interest-bearing debt must be under 33% of total assets</li>
-                                        <li>Cash and liquid deposits must be under 33% of total assets</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <p style="font-size: 0.85rem; font-weight: 700; color: #fff; text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 0.05em;">Financial Ratio Limits</p>
+                            
+                            <div class="metric-grid">
+                                <div class="metric-badge-card">
+                                    <div class="metric-value">&lt; 33%</div>
+                                    <div class="metric-label">Debt / Assets</div>
+                                </div>
+                                <div class="metric-badge-card">
+                                    <div class="metric-value">&lt; 5%</div>
+                                    <div class="metric-label">Interest Income</div>
+                                </div>
+                                <div class="metric-badge-card">
+                                    <div class="metric-value">&lt; 33%</div>
+                                    <div class="metric-label">Cash / Assets</div>
+                                </div>
+                            </div>
+                            
+                            <p style="font-size: 0.85rem; font-weight: 700; color: #fff; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">100% Excluded Sectors</p>
+                            <div class="tag-list">
+                                <span class="tag">Conventional Banks</span>
+                                <span class="tag">NBFCs & Finance</span>
+                                <span class="tag">Liquor & Breweries</span>
+                                <span class="tag">Tobacco & Casinos</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -660,20 +737,39 @@
                                 <div class="card-icon" style="margin-bottom: 0;">📈</div>
                                 <h3 style="margin-bottom: 0;">Smart Trend-Following</h3>
                             </div>
-                            <p style="margin-bottom: 1rem;">Instead of guessing when a stock will rise or fall, our system uses simple mathematical checks to detect when a stock is entering a strong, steady upward trend. We only buy stocks that are already showing clear signs of strength and demand.</p>
-                            <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0;">
-                                By removing emotional decisions, the system only enters trades that have statistical probability in their favor. If the market shifts or the momentum fades, the capital protection rules trigger automatically to keep our cash safe.
+                            <p style="margin-bottom: 1.25rem; font-size: 0.95rem;">
+                                Instead of guessing where prices will go, HSTS uses objective checks to detect when a stock enters a steady upward trend. We only buy stocks with proven buyer demand.
+                            </p>
+                            <p style="font-size: 0.85rem; color: var(--accent-blue); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">
+                                ⚙️ Mathematical Discipline
+                            </p>
+                            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5;">
+                                Employs systematic parameters to remove emotional bias (greed/fear). Every setup comes with precise entry trigger levels, targets, and server-side safety floors.
                             </p>
                         </div>
                         
-                        <!-- Right Side: Actionable Checklist -->
+                        <!-- Right Side: Visual Steps -->
                         <div class="card-right">
-                            <p style="font-size: 0.9rem; color: var(--accent-blue); font-weight: 600; margin-bottom: 1rem;">How the scanning logic works in plain language:</p>
-                            <ul class="card-list">
-                                <li><strong>Trend Confirmation:</strong> We only look at stocks whose short-term average price is trading comfortably above their long-term average price, confirming the buyers are in control.</li>
-                                <li><strong>Strength Scoring:</strong> A specialized scoring model measures how fast the price is rising compared to normal, ranking stocks on a scale of 0 to 100. We only buy top-ranked setups (Score > 80).</li>
-                                <li><strong>Automatic Planning:</strong> The system automatically calculates a safe entry point, a protection line (Stop-Loss) to exit if the trade goes wrong, and a profit goal (Target) where we happily cash out.</li>
-                            </ul>
+                            <p style="font-size: 0.85rem; font-weight: 700; color: #fff; text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 0.05em;">HSTS Scan Protocol</p>
+                            
+                            <div class="metric-grid">
+                                <div class="metric-badge-card blue-metric">
+                                    <div class="metric-value">01</div>
+                                    <div class="metric-label">Confirm Trend</div>
+                                </div>
+                                <div class="metric-badge-card blue-metric">
+                                    <div class="metric-value">&gt; 80</div>
+                                    <div class="metric-label">Trend Score</div>
+                                </div>
+                                <div class="metric-badge-card blue-metric">
+                                    <div class="metric-value">03</div>
+                                    <div class="metric-label">Auto Limits</div>
+                                </div>
+                            </div>
+                            
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); background: rgba(59, 130, 246, 0.04); border: 1px solid rgba(59,130,246,0.1); border-radius: 8px; padding: 0.75rem; text-align: center;">
+                                🎯 Exact limits automatically calculated & pushed to exchange
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -869,6 +965,7 @@
             <div class="footer-nav">
                 <a href="#philosophy">Core Philosophy</a>
                 <a href="#regime-model">Regimes & Risk</a>
+                <a href="#comparison">Global Comparison</a>
                 <a href="#conclusion">Conclusion</a>
             </div>
             <p class="footer-disclaimer">Disclaimer: Algorithmic trading and equities investments are subject to market risks. The contents of this portal are for informational and operational log reference only and do not constitute financial advice. Past performance is not indicative of future results.</p>
