@@ -179,6 +179,9 @@
             transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .card:hover {
@@ -209,11 +212,12 @@
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
+            margin-top: auto;
         }
 
         .card-list li {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 0.5rem;
             font-size: 0.9rem;
             color: var(--text-primary);
@@ -223,10 +227,23 @@
             content: "✓";
             color: var(--accent-emerald);
             font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
         }
 
-        /* --- Market Regimes --- */
-        .regimes {
+        .sub-bullet-list {
+            margin-left: 1.25rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            list-style: circle;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            margin-top: 0.25rem;
+        }
+
+        /* --- Combined Regimes & Risk Section --- */
+        .regimes-risk {
             padding: 5rem 0;
             background: rgba(15, 23, 42, 0.3);
             border-top: 1px solid var(--border-color);
@@ -237,6 +254,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 1.5rem;
+            margin-bottom: 4rem;
         }
 
         .regime-card {
@@ -286,29 +304,17 @@
             color: var(--text-secondary);
         }
 
-        /* --- Risk Management Section --- */
-        .risk {
-            padding: 5rem 0;
-        }
-
-        .risk-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .risk-content {
-            flex: 1 1 500px;
-        }
-
-        .risk-title {
-            font-size: 2.25rem;
-            margin-bottom: 1.5rem;
+        /* Risk Protection Blocks */
+        .risk-protection {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 3rem;
         }
 
         .risk-item {
-            margin-bottom: 2rem;
             display: flex;
             gap: 1.25rem;
         }
@@ -335,6 +341,49 @@
         .risk-item-body p {
             color: var(--text-secondary);
             font-size: 0.95rem;
+        }
+
+        /* --- Conclusion Section --- */
+        .conclusion {
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .conclusion::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--accent-emerald), transparent);
+        }
+
+        .conclusion-content {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .conclusion-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .conclusion-title {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #ffffff, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .conclusion-text {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
         }
 
         /* --- Footer --- */
@@ -388,6 +437,9 @@
             .hero {
                 padding: 4rem 0 2.5rem;
             }
+            .risk-protection {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -418,7 +470,7 @@
         </div>
     </section>
 
-    <!-- Core Pillars -->
+    <!-- Core Philosophy -->
     <section class="pillars" id="philosophy">
         <div class="container">
             <div class="section-header">
@@ -426,110 +478,139 @@
                 <p>The foundations that protect our capital and ensure ethical growth.</p>
             </div>
             <div class="grid-2">
-                <!-- Pillar 1 -->
+                <!-- Pillar 1: Sharia Compliance -->
                 <div class="card" id="pillar-sharia">
-                    <div class="card-icon">🕌</div>
-                    <h3>AAOIFI Sharia Compliance</h3>
-                    <p>Every asset in our universe is screened against rigorous financial and business guidelines to avoid interest-based systems and non-permissible sectors.</p>
+                    <div>
+                        <div class="card-icon">🕌</div>
+                        <h3>AAOIFI Sharia Compliance</h3>
+                        <p>We actively filter out companies involved in unethical industries or those burdened by heavy interest-based operations. This ensures our capital grows on pure, real-world productivity rather than financial speculation.</p>
+                        
+                        <p style="font-size: 0.9rem; color: var(--accent-emerald); font-weight: 600; margin-bottom: 1rem;">Why this preserves cash and beats wild speculation:</p>
+                        <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                            Unlike speculative gambling (where traders bet blindly on rumor-heavy micro-caps), Sharia screening restricts us to highly stable, liquid, asset-backed giants. By automatically excluding interest-based financial institutions and highly indebted firms, we protect ourselves from sudden credit crashes and major market drawdowns.
+                        </p>
+                    </div>
+                    
                     <ul class="card-list">
-                        <li>Excludes conventional financial services & debt-heavy firms</li>
-                        <li>Interest Income must be under 5% of revenue</li>
-                        <li>Total Debt / Total Assets must be under 33%</li>
-                        <li>Cash & Short-Term Investments under 33% of Assets</li>
+                        <li><strong>Complete Exclusions of Unethical Sectors:</strong>
+                            <ul class="sub-bullet-list">
+                                <li>Conventional Banking & NBFCs (e.g., HDFC Bank, SBI, Bajaj Finance)</li>
+                                <li>Liquor, Pubs, Breweries, and Distilleries (e.g., United Breweries)</li>
+                                <li>Gambling, Casinos, Hotels with gaming, and Tobacco (e.g., ITC)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Rigorous Financial Ratios:</strong>
+                            <ul class="sub-bullet-list">
+                                <li>Interest-based income must be under 5% of total revenue</li>
+                                <li>Interest-bearing debt must be under 33% of total assets</li>
+                                <li>Cash and liquid deposits must be under 33% of total assets</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                <!-- Pillar 2 -->
+                
+                <!-- Pillar 2: Simplified Momentum -->
                 <div class="card" id="pillar-momentum">
-                    <div class="card-icon">📈</div>
-                    <h3>Mathematical Momentum</h3>
-                    <p>Our proprietary technical scanner ranks stocks using a multi-factor composite score to execute high-probability breakouts and trend-following plays.</p>
+                    <div>
+                        <div class="card-icon">📈</div>
+                        <h3>Smart Trend-Following</h3>
+                        <p>Instead of guessing when a stock will rise or fall, our system uses simple mathematical checks to detect when a stock is entering a strong, steady upward trend. We only buy stocks that are already showing clear signs of strength and demand.</p>
+                        
+                        <p style="font-size: 0.9rem; color: var(--accent-blue); font-weight: 600; margin-bottom: 1rem;">How the scanning logic works in plain language:</p>
+                    </div>
+                    
                     <ul class="card-list">
-                        <li>Trend identification using the 20 & 50 EMA</li>
-                        <li>RSI (Relative Strength Index) momentum screening</li>
-                        <li>Volume breakouts & volatility contraction patterns</li>
-                        <li>Auto-calculated Target Entry, Stop-Loss, and Targets</li>
+                        <li><strong>Trend Confirmation:</strong> We only look at stocks whose short-term average price is trading comfortably above their long-term average price, confirming the buyers are in control.</li>
+                        <li><strong>Strength Scoring:</strong> A specialized scoring model measures how fast the price is rising compared to normal, ranking stocks on a scale of 0 to 100. We only buy top-ranked setups (Score > 80).</li>
+                        <li><strong>Automatic Planning:</strong> The system automatically calculates a safe entry point, a protection line (Stop-Loss) to exit if the trade goes wrong, and a profit goal (Target) where we happily cash out.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Market Regimes -->
-    <section class="regimes" id="regime-model">
+    <!-- Combined Regimes & Risk Management -->
+    <section class="regimes-risk" id="regime-model">
         <div class="container">
             <div class="section-header">
-                <h2>Dynamic Market Regimes</h2>
-                <p>HSTS dynamically adjusts capital exposure based on Nifty 50 trend and market breadth.</p>
+                <h2>Regimes & Capital Protection</h2>
+                <p>How HSTS dynamically adjusts exposure sizes to manage market fluctuations and protect capital.</p>
             </div>
+            
+            <!-- 4 States -->
             <div class="grid-4">
                 <!-- State 1 -->
                 <div class="regime-card state-1" id="state-1">
                     <span class="regime-badge">State 1</span>
                     <h3>Macro Bullish</h3>
                     <div class="regime-allocation">
-                        <span>Max Position Risk:</span>
-                        <span>20% Capital</span>
+                        <span>Max Allocation:</span>
+                        <span>20% per trade</span>
                     </div>
-                    <p class="regime-desc">Nifty is trading above the 20 EMA and breadth is strong. We deploy maximum capital across momentum breakouts.</p>
+                    <p class="regime-desc">The general market index is in a strong upward trend. We deploy maximum permitted capital across our top momentum selections.</p>
                 </div>
                 <!-- State 2 -->
                 <div class="regime-card state-2" id="state-2">
                     <span class="regime-badge">State 2</span>
                     <h3>Bear Relief Rally</h3>
                     <div class="regime-allocation">
-                        <span>Max Position Risk:</span>
-                        <span>10% Capital</span>
+                        <span>Max Allocation:</span>
+                        <span>10% per trade</span>
                     </div>
-                    <p class="regime-desc">Index displays a short-term bounce but remains structurally weak. We trade with reduced sizes.</p>
+                    <p class="regime-desc">The market shows a short-term bounce but remains weak overall. We trade with half our normal size to keep risk low.</p>
                 </div>
                 <!-- State 3 -->
                 <div class="regime-card state-3" id="state-3">
                     <span class="regime-badge">State 3</span>
                     <h3>Capitulation Bottom</h3>
                     <div class="regime-allocation">
-                        <span>Max Position Risk:</span>
-                        <span>10% Capital</span>
+                        <span>Max Allocation:</span>
+                        <span>10% per trade</span>
                     </div>
-                    <p class="regime-desc">Extreme market oversold levels with breadth under 15%. We look for selective, low-risk bottom reversals.</p>
+                    <p class="regime-desc">Markets are extremely panic-sold and bottoming out. We look for high-value reversal trades with tight risk limits.</p>
                 </div>
                 <!-- State 4 -->
                 <div class="regime-card state-4" id="state-4">
                     <span class="regime-badge">State 4</span>
-                    <h3>Risk-Off / Cash</h3>
+                    <h3>Risk-Off (Cash)</h3>
                     <div class="regime-allocation">
-                        <span>Max Position Risk:</span>
+                        <span>Max Allocation:</span>
                         <span>0% (CASH)</span>
                     </div>
-                    <p class="regime-desc">Index trades below the 20 and 50 EMA with deteriorating breadth. The system sits entirely in cash.</p>
+                    <p class="regime-desc">The general market is falling and unsafe. The system locks all trading and keeps 100% of our money safe in cash.</p>
+                </div>
+            </div>
+
+            <!-- Risk Protections -->
+            <div class="risk-protection">
+                <div class="risk-item">
+                    <div class="risk-icon-wrapper">🛡️</div>
+                    <div class="risk-item-body">
+                        <h4>Server-Side Protection Orders</h4>
+                        <p>Whenever a trade is filled, the system immediately registers a linked protection order (GTT OCO) directly on the exchange servers. If the stock hits our profit goal, it exits; if it hits our safety floor, it drops the trade. This eliminates human hesitation and greed.</p>
+                    </div>
+                </div>
+
+                <div class="risk-item">
+                    <div class="risk-icon-wrapper">📊</div>
+                    <div class="risk-item-body">
+                        <h4>Dynamic Cap Enforcement</h4>
+                        <p>We restrict each stock position to fit within the regime's allocation cap. High-priced stocks are automatically skipped or limited to 1 share to prevent a single trade from consuming too much capital.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Risk Management -->
-    <section class="risk" id="risk-mgmt">
+    <!-- Conclusion Section -->
+    <section class="conclusion" id="conclusion">
         <div class="container">
-            <div class="risk-wrapper">
-                <div class="risk-content">
-                    <h2 class="risk-title">Rigorous Capital Protection</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 2.5rem;">HSTS treats risk management as the absolute highest priority. No trade is taken without predefined mathematical exit parameters.</p>
-                    
-                    <div class="risk-item">
-                        <div class="risk-icon-wrapper">🛡️</div>
-                        <div class="risk-item-body">
-                            <h4>GTT OCO Order Execution</h4>
-                            <p>Every filled position is locked on the broker server with a One-Cancels-Other (OCO) order containing a target exit and a hard stop-loss trigger. This removes manual execution delays.</p>
-                        </div>
-                    </div>
-
-                    <div class="risk-item">
-                        <div class="risk-icon-wrapper">📊</div>
-                        <div class="risk-item-body">
-                            <h4>Dynamic Position Sizing</h4>
-                            <p>Position sizes are dynamically scaled based on the current regime and the price of the stock. High-priced stocks are restricted if they violate allocation caps.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="conclusion-content">
+                <div class="conclusion-icon">💎</div>
+                <h2 class="conclusion-title">Ethical Wealth, Mathematical Discipline</h2>
+                <p class="conclusion-text">
+                    By combining the moral boundary of Sharia-compliant screening with the objective execution of mathematical momentum, HSTS eliminates the two biggest killers of retail portfolios: emotional bias and excessive leverage. We do not chase hype, gamble on rumors, or trade during unsafe market regimes. We protect cash first, harvest steady swings second, and let compound interest do the rest.
+                </p>
             </div>
         </div>
     </section>
@@ -540,8 +621,8 @@
             <div class="footer-logo">HSTS System</div>
             <div class="footer-nav">
                 <a href="#philosophy">Core Philosophy</a>
-                <a href="#regime-model">Market Regimes</a>
-                <a href="#risk-mgmt">Risk Management</a>
+                <a href="#regime-model">Regimes & Risk</a>
+                <a href="#conclusion">Conclusion</a>
             </div>
             <p class="footer-disclaimer">Disclaimer: Algorithmic trading and equities investments are subject to market risks. The contents of this portal are for informational and operational log reference only and do not constitute financial advice. Past performance is not indicative of future results.</p>
             <p class="copyright">&copy; 2026 Syed Tousif Masood - HalaalTrading. All rights reserved.</p>
