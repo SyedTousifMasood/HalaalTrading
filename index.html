@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HSTS (Halal Swing Trading System) is a rules-based, Sharia-compliant momentum swing trading model designed for the Indian stock market.">
+    <title>HSTS - Halal Swing Trading System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --card-bg: rgba(20, 24, 33, 0.6);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-emerald: #10b981;
+            --accent-blue: #3b82f6;
+            --accent-gold: #f59e0b;
+            --accent-rose: #f43f5e;
+            --glow-emerald: rgba(16, 185, 129, 0.15);
+            --glow-blue: rgba(59, 130, 246, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* --- Header / Navigation --- */
+        header {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(11, 12, 16, 0.8);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent-emerald);
+            background: linear-gradient(135deg, var(--accent-emerald), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-icon {
+            width: 2rem;
+            height: 2rem;
+            background: linear-gradient(135deg, var(--accent-emerald), var(--accent-blue));
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: #fff;
+            font-size: 1.1rem;
+            -webkit-text-fill-color: initial;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 6rem 0 4rem;
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(11, 12, 16, 0.4), var(--bg-color)), url('assets/hsts_hero_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: var(--accent-emerald);
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #ffffff, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+        }
+
+        /* --- Core Pillars --- */
+        .pillars {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            backdrop-filter: blur(8px);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(16, 185, 129, 0.3);
+            box-shadow: 0 10px 30px var(--glow-emerald);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .card-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        .card-list li::before {
+            content: "✓";
+            color: var(--accent-emerald);
+            font-weight: bold;
+        }
+
+        /* --- Market Regimes --- */
+        .regimes {
+            padding: 5rem 0;
+            background: rgba(15, 23, 42, 0.3);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .regime-card {
+            background: rgba(20, 24, 33, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .regime-card.state-1:hover { border-color: var(--accent-emerald); box-shadow: 0 8px 24px rgba(16, 185, 129, 0.1); }
+        .regime-card.state-2:hover { border-color: var(--accent-blue); box-shadow: 0 8px 24px rgba(59, 130, 246, 0.1); }
+        .regime-card.state-3:hover { border-color: var(--accent-gold); box-shadow: 0 8px 24px rgba(245, 158, 11, 0.1); }
+        .regime-card.state-4:hover { border-color: var(--accent-rose); box-shadow: 0 8px 24px rgba(244, 63, 94, 0.1); }
+
+        .regime-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .state-1 .regime-badge { background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); }
+        .state-2 .regime-badge { background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); }
+        .state-3 .regime-badge { background: rgba(245, 158, 11, 0.1); color: var(--accent-gold); }
+        .state-4 .regime-badge { background: rgba(244, 63, 94, 0.1); color: var(--accent-rose); }
+
+        .regime-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .regime-allocation {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .regime-desc {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        /* --- Risk Management Section --- */
+        .risk {
+            padding: 5rem 0;
+        }
+
+        .risk-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .risk-content {
+            flex: 1 1 500px;
+        }
+
+        .risk-title {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .risk-item {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1.25rem;
+        }
+
+        .risk-icon-wrapper {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 8px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .risk-item-body h4 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .risk-item-body p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* --- Footer --- */
+        footer {
+            padding: 4rem 0 2rem;
+            border-top: 1px solid var(--border-color);
+            background: rgba(11, 12, 16, 0.9);
+            text-align: center;
+        }
+
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-nav a:hover {
+            color: var(--accent-emerald);
+        }
+
+        .footer-disclaimer {
+            font-size: 0.75rem;
+            color: #4b5563;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: #4b5563;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .hero {
+                padding: 4rem 0 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">
+                    <div class="logo-icon">H</div>
+                    <span>HSTS</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>⚡</span> Automated Sharia momentum trading
+                </div>
+                <h1 class="hero-title" id="hsts-main-title">Halal Swing Trading System</h1>
+                <p class="hero-description">A systematic, mathematical approach to swing trading Indian equities, combining strict AAOIFI Sharia filters with a rules-based momentum regime model.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Pillars -->
+    <section class="pillars" id="philosophy">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Two Core Pillars</h2>
+                <p>The foundations that protect our capital and ensure ethical growth.</p>
+            </div>
+            <div class="grid-2">
+                <!-- Pillar 1 -->
+                <div class="card" id="pillar-sharia">
+                    <div class="card-icon">🕌</div>
+                    <h3>AAOIFI Sharia Compliance</h3>
+                    <p>Every asset in our universe is screened against rigorous financial and business guidelines to avoid interest-based systems and non-permissible sectors.</p>
+                    <ul class="card-list">
+                        <li>Excludes conventional financial services & debt-heavy firms</li>
+                        <li>Interest Income must be under 5% of revenue</li>
+                        <li>Total Debt / Total Assets must be under 33%</li>
+                        <li>Cash & Short-Term Investments under 33% of Assets</li>
+                    </ul>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="card" id="pillar-momentum">
+                    <div class="card-icon">📈</div>
+                    <h3>Mathematical Momentum</h3>
+                    <p>Our proprietary technical scanner ranks stocks using a multi-factor composite score to execute high-probability breakouts and trend-following plays.</p>
+                    <ul class="card-list">
+                        <li>Trend identification using the 20 & 50 EMA</li>
+                        <li>RSI (Relative Strength Index) momentum screening</li>
+                        <li>Volume breakouts & volatility contraction patterns</li>
+                        <li>Auto-calculated Target Entry, Stop-Loss, and Targets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Regimes -->
+    <section class="regimes" id="regime-model">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dynamic Market Regimes</h2>
+                <p>HSTS dynamically adjusts capital exposure based on Nifty 50 trend and market breadth.</p>
+            </div>
+            <div class="grid-4">
+                <!-- State 1 -->
+                <div class="regime-card state-1" id="state-1">
+                    <span class="regime-badge">State 1</span>
+                    <h3>Macro Bullish</h3>
+                    <div class="regime-allocation">
+                        <span>Max Position Risk:</span>
+                        <span>20% Capital</span>
+                    </div>
+                    <p class="regime-desc">Nifty is trading above the 20 EMA and breadth is strong. We deploy maximum capital across momentum breakouts.</p>
+                </div>
+                <!-- State 2 -->
+                <div class="regime-card state-2" id="state-2">
+                    <span class="regime-badge">State 2</span>
+                    <h3>Bear Relief Rally</h3>
+                    <div class="regime-allocation">
+                        <span>Max Position Risk:</span>
+                        <span>10% Capital</span>
+                    </div>
+                    <p class="regime-desc">Index displays a short-term bounce but remains structurally weak. We trade with reduced sizes.</p>
+                </div>
+                <!-- State 3 -->
+                <div class="regime-card state-3" id="state-3">
+                    <span class="regime-badge">State 3</span>
+                    <h3>Capitulation Bottom</h3>
+                    <div class="regime-allocation">
+                        <span>Max Position Risk:</span>
+                        <span>10% Capital</span>
+                    </div>
+                    <p class="regime-desc">Extreme market oversold levels with breadth under 15%. We look for selective, low-risk bottom reversals.</p>
+                </div>
+                <!-- State 4 -->
+                <div class="regime-card state-4" id="state-4">
+                    <span class="regime-badge">State 4</span>
+                    <h3>Risk-Off / Cash</h3>
+                    <div class="regime-allocation">
+                        <span>Max Position Risk:</span>
+                        <span>0% (CASH)</span>
+                    </div>
+                    <p class="regime-desc">Index trades below the 20 and 50 EMA with deteriorating breadth. The system sits entirely in cash.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Management -->
+    <section class="risk" id="risk-mgmt">
+        <div class="container">
+            <div class="risk-wrapper">
+                <div class="risk-content">
+                    <h2 class="risk-title">Rigorous Capital Protection</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2.5rem;">HSTS treats risk management as the absolute highest priority. No trade is taken without predefined mathematical exit parameters.</p>
+                    
+                    <div class="risk-item">
+                        <div class="risk-icon-wrapper">🛡️</div>
+                        <div class="risk-item-body">
+                            <h4>GTT OCO Order Execution</h4>
+                            <p>Every filled position is locked on the broker server with a One-Cancels-Other (OCO) order containing a target exit and a hard stop-loss trigger. This removes manual execution delays.</p>
+                        </div>
+                    </div>
+
+                    <div class="risk-item">
+                        <div class="risk-icon-wrapper">📊</div>
+                        <div class="risk-item-body">
+                            <h4>Dynamic Position Sizing</h4>
+                            <p>Position sizes are dynamically scaled based on the current regime and the price of the stock. High-priced stocks are restricted if they violate allocation caps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">HSTS System</div>
+            <div class="footer-nav">
+                <a href="#philosophy">Core Philosophy</a>
+                <a href="#regime-model">Market Regimes</a>
+                <a href="#risk-mgmt">Risk Management</a>
+            </div>
+            <p class="footer-disclaimer">Disclaimer: Algorithmic trading and equities investments are subject to market risks. The contents of this portal are for informational and operational log reference only and do not constitute financial advice. Past performance is not indicative of future results.</p>
+            <p class="copyright">&copy; 2026 Syed Tousif Masood - HalaalTrading. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
