@@ -449,6 +449,18 @@ class TradingJournal:
         logger.info(f"Recorded open trade for {symbol} to Ledger (Row {row_idx})")
         self.log_event(f"Recorded buy order: {qty} shares of {symbol} at {buy_price}")
 
+    def get_open_trade_buy_price(self, symbol):
+        wb = openpyxl.load_workbook(self.file_path)
+        ws = wb["Ledger"]
+        true_max = self._get_true_max_row(ws)
+        for r in range(2, true_max + 1):
+            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=14).value == "OPEN":
+                buy_price = ws.cell(row=r, column=5).value
+                wb.close()
+                return buy_price
+        wb.close()
+        return None
+
     def close_trade(self, symbol, exit_date, exit_price, status, notes=""):
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Ledger"]

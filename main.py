@@ -411,11 +411,15 @@ def sync_zerodha_orders():
                         print(f"Logged buy charges for {symbol}: INR {buy_charges:.2f}")
 
                 elif tx_type == "SELL":
+                    buy_price = journal.get_open_trade_buy_price(symbol)
+                    status = "WIN"
+                    if buy_price is not None and avg_price < buy_price:
+                        status = "LOSS"
                     journal.close_trade(
                         symbol=symbol,
                         exit_date=datetime.date.today().strftime("%Y-%m-%d"),
                         exit_price=avg_price,
-                        status="WIN",
+                        status=status,
                         notes="Auto-synced sell from Zerodha account"
                     )
                     synced_count += 1
