@@ -13,3 +13,4 @@ logs/
 
 # Temp files
 scratch/
+data/active_intraday_trades.json

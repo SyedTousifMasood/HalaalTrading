@@ -535,5 +535,211 @@ def scan_intraday():
     print("\n[COMPLIANCE NOTE] In accordance with AAOIFI standards, all intraday setups must be placed as CNC (Cash Delivery) orders on your broker platform.")
     print("Intraday MIS/margin leverage is strictly prohibited. Setups not hitting targets must be squared off before 3:15 PM IST.")
 
+@cli.command()
+@click.option("--symbol", required=True, help="Stock symbol (e.g. SONACOMS).")
+@click.option("--qty", required=True, type=int, help="Quantity to buy.")
+@click.option("--price", required=True, type=float, help="AMO buy limit price.")
+@click.option("--sl", required=True, type=float, help="GTT Stop-Loss price.")
+@click.option("--target", required=True, type=float, help="GTT Profit Target price.")
+def place_intraday_amo(symbol, qty, price, sl, target):
+    """Place a Sharia-compliant pre-market Intraday BUY AMO + GTT exit orders."""
+    import json
+    import datetime
+    from dotenv import load_dotenv
+    from hsts.broker.zerodha_free import ZerodhaFreeBroker
+    from hsts.scheduler_utils import register_square_off_task
+    
+    load_dotenv()
+    user_id = os.getenv("ZERODHA_USER_ID")
+    password = os.getenv("ZERODHA_PASSWORD")
+    totp_secret = os.getenv("ZERODHA_TOTP_SECRET")
+    
+    print("Connecting to Zerodha...")
+    broker = ZerodhaFreeBroker(user_id=user_id, password=password, totp_secret=totp_secret)
+    if not broker.authenticate():
+        print("[FAILED] Authentication failed.")
+        sys.exit(1)
+        
+    print(f"\nPlacing BUY LIMIT AMO order for {qty} shares of {symbol} at INR {price:.2f}...")
+    order_res = broker.place_order(symbol=symbol, qty=qty, transaction_type="BUY", order_type="LIMIT", price=price, variety="amo")
+    print("AMO Order Response:", order_res)
+    
+    if order_res.get("status") in ["COMPLETE", "SUCCESS"] or order_res.get("order_id"):
+        order_id = order_res.get("order_id")
+        print(f"[SUCCESS] AMO Buy placed successfully! ID: {order_id}")
+        
+        # Place GTT OCO
+        print(f"\nPlacing GTT OCO (two-leg) trigger for {symbol} (SL: {sl:.2f}, Target: {target:.2f})...")
+        gtt_res = broker.place_gtt(
+            symbol=symbol,
+            qty=qty,
+            trigger_type="two-leg",
+            trigger_values=[sl, target],
+            limit_prices=[sl, target],
+            last_price=price
+        )
+        print("GTT Response:", gtt_res)
+        
+        # Log to Trading Journal
+        try:
+            journal = TradingJournal()
+            entry_date = datetime.date.today().strftime("%Y-%m-%d")
+            
+            # Log as INTRADAY
+            journal.add_trade(
+                symbol=symbol,
+                name=symbol,
+                entry_date=entry_date,
+                qty=qty,
+                buy_price=price,
+                suggested_entry=price,
+                target=target,
+                stop_loss=sl,
+                notes=f"Intraday AMO placement. GTT Trigger: {gtt_res.get('trigger_id', 'UNKNOWN')}",
+                trade_type="INTRADAY"
+            )
+            
+            # Log charges
+            buy_charges = round(qty * price * 0.0012, 2)
+            charge_notes = f"Brokerage & taxes on {symbol} BUY ({qty} qty @ {price:.2f})"
+            if not journal.capital_transaction_exists(charge_notes):
+                journal.add_capital_transaction("WITHDRAWAL", buy_charges, notes=charge_notes)
+                
+            print("[SUCCESS] Trade logged to Trading Journal Ledger as INTRADAY.")
+        except Exception as je:
+            print(f"[ERROR] Failed to update Trading Journal: {je}")
+            
+        # Register square-off task at 3:15 PM
+        register_square_off_task()
+        
+        # Save to active trades registry
+        os.makedirs("data", exist_ok=True)
+        registry_path = "data/active_intraday_trades.json"
+        trades = []
+        if os.path.exists(registry_path):
+            try:
+                with open(registry_path, "r") as f:
+                    trades = json.load(f)
+            except Exception:
+                pass
+        trades.append({
+            "symbol": symbol,
+            "qty": qty,
+            "buy_order_id": order_id,
+            "trigger_id": gtt_res.get("trigger_id") if gtt_res else None,
+            "sl": sl,
+            "target": target
+        })
+        with open(registry_path, "w") as f:
+            json.dump(trades, f, indent=4)
+        print("[SUCCESS] Trade added to active intraday trades registry.")
+    else:
+        print("[FAILED] AMO order placement failed. Exits and logs skipped.")
+
+@cli.command()
+def square_off_intraday():
+    """Check active intraday setups and square off open positions at 3:15 PM IST."""
+    import json
+    import datetime
+    from hsts.broker.zerodha_free import ZerodhaFreeBroker
+    from hsts.scheduler_utils import deregister_square_off_task
+    
+    registry_path = "data/active_intraday_trades.json"
+    if not os.path.exists(registry_path):
+        print("[INFO] No active intraday trades found to square off.")
+        deregister_square_off_task()
+        return
+        
+    with open(registry_path, "r") as f:
+        try:
+            trades = json.load(f)
+        except Exception:
+            trades = []
+            
+    if not trades:
+        print("[INFO] Active intraday trades registry is empty.")
+        deregister_square_off_task()
+        return
+        
+    from dotenv import load_dotenv
+    load_dotenv()
+    user_id = os.getenv("ZERODHA_USER_ID")
+    password = os.getenv("ZERODHA_PASSWORD")
+    totp_secret = os.getenv("ZERODHA_TOTP_SECRET")
+    
+    print("Connecting to Zerodha...")
+    broker = ZerodhaFreeBroker(user_id=user_id, password=password, totp_secret=totp_secret)
+    if not broker.authenticate():
+        print("[FAILED] Authentication failed.")
+        sys.exit(1)
+        
+    journal = TradingJournal()
+    exit_date = datetime.date.today().strftime("%Y-%m-%d")
+    
+    for t in trades:
+        symbol = t["symbol"]
+        qty = t["qty"]
+        trigger_id = t["trigger_id"]
+        
+        print(f"\n--- Processing Square-Off for {symbol} ---")
+        
+        # 1. Check if GTT is still active
+        is_gtt_active = False
+        if trigger_id:
+            gtts = broker.get_gtts()
+            for g in gtts or []:
+                if g.get("trigger_id") == trigger_id:
+                    is_gtt_active = True
+                    break
+                    
+        # 2. If GTT is active, position is still open -> Cancel GTT and Market Sell
+        if is_gtt_active:
+            print(f"GTT trigger {trigger_id} is still active. Position is OPEN.")
+            print(f"Cancelling GTT {trigger_id}...")
+            broker.delete_gtt(trigger_id)
+            
+            print(f"Placing CNC SELL MARKET order for {qty} shares of {symbol}...")
+            sell_res = broker.place_order(symbol=symbol, qty=qty, transaction_type="SELL", order_type="MARKET")
+            print("Sell Order Response:", sell_res)
+            
+            exit_price = None
+            if sell_res.get("order_id"):
+                sell_order_id = sell_res.get("order_id")
+                # Find exit price from orders list
+                orders = broker.get_orders()
+                for o in orders or []:
+                    if o.get("order_id") == sell_order_id:
+                        exit_price = o.get("average_price")
+                        break
+            if not exit_price:
+                exit_price = t["sl"]  # fallback
+                
+            buy_price = journal.get_open_trade_buy_price(symbol) or t["sl"]
+            status = "WIN" if exit_price >= buy_price else "LOSS"
+            journal.close_trade(symbol, exit_date, exit_price, status, f"Manually squared off at 3:15 PM (Execution: INR {exit_price:.2f})")
+            print(f"[SUCCESS] Position squared off and logged to journal at INR {exit_price:.2f}.")
+        else:
+            # GTT already triggered. Find exit price from trades list
+            print(f"GTT trigger {trigger_id} is no longer active. Position was already closed.")
+            exit_price = None
+            orders = broker.get_orders()
+            for o in orders or []:
+                if o.get("tradingsymbol") == symbol and o.get("transaction_type") == "SELL" and o.get("status") == "COMPLETE":
+                    exit_price = o.get("average_price")
+                    break
+            if not exit_price:
+                exit_price = t["target"]  # default fallback
+                
+            buy_price = journal.get_open_trade_buy_price(symbol) or t["sl"]
+            status = "WIN" if exit_price >= buy_price else "LOSS"
+            journal.close_trade(symbol, exit_date, exit_price, status, f"Position closed automatically via GTT trigger (Exit: INR {exit_price:.2f})")
+            print(f"[SUCCESS] Position verified closed and logged to journal.")
+            
+    # Clean up
+    if os.path.exists(registry_path):
+        os.remove(registry_path)
+    deregister_square_off_task()
+    print("\n[SUCCESS] Square-off cycle complete. Windows scheduled task removed.")
+
 if __name__ == "__main__":
     cli()

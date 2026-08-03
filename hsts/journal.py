@@ -140,6 +140,21 @@ class TradingJournal:
                     pnl_formula = f'=IF(OR(N{r}="WIN", N{r}="LOSS"), (L{r}-E{r})*D{r}, 0)'
                     ws.cell(row=r, column=13, value=pnl_formula)
 
+            # 3. Trade Type Column P Upgrade
+            if ws.cell(row=1, column=16).value != "Trade Type":
+                logger.info("Upgrading Ledger sheet: Adding Trade Type column...")
+                cell = ws.cell(row=1, column=16, value="Trade Type")
+                cell.font = font_header
+                cell.fill = fill_header_ledg
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                ws.column_dimensions["P"].width = 18
+
+                true_max = self._get_true_max_row(ws)
+                for r in range(2, true_max + 1):
+                    val = ws.cell(row=r, column=16).value
+                    if val is None or str(val).strip() == "":
+                        ws.cell(row=r, column=16, value="SWING")
+
         ws_dash = wb["Dashboard"]
         self._setup_dashboard(ws_dash)
 
@@ -151,8 +166,10 @@ class TradingJournal:
         font_header = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
         font_bold = Font(name="Segoe UI", size=11, bold=True)
         font_regular = Font(name="Segoe UI", size=11)
+        font_section = Font(name="Segoe UI", size=11, bold=True, color="1B365D")
         fill_header = PatternFill(start_color="1B365D", end_color="1B365D", fill_type="solid")
         fill_metric = PatternFill(start_color="F2F4F7", end_color="F2F4F7", fill_type="solid")
+        fill_section = PatternFill(start_color="D3DDF1", end_color="D3DDF1", fill_type="solid")
 
         ws["A1"] = "HSTS v1.0 Trading Dashboard"
         ws["A1"].font = font_title
@@ -167,29 +184,44 @@ class TradingJournal:
         ws.row_dimensions[3].height = 24
 
         metrics = [
-            ("Total Net Capital Deposited", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C) - SUMIF(Capital!B:B, "WITHDRAWAL", Capital!C:C)'),
-            ("Lifetime Realized PnL", "=SUM(Ledger!M:M)"),
-            ("Current Total Portfolio Value", "=B4 + B5"),
-            ("Capital Deployed in Open Trades", '=SUMPRODUCT((Ledger!N2:N500="OPEN")*(Ledger!E2:E500)*(Ledger!D2:D500))'),
-            ("Capital Available for Trading", "=B6 - B7"),
-            ("Win Rate", '=IF((COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS"))>0, COUNTIF(Ledger!N:N, "WIN")/(COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS")), 0)'),
-            ("Total Completed Trades", '=COUNTIF(Ledger!N:N, "WIN") + COUNTIF(Ledger!N:N, "LOSS")'),
-            ("Active Open Positions", '=COUNTIF(Ledger!N:N, "OPEN")'),
-            ("Win Trades", '=COUNTIF(Ledger!N:N, "WIN")'),
-            ("Loss Trades", '=COUNTIF(Ledger!N:N, "LOSS")'),
+            ("Global Portfolio Metrics", None, "header"),
+            ("Total Net Capital Deposited", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C) - SUMIF(Capital!B:B, "WITHDRAWAL", Capital!C:C)', "currency"),
+            ("Lifetime Realized PnL", "=SUM(Ledger!M:M)", "currency"),
+            ("Current Total Portfolio Value", "=B5 + B6", "currency"),
+            ("Capital Deployed in Open Trades", '=SUMPRODUCT((Ledger!N2:N500="OPEN")*(Ledger!E2:E500)*(Ledger!D2:D500))', "currency"),
+            ("Capital Available for Trading", "=B7 - B8", "currency"),
+            ("Swing Trading Statistics", None, "header"),
+            ("Swing Win Rate", '=IF((COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "WIN")+COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "LOSS"))>0, COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "WIN")/(COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "WIN")+COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "LOSS")), 0)', "percentage"),
+            ("Swing Realized PnL", '=SUMIFS(Ledger!M:M, Ledger!P:P, "SWING")', "currency"),
+            ("Swing Completed Trades", '=COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "WIN") + COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "LOSS")', "integer"),
+            ("Swing Active Positions", '=COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "OPEN")', "integer"),
+            ("Intraday Trading Statistics", None, "header"),
+            ("Intraday Win Rate", '=IF((COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "WIN")+COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "LOSS"))>0, COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "WIN")/(COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "WIN")+COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "LOSS")), 0)', "percentage"),
+            ("Intraday Realized PnL", '=SUMIFS(Ledger!M:M, Ledger!P:P, "INTRADAY")', "currency"),
+            ("Intraday Completed Trades", '=COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "WIN") + COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "LOSS")', "integer"),
+            ("Intraday Active Positions", '=COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "OPEN")', "integer"),
         ]
 
-        for i, (metric_name, formula) in enumerate(metrics, 4):
-            cell_name = ws.cell(row=i, column=1, value=metric_name)
-            cell_name.font = font_bold
-            cell_name.fill = fill_metric
+        for idx, (metric_name, formula, m_type) in enumerate(metrics, 4):
+            cell_name = ws.cell(row=idx, column=1, value=metric_name)
+            cell_val = ws.cell(row=idx, column=2, value=formula)
             
-            cell_val = ws.cell(row=i, column=2, value=formula)
-            cell_val.font = font_regular
-            if metric_name == "Win Rate":
-                cell_val.number_format = "0.0%"
-            elif metric_name in ["Total Net Capital Deposited", "Lifetime Realized PnL", "Current Total Portfolio Value", "Capital Deployed in Open Trades", "Capital Available for Trading"]:
-                cell_val.number_format = "INR #,##0.00"
+            if m_type == "header":
+                cell_name.font = font_section
+                cell_name.fill = fill_section
+                if type(cell_val).__name__ != "MergedCell":
+                    cell_val.value = ""
+                    cell_val.fill = fill_section
+            else:
+                cell_name.font = font_bold
+                cell_name.fill = fill_metric
+                cell_val.font = font_regular
+                if m_type == "currency":
+                    cell_val.number_format = "INR #,##0.00"
+                elif m_type == "percentage":
+                    cell_val.number_format = "0.0%"
+                elif m_type == "integer":
+                    cell_val.number_format = "#,##0"
 
         ws.column_dimensions["A"].width = 34
         ws.column_dimensions["B"].width = 22
@@ -203,7 +235,7 @@ class TradingJournal:
             "Symbol", "Name", "Entry Date", "Qty", "Buy Price", 
             "Suggested Entry", "Slippage/Deviation", "Target Price", 
             "Stop Loss", "Risk-to-Reward Ratio", "Exit Date", "Exit Price", 
-            "Realized PnL", "Status", "Notes"
+            "Realized PnL", "Status", "Notes", "Trade Type"
         ]
 
         for col_idx, text in enumerate(headers, 1):
@@ -220,6 +252,7 @@ class TradingJournal:
         ws.column_dimensions["B"].width = 25
         ws.column_dimensions["J"].width = 22
         ws.column_dimensions["O"].width = 30
+        ws.column_dimensions["P"].width = 18
 
     def _setup_recommendations(self, ws):
         ws.views.sheetView[0].showGridLines = True
@@ -402,7 +435,7 @@ class TradingJournal:
         logger.info(f"Capital Transaction: {transaction_type.upper()} of INR {amount:.2f} logged.")
         self.log_event(f"Capital Transaction: {transaction_type.upper()} of INR {amount:.2f} logged.")
 
-    def add_trade(self, symbol, name, entry_date, qty, buy_price, suggested_entry, target, stop_loss, notes=""):
+    def add_trade(self, symbol, name, entry_date, qty, buy_price, suggested_entry, target, stop_loss, notes="", trade_type="SWING"):
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Ledger"]
         row_idx = self._get_true_max_row(ws) + 1
@@ -437,6 +470,7 @@ class TradingJournal:
         ws.cell(row=row_idx, column=13, value=pnl_formula)
         ws.cell(row=row_idx, column=14, value="OPEN")
         ws.cell(row=row_idx, column=15, value=notes)
+        ws.cell(row=row_idx, column=16, value=trade_type.upper())
 
         ws.cell(row=row_idx, column=5).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=6).number_format = "INR #,##0.00"
@@ -447,7 +481,7 @@ class TradingJournal:
 
         wb.save(self.file_path)
         logger.info(f"Recorded open trade for {symbol} to Ledger (Row {row_idx})")
-        self.log_event(f"Recorded buy order: {qty} shares of {symbol} at {buy_price}")
+        self.log_event(f"Recorded buy order: {qty} shares of {symbol} at {buy_price} ({trade_type.upper()})")
 
     def get_open_trade_buy_price(self, symbol):
         wb = openpyxl.load_workbook(self.file_path)
