@@ -508,5 +508,32 @@ def optimize_ai(period, start_date, end_date):
     except Exception as e:
         print(f"[ERROR] Exception during AI optimization: {e}")
 
+@cli.command()
+def scan_intraday():
+    """Scan stock universe for Halal Intraday Trading setups (AAOIFI standards)."""
+    import datetime
+    from hsts.intraday_scanner import HalalIntradayScanner
+    
+    print("\n=========================================")
+    print("HALAL INTRADAY TRADING STRATEGY (AAOIFI)")
+    print("=========================================")
+    print(f"Session Date: {datetime.date.today().strftime('%Y-%m-%d')}")
+    print("Screening stocks for AAOIFI Shariah compliance and intraday momentum breakouts...\n")
+    
+    scanner = HalalIntradayScanner(universe_csv_path="data/universe.csv")
+    candidates = scanner.scan_universe()
+    
+    if not candidates:
+        print("\n[INFO] No breakout setups found meeting the Sharia-compliant criteria today.")
+        return
+        
+    print(f"{'Date':<12} | {'Symbol':<12} | {'Composite Score':<15} | {'Target Entry':<12} | {'Stop-Loss':<10} | {'Profit Target':<13} | {'Risk-to-Reward':<14}")
+    print("-" * 105)
+    for c in candidates:
+        print(f"{datetime.date.today().strftime('%Y-%m-%d'):<12} | {c['symbol']:<12} | {c['score']:<15} | INR {c['entry']:<8.2f} | INR {c['stop_loss']:<6.2f} | INR {c['target']:<9.2f} | 1:{c['rr_ratio']:.1f}")
+    
+    print("\n[COMPLIANCE NOTE] In accordance with AAOIFI standards, all intraday setups must be placed as CNC (Cash Delivery) orders on your broker platform.")
+    print("Intraday MIS/margin leverage is strictly prohibited. Setups not hitting targets must be squared off before 3:15 PM IST.")
+
 if __name__ == "__main__":
     cli()
