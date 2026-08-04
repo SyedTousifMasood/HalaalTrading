@@ -183,16 +183,21 @@ class TradingJournal:
             cell.alignment = Alignment(horizontal="center", vertical="center")
         ws.row_dimensions[3].height = 24
 
+        # Unmerge all cells first to prevent layout collisions during template rebuild
+        for rng in list(ws.merged_cells.ranges):
+            ws.unmerge_cells(str(rng))
+
         metrics = [
             ("Global Portfolio Metrics", None, "header"),
-            ("Total Net Capital Deposited", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C) - SUMIF(Capital!B:B, "WITHDRAWAL", Capital!C:C)', "currency"),
+            ("Total Net Capital Deposited", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C)', "currency"),
             ("Lifetime Realized PnL", "=SUM(Ledger!M:M)", "currency"),
-            ("Current Total Portfolio Value", "=B5 + B6 + (B11 - B10)", "currency"),
+            ("Lifetime Realized P/L Percentage", "=B6/B5", "percentage"),
+            ("Current Total Portfolio Value", "=B13+B12", "currency"),
             ("Total Number of Trades", '=COUNTIF(Ledger!N:N, "WIN") + COUNTIF(Ledger!N:N, "LOSS") + COUNTIF(Ledger!N:N, "OPEN")', "integer"),
             ("Winning Percentage of Trades", '=IF((COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS"))>0, COUNTIF(Ledger!N:N, "WIN")/(COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS")), 0)', "percentage"),
             ("Capital Deployed in Open Trades", '=SUMPRODUCT((Ledger!N2:N500="OPEN")*(Ledger!E2:E500)*(Ledger!D2:D500))', "currency"),
-            ("Current Value of Active Trades", 0.0, "currency"), # Python will update this live
-            ("Capital Available for Trading", "=B5 + B6 - B10", "currency"),
+            ("Current Value of Active Trades", 0.0, "currency"), # Updated dynamically by python script
+            ("Capital Available for Trading", "=B5 - SUMIF(Capital!B:B, \"WITHDRAWAL\", Capital!C:C) + B6 - B11", "currency"),
             ("Total Wins", '=COUNTIF(Ledger!N:N, "WIN")', "integer"),
             ("Total Losses", '=COUNTIF(Ledger!N:N, "LOSS")', "integer"),
             ("Total Taxes Paid to Zerodha", '=SUMIF(Capital!D:D, "*Brokerage & taxes*", Capital!C:C)', "currency"),
@@ -219,21 +224,16 @@ class TradingJournal:
             if m_type == "header":
                 cell_name.font = font_section
                 cell_name.fill = fill_section
-                if type(cell_val).__name__ != "MergedCell":
-                    cell_val.value = ""
-                    cell_val.fill = fill_section
+                cell_val.value = ""
+                cell_val.fill = fill_section
+                # Merge columns A and B for header row
+                ws.merge_cells(start_row=idx, start_column=1, end_row=idx, end_column=2)
             else:
-                if type(cell_val).__name__ != "MergedCell":
-                    cell_val.value = formula
+                cell_val.value = formula
                 cell_name.font = font_bold
                 cell_val.font = font_regular
+                cell_val.fill = fill_metric
                 
-                # Apply custom dynamic fills for Current Value of Active Trades (Row 11 / B11)
-                if metric_name == "Current Value of Active Trades":
-                    cell_val.fill = fill_metric # default
-                else:
-                    cell_val.fill = fill_metric
-                    
                 if m_type == "currency":
                     cell_val.number_format = "INR #,##0.00"
                 elif m_type == "percentage":
