@@ -95,19 +95,29 @@ def scan(capital, save_journal):
         print(f"Batch downloading price history for {len(tickers_list)} compliant tickers...")
         import yfinance as yf
         
-        # Download in chunks of 100 to prevent yfinance rate-limiting / timeout hangs
+        # Download in chunks of 100 concurrently to prevent rate-limiting and maximize download speed
+        import concurrent.futures
         batch_size = 100
-        dfs = []
-        for i in range(0, len(tickers_list), batch_size):
-            chunk = tickers_list[i:i+batch_size]
-            print(f"Downloading price batch {i//batch_size + 1}/{len(tickers_list)//batch_size + 1}... ({len(chunk)} tickers)")
+        chunks = [tickers_list[i:i+batch_size] for i in range(0, len(tickers_list), batch_size)]
+        
+        def download_chunk(chunk, index):
+            print(f"Downloading price batch {index+1}/{len(chunks)}... ({len(chunk)} tickers)")
             try:
-                df_chunk = yf.download(chunk, period="6mo", group_by="ticker", progress=False, threads=True, timeout=10)
-                if not df_chunk.empty:
-                    dfs.append(df_chunk)
+                # Use threads=True for intra-batch speed and timeout to prevent hanging
+                df = yf.download(chunk, period="6mo", group_by="ticker", progress=False, threads=True, timeout=12)
+                return df
             except Exception as ex:
-                print(f"Warning: Failed to download batch starting at {i}: {ex}")
+                print(f"Warning: Failed to download batch {index+1}: {ex}")
+                return pd.DataFrame()
                 
+        dfs = []
+        with concurrent.futures.ThreadPoolExecutor(max_workers=len(chunks)) as executor:
+            futures = [executor.submit(download_chunk, chunk, idx) for idx, chunk in enumerate(chunks)]
+            for future in concurrent.futures.as_completed(futures):
+                df_res = future.result()
+                if not df_res.empty:
+                    dfs.append(df_res)
+                    
         if dfs:
             df_batch = pd.concat(dfs, axis=1)
         else:
