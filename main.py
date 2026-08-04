@@ -88,10 +88,26 @@ def scan(capital, save_journal):
     if compliant_symbols:
         tickers_map = {f"{sym}.NS": (sym, name) for sym, name in compliant_symbols}
         tickers_list = list(tickers_map.keys())
-        
         print(f"Batch downloading price history for {len(tickers_list)} compliant tickers...")
         import yfinance as yf
-        df_batch = yf.download(tickers_list, period="6mo", group_by="ticker", progress=False)
+        
+        # Download in chunks of 100 to prevent yfinance rate-limiting / timeout hangs
+        batch_size = 100
+        dfs = []
+        for i in range(0, len(tickers_list), batch_size):
+            chunk = tickers_list[i:i+batch_size]
+            print(f"Downloading price batch {i//batch_size + 1}/{len(tickers_list)//batch_size + 1}... ({len(chunk)} tickers)")
+            try:
+                df_chunk = yf.download(chunk, period="6mo", group_by="ticker", progress=False, threads=True, timeout=10)
+                if not df_chunk.empty:
+                    dfs.append(df_chunk)
+            except Exception as ex:
+                print(f"Warning: Failed to download batch starting at {i}: {ex}")
+                
+        if dfs:
+            df_batch = pd.concat(dfs, axis=1)
+        else:
+            df_batch = pd.DataFrame()
         
         for ns_sym, (symbol, name) in tickers_map.items():
             df_ticker = None

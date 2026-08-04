@@ -140,7 +140,7 @@ class ShariaScreeningEngine:
             source = matched.iloc[0]["source"]
             if source == "nifty_shariah":
                 # Option 1: Pre-screened by NSE Indices
-                logger.info(f"{symbol} is pre-screened (Nifty Shariah). Automatically compliant.")
+                logger.debug(f"{symbol} is pre-screened (Nifty Shariah). Automatically compliant.")
                 return True, {"source": "Nifty Shariah", "status": "Compliant"}
 
         # 2. Check local cache
@@ -150,7 +150,7 @@ class ShariaScreeningEngine:
             entry = self.cache[symbol]
             cached_time = entry.get("timestamp", 0)
             if (now - cached_time) < thirty_days:
-                logger.info(f"Using cached Sharia status for {symbol} (Screened {(now - cached_time)/86400:.1f} days ago)")
+                logger.debug(f"Using cached Sharia status for {symbol} (Screened {(now - cached_time)/86400:.1f} days ago)")
                 return entry["is_compliant"], entry["details"]
 
         # Option 3: Programmatic screening
