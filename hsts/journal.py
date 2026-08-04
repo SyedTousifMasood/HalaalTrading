@@ -187,10 +187,12 @@ class TradingJournal:
             ("Global Portfolio Metrics", None, "header"),
             ("Total Net Capital Deposited", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C) - SUMIF(Capital!B:B, "WITHDRAWAL", Capital!C:C)', "currency"),
             ("Lifetime Realized PnL", "=SUM(Ledger!M:M)", "currency"),
-            ("Current Total Portfolio Value", "=B5 + B6", "currency"),
+            ("Current Total Portfolio Value", "=B5 + B6 + (B11 - B10)", "currency"),
+            ("Total Number of Trades", '=COUNTIF(Ledger!N:N, "WIN") + COUNTIF(Ledger!N:N, "LOSS") + COUNTIF(Ledger!N:N, "OPEN")', "integer"),
+            ("Winning Percentage of Trades", '=IF((COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS"))>0, COUNTIF(Ledger!N:N, "WIN")/(COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS")), 0)', "percentage"),
             ("Capital Deployed in Open Trades", '=SUMPRODUCT((Ledger!N2:N500="OPEN")*(Ledger!E2:E500)*(Ledger!D2:D500))', "currency"),
-            ("Capital Available for Trading", "=B7 - B8", "currency"),
-            ("Total Completed Trades", '=COUNTIF(Ledger!N:N, "WIN") + COUNTIF(Ledger!N:N, "LOSS")', "integer"),
+            ("Current Value of Active Trades", 0.0, "currency"), # Python will update this live
+            ("Capital Available for Trading", "=B5 + B6 - B10", "currency"),
             ("Total Wins", '=COUNTIF(Ledger!N:N, "WIN")', "integer"),
             ("Total Losses", '=COUNTIF(Ledger!N:N, "LOSS")', "integer"),
             ("Total Taxes Paid to Zerodha", '=SUMIF(Capital!D:D, "*Brokerage & taxes*", Capital!C:C)', "currency"),
@@ -206,6 +208,10 @@ class TradingJournal:
             ("Intraday Active Positions", '=COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "OPEN")', "integer"),
         ]
 
+        # Colors for dynamic active trades value
+        fill_profit = PatternFill(start_color="E2F0D9", end_color="E2F0D9", fill_type="solid") # Pastel Green
+        fill_loss = PatternFill(start_color="FCE4D6", end_color="FCE4D6", fill_type="solid") # Pastel Red
+
         for idx, (metric_name, formula, m_type) in enumerate(metrics, 4):
             cell_name = ws.cell(row=idx, column=1, value=metric_name)
             cell_val = ws.cell(row=idx, column=2)
@@ -220,8 +226,14 @@ class TradingJournal:
                 if type(cell_val).__name__ != "MergedCell":
                     cell_val.value = formula
                 cell_name.font = font_bold
-                cell_name.fill = fill_metric
                 cell_val.font = font_regular
+                
+                # Apply custom dynamic fills for Current Value of Active Trades (Row 11 / B11)
+                if metric_name == "Current Value of Active Trades":
+                    cell_val.fill = fill_metric # default
+                else:
+                    cell_val.fill = fill_metric
+                    
                 if m_type == "currency":
                     cell_val.number_format = "INR #,##0.00"
                 elif m_type == "percentage":
