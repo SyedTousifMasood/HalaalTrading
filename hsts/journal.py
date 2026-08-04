@@ -190,6 +190,10 @@ class TradingJournal:
             ("Current Total Portfolio Value", "=B5 + B6", "currency"),
             ("Capital Deployed in Open Trades", '=SUMPRODUCT((Ledger!N2:N500="OPEN")*(Ledger!E2:E500)*(Ledger!D2:D500))', "currency"),
             ("Capital Available for Trading", "=B7 - B8", "currency"),
+            ("Total Completed Trades", '=COUNTIF(Ledger!N:N, "WIN") + COUNTIF(Ledger!N:N, "LOSS")', "integer"),
+            ("Total Wins", '=COUNTIF(Ledger!N:N, "WIN")', "integer"),
+            ("Total Losses", '=COUNTIF(Ledger!N:N, "LOSS")', "integer"),
+            ("Total Taxes Paid to Zerodha", '=SUMIF(Capital!D:D, "*Brokerage & taxes*", Capital!C:C)', "currency"),
             ("Swing Trading Statistics", None, "header"),
             ("Swing Win Rate", '=IF((COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "WIN")+COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "LOSS"))>0, COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "WIN")/(COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "WIN")+COUNTIFS(Ledger!P:P, "SWING", Ledger!N:N, "LOSS")), 0)', "percentage"),
             ("Swing Realized PnL", '=SUMIFS(Ledger!M:M, Ledger!P:P, "SWING")', "currency"),
@@ -204,7 +208,7 @@ class TradingJournal:
 
         for idx, (metric_name, formula, m_type) in enumerate(metrics, 4):
             cell_name = ws.cell(row=idx, column=1, value=metric_name)
-            cell_val = ws.cell(row=idx, column=2, value=formula)
+            cell_val = ws.cell(row=idx, column=2)
             
             if m_type == "header":
                 cell_name.font = font_section
@@ -213,6 +217,8 @@ class TradingJournal:
                     cell_val.value = ""
                     cell_val.fill = fill_section
             else:
+                if type(cell_val).__name__ != "MergedCell":
+                    cell_val.value = formula
                 cell_name.font = font_bold
                 cell_name.fill = fill_metric
                 cell_val.font = font_regular
@@ -480,6 +486,8 @@ class TradingJournal:
         ws.cell(row=row_idx, column=13).number_format = "INR #,##0.00"
 
         wb.save(self.file_path)
+        wb.close()
+        self.apply_row_styling()
         logger.info(f"Recorded open trade for {symbol} to Ledger (Row {row_idx})")
         self.log_event(f"Recorded buy order: {qty} shares of {symbol} at {buy_price} ({trade_type.upper()})")
 
@@ -517,8 +525,39 @@ class TradingJournal:
             return False
 
         wb.save(self.file_path)
+        wb.close()
+        
+        self.apply_row_styling()
         self.log_event(f"Closed {trade_type} trade: {symbol} exited at {exit_price} ({status})")
         return True
+
+    def apply_row_styling(self):
+        """Color code completed Ledger rows based on Win/Loss status."""
+        wb = openpyxl.load_workbook(self.file_path)
+        ws = wb["Ledger"]
+        ws.views.sheetView[0].showGridLines = True
+        
+        fill_win = PatternFill(start_color="E2F0D9", end_color="E2F0D9", fill_type="solid") # Pastel Green
+        fill_loss = PatternFill(start_color="FCE4D6", end_color="FCE4D6", fill_type="solid") # Pastel Red
+        
+        true_max = self._get_true_max_row(ws)
+        for r in range(2, true_max + 1):
+            status = ws.cell(row=r, column=14).value
+            if not status:
+                continue
+            status_upper = str(status).upper()
+            if status_upper == "WIN":
+                row_fill = fill_win
+            elif status_upper == "LOSS":
+                row_fill = fill_loss
+            else:
+                row_fill = None
+                
+            if row_fill:
+                for c in range(1, 17): # Columns A to P
+                    ws.cell(row=r, column=c).fill = row_fill
+        wb.save(self.file_path)
+        wb.close()
 
     def log_event(self, message, level="INFO"):
         wb = openpyxl.load_workbook(self.file_path)
