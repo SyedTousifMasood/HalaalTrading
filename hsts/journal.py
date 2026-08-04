@@ -8,7 +8,7 @@ import logging
 logger = logging.getLogger("hsts.journal")
 
 class TradingJournal:
-    def __init__(self, file_path="G:/My Drive/HalaalTrading/Trading_Journal.xlsx"):
+    def __init__(self, file_path="Trading_Journal.xlsx"):
         self.file_path = file_path
         self.initialize_journal()
 
