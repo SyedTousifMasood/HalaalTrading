@@ -162,10 +162,24 @@ class ShariaScreeningEngine:
             info = ticker.info
             if not info or "sector" not in info:
                 logger.warning(f"Could not retrieve info for {symbol}. Stock skipped.")
-                return False, {"status": "Data Fetch Failed"}
+                res = (False, {"status": "Data Fetch Failed", "reason": "No info or sector found"})
+                self.cache[symbol] = {
+                    "is_compliant": res[0],
+                    "details": res[1],
+                    "timestamp": now
+                }
+                self._save_cache()
+                return res
         except Exception as e:
             logger.error(f"Error fetching ticker info for {symbol}: {e}")
-            return False, {"status": "Data Fetch Failed"}
+            res = (False, {"status": "Data Fetch Failed", "reason": str(e)})
+            self.cache[symbol] = {
+                "is_compliant": res[0],
+                "details": res[1],
+                "timestamp": now
+            }
+            self._save_cache()
+            return res
 
         # 1. Business Screen
         if not self.is_business_compliant(info):
@@ -181,7 +195,14 @@ class ShariaScreeningEngine:
         # 2. Financial Screen
         ratios = self.get_financial_ratios(ticker)
         if not ratios:
-            return False, {"reason": "Financial ratios could not be calculated (missing data)", "status": "Non-Compliant"}
+            res = (False, {"reason": "Financial ratios could not be calculated (missing data)", "status": "Non-Compliant"})
+            self.cache[symbol] = {
+                "is_compliant": res[0],
+                "details": res[1],
+                "timestamp": now
+            }
+            self._save_cache()
+            return res
 
         # AAOIFI Compliance Limits
         violations = []
