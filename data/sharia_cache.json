@@ -1,0 +1,5528 @@
+{
+    "TIMKEN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.08626113210321014,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804038.9904065
+    },
+    "HDFCBANK": {
+        "is_compliant": false,
+        "details": {
+            "reason": "Non-permissible activities (Banks - Regional)",
+            "status": "Non-Compliant"
+        },
+        "timestamp": 1785804042.7676067
+    },
+    "ITC": {
+        "is_compliant": false,
+        "details": {
+            "reason": "Non-permissible activities (Tobacco)",
+            "status": "Non-Compliant"
+        },
+        "timestamp": 1785804043.0353916
+    },
+    "LT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2688831118461461,
+                "cash_to_assets": 0.16931813129637777,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804045.5848358
+    },
+    "MUTHOOTFIN": {
+        "is_compliant": false,
+        "details": {
+            "reason": "Non-permissible activities (Credit Services)",
+            "status": "Non-Compliant"
+        },
+        "timestamp": 1785804046.6075041
+    },
+    "3MINDIA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.2613339708343294,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804047.0348613
+    },
+    "APLAPOLLO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.05122321216306477,
+                "cash_to_assets": 0.21462420612907973,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804048.092906
+    },
+    "ACE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 3.382866702750578e-05,
+                "cash_to_assets": 0.2000627368006692,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804049.635059
+    },
+    "ACUTAAS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": NaN,
+                "receivables_to_assets": NaN,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804050.6024022
+    },
+    "ATGL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2896648939846805,
+                "cash_to_assets": 0.05706793232948845,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804051.8546515
+    },
+    "ABFRL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09543171220687946,
+                "cash_to_assets": 0.09004966999301692,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804053.9439163
+    },
+    "ABLBL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0956061031760139,
+                "cash_to_assets": 0.012368048348346627,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804054.9734297
+    },
+    "ABREL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.27858235851164154,
+                "cash_to_assets": 0.1109932604350568,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804055.900995
+    },
+    "CPPLUS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.027720405563023756,
+                "cash_to_assets": 0.04270939953570475,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804057.222566
+    },
+    "AEGISLOG": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.16676819152147143,
+                "cash_to_assets": 0.310534418098958,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804058.7203608
+    },
+    "AEGISVOPAK": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.25060265353588457,
+                "cash_to_assets": 0.036354274268576826,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804059.8485484
+    },
+    "AFCONS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.18495071841964406,
+                "cash_to_assets": 0.050692388431687406,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804063.810315
+    },
+    "ARE&M": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.03173595933216488,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804070.1217675
+    },
+    "AMBER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.16749984771417784,
+                "cash_to_assets": 0.1035173426929587,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804071.1433232
+    },
+    "ANANTRAJ": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0882606556763667,
+                "cash_to_assets": 0.13097030673946297,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804074.079293
+    },
+    "ANTHEM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.014891712278634936,
+                "cash_to_assets": 0.27367093479991483,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804075.1074357
+    },
+    "ANURAS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2501140659008625,
+                "cash_to_assets": 0.02294318872839106,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804076.112313
+    },
+    "APARINDS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.06130057784497301,
+                "cash_to_assets": 0.06331060024257382,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804077.1030908
+    },
+    "APOLLOTYRE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0900042226810882,
+                "cash_to_assets": 0.037795270043140296,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804078.1158812
+    },
+    "ASAHIINDIA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2648743928720769,
+                "cash_to_assets": 0.03156228891247708,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804079.2299085
+    },
+    "ASTERDM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.08643780294774629,
+                "cash_to_assets": 0.18310864451994338,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804080.0743544
+    },
+    "DMART": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.026084311681308862,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804081.5161123
+    },
+    "BEML": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.04165008451548024,
+                "cash_to_assets": 0.00654156949169466,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804082.6666572
+    },
+    "BAYERCROP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.258272800645682,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804084.138168
+    },
+    "BELRISE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.16831859885148004,
+                "cash_to_assets": 0.09859170744156637,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804088.5808432
+    },
+    "BPCL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1748958423960032,
+                "cash_to_assets": 0.09219912328259766,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804090.4106934
+    },
+    "BHARTIARTL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.220358684100526,
+                "cash_to_assets": 0.09091379976079034,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804091.3212535
+    },
+    "BHARTIHEXA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1268044051106002,
+                "cash_to_assets": 0.07832824163018487,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804092.9075968
+    },
+    "BIKAJI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09366016440055631,
+                "cash_to_assets": 0.10820523461423345,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804094.1190615
+    },
+    "BLUEDART": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.048463113512727626,
+                "cash_to_assets": 0.16720501108593722,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804096.032369
+    },
+    "BLUEJET": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.23652567272620917,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804097.077139
+    },
+    "BLUESTARCO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07308785701459192,
+                "cash_to_assets": 0.10513667242694129,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804103.0365765
+    },
+    "BBTC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.10700352439148533,
+                "cash_to_assets": 0.1676692794669117,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804104.1050467
+    },
+    "FIRSTCRY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.06587120028159722,
+                "cash_to_assets": 0.1624976823387456,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804105.9912522
+    },
+    "MAPMYINDIA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.32104938033280567,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804108.0151258
+    },
+    "CCL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.29834970181963494,
+                "cash_to_assets": 0.050566595047965915,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804111.171263
+    },
+    "CIEINDIA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.041955723249625376,
+                "cash_to_assets": 0.09120380486859682,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804112.2691782
+    },
+    "CAPLIPOINT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.00014089798985534473,
+                "cash_to_assets": 0.26719202665691094,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804114.380683
+    },
+    "CEATLTD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.21656869684309868,
+                "cash_to_assets": 0.002894497577368827,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804115.686017
+    },
+    "CEMPRO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.13591008191689774,
+                "cash_to_assets": 0.0894354719217662,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804116.7770908
+    },
+    "CHALET": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.31797304885510724,
+                "cash_to_assets": 0.05512125935469182,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804118.069545
+    },
+    "CHAMBLFERT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07321051155220921,
+                "cash_to_assets": 0.08521125587053305,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804119.5353644
+    },
+    "CHENNPETRO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09739041718784784,
+                "cash_to_assets": 0.0771264940388188,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804120.5993896
+    },
+    "COHANCE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.029612680726886855,
+                "cash_to_assets": 0.05720952799826865,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804123.155435
+    },
+    "CONCORDBIO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.18195747480755034,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804125.0403512
+    },
+    "CONCOR": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0016005893648118105,
+                "cash_to_assets": 0.2485572291419286,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804125.98541
+    },
+    "CROMPTON": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.19074565766002746,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804127.2055948
+    },
+    "DCMSHRIRAM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.19894883901886926,
+                "cash_to_assets": 0.0667777247245654,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804129.7309892
+    },
+    "DOMS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.05233811583857789,
+                "cash_to_assets": 0.03700130962992732,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804130.934339
+    },
+    "DATAPATTNS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.21909372699847607,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804131.831003
+    },
+    "DELHIVERY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.00019840585008453968,
+                "cash_to_assets": 0.2601531943615797,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804132.9413874
+    },
+    "EIHOTEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.16963120844972585,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804134.0379999
+    },
+    "ELECON": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.2597783330447045,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804137.042233
+    },
+    "ELGIEQUIP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11417289521929207,
+                "cash_to_assets": 0.26080947680157945,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804138.2249105
+    },
+    "EMAMILTD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.031900584852483586,
+                "cash_to_assets": 0.23531393382532623,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804139.313703
+    },
+    "EMCURE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.12526245825609433,
+                "cash_to_assets": 0.02249772977444637,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804141.0495126
+    },
+    "EMMVEE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.030708401154995103,
+                "cash_to_assets": 0.04842710912375452,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804142.113034
+    },
+    "ETERNAL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.21077179890023567,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804143.475942
+    },
+    "NYKAA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.16203609331696803,
+                "cash_to_assets": 0.13711296835220693,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804144.730971
+    },
+    "FINCABLES": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.00012303360820376655,
+                "cash_to_assets": 0.29605319629869126,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804145.7589881
+    },
+    "FSL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2078822846127575,
+                "cash_to_assets": 0.009087730212287738,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804146.7815692
+    },
+    "FORTIS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17992069522302456,
+                "cash_to_assets": 0.034991023959005566,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804147.587247
+    },
+    "GAIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.14205702586066732,
+                "cash_to_assets": 0.023544829143783835,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804148.7037537
+    },
+    "GVT&D": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.20032741429278383,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804149.7792473
+    },
+    "GABRIEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.033548433832929554,
+                "cash_to_assets": 0.1358973345812949,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804150.805044
+    },
+    "GALLANTT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.12827542213616508,
+                "cash_to_assets": 0.19505714048021536,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804151.6827216
+    },
+    "GILLETTE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.22206288783438494,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804152.5424182
+    },
+    "GLAND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.01945191884674804,
+                "cash_to_assets": 0.2743896337002895,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804153.3017344
+    },
+    "MEDANTA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.10687122311856181,
+                "cash_to_assets": 0.19684779214374792,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804154.1086078
+    },
+    "GPIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0584815279291133,
+                "cash_to_assets": 0.16167704885453288,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804155.0447628
+    },
+    "GRAVITA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.21431978811513192,
+                "cash_to_assets": 0.1982528278142788,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804155.8830633
+    },
+    "FLUOROCHEM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.18505427922241857,
+                "cash_to_assets": 0.06833291256416729,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804156.7019763
+    },
+    "GMDCLTD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.03434828976575702,
+                "cash_to_assets": 0.22550534455158533,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804159.3852708
+    },
+    "HBLENGINE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.014954090703579939,
+                "cash_to_assets": 0.2469311649505213,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804161.0566487
+    },
+    "HFCL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.21035276817350393,
+                "cash_to_assets": 0.13667990590442938,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804162.162563
+    },
+    "HAVELLS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.15867220479782995,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804163.1186464
+    },
+    "HEXT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.1495805869191496,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804167.8835251
+    },
+    "HSCL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.12155409975419516,
+                "cash_to_assets": 0.04591049890480845,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804186.555799
+    },
+    "HINDCOPPER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.024890843539386913,
+                "cash_to_assets": 0.18661225451119645,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804188.5207474
+    },
+    "HINDPETRO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2506848922405344,
+                "cash_to_assets": 0.04080186667365382,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804193.0339782
+    },
+    "HINDZINC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.19723861222563135,
+                "cash_to_assets": 0.3221855086145858,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804195.2954028
+    },
+    "HONASA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.24818900317037945,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804196.3285153
+    },
+    "HYUNDAI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.028964554329292614,
+                "cash_to_assets": 0.3259809003873881,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804197.2696333
+    },
+    "ITCHOTELS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 8.973205711111721e-05,
+                "cash_to_assets": 0.11801248684609618,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804198.24312
+    },
+    "ITI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.08184855770002343,
+                "cash_to_assets": 0.2896882586371627,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804199.3635023
+    },
+    "INDGN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.32062853061489516,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804200.3883479
+    },
+    "INDIACEM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0970505286634098,
+                "cash_to_assets": 0.0046431236600993535,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804201.3798034
+    },
+    "INDHOTEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.002526484235585787,
+                "cash_to_assets": 0.21258729131131823,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804202.559128
+    },
+    "IOC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.22703091771745557,
+                "cash_to_assets": 0.03064468853832092,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804208.7042727
+    },
+    "INDUSTOWER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.011886242528715367,
+                "cash_to_assets": 0.15783042167408315,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.015086999323931633
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804213.5476253
+    },
+    "NAUKRI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 8.99925791866887e-06,
+                "cash_to_assets": 0.09861557140336089,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804214.9608164
+    },
+    "INOXWIND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1285632130569385,
+                "cash_to_assets": 0.06245732430873667,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804216.3345473
+    },
+    "INTELLECT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 4.367141192950124e-07,
+                "cash_to_assets": 0.17764918973154092,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804217.9658198
+    },
+    "IKS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15011360438587673,
+                "cash_to_assets": 0.16210292648740673,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804223.1224356
+    },
+    "JKCEMENT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.32830485671057846,
+                "cash_to_assets": 0.049982243214448455,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804224.0977337
+    },
+    "JKTYRE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2967017715833972,
+                "cash_to_assets": 0.017807732750849282,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804229.561655
+    },
+    "JSWCEMENT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2808032483275406,
+                "cash_to_assets": 0.030789488892007694,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804230.6563551
+    },
+    "JSWINFRA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.31484960790236977,
+                "cash_to_assets": 0.12042960048530217,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804231.6304018
+    },
+    "JPPOWER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.18823464553248645,
+                "cash_to_assets": 0.04204060221721785,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804232.581243
+    },
+    "JINDALSAW": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.18550747231364226,
+                "cash_to_assets": 0.02307405712746776,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804233.8078096
+    },
+    "JUBLFOOD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.18254524192919963,
+                "cash_to_assets": 0.03973936632273579,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804234.8633614
+    },
+    "JUBLINGREA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.14241948454792633,
+                "cash_to_assets": 0.04285768993002938,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804236.0168443
+    },
+    "JUBLPHARMA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2074059280924066,
+                "cash_to_assets": 0.09576297937858749,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804237.1109695
+    },
+    "JWL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1989680124605832,
+                "cash_to_assets": 0.14287157875080106,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804238.2756684
+    },
+    "JYOTICNC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.23502972066173766,
+                "cash_to_assets": 0.21063084144462607,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804239.407766
+    },
+    "KPRMILL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.08724629875717857,
+                "cash_to_assets": 0.20940048354710486,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804240.5581222
+    },
+    "KAJARIACER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.03234380933235051,
+                "cash_to_assets": 0.1882701571772134,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804241.8021386
+    },
+    "KPIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11932948072825422,
+                "cash_to_assets": 0.07500816408272697,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804243.3892646
+    },
+    "KAYNES": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1269128367141644,
+                "cash_to_assets": 0.1196904851527013,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804244.5050333
+    },
+    "KFINTECH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.2007814868800986,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804245.6080375
+    },
+    "LTTS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.29446367111899246,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804246.6538014
+    },
+    "LTFOODS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.10736970279947171,
+                "cash_to_assets": 0.04279382414717169,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804248.204533
+    },
+    "THELEELA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17445911352306961,
+                "cash_to_assets": 0.03753124830507221,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804249.5803065
+    },
+    "LENSKART": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.015232711066510404,
+                "cash_to_assets": 0.2550279866046167,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804250.78454
+    },
+    "LODHA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1677039394875171,
+                "cash_to_assets": 0.059567399544595376,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804252.2900906
+    },
+    "MRF": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07407793384826894,
+                "cash_to_assets": 0.16362709448821117,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804254.2678623
+    },
+    "MRPL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.3222414060903295,
+                "cash_to_assets": 0.015676361892707172,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804255.5000236
+    },
+    "MAXHEALTH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.16869770308526408,
+                "cash_to_assets": 0.03879242803932925,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.015003103285749619
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804257.157585
+    },
+    "MINDACORP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.220584488845216,
+                "cash_to_assets": 0.025166502893328967,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804258.3590565
+    },
+    "MSUMI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.002191457529974503,
+                "cash_to_assets": 0.016730935373074574,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804259.399815
+    },
+    "NCC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1310078762381244,
+                "cash_to_assets": 0.08277413696110178,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804260.4413936
+    },
+    "NSLNISP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1629739125014874,
+                "cash_to_assets": 0.02984706742292459,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804261.454223
+    },
+    "NATIONALUM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.31957932523588667,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804264.2792952
+    },
+    "NAVA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15452721976015038,
+                "cash_to_assets": 0.24303737296685124,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804265.392605
+    },
+    "NETWEB": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.12047879134056609,
+                "cash_to_assets": 0.2661237964138988,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804266.5562599
+    },
+    "NEULANDLAB": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.06710029361418748,
+                "cash_to_assets": 0.11148636461692568,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804267.7589366
+    },
+    "NUVOCO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.22369405025464284,
+                "cash_to_assets": 0.029728528766413354,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804268.6312425
+    },
+    "OBEROIRLTY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11118807892761128,
+                "cash_to_assets": 0.10767143280218275,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804269.6831856
+    },
+    "OIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.29034670229742837,
+                "cash_to_assets": 0.05520814055676618,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804270.7851229
+    },
+    "OLAELEC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.3179250128402671,
+                "cash_to_assets": 0.24961479198767333,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804271.738039
+    },
+    "OLECTRA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.14814084493545407,
+                "cash_to_assets": 0.08158763141286872,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804272.84309
+    },
+    "ONESOURCE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15545600774858606,
+                "cash_to_assets": 0.014553690164231145,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804274.6505728
+    },
+    "PGEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.08403191699563202,
+                "cash_to_assets": 0.09360373654184902,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804276.143597
+    },
+    "PTCIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1335935288734289,
+                "cash_to_assets": 0.10905424147169168,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804279.6267154
+    },
+    "PVRINOX": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.04858989386573407,
+                "cash_to_assets": 0.038488883764723966,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804281.058813
+    },
+    "PAGEIND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.00415805001213071,
+                "cash_to_assets": 0.14922732808964612,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804284.4813898
+    },
+    "PATANJALI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.14804417975575285,
+                "cash_to_assets": 0.05061580342760902,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804285.5548887
+    },
+    "PPLPHARMA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.30589801080320445,
+                "cash_to_assets": 0.07430153230941874,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804286.8301222
+    },
+    "RRKABEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0502704951476798,
+                "cash_to_assets": 0.02954628153237797,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804287.9587371
+    },
+    "RHIM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.06619876456101872,
+                "cash_to_assets": 0.08150057925603413,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804289.0354848
+    },
+    "RVNL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.22181007363840827,
+                "cash_to_assets": 0.21490287296234123,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804290.3500652
+    },
+    "RAILTEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.13098113207547168,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804291.6113017
+    },
+    "RAINBOW": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.17565396516270115,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804292.574976
+    },
+    "RKFORGE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.3253063505965852,
+                "cash_to_assets": 0.024216362872509434,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804293.7579288
+    },
+    "REDINGTON": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.077941271210032,
+                "cash_to_assets": 0.0348187620534213,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804294.8321671
+    },
+    "SAGILITY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.04583520552765406,
+                "cash_to_assets": 0.07172291132552311,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804295.8370118
+    },
+    "SAILIFE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.026233129443430203,
+                "cash_to_assets": 0.07220736099543867,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804297.4200246
+    },
+    "SAPPHIRE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.00172210871859386,
+                "cash_to_assets": 0.0433742888277621,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804298.7481189
+    },
+    "SARDAEN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.22823133140439902,
+                "cash_to_assets": 0.21315574239053003,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804299.5159419
+    },
+    "SAREGAMA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.030310599665799583,
+                "cash_to_assets": 0.14291374528415648,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804300.5503378
+    },
+    "SCI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.185976649022037,
+                "cash_to_assets": 0.23620828171340616,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804301.4649317
+    },
+    "SHYAMMETL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.04891719389616786,
+                "cash_to_assets": 0.028758018108912688,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804302.4766982
+    },
+    "SIGNATURE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17043862205687943,
+                "cash_to_assets": 0.164463031050877,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804303.4196062
+    },
+    "SONATSOFTW": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11160236403740506,
+                "cash_to_assets": 0.11868504838655822,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804304.3375337
+    },
+    "SAIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1594548217752517,
+                "cash_to_assets": 0.016100019345660445,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804305.330539
+    },
+    "SPLPETRO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0020950484078769717,
+                "cash_to_assets": 0.20094500689920028,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804306.3544698
+    },
+    "SWANCORP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15184342688416172,
+                "cash_to_assets": 0.10102076055128548,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804307.6450114
+    },
+    "SYRMA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.061198712583884214,
+                "cash_to_assets": 0.17493358326948302,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804311.0400195
+    },
+    "TBOTEK": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.06929961414274946,
+                "cash_to_assets": 0.1823375586523109,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804312.1717312
+    },
+    "TATACONSUM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.061542172283600594,
+                "cash_to_assets": 0.12538603359479128,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804315.680682
+    },
+    "TMCV": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09208740369726051,
+                "cash_to_assets": 0.24967022883251447,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804318.8583722
+    },
+    "TMPV": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1891459512675363,
+                "cash_to_assets": 0.1252297589560172,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804319.7542517
+    },
+    "TATATECH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07433550828394833,
+                "cash_to_assets": 0.16824333832953964,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804325.315146
+    },
+    "TENNIND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.27471383564878044,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804326.3674045
+    },
+    "RAMCOCEM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.23155475699990202,
+                "cash_to_assets": 0.012800868499403989,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804330.052321
+    },
+    "TITAGARH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.12920045058985183,
+                "cash_to_assets": 0.11915625812361512,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804334.0637245
+    },
+    "TORNTPOWER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.30387106224642246,
+                "cash_to_assets": 0.05132201070601647,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804338.2131374
+    },
+    "TARIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17128955779301652,
+                "cash_to_assets": 0.11440436354905992,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804339.1513503
+    },
+    "TRIDENT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.23455086554957455,
+                "cash_to_assets": 0.06824221854546275,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804343.606589
+    },
+    "USHAMART": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.034555132935405596,
+                "cash_to_assets": 0.1131933463443357,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804344.839711
+    },
+    "VTL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.13376894533574218,
+                "cash_to_assets": 0.08348244389872742,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804348.7821317
+    },
+    "VEDL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11574113773173952,
+                "cash_to_assets": 0.06888730727674973,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804349.947642
+    },
+    "VIJAYA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.1918487284050551,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804350.9610388
+    },
+    "VMM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.15175989577819957,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804351.9911776
+    },
+    "WAAREEENER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09864730202551056,
+                "cash_to_assets": 0.2691784958976098,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804352.9768403
+    },
+    "WELCORP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.10591954585494763,
+                "cash_to_assets": 0.18418958598414406,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804353.9902732
+    },
+    "WELSPUNLIV": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17239212400502724,
+                "cash_to_assets": 0.1221676394013999,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804355.0601795
+    },
+    "WOCKPHARMA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.24666279744631456,
+                "cash_to_assets": 0.07301218804410911,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804356.2158523
+    },
+    "ZEEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.012500439660933489,
+                "cash_to_assets": 0.22463508142520489,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804357.135539
+    },
+    "ZYDUSWELL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.3091251285434331,
+                "cash_to_assets": 0.011146898465239915,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804358.1572607
+    },
+    "20MICRONS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.19283184607283624,
+                "cash_to_assets": 0.11004921037800246,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804359.075079
+    },
+    "AARTIDRUGS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.20418362779991903,
+                "cash_to_assets": 0.008624425452711295,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804360.0290742
+    },
+    "AARTIPHARM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.19692484652422826,
+                "cash_to_assets": 0.0027618358000886865,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804361.078332
+    },
+    "ABINFRA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.08850216512462601,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804361.9836886
+    },
+    "ACI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1519892947304377,
+                "cash_to_assets": 0.02293670575793261,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804363.149533
+    },
+    "ADFFOODS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.011597005772393056,
+                "cash_to_assets": 0.11356477245813183,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804364.3772311
+    },
+    "ADVANCE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15369464275999783,
+                "cash_to_assets": 0.12317395909668377,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804365.322637
+    },
+    "ADVENTHTL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.20010088410578977,
+                "cash_to_assets": 0.00753840978761146,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804366.235997
+    },
+    "AEQUS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15000278761703345,
+                "cash_to_assets": 0.13938791363590747,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804367.9798865
+    },
+    "AEROENTER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.022936556518579242,
+                "cash_to_assets": 0.1299773099410145,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804368.9799838
+    },
+    "AEROFLEX": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0018898586552800825,
+                "cash_to_assets": 0.12327018111705902,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804369.873002
+    },
+    "AETHER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.13795789751192125,
+                "cash_to_assets": 0.01231951011830353,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804370.7414055
+    },
+    "AGARIND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.27948762188812687,
+                "cash_to_assets": 0.09565369737786314,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804372.1698976
+    },
+    "AGIIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11761196299581803,
+                "cash_to_assets": 0.06237998986186795,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804373.0991457
+    },
+    "AHCL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11672934185569724,
+                "cash_to_assets": 0.011701359297966575,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804374.1666088
+    },
+    "AJMERA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2742345315807535,
+                "cash_to_assets": 0.04589918681632228,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804375.2286332
+    },
+    "AKUMS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.30860231339837874,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804376.5825365
+    },
+    "ALEMBICLTD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.00410830921903662,
+                "cash_to_assets": 0.038014053711591014,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804377.5534992
+    },
+    "ALIVUS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.20457546353822356,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804378.4670968
+    },
+    "ALKYLAMINE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.13239148168716375,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804379.3855088
+    },
+    "ALLCARGO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0587557603686636,
+                "cash_to_assets": 0.09735023041474654,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804380.3864868
+    },
+    "ALLTIME": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.10245004519166433,
+                "cash_to_assets": 0.16455085481452283,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804381.6624868
+    },
+    "ANTELOPUS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.08553677389605505,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804382.5663908
+    },
+    "APCOTEXIND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09423314420773587,
+                "cash_to_assets": 0.05509437374409179,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804383.7945397
+    },
+    "APEX": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.009580232230053826,
+                "cash_to_assets": 0.03138200642338447,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804384.7763107
+    },
+    "APLLTD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15530225652461202,
+                "cash_to_assets": 0.022410040866912638,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804385.9971607
+    },
+    "APOLLO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.22478793931184451,
+                "cash_to_assets": 0.06591249859669059,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804387.6228523
+    },
+    "APOLLOPIPE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09596913521065936,
+                "cash_to_assets": 0.06402563647392269,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804388.5729697
+    },
+    "APTECHT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.31422382262997656,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804389.7705996
+    },
+    "ARIS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.052600145372702384,
+                "cash_to_assets": 0.09846648122205248,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804390.6692822
+    },
+    "ARKADE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.08699429852156161,
+                "cash_to_assets": 0.08164696681134163,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804391.8048851
+    },
+    "ARVIND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.16307077373657128,
+                "cash_to_assets": 0.04886114025170685,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804393.2598445
+    },
+    "ARVINDFASN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1260359885952303,
+                "cash_to_assets": 0.012367818055021846,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804394.303371
+    },
+    "ARVSMART": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.16068911518327972,
+                "cash_to_assets": 0.0829319090887866,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804395.693222
+    },
+    "ASHAPURMIN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.30687282224402784,
+                "cash_to_assets": 0.13212659666629062,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804396.6012928
+    },
+    "ASHIANA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07122564319246634,
+                "cash_to_assets": 0.21423719159326846,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804397.8872612
+    },
+    "ASHOKA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11575331034610647,
+                "cash_to_assets": 0.06696005546604612,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804402.05507
+    },
+    "ASIANENE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17216470868514538,
+                "cash_to_assets": 0.16487712810310146,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804407.0353096
+    },
+    "ASIANTILES": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17317557925657986,
+                "cash_to_assets": 0.06757552449385748,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804408.046136
+    },
+    "ASKAUTOLTD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.25581195244055066,
+                "cash_to_assets": 0.00529959324155194,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804412.080837
+    },
+    "ASTRAMICRO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.14439607211254638,
+                "cash_to_assets": 0.12721961295785145,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804413.352203
+    },
+    "ATL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.06853397856009742,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.003412805229763507
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804414.4897134
+    },
+    "ATLANTAELE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.03090446883466194,
+                "cash_to_assets": 0.07299917016342788,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804415.646016
+    },
+    "ATULAUTO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1877804805078242,
+                "cash_to_assets": 0.1185269976716053,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0014678745176983728
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804416.6687436
+    },
+    "AURIONPRO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.02199866687466232,
+                "cash_to_assets": 0.22044056699888576,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804417.736265
+    },
+    "AURUM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.001824836766768984,
+                "cash_to_assets": 0.17730451567988353,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804418.5736153
+    },
+    "AVALON": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.14507107752804901,
+                "cash_to_assets": 0.11365207364160222,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804419.5332508
+    },
+    "AVANTEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0838845197382804,
+                "cash_to_assets": 0.0177780185202536,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804420.477331
+    },
+    "AVL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2247858599592114,
+                "cash_to_assets": 0.08745751189666894,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804421.446453
+    },
+    "AWFIS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.017491303829407643,
+                "cash_to_assets": 0.1324505040737904,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804422.4629467
+    },
+    "AWHCL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.24471648252018963,
+                "cash_to_assets": 0.09961169268734575,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804423.3688197
+    },
+    "AXISCADES": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.18854261923520976,
+                "cash_to_assets": 0.09721655379525132,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804424.3537786
+    },
+    "AZAD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.20755921932399474,
+                "cash_to_assets": 0.08674925296880696,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804425.8363569
+    },
+    "BAJAJELEC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.14868707814575383,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804427.177755
+    },
+    "BAJAJHCARE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2528802539640726,
+                "cash_to_assets": 0.046808053402817885,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804428.4989681
+    },
+    "BAJEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.13786329193390004,
+                "cash_to_assets": 0.009344664119221354,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804429.4787817
+    },
+    "BALAJITELE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.015965161298936728,
+                "cash_to_assets": 0.15845298439662917,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804430.4582672
+    },
+    "BALAMINES": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0484626113872889,
+                "cash_to_assets": 0.09837140204020592,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804432.7346497
+    },
+    "BALUFORGE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.06846580867267904,
+                "cash_to_assets": 0.054167097565559034,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804433.7315702
+    },
+    "BANCOINDIA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.13987155087278696,
+                "cash_to_assets": 0.06767450834199908,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804436.165925
+    },
+    "BANSALWIRE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.21940631368324942,
+                "cash_to_assets": 0.01243736717032514,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804440.213862
+    },
+    "BBOX": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.19259612921256725,
+                "cash_to_assets": 0.2522067214756504,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804441.4223452
+    },
+    "BCG": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.11812443029218483,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804442.5708365
+    },
+    "BECTORFOOD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07779003245943164,
+                "cash_to_assets": 0.14426400890871235,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804446.736593
+    },
+    "BEPL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.30910574023251236,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804450.6707096
+    },
+    "BESTAGRO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2566694931837454,
+                "cash_to_assets": 0.05895956499309184,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804451.6664524
+    },
+    "BFUTILITIE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.31483259071185554,
+                "cash_to_assets": 0.1614112580489275,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804455.5152981
+    },
+    "BHAGCHEM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2062617993123324,
+                "cash_to_assets": 0.014051782533071997,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804456.4502225
+    },
+    "BHAGERIA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11730586598476316,
+                "cash_to_assets": 0.07377536510457026,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804460.2947073
+    },
+    "BHARATSE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.06817195782422707,
+                "cash_to_assets": 0.022152977857610612,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804461.103258
+    },
+    "BHARATWIRE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07505182974165994,
+                "cash_to_assets": 0.01910338764424215,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804461.9361837
+    },
+    "BIRLACORPN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2257240838425203,
+                "cash_to_assets": 0.08300310267497171,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804462.7953844
+    },
+    "BLISSGVS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.001960716914007668,
+                "cash_to_assets": 0.12671436256967156,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804463.7545216
+    },
+    "BLKASHYAP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1797851824324426,
+                "cash_to_assets": 0.027113052296146734,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804464.6425524
+    },
+    "BLUESTONE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2074449729208476,
+                "cash_to_assets": 0.1727123417560772,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804465.778994
+    },
+    "BLUSPRING": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.04709066385868601,
+                "cash_to_assets": 0.0447906437453414,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804466.7765453
+    },
+    "BOMDYEING": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0010629753862143904,
+                "cash_to_assets": 0.3009063974245625,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804467.528518
+    },
+    "BOROLTD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.10642804229109672,
+                "cash_to_assets": 0.05896684612386877,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804468.7845032
+    },
+    "CENTENKA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.010748622663929999,
+                "cash_to_assets": 0.19183320730258183,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804469.6250038
+    },
+    "CEWATER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15886875470144016,
+                "cash_to_assets": 0.07920377039742141,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804470.4850662
+    },
+    "CHEMPLASTS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.30906871167004213,
+                "cash_to_assets": 0.06842031089920715,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804471.4080753
+    },
+    "CLSEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07957422808184882,
+                "cash_to_assets": 0.12413669991272501,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804472.3282638
+    },
+    "CMSINFO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.1508001751608781,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804473.578034
+    },
+    "COFFEEDAY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.12753733695041353,
+                "cash_to_assets": 0.2245770462323673,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804478.30515
+    },
+    "CONFIPET": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.18363155278776716,
+                "cash_to_assets": 0.12442621992222905,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804479.212754
+    },
+    "CSM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.20817442641450343,
+                "cash_to_assets": 0.008476473579931853,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0028527806581069865
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804481.9629402
+    },
+    "CYIENTDLM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0646242264883515,
+                "cash_to_assets": 0.08263436663082013,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804485.5967696
+    },
+    "DATAMATICS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.06002369356324865,
+                "cash_to_assets": 0.300555822119937,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804487.5065427
+    },
+    "EMSLIMITED": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11585297027701463,
+                "cash_to_assets": 0.06933489524082638,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804493.5681984
+    },
+    "EMUDHRA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.01967393337745059,
+                "cash_to_assets": 0.08946765087153555,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804496.5852342
+    },
+    "ENTERO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15740044546745613,
+                "cash_to_assets": 0.08223399235000332,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804497.5305467
+    },
+    "EPACK": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.28217372300225074,
+                "cash_to_assets": 0.007898397643583174,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804498.97437
+    },
+    "EPACKPEB": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07573591836088225,
+                "cash_to_assets": 0.2225040756064773,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804499.925962
+    },
+    "EPL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.14469978366463937,
+                "cash_to_assets": 0.046124331605371646,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804500.9985757
+    },
+    "EUREKAFORB": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.07069650401315854,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804502.0201962
+    },
+    "EUROPRATIK": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.029172960986851938,
+                "cash_to_assets": 0.16790906233387218,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804502.9544587
+    },
+    "EVEREADY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.14780772788754187,
+                "cash_to_assets": 0.013886359519870183,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804504.0978467
+    },
+    "EXCELSOFT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.2618394299203357,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804506.9628448
+    },
+    "EXICOM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.22225170285871504,
+                "cash_to_assets": 0.04961229108238568,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804507.903793
+    },
+    "FCL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.007070636577268081,
+                "cash_to_assets": 0.06424493366943385,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804508.9909558
+    },
+    "FDC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.18234780559728073,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804510.0724723
+    },
+    "FILATEX": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.05177745933823946,
+                "cash_to_assets": 0.12175049992308876,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804515.9808102
+    },
+    "FINPIPE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.05757566581573206,
+                "cash_to_assets": 0.3285836349345737,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804517.1868024
+    },
+    "FISCHER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.10783749168791074,
+                "cash_to_assets": 0.047017290039829476,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804521.2504752
+    },
+    "FLAIR": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.027230635394176684,
+                "cash_to_assets": 0.0963101258190061,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804524.956789
+    },
+    "GANDHAR": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07570453391334828,
+                "cash_to_assets": 0.06672119286545661,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804526.257302
+    },
+    "GANECOS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.24738840071105841,
+                "cash_to_assets": 0.0681583226584556,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804529.7949545
+    },
+    "GANESHBE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.027671576013259,
+                "cash_to_assets": 0.10645222803977701,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804530.988334
+    },
+    "GARFIBRES": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.021449036442598105,
+                "cash_to_assets": 0.2253674045629575,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804532.180637
+    },
+    "GARUDA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.018681690654979734,
+                "cash_to_assets": 0.035500333917566206,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804533.3204098
+    },
+    "GATEWAY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.08292524436217676,
+                "cash_to_assets": 0.034825365215873365,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804537.8617249
+    },
+    "GAUDIUMIVF": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11949384918528569,
+                "cash_to_assets": 0.0726254437364225,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804540.54218
+    },
+    "GAYAPROJ": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.010732373262802995,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804541.714369
+    },
+    "GEMAROMA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.23333894180586584,
+                "cash_to_assets": 0.012695400740941538,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804542.6164234
+    },
+    "GHCL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.014449811731488868,
+                "cash_to_assets": 0.25837556486367685,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804543.7449727
+    },
+    "GHCLTEXTIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07175890035981031,
+                "cash_to_assets": 0.007287094411445497,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804544.6983037
+    },
+    "GKSL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.05280204273619137,
+                "cash_to_assets": 0.19988039242037361,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804545.9317884
+    },
+    "GLOTTIS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.135429798064697,
+                "cash_to_assets": 0.30563887149009394,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804547.011886
+    },
+    "GMMPFAUDLR": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.20754309005728772,
+                "cash_to_assets": 0.15865591331038512,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804547.7897058
+    },
+    "GNA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1434563926151275,
+                "cash_to_assets": 0.02493207519169715,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804549.1858957
+    },
+    "GNFC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.17105378994629808,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804553.8096704
+    },
+    "GOCLCORP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0001730463831252548,
+                "cash_to_assets": 0.06142637475534555,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804554.6734686
+    },
+    "GOCOLORS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.13302521703042744,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804555.6437364
+    },
+    "GODREJAGRO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.23798780912743367,
+                "cash_to_assets": 0.0500292535562114,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804556.592026
+    },
+    "GOKEX": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2245103242717247,
+                "cash_to_assets": 0.12522988950559202,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.014250683212845243
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804557.5802422
+    },
+    "GOKULAGRO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11543342338389169,
+                "cash_to_assets": 0.14255032742159013,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804558.432936
+    },
+    "GOPAL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.21525744116120313,
+                "cash_to_assets": 0.0023562103071608363,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804559.4951026
+    },
+    "GPPL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.2827549895955011,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804560.4344738
+    },
+    "GPTHEALTH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.034663716825584265,
+                "cash_to_assets": 0.1012784987655681,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804561.3610065
+    },
+    "GPTINFRA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.21540996087628564,
+                "cash_to_assets": 0.015207125934519904,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804562.3416862
+    },
+    "GRAUWEIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.006035729859558534,
+                "cash_to_assets": 0.3283589321188042,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804563.3052678
+    },
+    "GREAVESCOT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11267537493952588,
+                "cash_to_assets": 0.3128654364503421,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804564.23703
+    },
+    "GREENPANEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17225346849597373,
+                "cash_to_assets": 0.09619314390416593,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804565.299901
+    },
+    "GREENPLY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.24935776142400634,
+                "cash_to_assets": 0.019675027331524587,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804566.5105467
+    },
+    "GREENPOWER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2906694075053556,
+                "cash_to_assets": 0.04358395454519208,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804567.6707122
+    },
+    "GRMOVER": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.3154204985178275,
+                "cash_to_assets": 0.06701138494327182,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804568.7562177
+    },
+    "GRWRHITECH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.2572106044454186,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804569.9365346
+    },
+    "GSFC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.001737371912255769,
+                "cash_to_assets": 0.09734981288504505,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804575.1453469
+    },
+    "GSPCROP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.16835729303242122,
+                "cash_to_assets": 0.12205805151917164,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804577.9255257
+    },
+    "GUFICBIO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.28692629624828847,
+                "cash_to_assets": 0.056777768341758704,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804579.0213954
+    },
+    "GUJENERGY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11108832088381873,
+                "cash_to_assets": 0.25020329689478515,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804580.0733945
+    },
+    "GUJTHEM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.31755453525896327,
+                "cash_to_assets": 0.012748631081472454,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804581.022819
+    },
+    "GVPIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.19854749857368661,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804582.0179958
+    },
+    "HAPPYFORGE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.12519809175580882,
+                "cash_to_assets": 0.15374784113552994,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804583.7114623
+    },
+    "HARDWYN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.011678500084754309,
+                "cash_to_assets": 0.004480820850847436,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804586.9917903
+    },
+    "HARIOMPIPE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.30864467743847346,
+                "cash_to_assets": 0.009571368917249959,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804587.9884906
+    },
+    "HARSHA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17941535067347886,
+                "cash_to_assets": 0.14014359808019816,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804589.3726656
+    },
+    "HCC": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.12001606259229514,
+                "cash_to_assets": 0.0705552899392118,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804590.3103583
+    },
+    "HCG": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2320970595583474,
+                "cash_to_assets": 0.1407786791211817,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804591.3236156
+    },
+    "HEIDELBERG": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.17102430021531836,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804592.3106291
+    },
+    "HEMIPROP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.07513174796337914,
+                "cash_to_assets": 0.047477682542983145,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804595.9773161
+    },
+    "HERITGFOOD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1662385898904814,
+                "cash_to_assets": 0.13310195988729134,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804602.2296252
+    },
+    "HIKAL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.28773146190919086,
+                "cash_to_assets": 0.019277923395620192,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804603.229759
+    },
+    "HINDOILEXP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.022925764242430244,
+                "cash_to_assets": 0.043399936474842034,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": -0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804604.2741787
+    },
+    "HITECH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11958893784250876,
+                "cash_to_assets": 0.04299051583944208,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804605.2532675
+    },
+    "HLEGLAS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2266984957003883,
+                "cash_to_assets": 0.04805994966562435,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804606.2669475
+    },
+    "HPL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.3126155830355115,
+                "cash_to_assets": 0.04886258558507735,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804607.2490685
+    },
+    "HUBTOWN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1897633135155805,
+                "cash_to_assets": 0.09808280298234173,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804608.1705437
+    },
+    "HUHTAMAKI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.047113093088755685,
+                "cash_to_assets": 0.18119448255939916,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804609.2378612
+    },
+    "ICIL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.23902501294628276,
+                "cash_to_assets": 0.08199186260370189,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804610.1174805
+    },
+    "IDEAFORGE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.1298696420791162,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804611.173808
+    },
+    "IFBIND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.006449976446715223,
+                "cash_to_assets": 0.15588248320066997,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804612.3588634
+    },
+    "IFGLEXPOR": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11692652251120952,
+                "cash_to_assets": 0.07142028838583171,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804613.4018302
+    },
+    "IGARASHI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.15463208857509567,
+                "cash_to_assets": 0.0037280658646145024,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804614.4644444
+    },
+    "IKIO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.053699682210293885,
+                "cash_to_assets": 0.07361563348080097,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804617.8515718
+    },
+    "IMAGICAA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.19525937459221662,
+                "cash_to_assets": 0.02853225123554263,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804619.104905
+    },
+    "IMFA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.21398901432400563,
+                "cash_to_assets": 0.09357516338355114,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804622.2024627
+    },
+    "INDIANHUME": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.14655700518585624,
+                "cash_to_assets": 0.1597520490195379,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804623.1465604
+    },
+    "INDIGOPNTS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0011703233644463939,
+                "cash_to_assets": 0.20430583722105908,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804626.3102348
+    },
+    "INDIQUBE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.04454174049873775,
+                "cash_to_assets": 0.05917853585359089,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804630.1408768
+    },
+    "INDOFARM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.19248633280378924,
+                "cash_to_assets": 0.09889346142432734,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804631.0586362
+    },
+    "INDRAMEDCO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.2766099096191091,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804638.2927852
+    },
+    "INOXGREEN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.04178222882727677,
+                "cash_to_assets": 0.2960631561012088,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804640.1288984
+    },
+    "INOXINDIA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.034476728828126066,
+                "cash_to_assets": 0.1556454651319975,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804641.0998445
+    },
+    "IOLCP": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.05102533871934131,
+                "cash_to_assets": 0.08091381742979184,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804642.120045
+    },
+    "IONEXCHANG": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1344436127375419,
+                "cash_to_assets": 0.09679194539531884,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804642.9358137
+    },
+    "IPL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0799670855774985,
+                "cash_to_assets": 0.0890035906642729,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804643.9537444
+    },
+    "IRISDOREME": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09847395653605952,
+                "cash_to_assets": 0.005268430794967085,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804644.8386173
+    },
+    "IRMENERGY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.038281738164482264,
+                "cash_to_assets": 0.21713247602811056,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804646.163354
+    },
+    "IVALUE": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.19129445076756516,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804647.4556277
+    },
+    "IZMO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.1359625550955178,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804648.3745973
+    },
+    "JAIBALAJI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09972139518229486,
+                "cash_to_assets": 0.021991632045440055,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804649.5408814
+    },
+    "JAICORPLTD": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": NaN,
+                "cash_to_assets": 0.32537030028161423,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804650.4976351
+    },
+    "JAMNAAUTO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.06637310686262828,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": NaN
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804651.4335747
+    },
+    "JARO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0008877983347543081,
+                "cash_to_assets": 0.22020383681860836,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804652.6829998
+    },
+    "JASH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09468147056632502,
+                "cash_to_assets": 0.12363342678510755,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804654.1409261
+    },
+    "JAYBARMARU": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.23960844302910517,
+                "cash_to_assets": 0.03983099305370856,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804655.4749913
+    },
+    "JAYKAY": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.04036941412654765,
+                "cash_to_assets": 0.10301483935696959,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804658.0056612
+    },
+    "JGCHEM": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.011327184892402285,
+                "cash_to_assets": 0.3046798418972332,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804658.9811583
+    },
+    "JINDRILL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0364409994485747,
+                "cash_to_assets": 0.11975314918596329,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804659.9450653
+    },
+    "VIPIND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2560434354390296,
+                "cash_to_assets": 0.07904776152896735,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804661.0687144
+    },
+    "VISAKAIND": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2242158120377183,
+                "cash_to_assets": 0.01810211903346848,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804662.3999705
+    },
+    "VISHNU": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2525252196265373,
+                "cash_to_assets": 0.049768220882914556,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804663.4366498
+    },
+    "VIYASH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09416109759188244,
+                "cash_to_assets": 0.058276673925494994,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804664.5429032
+    },
+    "VMART": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.03597611424871398,
+                "cash_to_assets": 0.019504298715781142,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804665.671423
+    },
+    "WEBELSOLAR": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1267104895705785,
+                "cash_to_assets": 0.165678503147086,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804666.627307
+    },
+    "WEL": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.267668611216882,
+                "cash_to_assets": 0.06886582265904602,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804667.6868794
+    },
+    "WELENT": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.2690366618868367,
+                "cash_to_assets": 0.21825494821547708,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804668.5148726
+    },
+    "WEWORK": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.04692040224698822,
+                "cash_to_assets": 0.06071041826467536,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.013958106669474373
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804669.6399403
+    },
+    "WHEELS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.1955411646956418,
+                "cash_to_assets": 0.0024724051795754383,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804671.2765026
+    },
+    "WINDMACHIN": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.09033184570788155,
+                "cash_to_assets": 0.04163525078055342,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804672.1933777
+    },
+    "WSTCSTPAPR": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.05745141008859106,
+                "cash_to_assets": 0.21915557650538814,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804673.1102707
+    },
+    "YATHARTH": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.11103552833601647,
+                "cash_to_assets": 0.13238741879904328,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804674.1554444
+    },
+    "YATRA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.05359195230284818,
+                "cash_to_assets": 0.17658736097309852,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804675.1807573
+    },
+    "ZEEMEDIA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.012117463807953088,
+                "cash_to_assets": 0.02048973795125527,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804676.94692
+    },
+    "ZUARI": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.17210477092895907,
+                "cash_to_assets": 0.01951380086878407,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804678.0342162
+    },
+    "ELECTCAST": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.159877726864107,
+                "cash_to_assets": 0.11265869081985982,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804679.065053
+    },
+    "MOREPENLAB": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.10055703672514944,
+                "cash_to_assets": 0.05561375040732235,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804680.7149413
+    },
+    "RALLIS": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0020627494357333973,
+                "cash_to_assets": 0.16265526673741798,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804681.689614
+    },
+    "INDIGO": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.013281412566423607,
+                "cash_to_assets": 0.28922200466022213,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804684.3996763
+    },
+    "LGEINDIA": {
+        "is_compliant": true,
+        "details": {
+            "source": "Programmatic Screen",
+            "ratios": {
+                "debt_to_assets": 0.0,
+                "cash_to_assets": 0.323479723721799,
+                "receivables_to_assets": 0.0,
+                "interest_to_revenue": 0.0
+            },
+            "status": "Compliant"
+        },
+        "timestamp": 1785804686.1791582
+    }
+}
