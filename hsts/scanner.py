@@ -33,14 +33,15 @@ class TechnicalScanner:
             except Exception as e:
                 logger.warning(f"Could not load AI weights file: {e}")
 
-    def get_technical_data(self, symbol):
+    def get_technical_data(self, symbol, df=None):
         """
         Fetch historical daily price data and calculate all 20+ indicators.
         """
-        ticker_symbol = f"{symbol}.NS"
         try:
-            ticker = yf.Ticker(ticker_symbol)
-            df = ticker.history(period="6mo")
+            if df is None:
+                ticker_symbol = f"{symbol}.NS"
+                ticker = yf.Ticker(ticker_symbol)
+                df = ticker.history(period="6mo")
             if df.empty:
                 return None
             df = df.dropna(subset=["Close"])
@@ -276,11 +277,11 @@ class TechnicalScanner:
 
         return df
 
-    def analyze_stock(self, symbol):
+    def analyze_stock(self, symbol, df=None):
         """
         Analyze a stock and compile category technical scores to return signal & score.
         """
-        df = self.get_technical_data(symbol)
+        df = self.get_technical_data(symbol, df)
         if df is None:
             return {"signal": "WAIT", "reason": "No historical price data available"}
 

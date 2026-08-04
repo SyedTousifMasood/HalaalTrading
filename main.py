@@ -62,6 +62,7 @@ def scan(capital, save_journal):
     non_compliant = []
     
     print("Running screening and analysis...")
+    compliant_symbols = []
     for idx, row in df_universe.iterrows():
         symbol = row["symbol"]
         name = row["name"]
@@ -81,24 +82,46 @@ def scan(capital, save_journal):
                     "reason": screen_details.get("reason", "Unknown ratio violation")
                 })
             continue
+        
+        compliant_symbols.append((symbol, name))
 
-        # 2. Technical Scanner Analysis
-        analysis = scanner.analyze_stock(symbol)
-        if "reason" in analysis and analysis["signal"] == "WAIT" and "No historical" in analysis["reason"]:
-            skipped_or_failed.append({"symbol": symbol, "reason": analysis["reason"]})
-            continue
+    if compliant_symbols:
+        tickers_map = {f"{sym}.NS": (sym, name) for sym, name in compliant_symbols}
+        tickers_list = list(tickers_map.keys())
+        
+        print(f"Batch downloading price history for {len(tickers_list)} compliant tickers...")
+        import yfinance as yf
+        df_batch = yf.download(tickers_list, period="6mo", group_by="ticker", progress=False)
+        
+        for ns_sym, (symbol, name) in tickers_map.items():
+            df_ticker = None
+            # Handle single ticker DataFrame format or multi-ticker
+            if len(tickers_list) == 1:
+                df_ticker = df_batch.dropna(subset=["Close"])
+            elif ns_sym in df_batch.columns.levels[0]:
+                df_ticker = df_batch[ns_sym].dropna(subset=["Close"])
+                
+            if df_ticker is None or df_ticker.empty or len(df_ticker) < 50:
+                skipped_or_failed.append({"symbol": symbol, "reason": "No historical price data available"})
+                continue
 
-        # Collect all compliant stocks for ranking
-        all_compliant_analyses.append({
-            "symbol": symbol,
-            "name": name,
-            "close": analysis["close"],
-            "rsi": analysis["rsi"],
-            "score": analysis["score"],
-            "signal": analysis["signal"],
-            "suggested_sl": analysis["suggested_sl"],
-            "suggested_target": analysis["suggested_target"]
-        })
+            # 2. Technical Scanner Analysis
+            analysis = scanner.analyze_stock(symbol, df=df_ticker)
+            if "reason" in analysis and analysis["signal"] == "WAIT" and "No historical" in analysis["reason"]:
+                skipped_or_failed.append({"symbol": symbol, "reason": analysis["reason"]})
+                continue
+
+            # Collect all compliant stocks for ranking
+            all_compliant_analyses.append({
+                "symbol": symbol,
+                "name": name,
+                "close": analysis["close"],
+                "rsi": analysis["rsi"],
+                "score": analysis["score"],
+                "signal": analysis["signal"],
+                "suggested_sl": analysis["suggested_sl"],
+                "suggested_target": analysis["suggested_target"]
+            })
 
     # 4. Display Results
     print("\n--- SHARIA NON-COMPLIANT STOCKS ---")
@@ -714,9 +737,9 @@ def square_off_intraday():
             if not exit_price:
                 exit_price = t["sl"]  # fallback
                 
-            buy_price = journal.get_open_trade_buy_price(symbol) or t["sl"]
+            buy_price = journal.get_open_trade_buy_price(symbol, trade_type="INTRADAY") or t["sl"]
             status = "WIN" if exit_price >= buy_price else "LOSS"
-            journal.close_trade(symbol, exit_date, exit_price, status, f"Manually squared off at 3:15 PM (Execution: INR {exit_price:.2f})")
+            journal.close_trade(symbol, exit_date, exit_price, status, f"Manually squared off at 3:15 PM (Execution: INR {exit_price:.2f})", trade_type="INTRADAY")
             print(f"[SUCCESS] Position squared off and logged to journal at INR {exit_price:.2f}.")
         else:
             # GTT already triggered. Find exit price from trades list
@@ -730,9 +753,9 @@ def square_off_intraday():
             if not exit_price:
                 exit_price = t["target"]  # default fallback
                 
-            buy_price = journal.get_open_trade_buy_price(symbol) or t["sl"]
+            buy_price = journal.get_open_trade_buy_price(symbol, trade_type="INTRADAY") or t["sl"]
             status = "WIN" if exit_price >= buy_price else "LOSS"
-            journal.close_trade(symbol, exit_date, exit_price, status, f"Position closed automatically via GTT trigger (Exit: INR {exit_price:.2f})")
+            journal.close_trade(symbol, exit_date, exit_price, status, f"Position closed automatically via GTT trigger (Exit: INR {exit_price:.2f})", trade_type="INTRADAY")
             print(f"[SUCCESS] Position verified closed and logged to journal.")
             
     # Clean up
@@ -740,6 +763,32 @@ def square_off_intraday():
         os.remove(registry_path)
     deregister_square_off_task()
     print("\n[SUCCESS] Square-off cycle complete. Windows scheduled task removed.")
+
+@cli.command()
+def rebuild_sharia_cache():
+    """Download financial reports and rebuild the Sharia Compliance local cache."""
+    print("Rebuilding Sharia Compliance Cache for the stock universe...")
+    universe_path = "data/universe.csv"
+    if not os.path.exists(universe_path):
+        print(f"[ERROR] Universe file not found at {universe_path}")
+        return
+        
+    df_universe = pd.read_csv(universe_path)
+    sharia_engine = ShariaScreeningEngine(universe_path)
+    
+    # Clear the existing cache to force live check
+    sharia_engine.cache = {}
+    
+    total = len(df_universe)
+    print(f"Starting programmatic screen for {total} symbols...")
+    
+    for idx, row in df_universe.iterrows():
+        symbol = row["symbol"]
+        print(f"[{idx+1}/{total}] Screening {symbol}...")
+        # Since we cleared cache, screen_stock will download financials and save to cache
+        sharia_engine.screen_stock(symbol)
+        
+    print("\n[SUCCESS] Sharia Compliance Cache rebuilt successfully at data/sharia_cache.json!")
 
 if __name__ == "__main__":
     cli()

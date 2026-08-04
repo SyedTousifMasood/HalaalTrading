@@ -14,9 +14,11 @@ NON_PERMISSIBLE_INDUSTRIES = [
 ]
 
 class ShariaScreeningEngine:
-    def __init__(self, universe_csv_path="data/universe.csv"):
+    def __init__(self, universe_csv_path="data/universe.csv", cache_path="data/sharia_cache.json"):
         self.universe_csv_path = universe_csv_path
         self.universe = pd.read_csv(universe_csv_path)
+        self.cache_path = cache_path
+        self.cache = self._load_cache()
 
     def is_business_compliant(self, info):
         """
@@ -105,11 +107,34 @@ class ShariaScreeningEngine:
             logger.error(f"Error fetching financial data for {ticker.ticker}: {e}")
             return None
 
+    def _load_cache(self):
+        import os
+        import json
+        if os.path.exists(self.cache_path):
+            try:
+                with open(self.cache_path, "r") as f:
+                    return json.load(f)
+            except Exception as e:
+                logger.error(f"Error loading Sharia cache: {e}")
+        return {}
+
+    def _save_cache(self):
+        import os
+        import json
+        os.makedirs(os.path.dirname(self.cache_path), exist_ok=True)
+        try:
+            with open(self.cache_path, "w") as f:
+                json.dump(self.cache, f, indent=4)
+        except Exception as e:
+            logger.error(f"Error saving Sharia cache: {e}")
+
     def screen_stock(self, symbol):
         """
         Full screening logic combining business activity and financial ratios.
         """
-        # Check source from universe first
+        import time
+
+        # 1. Check source from universe first
         matched = self.universe[self.universe["symbol"] == symbol]
         if not matched.empty:
             source = matched.iloc[0]["source"]
@@ -117,6 +142,16 @@ class ShariaScreeningEngine:
                 # Option 1: Pre-screened by NSE Indices
                 logger.info(f"{symbol} is pre-screened (Nifty Shariah). Automatically compliant.")
                 return True, {"source": "Nifty Shariah", "status": "Compliant"}
+
+        # 2. Check local cache
+        now = time.time()
+        thirty_days = 30 * 24 * 60 * 60
+        if symbol in self.cache:
+            entry = self.cache[symbol]
+            cached_time = entry.get("timestamp", 0)
+            if (now - cached_time) < thirty_days:
+                logger.info(f"Using cached Sharia status for {symbol} (Screened {(now - cached_time)/86400:.1f} days ago)")
+                return entry["is_compliant"], entry["details"]
 
         # Option 3: Programmatic screening
         logger.info(f"Running programmatic screen for {symbol}...")
@@ -134,19 +169,21 @@ class ShariaScreeningEngine:
 
         # 1. Business Screen
         if not self.is_business_compliant(info):
-            return False, {"reason": f"Non-permissible activities ({info.get('industry', 'unknown')})", "status": "Non-Compliant"}
+            res = (False, {"reason": f"Non-permissible activities ({info.get('industry', 'unknown')})", "status": "Non-Compliant"})
+            self.cache[symbol] = {
+                "is_compliant": res[0],
+                "details": res[1],
+                "timestamp": now
+            }
+            self._save_cache()
+            return res
 
         # 2. Financial Screen
         ratios = self.get_financial_ratios(ticker)
         if not ratios:
-            # If financial statements cannot be fetched, default to non-compliant for safety
             return False, {"reason": "Financial ratios could not be calculated (missing data)", "status": "Non-Compliant"}
 
         # AAOIFI Compliance Limits
-        # - Debt / Assets < 33%
-        # - Cash / Assets < 33%
-        # - Receivables / Assets < 49%
-        # - Interest / Revenue < 5%
         violations = []
         if ratios["debt_to_assets"] >= 0.33:
             violations.append(f"Debt/Assets ratio ({ratios['debt_to_assets']:.2%}) >= 33%")
@@ -159,15 +196,24 @@ class ShariaScreeningEngine:
 
         if violations:
             logger.info(f"Rejected {symbol}: Financial ratio violations: {', '.join(violations)}")
-            return False, {
+            res = (False, {
                 "reason": "Financial ratio violations", 
                 "violations": violations, 
                 "ratios": ratios,
                 "status": "Non-Compliant"
-            }
+            })
+        else:
+            res = (True, {
+                "source": "Programmatic Screen", 
+                "ratios": ratios,
+                "status": "Compliant"
+            })
 
-        return True, {
-            "source": "Programmatic Screen", 
-            "ratios": ratios,
-            "status": "Compliant"
+        # Save to cache
+        self.cache[symbol] = {
+            "is_compliant": res[0],
+            "details": res[1],
+            "timestamp": now
         }
+        self._save_cache()
+        return res
