@@ -82,6 +82,10 @@ class HalalIntradayScanner:
         compliant_df = all_symbols[all_symbols["source"] == "nifty_shariah"]
         compliant_symbols = compliant_df["symbol"].tolist()
         
+        # Filter out known delisted/unresponsive symbols to prevent yfinance threading deadlocks
+        bad_symbols = {"LTIM", "BIRLASOFT", "OBEROIREAL", "GUJGASLTD", "JBCHEPHARM", "SPICEJET", "CSM"}
+        compliant_symbols = [sym for sym in compliant_symbols if sym not in bad_symbols]
+        
         logger.info(f"Filtered to {len(compliant_symbols)} pre-screened Nifty Shariah symbols. Starting batch download...")
         
         # Batch download 15m candles

@@ -86,7 +86,11 @@ def scan(capital, save_journal):
         compliant_symbols.append((symbol, name))
 
     if compliant_symbols:
-        tickers_map = {f"{sym}.NS": (sym, name) for sym, name in compliant_symbols}
+        # Filter out known delisted/unresponsive symbols to prevent yfinance threading deadlocks
+        bad_symbols = {"LTIM", "BIRLASOFT", "OBEROIREAL", "GUJGASLTD", "JBCHEPHARM", "SPICEJET", "CSM"}
+        filtered_compliant = [(sym, name) for sym, name in compliant_symbols if sym not in bad_symbols]
+        
+        tickers_map = {f"{sym}.NS": (sym, name) for sym, name in filtered_compliant}
         tickers_list = list(tickers_map.keys())
         print(f"Batch downloading price history for {len(tickers_list)} compliant tickers...")
         import yfinance as yf
