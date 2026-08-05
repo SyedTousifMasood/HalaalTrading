@@ -5524,5 +5524,21 @@
             "status": "Compliant"
         },
         "timestamp": 1785804686.1791582
+    },
+    "SPICEJET": {
+        "is_compliant": false,
+        "details": {
+            "status": "Data Fetch Failed",
+            "reason": "No info or sector found"
+        },
+        "timestamp": 1785876233.0929432
+    },
+    "WELSPLSOL": {
+        "is_compliant": false,
+        "details": {
+            "reason": "Financial ratios could not be calculated (missing data)",
+            "status": "Non-Compliant"
+        },
+        "timestamp": 1785876234.8532026
     }
 }
