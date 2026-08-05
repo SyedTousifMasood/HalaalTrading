@@ -316,9 +316,9 @@ class TradingJournal:
             for r in range(2, self._get_true_max_row(ws_cap) + 1):
                 t_type = str(ws_cap.cell(row=r, column=2).value or "").strip().upper()
                 amt = float(ws_cap.cell(row=r, column=3).value or 0.0)
-                if t_type == "DEPOSIT":
+                if t_type in ["DEPOSIT", "ADJUSTMENT_IN"]:
                     deposits += amt
-                elif t_type == "WITHDRAWAL":
+                elif t_type in ["WITHDRAWAL", "ADJUSTMENT_OUT"]:
                     deposits -= amt
             if deposits <= 0.0:
                 deposits = default_capital
