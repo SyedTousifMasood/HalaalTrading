@@ -231,6 +231,8 @@ class TradingJournal:
                         
                     if status in ["WIN", "LOSS"] and ext_d:
                         closed_durations.append((ext_d - ent_d).days)
+                    elif status == "OPEN":
+                        closed_durations.append((max_date - ent_d).days)
                 except Exception:
                     pass
                     
