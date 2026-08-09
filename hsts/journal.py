@@ -187,6 +187,66 @@ class TradingJournal:
         for rng in list(ws.merged_cells.ranges):
             ws.unmerge_cells(str(rng))
 
+        # Try to read current value of active trades to avoid resetting it to 0.0
+        current_b12 = ws.cell(row=12, column=2).value
+        try:
+            curr_val_active = float(current_b12) if current_b12 is not None else 0.0
+        except ValueError:
+            curr_val_active = 0.0
+
+        # Calculate analytics from Ledger sheet
+        ws_ledg = ws.parent["Ledger"]
+        closed_durations = []
+        entry_dates = set()
+        trades_with_dates = []
+        min_date = None
+        max_date = datetime.date.today()
+        
+        for r in range(2, ws_ledg.max_row + 1):
+            sym = ws_ledg.cell(row=r, column=1).value
+            status = ws_ledg.cell(row=r, column=14).value
+            entry_val = ws_ledg.cell(row=r, column=3).value
+            exit_val = ws_ledg.cell(row=r, column=11).value
+            
+            if sym and entry_val:
+                try:
+                    if isinstance(entry_val, (datetime.datetime, datetime.date)):
+                        ent_d = entry_val.date() if isinstance(entry_val, datetime.datetime) else entry_val
+                    else:
+                        ent_d = datetime.datetime.strptime(str(entry_val).split(" ")[0], "%Y-%m-%d").date()
+                    
+                    entry_dates.add(ent_d)
+                    
+                    ext_d = None
+                    if exit_val:
+                        if isinstance(exit_val, (datetime.datetime, datetime.date)):
+                            ext_d = exit_val.date() if isinstance(exit_val, datetime.datetime) else exit_val
+                        else:
+                            ext_d = datetime.datetime.strptime(str(exit_val).split(" ")[0], "%Y-%m-%d").date()
+                    
+                    trades_with_dates.append((sym, ent_d, ext_d))
+                    
+                    if min_date is None or ent_d < min_date:
+                        min_date = ent_d
+                        
+                    if status in ["WIN", "LOSS"] and ext_d:
+                        closed_durations.append((ext_d - ent_d).days)
+                except Exception:
+                    pass
+                    
+        avg_exit_days = sum(closed_durations) / len(closed_durations) if closed_durations else 0.0
+        avg_trades_per_day = len(trades_with_dates) / len(entry_dates) if entry_dates else 0.0
+        
+        daily_counts = []
+        if min_date:
+            d = min_date
+            while d <= max_date:
+                if d.weekday() < 5:
+                    count = sum(1 for sym, ent_d, ext_d in trades_with_dates if ent_d <= d <= (ext_d if ext_d else max_date))
+                    daily_counts.append(count)
+                d += datetime.timedelta(days=1)
+        avg_unique_holdings = sum(daily_counts) / len(daily_counts) if daily_counts else 0.0
+
         metrics = [
             ("Global Portfolio Metrics", None, "header"),
             ("Total Net Capital Deposited", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C)', "currency"),
@@ -196,7 +256,7 @@ class TradingJournal:
             ("Total Number of Trades", '=COUNTIF(Ledger!N:N, "WIN") + COUNTIF(Ledger!N:N, "LOSS") + COUNTIF(Ledger!N:N, "OPEN")', "integer"),
             ("Winning Percentage of Trades", '=IF((COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS"))>0, COUNTIF(Ledger!N:N, "WIN")/(COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS")), 0)', "percentage"),
             ("Capital Deployed in Open Trades", '=SUMPRODUCT((Ledger!N2:N500="OPEN")*(Ledger!E2:E500)*(Ledger!D2:D500))', "currency"),
-            ("Current Value of Active Trades", 0.0, "currency"), # Updated dynamically by python script
+            ("Current Value of Active Trades", curr_val_active, "currency"),
             ("Capital Available for Trading", "=B5 - SUMIF(Capital!B:B, \"WITHDRAWAL\", Capital!C:C) + B6 - B11", "currency"),
             ("Total Wins", '=COUNTIF(Ledger!N:N, "WIN")', "integer"),
             ("Total Losses", '=COUNTIF(Ledger!N:N, "LOSS")', "integer"),
@@ -211,6 +271,10 @@ class TradingJournal:
             ("Intraday Realized PnL", '=SUMIFS(Ledger!M:M, Ledger!P:P, "INTRADAY")', "currency"),
             ("Intraday Completed Trades", '=COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "WIN") + COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "LOSS")', "integer"),
             ("Intraday Active Positions", '=COUNTIFS(Ledger!P:P, "INTRADAY", Ledger!N:N, "OPEN")', "integer"),
+            ("Activity & Performance Metrics", None, "header"),
+            ("Average Days to Exit a Trade", avg_exit_days, "float"),
+            ("Average Trades per Day", avg_trades_per_day, "float"),
+            ("Average Unique Holdings per Day", avg_unique_holdings, "float"),
         ]
 
         # Colors for dynamic active trades value
@@ -238,6 +302,10 @@ class TradingJournal:
                     cell_val.number_format = "INR #,##0.00"
                 elif m_type == "percentage":
                     cell_val.number_format = "0.0%"
+                elif m_type == "integer":
+                    cell_val.number_format = "#,##0"
+                elif m_type == "float":
+                    cell_val.number_format = "#,##0.00"
                 elif m_type == "integer":
                     cell_val.number_format = "#,##0"
 
