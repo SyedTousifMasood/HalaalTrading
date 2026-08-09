@@ -948,6 +948,44 @@
                 </svg>
             </div>
 
+            <!-- Strategic Regime Playbook Selector (HSTS vs VTSS) -->
+            <div style="margin-top: 3rem; background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; backdrop-filter: blur(8px);">
+                <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; color: #fff; margin-bottom: 1.25rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                    🔄 HSTS vs. VTSS Regime Playbook Selection
+                </h3>
+                <p style="color: var(--text-secondary); text-align: center; font-size: 0.95rem; max-width: 700px; margin: 0 auto 2rem;">
+                    HSTS(Halal Trading System) dynamically shifts between two distinct execution models depending on the broader market state:
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: rgba(16, 185, 129, 0.02); border: 1px solid rgba(16, 185, 129, 0.12); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
+                        <span style="font-size: 0.75rem; font-weight: 700; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); padding: 0.25rem 0.75rem; border-radius: 9999px; display: inline-block; margin-bottom: 0.75rem; text-transform: uppercase; align-self: flex-start;">Bullish / Trending Markets</span>
+                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">Standard HSTS Swing Setup</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.5;">
+                            Deployed during <strong>State 1 (Macro Bullish)</strong> to ride major, multi-week upward trends.
+                        </p>
+                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-primary); display: flex; flex-direction: column; gap: 0.4rem; margin-top: auto;">
+                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-emerald);">✓</span> <strong>Profit Target:</strong> 10% to 15%</li>
+                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-emerald);">✓</span> <strong>Stop-Loss:</strong> 5% to 7.5%</li>
+                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-emerald);">✓</span> <strong>Allocation Limit:</strong> Up to 20% per position</li>
+                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-emerald);">✓</span> <strong>Holding Rule:</strong> Long-term trend riding</li>
+                        </ul>
+                    </div>
+                    <div style="background: rgba(59, 130, 246, 0.02); border: 1px solid rgba(59, 130, 246, 0.12); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
+                        <span style="font-size: 0.75rem; font-weight: 700; background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); padding: 0.25rem 0.75rem; border-radius: 9999px; display: inline-block; margin-bottom: 0.75rem; text-transform: uppercase; align-self: flex-start;">Sideways / Choppy Markets</span>
+                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">Velocity-Tax Swing (VTSS)</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.5;">
+                            Deployed during <strong>State 2 / 4 (Range-Bound / Chop)</strong> to extract returns from quick swings.
+                        </p>
+                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-primary); display: flex; flex-direction: column; gap: 0.4rem; margin-top: auto;">
+                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-blue);">✓</span> <strong>Profit Target:</strong> 5% to 7% (using 1.5 * ATR)</li>
+                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-blue);">✓</span> <strong>Stop-Loss:</strong> 2.5% to 3.5% (using 0.75 * ATR)</li>
+                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-blue);">✓</span> <strong>Allocation Limit:</strong> 3-4 trades (25%-33% each)</li>
+                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-blue);">✓</span> <strong>Time-Stop:</strong> Day 5 Review / Day 7 Hard Exit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <!-- Risk Protections -->
             <div class="risk-protection">
                 <div class="risk-item">
