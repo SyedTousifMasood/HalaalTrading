@@ -175,6 +175,14 @@ class TradingJournal:
         ws["A1"].font = font_title
         ws.row_dimensions[1].height = 30
 
+        existing_a2 = ws["A2"].value
+        if existing_a2:
+            ws["A2"] = existing_a2
+        else:
+            ws["A2"] = f"Last updated on : {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+        ws["A2"].font = Font(name="Segoe UI", size=9, italic=True, color="595959")
+        ws.row_dimensions[2].height = 18
+
         headers = ["Metric", "Value"]
         for col_idx, text in enumerate(headers, 1):
             cell = ws.cell(row=3, column=col_idx, value=text)
