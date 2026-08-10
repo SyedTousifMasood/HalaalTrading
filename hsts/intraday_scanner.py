@@ -88,29 +88,50 @@ class HalalIntradayScanner:
         
         logger.info(f"Filtered to {len(compliant_symbols)} pre-screened Nifty Shariah symbols. Starting batch download...")
         
-        # Batch download 15m candles
+        # Batch download 15m candles in chunks of 30 to prevent OpenBLAS/yfinance threading memory exhaustion
         tickers_map = {f"{sym}.NS": sym for sym in compliant_symbols}
         tickers_list = list(tickers_map.keys())
+        chunk_size = 30
+        chunks = [tickers_list[i:i + chunk_size] for i in range(0, len(tickers_list), chunk_size)]
         
-        try:
-            df_batch = yf.download(tickers_list, interval="15m", period="5d", group_by="ticker", progress=False)
-            
-            for ns_sym, sym in tickers_map.items():
-                if ns_sym in df_batch.columns.levels[0]:
-                    df = df_batch[ns_sym].dropna(subset=["Close"])
-                    if df.empty or len(df) < 30:
+        for idx, chunk in enumerate(chunks):
+            logger.info(f"Downloading intraday batch {idx+1}/{len(chunks)}... ({len(chunk)} tickers)")
+            try:
+                # Use threads=True but with smaller batch size to avoid memory exhaustion
+                df_batch = yf.download(chunk, interval="15m", period="5d", group_by="ticker", progress=False, threads=True, timeout=10)
+                if df_batch.empty:
+                    continue
+                
+                # Check format of returned batch columns
+                has_multiindex = isinstance(df_batch.columns, pd.MultiIndex)
+                
+                for ns_sym in chunk:
+                    sym = tickers_map[ns_sym]
+                    df = None
+                    if len(chunk) == 1:
+                        df = df_batch.dropna(subset=["Close"])
+                    elif has_multiindex and ns_sym in df_batch.columns.levels[0]:
+                        df = df_batch[ns_sym].dropna(subset=["Close"])
+                        
+                    if df is None or df.empty or len(df) < 30:
                         continue
                         
                     try:
                         df = self.calculate_indicators(df)
                         latest = df.iloc[-1]
                         
+                        # Relaxed breakout criteria: check if breakout occurred at any point today (last 25 candles)
+                        # but ensure the stock ended the day bullishly (Close > VWAP, RSI > 50, MACD > Signal)
+                        recent_candles = df.tail(25)
+                        had_orb = recent_candles["ORB_Signal"].any()
+                        had_mom = recent_candles["Mom_Breakout"].any()
+                        
                         is_bullish = (
-                            latest["Close"] > latest["VWAP"] and
-                            latest["ORB_Signal"] and
-                            latest["Mom_Breakout"] and
-                            latest["RSI"] > 50.0 and
-                            latest["MACD"] > latest["MACD_Signal"]
+                          latest["Close"] > latest["VWAP"] and
+                          had_orb and
+                          had_mom and
+                          latest["RSI"] > 50.0 and
+                          latest["MACD"] > latest["MACD_Signal"]
                         )
                         
                         if not is_bullish:
@@ -141,9 +162,8 @@ class HalalIntradayScanner:
                         })
                     except Exception as ex:
                         continue
-                        
-        except Exception as e:
-            logger.error(f"Error in batch intraday download/scan: {e}")
+            except Exception as e:
+                logger.error(f"Error in batch intraday download/scan chunk: {e}")
             
         # Sort candidates by composite score descending
         candidates = sorted(candidates, key=lambda x: x["score"], reverse=True)
