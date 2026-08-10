@@ -391,14 +391,17 @@ class TradingJournal:
             wb = openpyxl.load_workbook(self.file_path, data_only=True)
             ws_cap = wb["Capital"]
             deposits = 0.0
+            has_transactions = False
             for r in range(2, self._get_true_max_row(ws_cap) + 1):
                 t_type = str(ws_cap.cell(row=r, column=2).value or "").strip().upper()
                 amt = float(ws_cap.cell(row=r, column=3).value or 0.0)
                 if t_type in ["DEPOSIT", "ADJUSTMENT_IN"]:
                     deposits += amt
+                    has_transactions = True
                 elif t_type in ["WITHDRAWAL", "ADJUSTMENT_OUT"]:
                     deposits -= amt
-            if deposits <= 0.0:
+                    has_transactions = True
+            if not has_transactions:
                 deposits = default_capital
 
             ws_ledg = wb["Ledger"]
