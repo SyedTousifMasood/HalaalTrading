@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **CHENNPETRO** | Chennai Petroleum Corporation Limited | 96/100 | `BUY` | INR 1355.00 | INR 1216.75 | INR 1631.50 | 1:2.0 | 0 | INR 0.00 |
-| **CONCORDBIO** | Concord Biotech Limited | 96/100 | `BUY` | INR 1461.60 | INR 1350.93 | INR 1682.95 | 1:2.0 | 0 | INR 0.00 |
-| **AKUMS** | AKUMS | 96/100 | `BUY` | INR 767.10 | INR 719.06 | INR 863.19 | 1:2.0 | 0 | INR 0.00 |
-| **OLECTRA** | Olectra Greentech Limited | 96/100 | `BUY` | INR 1405.90 | INR 1339.67 | INR 1538.36 | 1:2.0 | 0 | INR 0.00 |
-| **OIL** | Oil India Limited | 96/100 | `BUY` | INR 473.25 | INR 445.80 | INR 528.15 | 1:2.0 | 0 | INR 0.00 |
+| **CLEAN** | Clean Science and Technology Limited | 99/100 | `BUY` | INR 803.55 | INR 754.65 | INR 901.35 | 1:2.0 | 0 | INR 0.00 |
+| **HARSHA** | Harsha Engineers International Limited | 99/100 | `BUY` | INR 432.60 | INR 408.84 | INR 480.13 | 1:2.0 | 0 | INR 0.00 |
+| **SCHNEIDER** | Schneider Electric Infrastructure Limited | 96/100 | `BUY` | INR 1424.90 | INR 1320.61 | INR 1633.47 | 1:2.0 | 0 | INR 0.00 |
+| **BRITANNIA** | Britannia Industries Limited | 96/100 | `BUY` | INR 5623.50 | INR 5378.12 | INR 6114.26 | 1:2.0 | 0 | INR 0.00 |
+| **AVALON** | Avalon Technologies Limited | 96/100 | `BUY` | INR 1923.70 | INR 1723.61 | INR 2323.87 | 1:2.0 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **DEVYANI** | 100/100 | INR 142.57 | INR 135.60 | INR 156.50 | 1:2.0 |
-| **POLYMED** | 95/100 | INR 1885.00 | INR 1817.90 | INR 2019.15 | 1:2.0 |
-| **IPCALAB** | 93/100 | INR 1735.10 | INR 1702.85 | INR 1799.60 | 1:2.0 |
-| **AJANTPHARM** | 92/100 | INR 3575.60 | INR 3523.10 | INR 3680.60 | 1:2.0 |
-| **GRAPHITE** | 87/100 | INR 737.90 | INR 725.75 | INR 762.20 | 1:2.0 |
+| **BEL** | 100/100 | INR 405.85 | INR 399.40 | INR 418.75 | 1:2.0 |
+| **CGPOWER** | 100/100 | INR 881.00 | INR 873.40 | INR 896.25 | 1:2.0 |
+| **IGL** | 100/100 | INR 153.07 | INR 151.85 | INR 155.45 | 1:2.0 |
+| **DRREDDY** | 100/100 | INR 1205.00 | INR 1189.60 | INR 1235.85 | 1:2.0 |
+| **TATACOMM** | 100/100 | INR 1746.10 | INR 1722.50 | INR 1793.25 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
