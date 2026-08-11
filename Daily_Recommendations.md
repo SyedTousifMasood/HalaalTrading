@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **OIL** | Oil India Limited | 96/100 | `BUY` | INR 472.90 | INR 445.45 | INR 527.80 | 1:2.0 | 0 | INR 0.00 |
-| **OLECTRA** | Olectra Greentech Limited | 96/100 | `BUY` | INR 1408.00 | INR 1341.77 | INR 1540.46 | 1:2.0 | 0 | INR 0.00 |
-| **AKUMS** | AKUMS | 96/100 | `BUY` | INR 764.05 | INR 717.26 | INR 857.64 | 1:2.0 | 0 | INR 0.00 |
-| **CONCORDBIO** | Concord Biotech Limited | 96/100 | `BUY` | INR 1461.40 | INR 1350.73 | INR 1682.75 | 1:2.0 | 0 | INR 0.00 |
-| **CHENNPETRO** | Chennai Petroleum Corporation Limited | 96/100 | `BUY` | INR 1353.10 | INR 1214.85 | INR 1629.60 | 1:2.0 | 0 | INR 0.00 |
+| **CHENNPETRO** | Chennai Petroleum Corporation Limited | 96/100 | `BUY` | INR 1355.00 | INR 1216.75 | INR 1631.50 | 1:2.0 | 0 | INR 0.00 |
+| **CONCORDBIO** | Concord Biotech Limited | 96/100 | `BUY` | INR 1461.60 | INR 1350.93 | INR 1682.95 | 1:2.0 | 0 | INR 0.00 |
+| **AKUMS** | AKUMS | 96/100 | `BUY` | INR 767.10 | INR 719.06 | INR 863.19 | 1:2.0 | 0 | INR 0.00 |
+| **OLECTRA** | Olectra Greentech Limited | 96/100 | `BUY` | INR 1405.90 | INR 1339.67 | INR 1538.36 | 1:2.0 | 0 | INR 0.00 |
+| **OIL** | Oil India Limited | 96/100 | `BUY` | INR 473.25 | INR 445.80 | INR 528.15 | 1:2.0 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **POLYMED** | 92/100 | INR 1885.70 | INR 1818.60 | INR 2019.85 | 1:2.0 |
-| **DEVYANI** | 88/100 | INR 141.06 | INR 134.50 | INR 154.20 | 1:2.0 |
-| **IPCALAB** | 86/100 | INR 1731.90 | INR 1699.65 | INR 1796.40 | 1:2.0 |
-| **GRAPHITE** | 85/100 | INR 738.70 | INR 726.55 | INR 763.00 | 1:2.0 |
-| **AJANTPHARM** | 83/100 | INR 3572.60 | INR 3521.30 | INR 3675.20 | 1:2.0 |
+| **DEVYANI** | 100/100 | INR 142.57 | INR 135.60 | INR 156.50 | 1:2.0 |
+| **POLYMED** | 95/100 | INR 1885.00 | INR 1817.90 | INR 2019.15 | 1:2.0 |
+| **IPCALAB** | 93/100 | INR 1735.10 | INR 1702.85 | INR 1799.60 | 1:2.0 |
+| **AJANTPHARM** | 92/100 | INR 3575.60 | INR 3523.10 | INR 3680.60 | 1:2.0 |
+| **GRAPHITE** | 87/100 | INR 737.90 | INR 725.75 | INR 762.20 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**

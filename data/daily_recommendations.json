@@ -3,37 +3,13 @@
   "market_regime": "STATE 1: Macro Bullish",
   "swing_recommendations": [
     {
-      "symbol": "OIL",
-      "name": "Oil India Limited",
-      "close": 472.8999938964844,
+      "symbol": "CHENNPETRO",
+      "name": "Chennai Petroleum Corporation Limited",
+      "close": 1355.0,
       "score": 96,
       "signal": "BUY",
-      "stop_loss": 445.4499947684152,
-      "target": 527.7999921526227,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "OLECTRA",
-      "name": "Olectra Greentech Limited",
-      "close": 1408.0,
-      "score": 96,
-      "signal": "BUY",
-      "stop_loss": 1341.7714146205358,
-      "target": 1540.4571707589287,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "AKUMS",
-      "name": "AKUMS",
-      "close": 764.0499877929688,
-      "score": 96,
-      "signal": "BUY",
-      "stop_loss": 717.2571149553571,
-      "target": 857.6357334681919,
+      "stop_loss": 1216.7488841569555,
+      "target": 1631.502231686089,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.0"
@@ -41,23 +17,47 @@
     {
       "symbol": "CONCORDBIO",
       "name": "Concord Biotech Limited",
-      "close": 1461.4000244140625,
+      "close": 1461.5999755859375,
       "score": 96,
       "signal": "BUY",
-      "stop_loss": 1350.7275030148508,
-      "target": 1682.7450672124862,
+      "stop_loss": 1350.9274541867258,
+      "target": 1682.9450183843612,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "CHENNPETRO",
-      "name": "Chennai Petroleum Corporation Limited",
-      "close": 1353.0999755859375,
+      "symbol": "AKUMS",
+      "name": "AKUMS",
+      "close": 767.0999755859375,
       "score": 96,
       "signal": "BUY",
-      "stop_loss": 1214.848859742893,
-      "target": 1629.6022072720266,
+      "stop_loss": 719.0571201869419,
+      "target": 863.1856863839286,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "OLECTRA",
+      "name": "Olectra Greentech Limited",
+      "close": 1405.9000244140625,
+      "score": 96,
+      "signal": "BUY",
+      "stop_loss": 1339.6714390345983,
+      "target": 1538.3571951729912,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "OIL",
+      "name": "Oil India Limited",
+      "close": 473.25,
+      "score": 96,
+      "signal": "BUY",
+      "stop_loss": 445.8000008719308,
+      "target": 528.1499982561384,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.0"
@@ -65,43 +65,43 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "POLYMED",
-      "score": 92,
-      "entry": 1885.7,
-      "stop_loss": 1818.6,
-      "target": 2019.85,
+      "symbol": "DEVYANI",
+      "score": 100,
+      "entry": 142.57,
+      "stop_loss": 135.6,
+      "target": 156.5,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "DEVYANI",
-      "score": 88,
-      "entry": 141.06,
-      "stop_loss": 134.5,
-      "target": 154.2,
+      "symbol": "POLYMED",
+      "score": 95,
+      "entry": 1885.0,
+      "stop_loss": 1817.9,
+      "target": 2019.15,
       "rr_ratio": "1:2.0"
     },
     {
       "symbol": "IPCALAB",
-      "score": 86,
-      "entry": 1731.9,
-      "stop_loss": 1699.65,
-      "target": 1796.4,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "GRAPHITE",
-      "score": 85,
-      "entry": 738.7,
-      "stop_loss": 726.55,
-      "target": 763.0,
+      "score": 93,
+      "entry": 1735.1,
+      "stop_loss": 1702.85,
+      "target": 1799.6,
       "rr_ratio": "1:2.0"
     },
     {
       "symbol": "AJANTPHARM",
-      "score": 83,
-      "entry": 3572.6,
-      "stop_loss": 3521.3,
-      "target": 3675.2,
+      "score": 92,
+      "entry": 3575.6,
+      "stop_loss": 3523.1,
+      "target": 3680.6,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "GRAPHITE",
+      "score": 87,
+      "entry": 737.9,
+      "stop_loss": 725.75,
+      "target": 762.2,
       "rr_ratio": "1:2.0"
     }
   ]
