@@ -148,9 +148,21 @@ class HalalIntradayScanner:
                         composite_score = max(50, min(100, composite_score))
                         
                         entry_price = float(round(latest["Close"], 2))
-                        atr = float(latest["ATR"]) if not pd.isna(latest["ATR"]) else entry_price * 0.01
-                        sl = float(round(entry_price - (2 * atr), 2))
-                        target = float(round(entry_price + (4 * atr), 2))
+                        
+                        # Estimate daily ATR from 15m data (5 days of history) to prevent paper-thin targets
+                        df["Date_Only"] = df.index.date
+                        daily_ranges = df.groupby("Date_Only").apply(lambda x: x["High"].max() - x["Low"].min(), include_groups=False)
+                        est_daily_atr = float(daily_ranges.mean())
+                        if pd.isna(est_daily_atr) or est_daily_atr <= 0:
+                            est_daily_atr = entry_price * 0.03 # fallback to 3% daily range
+                        
+                        # Set Stop-Loss at 0.75x Daily ATR and Target at 1.5x Daily ATR (yielding a clean 1:2.0 risk-to-reward)
+                        sl = float(round(entry_price - (0.75 * est_daily_atr), 2))
+                        target = float(round(entry_price + (1.5 * est_daily_atr), 2))
+                        
+                        # Ensure both stop-loss and target conform to 0.05 tick size
+                        sl = float(round(sl * 20) / 20)
+                        target = float(round(target * 20) / 20)
                         
                         candidates.append({
                             "symbol": sym,
