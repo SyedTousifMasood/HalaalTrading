@@ -42,7 +42,7 @@ jobs:
         ZERODHA_PASSWORD: ${{ secrets.ZERODHA_PASSWORD }}
         ZERODHA_TOTP_SECRET: ${{ secrets.ZERODHA_TOTP_SECRET }}
       run: |
-        python scratch/apply_reconciliation_and_styling.py
+        python apply_reconciliation_and_styling.py
 
     - name: Commit and Push Updated Trading Journal
       run: |
