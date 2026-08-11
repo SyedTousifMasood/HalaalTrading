@@ -49,8 +49,8 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         
-        # Check if the spreadsheet or any logs were updated
-        git add Trading_Journal.xlsx logs/
+        # Check if the spreadsheet was updated
+        git add Trading_Journal.xlsx
         if git diff-index --quiet HEAD; then
           echo "No changes to commit."
         else
