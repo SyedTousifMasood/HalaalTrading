@@ -252,6 +252,8 @@ def run_master_reconciliation():
 
     # Calculate analytics from Ledger sheet
     closed_durations = []
+    win_pcts = []
+    loss_pcts = []
     entry_dates = set()
     trades_with_dates = []
     min_date = None
@@ -263,6 +265,8 @@ def run_master_reconciliation():
         status = ws_ledg.cell(row=r, column=14).value
         entry_val = ws_ledg.cell(row=r, column=3).value
         exit_val = ws_ledg.cell(row=r, column=11).value
+        buy_pr = ws_ledg.cell(row=r, column=5).value
+        exit_pr = ws_ledg.cell(row=r, column=12).value
         
         if sym and entry_val:
             try:
@@ -287,6 +291,12 @@ def run_master_reconciliation():
                     
                 if status in ["WIN", "LOSS"] and ext_d:
                     closed_durations.append((ext_d - ent_d).days)
+                    if buy_pr and exit_pr:
+                        pct = (float(exit_pr) - float(buy_pr)) / float(buy_pr)
+                        if status == "WIN":
+                            win_pcts.append(pct)
+                        elif status == "LOSS":
+                            loss_pcts.append(pct)
                 elif status == "OPEN":
                     closed_durations.append((max_date - ent_d).days)
             except Exception:
@@ -294,6 +304,8 @@ def run_master_reconciliation():
                 
     avg_exit_days = sum(closed_durations) / len(closed_durations) if closed_durations else 0.0
     avg_trades_per_day = len(trades_with_dates) / len(entry_dates) if entry_dates else 0.0
+    avg_win_pct = sum(win_pcts) / len(win_pcts) if win_pcts else 0.0
+    avg_loss_pct = sum(loss_pcts) / len(loss_pcts) if loss_pcts else 0.0
     
     daily_counts = []
     if min_date:
@@ -333,6 +345,8 @@ def run_master_reconciliation():
         ("Average Days to Exit a Trade", avg_exit_days, "float"),
         ("Average Trades per Day", avg_trades_per_day, "float"),
         ("Average Unique Holdings per Day", avg_unique_holdings, "float"),
+        ("Average Profit % per trade", avg_win_pct, "percentage"),
+        ("Average Loss % per trade", avg_loss_pct, "percentage"),
     ]
 
     # Evaluate current PnL sum for coloring

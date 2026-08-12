@@ -383,7 +383,7 @@ class TradingJournal:
         ws.column_dimensions["K"].width = 24
         ws.column_dimensions["L"].width = 30
 
-    def get_available_capital(self, default_capital=100000.0):
+    def get_available_capital(self, default_capital=110000.0):
         """Calculates Capital Available for Trading dynamically from the Journal."""
         if not os.path.exists(self.file_path):
             return default_capital
