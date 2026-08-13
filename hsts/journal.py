@@ -539,10 +539,10 @@ class TradingJournal:
         ws = wb["Ledger"]
         row_idx = self._get_true_max_row(ws) + 1
         
-        # Prevent duplicate entries for same symbol/date and trade type
+        # Prevent duplicate entries for same symbol/date
         for r in range(2, row_idx):
-            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=3).value == entry_date and ws.cell(row=r, column=14).value == "OPEN" and ws.cell(row=r, column=16).value == trade_type.upper():
-                logger.info(f"Trade for {symbol} on {entry_date} ({trade_type.upper()}) already exists at Row {r}. Skipping duplicate.")
+            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=3).value == entry_date and ws.cell(row=r, column=14).value == "OPEN":
+                logger.info(f"Trade for {symbol} on {entry_date} already exists at Row {r}. Skipping duplicate.")
                 wb.close()
                 return
 
