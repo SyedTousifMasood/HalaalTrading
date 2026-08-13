@@ -489,6 +489,8 @@ def sync_zerodha_orders():
         print(f"\n[SUCCESS] Synced {synced_count} completed trade(s) to Trading Journal Ledger!")
 
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         print(f"[ERROR] Exception while syncing Zerodha orders: {e}")
 
 @cli.command()
