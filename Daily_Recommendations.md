@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-12***
+*Generated on: **2026-08-13***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **BLISSGVS** | Bliss GVS Pharma Limited | 96/100 | `BUY` | INR 494.05 | INR 448.43 | INR 585.29 | 1:2.0 | 21 | INR 10,375.05 |
-| **ARVIND** | Arvind Limited | 96/100 | `BUY` | INR 567.65 | INR 530.34 | INR 642.28 | 1:2.0 | 26 | INR 14,758.90 |
-| **AKUMS** | AKUMS | 96/100 | `BUY` | INR 760.95 | INR 712.71 | INR 857.42 | 1:2.0 | 20 | INR 15,219.00 |
-| **BRITANNIA** | Britannia Industries Limited | 96/100 | `BUY` | INR 5598.00 | INR 5358.62 | INR 6076.76 | 1:2.0 | 3 | INR 16,794.00 |
-| **CLEAN** | Clean Science and Technology Limited | 96/100 | `BUY` | INR 810.00 | INR 760.71 | INR 908.59 | 1:2.0 | 20 | INR 16,200.00 |
+| **EPL** | EPL Limited | 99/100 | `BUY` | INR 243.64 | INR 228.04 | INR 274.85 | 1:2.0 | 64 | INR 15,592.96 |
+| **BLISSGVS** | Bliss GVS Pharma Limited | 99/100 | `BUY` | INR 489.55 | INR 442.71 | INR 583.22 | 1:2.0 | 21 | INR 10,280.55 |
+| **EMCURE** | EMCURE | 99/100 | `BUY` | INR 2009.60 | INR 1901.71 | INR 2225.37 | 1:2.0 | 9 | INR 18,086.40 |
+| **BAJEL** | Bajel Projects Limited | 99/100 | `BUY` | INR 192.77 | INR 179.74 | INR 218.82 | 1:2.0 | 76 | INR 14,650.52 |
+| **SCHNEIDER** | Schneider Electric Infrastructure Limited | 96/100 | `BUY` | INR 1431.90 | INR 1323.70 | INR 1648.30 | 1:2.0 | 9 | INR 12,887.10 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ULTRACEMCO** | 100/100 | INR 11891.00 | INR 11725.70 | INR 12221.60 | 1:2.0 |
-| **PIDILITIND** | 100/100 | INR 1701.50 | INR 1685.70 | INR 1733.10 | 1:2.0 |
-| **PERSISTENT** | 100/100 | INR 5474.00 | INR 5413.25 | INR 5595.50 | 1:2.0 |
-| **ASTRAL** | 100/100 | INR 1464.00 | INR 1450.45 | INR 1491.10 | 1:2.0 |
-| **SUPREMEIND** | 100/100 | INR 3459.90 | INR 3417.85 | INR 3543.95 | 1:2.0 |
+| **HINDUNILVR** | 100/100 | INR 2092.00 | INR 2077.25 | INR 2121.50 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2755.50 | INR 2736.00 | INR 2794.50 | 1:2.0 |
+| **ULTRACEMCO** | 100/100 | INR 11706.00 | INR 11539.80 | INR 12038.40 | 1:2.0 |
+| **TATAELXSI** | 100/100 | INR 3778.00 | INR 3726.45 | INR 3881.10 | 1:2.0 |
+| **SUPREMEIND** | 100/100 | INR 3497.00 | INR 3457.50 | INR 3576.00 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
