@@ -436,25 +436,31 @@ def sync_zerodha_orders():
 
             # Auto-sync completed orders to Journal
             if status == "COMPLETE":
+                # Parse actual timestamp
+                actual_date = order_time.split(" ")[0] if order_time else datetime.date.today().strftime("%Y-%m-%d")
+
                 if tx_type == "BUY":
-                    # Fetch scanner values for comparison
-                    analysis = scanner.analyze_stock(symbol)
-                    suggested_entry = analysis.get("close", avg_price)
-                    suggested_sl = analysis.get("suggested_sl", avg_price * 0.95)
-                    suggested_target = analysis.get("suggested_target", avg_price * 1.10)
-                    
-                    journal.add_trade(
-                        symbol=symbol,
-                        name=symbol,
-                        entry_date=datetime.date.today().strftime("%Y-%m-%d"),
-                        qty=qty,
-                        buy_price=avg_price,
-                        suggested_entry=suggested_entry,
-                        target=suggested_target,
-                        stop_loss=suggested_sl,
-                        notes="Auto-synced from Zerodha account"
-                    )
-                    synced_count += 1
+                    if journal.update_open_trade(symbol, avg_price, actual_date):
+                        synced_count += 1
+                    else:
+                        # Fetch scanner values for comparison
+                        analysis = scanner.analyze_stock(symbol)
+                        suggested_entry = analysis.get("close", avg_price)
+                        suggested_sl = analysis.get("suggested_sl", avg_price * 0.95)
+                        suggested_target = analysis.get("suggested_target", avg_price * 1.10)
+                        
+                        journal.add_trade(
+                            symbol=symbol,
+                            name=symbol,
+                            entry_date=actual_date,
+                            qty=qty,
+                            buy_price=avg_price,
+                            suggested_entry=suggested_entry,
+                            target=suggested_target,
+                            stop_loss=suggested_sl,
+                            notes="Auto-synced from Zerodha account"
+                        )
+                        synced_count += 1
 
                     # Log buy-side commission/taxes to Capital sheet
                     buy_charges = round(qty * avg_price * 0.0012, 2)
@@ -470,7 +476,7 @@ def sync_zerodha_orders():
                         status = "LOSS"
                     journal.close_trade(
                         symbol=symbol,
-                        exit_date=datetime.date.today().strftime("%Y-%m-%d"),
+                        exit_date=actual_date,
                         exit_price=avg_price,
                         status=status,
                         notes="Auto-synced sell from Zerodha account"

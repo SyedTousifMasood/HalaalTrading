@@ -584,25 +584,41 @@ class TradingJournal:
         logger.info(f"Recorded open trade for {symbol} to Ledger (Row {row_idx})")
         self.log_event(f"Recorded buy order: {qty} shares of {symbol} at {buy_price} ({trade_type.upper()})")
 
-    def get_open_trade_buy_price(self, symbol, trade_type="SWING"):
+    def update_open_trade(self, symbol, actual_buy_price, actual_entry_date):
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Ledger"]
         true_max = self._get_true_max_row(ws)
         for r in range(2, true_max + 1):
-            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=14).value == "OPEN" and ws.cell(row=r, column=16).value == trade_type.upper():
+            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=14).value == "OPEN":
+                ws.cell(row=r, column=5, value=actual_buy_price)
+                ws.cell(row=r, column=3, value=actual_entry_date)
+                wb.save(self.file_path)
+                wb.close()
+                self.log_event(f"Updated OPEN trade: {symbol} execution price to {actual_buy_price} and date to {actual_entry_date}")
+                logger.info(f"Updated OPEN trade: {symbol} execution price to {actual_buy_price} and date to {actual_entry_date}")
+                return True
+        wb.close()
+        return False
+
+    def get_open_trade_buy_price(self, symbol):
+        wb = openpyxl.load_workbook(self.file_path)
+        ws = wb["Ledger"]
+        true_max = self._get_true_max_row(ws)
+        for r in range(2, true_max + 1):
+            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=14).value == "OPEN":
                 buy_price = ws.cell(row=r, column=5).value
                 wb.close()
                 return buy_price
         wb.close()
         return None
 
-    def close_trade(self, symbol, exit_date, exit_price, status, notes="", trade_type="SWING"):
+    def close_trade(self, symbol, exit_date, exit_price, status, notes=""):
         wb = openpyxl.load_workbook(self.file_path)
         ws = wb["Ledger"]
         found = False
         true_max = self._get_true_max_row(ws)
         for r in range(2, true_max + 1):
-            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=14).value == "OPEN" and ws.cell(row=r, column=16).value == trade_type.upper():
+            if ws.cell(row=r, column=1).value == symbol and ws.cell(row=r, column=14).value == "OPEN":
                 ws.cell(row=r, column=11, value=exit_date)
                 ws.cell(row=r, column=12, value=exit_price)
                 ws.cell(row=r, column=14, value=status.upper())
@@ -613,7 +629,7 @@ class TradingJournal:
                 break
 
         if not found:
-            logger.error(f"No active open {trade_type} trade found for symbol {symbol}")
+            logger.error(f"No active open trade found for symbol {symbol}")
             wb.close()
             return False
 
@@ -621,7 +637,7 @@ class TradingJournal:
         wb.close()
         
         self.apply_row_styling()
-        self.log_event(f"Closed {trade_type} trade: {symbol} exited at {exit_price} ({status})")
+        self.log_event(f"Closed trade: {symbol} exited at {exit_price} ({status})")
         return True
 
     def apply_row_styling(self):

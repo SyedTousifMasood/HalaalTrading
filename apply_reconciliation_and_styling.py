@@ -140,7 +140,11 @@ def run_master_reconciliation():
                 actual_cash = float(margins.get("equity", {}).get("available", {}).get("live_balance", actual_cash))
                 print(f"Fetched live Zerodha Equity margin: INR {actual_cash:.2f}")
     except Exception as e:
-        print(f"Error fetching live margin, using fallback cash INR {actual_cash:.2f}: {e}")
+        print(f"Error fetching live margin: {e}")
+        
+    journal_cash = journal.get_available_capital()
+    if actual_cash <= 0:
+        actual_cash = journal_cash
         
     journal_cash = journal.get_available_capital()
     print(f"Pre-reconciliation Journal Cash: INR {journal_cash:.2f}")
