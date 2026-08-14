@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-13***
-*Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
+*Generated on: **2026-08-14***
+*Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
 
 ---
 
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **EPL** | EPL Limited | 99/100 | `BUY` | INR 243.64 | INR 228.04 | INR 274.85 | 1:2.0 | 64 | INR 15,592.96 |
-| **BLISSGVS** | Bliss GVS Pharma Limited | 99/100 | `BUY` | INR 489.55 | INR 442.71 | INR 583.22 | 1:2.0 | 21 | INR 10,280.55 |
-| **EMCURE** | EMCURE | 99/100 | `BUY` | INR 2009.60 | INR 1901.71 | INR 2225.37 | 1:2.0 | 9 | INR 18,086.40 |
-| **BAJEL** | Bajel Projects Limited | 99/100 | `BUY` | INR 192.77 | INR 179.74 | INR 218.82 | 1:2.0 | 76 | INR 14,650.52 |
-| **SCHNEIDER** | Schneider Electric Infrastructure Limited | 96/100 | `BUY` | INR 1431.90 | INR 1323.70 | INR 1648.30 | 1:2.0 | 9 | INR 12,887.10 |
+| **BLISSGVS** | Bliss GVS Pharma Limited | 99/100 | `BUY` | INR 514.00 | INR 466.87 | INR 608.26 | 1:2.0 | 19 | INR 9,766.00 |
+| **BHARATSE** | Bharat Seats Limited | 96/100 | `BUY` | INR 245.25 | INR 219.06 | INR 297.64 | 1:2.0 | 38 | INR 9,319.50 |
+| **JAIBALAJI** | Jai Balaji Industries Limited | 96/100 | `BUY` | INR 68.87 | INR 62.62 | INR 81.37 | 1:2.0 | 145 | INR 9,986.15 |
+| **INDIQUBE** | INDIQUBE | 94/100 | `BUY` | INR 183.34 | INR 167.77 | INR 214.48 | 1:2.0 | 54 | INR 9,900.36 |
+| **BHEL** | Bharat Heavy Electricals Limited | 93/100 | `BUY` | INR 420.00 | INR 399.46 | INR 461.07 | 1:2.0 | 23 | INR 9,660.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HINDUNILVR** | 100/100 | INR 2092.00 | INR 2077.25 | INR 2121.50 | 1:2.0 |
-| **ASIANPAINT** | 100/100 | INR 2755.50 | INR 2736.00 | INR 2794.50 | 1:2.0 |
-| **ULTRACEMCO** | 100/100 | INR 11706.00 | INR 11539.80 | INR 12038.40 | 1:2.0 |
-| **TATAELXSI** | 100/100 | INR 3778.00 | INR 3726.45 | INR 3881.10 | 1:2.0 |
-| **SUPREMEIND** | 100/100 | INR 3497.00 | INR 3457.50 | INR 3576.00 | 1:2.0 |
+| **JSWSTEEL** | 100/100 | INR 1270.00 | INR 1254.50 | INR 1300.95 | 1:2.0 |
+| **BOSCHLTD** | 100/100 | INR 47100.00 | INR 45702.00 | INR 49896.00 | 1:2.0 |
+| **OFSS** | 100/100 | INR 11828.00 | INR 11637.20 | INR 12209.60 | 1:2.0 |
+| **THERMAX** | 100/100 | INR 4055.00 | INR 4005.30 | INR 4154.35 | 1:2.0 |
+| **SUMICHEM** | 100/100 | INR 564.95 | INR 554.10 | INR 586.60 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
