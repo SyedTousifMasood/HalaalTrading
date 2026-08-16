@@ -6172,3 +6172,47 @@
 2026-08-16 08:29:32,798 [INFO] hsts.broker.zerodha_free: Zerodha Free Authentication successful! enctoken extracted.
 2026-08-16 08:29:32,861 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
 2026-08-16 08:29:39,698 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-08-16 08:57:15,731 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-08-16 08:57:15,736 [INFO] hsts.main: Starting HSTS scanner run...
+2026-08-16 08:57:15,846 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-08-16 08:57:15,848 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-08-16 08:57:24,193 [INFO] hsts.regime: Evaluating market regime using index ^NSEI and universe data/universe.csv...
+2026-08-16 08:57:26,811 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+2026-08-16 08:57:27,777 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-08-16 08:57:28,467 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OBEROIREAL.NS"}}}
+2026-08-16 08:57:29,430 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-08-16 08:57:29,432 [ERROR] yfinance: 
+2 Failed downloads:
+2026-08-16 08:57:29,433 [ERROR] yfinance: ['LTIM.NS', 'OBEROIREAL.NS']: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-08-16 08:57:29,553 [INFO] hsts.regime: Market regime identified as STATE 2: Bear Relief Rally (Close: 24366.00, RSI: 64.5, Breadth: 58.3%)
+2026-08-16 08:59:32,215 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 6
+2026-08-16 08:59:32,217 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 0
+2026-08-16 08:59:32,218 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 0
+2026-08-16 09:07:51,858 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-08-16 09:07:51,861 [INFO] hsts.main: Starting HSTS scanner run...
+2026-08-16 09:07:51,947 [INFO] hsts.scanner: Loaded AI Adaptive Category Weights: {'trend': 0.2459, 'momentum': 0.2541, 'volatility': 0.1557, 'volume': 0.1639, 'levels': 0.1803}
+2026-08-16 09:07:51,950 [INFO] hsts.journal: Trading Journal already exists. Checking for updates/missing sheets...
+2026-08-16 09:08:00,068 [INFO] hsts.regime: Evaluating market regime using index ^NSEI and universe data/universe.csv...
+2026-08-16 09:08:02,509 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: OBEROIREAL.NS"}}}
+2026-08-16 09:08:03,095 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+2026-08-16 09:08:03,767 [ERROR] yfinance: $OBEROIREAL.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-08-16 09:08:04,533 [ERROR] yfinance: $LTIM.NS: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-08-16 09:08:04,546 [ERROR] yfinance: 
+2 Failed downloads:
+2026-08-16 09:08:04,546 [ERROR] yfinance: ['OBEROIREAL.NS', 'LTIM.NS']: possibly delisted; no price data found  (period=30d) (Yahoo error = "No data found, symbol may be delisted")
+2026-08-16 09:08:04,704 [INFO] hsts.regime: Market regime identified as STATE 2: Bear Relief Rally (Close: 24366.00, RSI: 64.5, Breadth: 58.3%)
+2026-08-16 09:09:58,223 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 6
+2026-08-16 09:09:58,225 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 0
+2026-08-16 09:09:58,226 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 0
+2026-08-16 09:09:58,228 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 0
+2026-08-16 09:09:58,229 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 1
+2026-08-16 09:09:58,231 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 0
+2026-08-16 09:09:58,233 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 0
+2026-08-16 09:09:58,235 [INFO] hsts.risk: Position size capped to 10% max allocation limit. New quantity: 0
+2026-08-16 09:23:39,030 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-08-16 09:23:42,111 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-08-16 09:23:45,006 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-08-16 09:24:10,189 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-08-16 09:24:12,883 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-08-16 09:24:15,716 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-08-16 09:24:33,613 [INFO] hsts: HSTS Log Engine initialized successfully.
