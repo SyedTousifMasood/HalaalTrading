@@ -6162,3 +6162,7 @@
 2026-08-14 07:51:25,973 [INFO] hsts.intraday_scanner: Downloading intraday batch 3/5... (30 tickers)
 2026-08-14 07:51:28,462 [INFO] hsts.intraday_scanner: Downloading intraday batch 4/5... (30 tickers)
 2026-08-14 07:51:31,010 [INFO] hsts.intraday_scanner: Downloading intraday batch 5/5... (24 tickers)
+2026-08-16 07:32:29,699 [INFO] hsts: HSTS Log Engine initialized successfully.
+2026-08-16 07:32:29,915 [INFO] hsts.broker.zerodha_free: Attempting automated Zerodha Web Login...
+2026-08-16 07:32:30,659 [INFO] hsts.broker.zerodha_free: Zerodha Login Response Data: {'user_id': 'JMA256', 'request_id': 'W19XYlwVuT5ivD7uNM9FfVFhR3aRdAs37F2Cc3aP5T2FnV3L8cwj5rp013aUNNlg', 'twofa_type': 'totp', 'twofa_types': ['totp', 'app_code'], 'twofa_status': 'active', 'profile': {'user_name': 'Syed Tousif Masood', 'user_shortname': 'Syed', 'avatar_url': None}}
+2026-08-16 07:32:30,716 [INFO] hsts.broker.zerodha_free: Zerodha Free Authentication successful! enctoken extracted.
