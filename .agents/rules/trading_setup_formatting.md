@@ -19,3 +19,17 @@ Whenever you present a table of trading setups or stock recommendations to the u
 2. To calculate "Projected Profit %": `((Profit Target - Entry Price) / Entry Price) * 100`. Format it as a percentage with two decimal places (e.g., `12.15%`).
 
 3. Ensure that NO columns are omitted from the scanner output. If the scanner misses metrics like Risk-to-Reward or Allocation, you MUST calculate them manually and include them.
+# Open Trades Analysis Tables
+
+Whenever you are asked to provide suggestions or analysis on **Open Trades**:
+1. You MUST display the results in a tabular format with the following exact columns:
+   - Symbol
+   - Entry Price
+   - Current Price
+   - Sessions/Days (Format: Trading Sessions / Calendar Days from date of purchase)
+   - Trade Health (Score 0-100 calculated as: ((Current Price - Stop Loss) / (Target - Stop Loss)) * 100)
+   - Stop Loss
+   - Target
+   - P&L (INR)
+   - P&L (%)
+   - Action (e.g., HOLD, TRAIL SL, SQUARE OFF)

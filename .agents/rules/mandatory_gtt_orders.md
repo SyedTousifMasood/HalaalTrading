@@ -9,3 +9,5 @@ Whenever you are instructed to place a new buy order (whether Intraday or Swing)
 2. This is COMPULSORY and cannot be skipped under any circumstances.
 3. If using a CLI tool that automatically handles the GTT (like `place-intraday-amo`), verify that it succeeds.
 4. If writing a custom Python script to place the order (e.g., using `broker.place_order`), your script MUST also include the `broker.place_gtt()` call in the exact same script. Do not leave it for a follow-up action.
+5. **100% Verification Required:** After placing the orders, you must explicitly fetch active GTTs (e.g., using `broker.get_gtts()`) and verify that the GTT for the new symbol is present in the active list.
+6. **Notification:** If the GTT order is missing or fails for any reason, you must immediately halt and notify the user of the failure.
