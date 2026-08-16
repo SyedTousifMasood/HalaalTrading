@@ -70,3 +70,23 @@ Depending on the market type identified by the regime engine, HSTS toggles betwe
 *   **Max Positions:** Restricted to **3 to 4 concentrated positions** (25% to 33% capital each) to reduce CDSL depository fees.
 *   **Time-Stop Policy:** Dynamic **5-Day Review** (exit early if the position is stagnant) and **7-Day Hard Exit** (liquidated at market close on the 7th session if targets/SLs are not hit).
 *   **Execution Discipline:** Single-tranche buy and sell orders only (no partial scaling) and BTST exits when targets are hit within 48 hours to bypass Demat settlement costs.
+
+## 5. Trade Management & Active Position Monitoring
+
+To actively manage risk and evaluate ongoing trades, HSTS employs strict monitoring rules:
+
+### A. Mandatory GTT Protection
+Every single trade executed MUST have a corresponding Good-Till-Triggered (GTT) OCO order placed immediately alongside it to secure the Target and Stop Loss. The system enforces **100% post-placement verification** by querying the broker to confirm the GTT is actively registered.
+
+### B. The 5-Session Time-Stop Rule
+If an open position has not reached its target after **5 trading sessions**, the system triggers a mandatory review:
+*   **Strong Technicals (High Composite Score):** Trail the Stop Loss to the original entry price (Cost) to secure capital, allowing the trade to run risk-free.
+*   **Weakening Technicals (Low Composite Score):** Square off the position at the current market price to free up tied capital for better setups with fresh momentum.
+
+### C. Evaluation Metrics
+When reviewing open trades, HSTS utilizes two distinct scoring mechanisms:
+1.  **Trade Health Score (0-100):** A position-based metric measuring the trade's physical progress. Formula: ((Current Price - Stop Loss) / (Target - Stop Loss)) * 100. A score of 0 means the Stop Loss is hit, 100 means the Target is hit, and ~33 means it is at the entry price. It shows if the specific trade is winning or losing.
+2.  **Composite Score (0-100):** An indicator-based metric measuring the stock's raw underlying market strength across Trend, Momentum, Volatility, and Volume indicators. It determines if the chart is still technically bullish, regardless of entry price.
+
+### D. Reporting Standards
+All open trade analysis MUST be presented in a strict 10-column tabular format including: Symbol, Entry Price, Current Price, Sessions/Days (Trading Sessions / Calendar Days), Trade Health (Score 0-100), Stop Loss, Target, P&L (INR), P&L (%), and Action (e.g., HOLD, TRAIL SL, SQUARE OFF).
