@@ -725,6 +725,7 @@
                 <ul class="nav-links">
                     <li><a href="#philosophy">Core Philosophy</a></li>
                     <li><a href="#regime-model">Regimes & Risk</a></li>
+                    <li><a href="#trade-management">Trade Management</a></li>
                     <li><a href="#comparison">Global Comparison</a></li>
                     <li><a href="#conclusion">Conclusion</a></li>
                 </ul>
@@ -1002,6 +1003,38 @@
                         <h4>Dynamic Cap Enforcement</h4>
                         <p>We restrict each stock position to fit within the regime's allocation cap. High-priced stocks are automatically skipped or limited to 1 share to prevent a single trade from consuming too much capital.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trade Management Section -->
+    <section class="pillars" id="trade-management" style="background: rgba(15, 23, 42, 0.2); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trade Management & Active Position Monitoring</h2>
+                <p>Strict rules for evaluating and protecting ongoing trades.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">1. Mandatory GTT Protection</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Every executed trade MUST have a corresponding GTT OCO order placed immediately. The system enforces <strong>100% post-placement verification</strong> to ensure the GTT is actively registered on exchange servers.</p>
+                </div>
+                
+                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">2. The 5-Session Rule</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">If a trade hasn't hit its target in 5 sessions, it undergoes review. Strong technicals warrant a <strong>Trailing Stop Loss</strong> to entry cost; weakening technicals trigger a <strong>Square Off</strong> to free up capital.</p>
+                </div>
+
+                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">3. Dual Evaluation Metrics</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;"><strong>Trade Health:</strong> (0-100) measures physical P&L progress from SL to Target.<br><br><strong>Composite Score:</strong> (0-100) measures raw underlying market momentum and trend strength.</p>
+                </div>
+                
+                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">4. Reporting Standards</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Open trades are analyzed strictly with 10 exact metrics, including dynamically calculated Sessions/Days holding periods, Trade Health, and predefined action recommendations.</p>
                 </div>
             </div>
         </div>
