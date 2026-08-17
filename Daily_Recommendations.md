@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-14***
-*Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
+*Generated on: **2026-08-17***
+*Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
 
@@ -10,11 +10,15 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **BLISSGVS** | Bliss GVS Pharma Limited | 99/100 | `BUY` | INR 514.00 | INR 466.87 | INR 608.26 | 1:2.0 | 19 | INR 9,766.00 |
-| **BHARATSE** | Bharat Seats Limited | 96/100 | `BUY` | INR 245.25 | INR 219.06 | INR 297.64 | 1:2.0 | 38 | INR 9,319.50 |
-| **JAIBALAJI** | Jai Balaji Industries Limited | 96/100 | `BUY` | INR 68.87 | INR 62.62 | INR 81.37 | 1:2.0 | 145 | INR 9,986.15 |
-| **INDIQUBE** | INDIQUBE | 94/100 | `BUY` | INR 183.34 | INR 167.77 | INR 214.48 | 1:2.0 | 54 | INR 9,900.36 |
-| **BHEL** | Bharat Heavy Electricals Limited | 93/100 | `BUY` | INR 420.00 | INR 399.46 | INR 461.07 | 1:2.0 | 23 | INR 9,660.00 |
+| **IPCALAB** | IPCA Laboratories Limited | 96/100 | `BUY` | INR 1884.60 | INR 1731.24 | INR 2191.32 | 1:2.0 | 0 | INR 0.00 |
+| **ASIANENE** | Asian Energy Services Limited | 96/100 | `BUY` | INR 425.25 | INR 380.54 | INR 514.68 | 1:2.0 | 0 | INR 0.00 |
+| **HARSHA** | Harsha Engineers International Limited | 96/100 | `BUY` | INR 425.60 | INR 395.81 | INR 485.17 | 1:2.0 | 0 | INR 0.00 |
+| **OBEROIRLTY** | Oberoi Realty Limited | 96/100 | `BUY` | INR 1931.00 | INR 1837.41 | INR 2118.17 | 1:2.0 | 0 | INR 0.00 |
+| **KPIL** | Kalpataru Projects International Limited | 96/100 | `BUY` | INR 1404.20 | INR 1313.23 | INR 1586.14 | 1:2.0 | 0 | INR 0.00 |
+
+> [Slim Warning]
+> **BROADER MARKET IS IN CASH ONLY REGIME.**
+> Under HSTS rules, taking new swing momentum entries is strictly not recommended to preserve capital.
 
 ---
 
@@ -23,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **JSWSTEEL** | 100/100 | INR 1270.00 | INR 1254.50 | INR 1300.95 | 1:2.0 |
-| **BOSCHLTD** | 100/100 | INR 47100.00 | INR 45702.00 | INR 49896.00 | 1:2.0 |
-| **OFSS** | 100/100 | INR 11828.00 | INR 11637.20 | INR 12209.60 | 1:2.0 |
-| **THERMAX** | 100/100 | INR 4055.00 | INR 4005.30 | INR 4154.35 | 1:2.0 |
-| **SUMICHEM** | 100/100 | INR 564.95 | INR 554.10 | INR 586.60 | 1:2.0 |
+| **GODREJPROP** | 100/100 | INR 2054.00 | INR 2013.10 | INR 2135.85 | 1:2.0 |
+| **IGL** | 100/100 | INR 151.00 | INR 148.75 | INR 155.45 | 1:2.0 |
+| **GRANULES** | 100/100 | INR 862.00 | INR 851.45 | INR 883.05 | 1:2.0 |
+| **BALKRISIND** | 100/100 | INR 2407.20 | INR 2348.65 | INR 2524.25 | 1:2.0 |
+| **NMDC** | 100/100 | INR 85.50 | INR 83.90 | INR 88.70 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
