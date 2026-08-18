@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-17***
+*Generated on: **2026-08-18***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **IPCALAB** | IPCA Laboratories Limited | 96/100 | `BUY` | INR 1884.60 | INR 1731.24 | INR 2191.32 | 1:2.0 | 0 | INR 0.00 |
-| **ASIANENE** | Asian Energy Services Limited | 96/100 | `BUY` | INR 425.25 | INR 380.54 | INR 514.68 | 1:2.0 | 0 | INR 0.00 |
-| **HARSHA** | Harsha Engineers International Limited | 96/100 | `BUY` | INR 425.60 | INR 395.81 | INR 485.17 | 1:2.0 | 0 | INR 0.00 |
-| **OBEROIRLTY** | Oberoi Realty Limited | 96/100 | `BUY` | INR 1931.00 | INR 1837.41 | INR 2118.17 | 1:2.0 | 0 | INR 0.00 |
-| **KPIL** | Kalpataru Projects International Limited | 96/100 | `BUY` | INR 1404.20 | INR 1313.23 | INR 1586.14 | 1:2.0 | 0 | INR 0.00 |
+| **TBOTEK** | TBOTEK | 99/100 | `BUY` | INR 1708.20 | INR 1569.09 | INR 1986.43 | 1:2.0 | 0 | INR 0.00 |
+| **OIL** | Oil India Limited | 99/100 | `BUY` | INR 480.50 | INR 454.83 | INR 531.84 | 1:2.0 | 0 | INR 0.00 |
+| **IPCALAB** | IPCA Laboratories Limited | 99/100 | `BUY` | INR 1882.10 | INR 1733.15 | INR 2179.99 | 1:2.0 | 0 | INR 0.00 |
+| **BOROLTD** | Borosil Limited | 96/100 | `BUY` | INR 250.34 | INR 230.89 | INR 289.25 | 1:2.0 | 0 | INR 0.00 |
+| **ACE** | Action Construction Equipment Limited | 96/100 | `BUY` | INR 1184.80 | INR 1104.06 | INR 1346.29 | 1:2.0 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **GODREJPROP** | 100/100 | INR 2054.00 | INR 2013.10 | INR 2135.85 | 1:2.0 |
-| **IGL** | 100/100 | INR 151.00 | INR 148.75 | INR 155.45 | 1:2.0 |
-| **GRANULES** | 100/100 | INR 862.00 | INR 851.45 | INR 883.05 | 1:2.0 |
-| **BALKRISIND** | 100/100 | INR 2407.20 | INR 2348.65 | INR 2524.25 | 1:2.0 |
-| **NMDC** | 100/100 | INR 85.50 | INR 83.90 | INR 88.70 | 1:2.0 |
+| **LALPATHLAB** | 100/100 | INR 1901.40 | INR 1866.40 | INR 1971.40 | 1:2.0 |
+| **SCHNEIDER** | 100/100 | INR 1279.90 | INR 1203.15 | INR 1433.40 | 1:2.0 |
+| **HEG** | 100/100 | INR 745.00 | INR 721.65 | INR 791.75 | 1:2.0 |
+| **AARTIIND** | 100/100 | INR 532.00 | INR 520.45 | INR 555.05 | 1:2.0 |
+| **PHOENIXLTD** | 100/100 | INR 1940.00 | INR 1916.25 | INR 1987.50 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
