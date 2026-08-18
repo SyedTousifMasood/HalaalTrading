@@ -265,7 +265,7 @@ class TradingJournal:
             ("Current Total Portfolio Value", "=B13+B12", "currency"),
             ("Total Number of Trades", '=COUNTIF(Ledger!N:N, "WIN") + COUNTIF(Ledger!N:N, "LOSS") + COUNTIF(Ledger!N:N, "OPEN")', "integer"),
             ("Winning Percentage of Trades", '=IF((COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS"))>0, COUNTIF(Ledger!N:N, "WIN")/(COUNTIF(Ledger!N:N, "WIN")+COUNTIF(Ledger!N:N, "LOSS")), 0)', "percentage"),
-            ("Capital Deployed in Open Trades", '=SUMPRODUCT((Ledger!N2:N500="OPEN")*(Ledger!E2:E500)*(Ledger!D2:D500))', "currency"),
+            ("Capital Deployed in Open Trades", '=SUMPRODUCT((Ledger!N2:N5000="OPEN")*(Ledger!E2:E5000)*(Ledger!D2:D5000))', "currency"),
             ("Current Value of Active Trades", curr_val_active, "currency"),
             ("Capital Available for Trading", "=B5 - SUMIF(Capital!B:B, \"WITHDRAWAL\", Capital!C:C) + B6 - B11", "currency"),
             ("Total Wins", '=COUNTIF(Ledger!N:N, "WIN")', "integer"),
