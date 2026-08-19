@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-18***
+*Generated on: **2026-08-19***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **TBOTEK** | TBOTEK | 99/100 | `BUY` | INR 1708.20 | INR 1569.09 | INR 1986.43 | 1:2.0 | 0 | INR 0.00 |
-| **OIL** | Oil India Limited | 99/100 | `BUY` | INR 480.50 | INR 454.83 | INR 531.84 | 1:2.0 | 0 | INR 0.00 |
-| **IPCALAB** | IPCA Laboratories Limited | 99/100 | `BUY` | INR 1882.10 | INR 1733.15 | INR 2179.99 | 1:2.0 | 0 | INR 0.00 |
-| **BOROLTD** | Borosil Limited | 96/100 | `BUY` | INR 250.34 | INR 230.89 | INR 289.25 | 1:2.0 | 0 | INR 0.00 |
-| **ACE** | Action Construction Equipment Limited | 96/100 | `BUY` | INR 1184.80 | INR 1104.06 | INR 1346.29 | 1:2.0 | 0 | INR 0.00 |
+| **ACE** | Action Construction Equipment Limited | 99/100 | `BUY` | INR 1181.20 | INR 1096.51 | INR 1350.57 | 1:2.0 | 0 | INR 0.00 |
+| **BOROLTD** | Borosil Limited | 96/100 | `BUY` | INR 248.11 | INR 228.83 | INR 286.67 | 1:2.0 | 0 | INR 0.00 |
+| **ALKYLAMINE** | Alkyl Amines Chemicals Limited | 96/100 | `BUY` | INR 1956.10 | INR 1821.09 | INR 2226.13 | 1:2.0 | 0 | INR 0.00 |
+| **HARSHA** | Harsha Engineers International Limited | 96/100 | `BUY` | INR 436.55 | INR 405.49 | INR 498.68 | 1:2.0 | 0 | INR 0.00 |
+| **EPL** | EPL Limited | 96/100 | `BUY` | INR 250.80 | INR 235.05 | INR 282.31 | 1:2.0 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **LALPATHLAB** | 100/100 | INR 1901.40 | INR 1866.40 | INR 1971.40 | 1:2.0 |
-| **SCHNEIDER** | 100/100 | INR 1279.90 | INR 1203.15 | INR 1433.40 | 1:2.0 |
-| **HEG** | 100/100 | INR 745.00 | INR 721.65 | INR 791.75 | 1:2.0 |
-| **AARTIIND** | 100/100 | INR 532.00 | INR 520.45 | INR 555.05 | 1:2.0 |
-| **PHOENIXLTD** | 100/100 | INR 1940.00 | INR 1916.25 | INR 1987.50 | 1:2.0 |
+| **SUNPHARMA** | 100/100 | INR 1900.00 | INR 1876.80 | INR 1946.40 | 1:2.0 |
+| **HCLTECH** | 100/100 | INR 1324.80 | INR 1300.15 | INR 1374.10 | 1:2.0 |
+| **JSWSTEEL** | 100/100 | INR 1285.80 | INR 1275.05 | INR 1307.30 | 1:2.0 |
+| **HINDALCO** | 91/100 | INR 1038.95 | INR 1024.05 | INR 1068.70 | 1:2.0 |
+| **TORNTPHARM** | 85/100 | INR 5013.00 | INR 4948.50 | INR 5142.00 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
