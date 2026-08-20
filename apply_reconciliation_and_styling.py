@@ -128,33 +128,14 @@ def run_master_reconciliation():
     password = os.getenv("ZERODHA_PASSWORD")
     totp_secret = os.getenv("ZERODHA_TOTP_SECRET")
     
-    # We default actual cash to the live equity balance or opening balance
-    actual_cash = 3928.20
-    try:
-        print("Connecting to Zerodha to fetch live cash margin...")
-        broker = ZerodhaFreeBroker(user_id=user_id, password=password, totp_secret=totp_secret)
-        if broker.authenticate():
-            margins = broker.get_margins()
-            if margins:
-                # Use live balance or cash
-                actual_cash = float(margins.get("equity", {}).get("available", {}).get("live_balance", actual_cash))
-                print(f"Fetched live Zerodha Equity margin: INR {actual_cash:.2f}")
-    except Exception as e:
-        print(f"Error fetching live margin: {e}")
-        
-    journal_cash = journal.get_available_capital()
-    if actual_cash <= 0:
-        actual_cash = journal_cash
-        
-    journal_cash = journal.get_available_capital()
-    print(f"Pre-reconciliation Journal Cash: INR {journal_cash:.2f}")
+    # We rely on the Journal's calculated cash margin (Initial Capital + Deposits - Withdrawals - Capital in OPEN trades + Realized PnL)
+    # The user requested to use last closed session prices/journal formulas instead of live margin overrides.
     
-    diff = float(actual_cash) - float(journal_cash)
-    if abs(diff) > 0.01:
-        print(f"Discrepancy found: INR {diff:+.2f} (Calculated: {journal_cash:.2f} vs Zerodha Live: {actual_cash:.2f}).")
-        print(f"[RECONCILED] Available cash updated directly to Zerodha margin: INR {actual_cash:.2f}")
-    else:
-        print("Journal cash matches Zerodha cash perfectly!")
+    journal_cash = journal.get_available_capital()
+    print(f"Pre-reconciliation Journal Cash (Calculated): INR {journal_cash:.2f}")
+    
+    # Do not overwrite the calculated cash balance with a live fetch.
+    actual_cash = journal_cash
 
     # 6. Apply row styling to Ledger
     print("Applying outcome-based row highlights to Ledger sheet...")
