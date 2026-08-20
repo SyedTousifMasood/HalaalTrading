@@ -548,6 +548,9 @@ def run_master_reconciliation():
     total_hold_pct_cell.number_format = "0.0%"
 
     # --- 2. Pie Chart ---
+    # Clear existing charts to prevent stacking duplicates
+    ws_dash._charts.clear()
+
     # Shifted to Column M (M3) to avoid overlap
     from openpyxl.chart import PieChart, LineChart, Reference
     pie = PieChart()
