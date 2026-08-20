@@ -1,0 +1,58 @@
+name: 5-Day Open Position Evaluator
+
+on:
+  schedule:
+    # Runs at 11:30 UTC (17:00 IST) every Monday through Friday
+    - cron: '30 11 * * 1-5'
+  workflow_dispatch: # Allows manual trigger from the Actions tab
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install System Dependencies
+        run: sudo apt-get install -y wkhtmltopdf
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas yfinance click openpyxl tabulate
+
+      - name: Run Evaluator
+        id: run_eval
+        run: |
+          # Run the evaluation script and save output
+          python main.py evaluate-positions > eval_output.txt
+          
+          # Cat the output so it shows up in the Action logs too
+          cat eval_output.txt
+          
+          # Format the output for the GitHub Issue body
+          echo "REPORT_BODY<<EOF" >> $GITHUB_ENV
+          echo '```text' >> $GITHUB_ENV
+          cat eval_output.txt >> $GITHUB_ENV
+          echo '```' >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Get Date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Issue
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: "📈 Daily Position Evaluation - ${{ steps.date.outputs.date }}"
+          content-filepath: ./eval_output.txt
+          labels: report, automated
