@@ -442,11 +442,11 @@ def run_master_reconciliation():
         ws_dash.cell(row=current_row, column=4).fill = fill_metric
         ws_dash.cell(row=current_row, column=4).alignment = Alignment(horizontal="center")
         
-        # Pie Chart Label & Data (Hidden in Col 15 / O and Col 16 / P)
+        # Pie Chart Label & Data (Hidden out of view in Col 27 / AA and Col 28 / AB)
         total_cost = qty * cost
         pie_label = f"{pos['symbol']} ({qty} Qty, ₹{total_cost:,.0f})"
-        ws_dash.cell(row=current_row, column=15, value=pie_label)
-        ws_dash.cell(row=current_row, column=16, value=total_cost) # Static value for chart rendering
+        ws_dash.cell(row=current_row, column=27, value=pie_label)
+        ws_dash.cell(row=current_row, column=28, value=total_cost) # Static value for chart rendering
         
         # Qty
         qty_cell = ws_dash.cell(row=current_row, column=5, value=qty)
@@ -554,18 +554,14 @@ def run_master_reconciliation():
     # Shifted to Column M (M3) to avoid overlap
     from openpyxl.chart import PieChart, LineChart, Reference
     pie = PieChart()
-    labels = Reference(ws_dash, min_col=15, min_row=4, max_row=current_row-1)
-    data = Reference(ws_dash, min_col=16, min_row=4, max_row=current_row-1)  # Using Col 16 (P) for static cost data
+    labels = Reference(ws_dash, min_col=27, min_row=4, max_row=current_row-1)
+    data = Reference(ws_dash, min_col=28, min_row=4, max_row=current_row-1)  # Using Col 28 (AB) for static cost data
     pie.add_data(data, titles_from_data=False)
     pie.set_categories(labels)
     pie.title = "Total Investment Allocation"
     pie.width = 14
     pie.height = 8.5
     ws_dash.add_chart(pie, "M3")
-    
-    # Hide Column O (15) and P (16) since they just store pie chart logic
-    ws_dash.column_dimensions['O'].hidden = True
-    ws_dash.column_dimensions['P'].hidden = True
 
 
     # --- 3. HelperData Sheet & Cumulative PnL ---
