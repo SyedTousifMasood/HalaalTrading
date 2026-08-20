@@ -125,6 +125,21 @@ class ZerodhaFreeBroker(BaseBroker):
             logger.error(f"Error fetching positions: {e}")
             return None
 
+    def get_holdings(self):
+        """Fetch long-term holdings from Zerodha OMS."""
+        url = f"{self.base_url}/oms/portfolio/holdings"
+        try:
+            res = self.session.get(url)
+            data = res.json()
+            if data.get("status") == "success":
+                return data.get("data", [])
+            else:
+                logger.error(f"Error fetching holdings: {data.get('message')}")
+                return []
+        except Exception as e:
+            logger.error(f"Error fetching holdings: {e}")
+            return []
+
     def get_orders(self):
         """Fetch today's orders list from Zerodha OMS."""
         url = f"{self.base_url}/oms/orders"
