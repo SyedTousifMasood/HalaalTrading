@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-11***
-*Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
+*Generated on: **2026-08-19***
+*Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
 
@@ -10,11 +10,15 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **CLEAN** | Clean Science and Technology Limited | 99/100 | `BUY` | INR 803.55 | INR 754.65 | INR 901.35 | 1:2.0 | 0 | INR 0.00 |
-| **HARSHA** | Harsha Engineers International Limited | 99/100 | `BUY` | INR 432.60 | INR 408.84 | INR 480.13 | 1:2.0 | 0 | INR 0.00 |
-| **SCHNEIDER** | Schneider Electric Infrastructure Limited | 96/100 | `BUY` | INR 1424.90 | INR 1320.61 | INR 1633.47 | 1:2.0 | 0 | INR 0.00 |
-| **BRITANNIA** | Britannia Industries Limited | 96/100 | `BUY` | INR 5623.50 | INR 5378.12 | INR 6114.26 | 1:2.0 | 0 | INR 0.00 |
-| **AVALON** | Avalon Technologies Limited | 96/100 | `BUY` | INR 1923.70 | INR 1723.61 | INR 2323.87 | 1:2.0 | 0 | INR 0.00 |
+| **ACE** | Action Construction Equipment Limited | 99/100 | `BUY` | INR 1181.20 | INR 1096.51 | INR 1350.57 | 1:2.0 | 0 | INR 0.00 |
+| **BOROLTD** | Borosil Limited | 96/100 | `BUY` | INR 248.11 | INR 228.83 | INR 286.67 | 1:2.0 | 0 | INR 0.00 |
+| **ALKYLAMINE** | Alkyl Amines Chemicals Limited | 96/100 | `BUY` | INR 1956.10 | INR 1821.09 | INR 2226.13 | 1:2.0 | 0 | INR 0.00 |
+| **HARSHA** | Harsha Engineers International Limited | 96/100 | `BUY` | INR 436.55 | INR 405.49 | INR 498.68 | 1:2.0 | 0 | INR 0.00 |
+| **EPL** | EPL Limited | 96/100 | `BUY` | INR 250.80 | INR 235.05 | INR 282.31 | 1:2.0 | 0 | INR 0.00 |
+
+> [Slim Warning]
+> **BROADER MARKET IS IN CASH ONLY REGIME.**
+> Under HSTS rules, taking new swing momentum entries is strictly not recommended to preserve capital.
 
 ---
 
@@ -23,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **BEL** | 100/100 | INR 405.85 | INR 399.40 | INR 418.75 | 1:2.0 |
-| **CGPOWER** | 100/100 | INR 881.00 | INR 873.40 | INR 896.25 | 1:2.0 |
-| **IGL** | 100/100 | INR 153.07 | INR 151.85 | INR 155.45 | 1:2.0 |
-| **DRREDDY** | 100/100 | INR 1205.00 | INR 1189.60 | INR 1235.85 | 1:2.0 |
-| **TATACOMM** | 100/100 | INR 1746.10 | INR 1722.50 | INR 1793.25 | 1:2.0 |
+| **SUNPHARMA** | 100/100 | INR 1900.00 | INR 1876.80 | INR 1946.40 | 1:2.0 |
+| **HCLTECH** | 100/100 | INR 1324.80 | INR 1300.15 | INR 1374.10 | 1:2.0 |
+| **JSWSTEEL** | 100/100 | INR 1285.80 | INR 1275.05 | INR 1307.30 | 1:2.0 |
+| **HINDALCO** | 91/100 | INR 1038.95 | INR 1024.05 | INR 1068.70 | 1:2.0 |
+| **TORNTPHARM** | 85/100 | INR 5013.00 | INR 4948.50 | INR 5142.00 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
