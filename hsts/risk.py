@@ -3,11 +3,11 @@ import logging
 logger = logging.getLogger("hsts.risk")
 
 class RiskManagementEngine:
-    def __init__(self, max_portfolio_risk_per_trade=0.01, min_risk_reward_ratio=2.0):
+    def __init__(self, max_portfolio_risk_per_trade=0.01, min_risk_reward_ratio=2.5):
         """
         Default:
         - Risk 1% of total capital per trade.
-        - Require minimum 1:2 Risk-to-Reward ratio.
+        - Require minimum 1:2.5 Risk-to-Reward ratio.
         """
         self.max_portfolio_risk_per_trade = max_portfolio_risk_per_trade
         self.min_risk_reward_ratio = min_risk_reward_ratio

@@ -156,10 +156,10 @@ class HalalIntradayScanner:
                         if pd.isna(est_daily_atr) or est_daily_atr <= 0:
                             est_daily_atr = entry_price * 0.03 # fallback to 3% daily range
                         
-                        # Set Stop-Loss at 0.3x Daily ATR and Target at 0.6x Daily ATR (yielding a clean 1:2.0 risk-to-reward)
-                        # This targets a realistic 2.0% - 3.5% move, which is highly achievable on a breakout day
+                        # Set Stop-Loss at 0.3x Daily ATR and Target at 0.75x Daily ATR (yielding a clean 1:2.5 risk-to-reward)
+                        # This targets a realistic 2.5% - 4.5% move, which is highly achievable on a breakout day
                         sl = float(round(entry_price - (0.3 * est_daily_atr), 2))
-                        target = float(round(entry_price + (0.6 * est_daily_atr), 2))
+                        target = float(round(entry_price + (0.75 * est_daily_atr), 2))
                         
                         # Ensure both stop-loss and target conform to 0.05 tick size
                         sl = float(round(sl * 20) / 20)

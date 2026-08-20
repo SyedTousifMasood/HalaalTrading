@@ -106,10 +106,10 @@ class TradingJournal:
                     if isinstance(entry, (int, float)) and isinstance(sl, (int, float)) and isinstance(target, (int, float)):
                         risk = entry - sl
                         reward = target - entry
-                        rr_val = (reward / risk) if risk > 0 else 2.0
+                        rr_val = (reward / risk) if risk > 0 else 2.5
                         ws.cell(row=r, column=8, value=f"1:{rr_val:.1f}")
                     else:
-                        ws.cell(row=r, column=8, value="1:2.0")
+                        ws.cell(row=r, column=8, value="1:2.5")
 
         # 2. Ledger Sheet Upgrade
         if "Ledger" in wb.sheetnames:
@@ -132,10 +132,10 @@ class TradingJournal:
                     if isinstance(buy_price, (int, float)) and isinstance(sl, (int, float)) and isinstance(target, (int, float)):
                         risk = buy_price - sl
                         reward = target - buy_price
-                        rr_val = (reward / risk) if risk > 0 else 2.0
+                        rr_val = (reward / risk) if risk > 0 else 2.5
                         ws.cell(row=r, column=10, value=f"1:{rr_val:.1f}")
                     else:
-                        ws.cell(row=r, column=10, value="1:2.0")
+                        ws.cell(row=r, column=10, value="1:2.5")
                     
                     pnl_formula = f'=IF(OR(N{r}="WIN", N{r}="LOSS"), (L{r}-E{r})*D{r}, 0)'
                     ws.cell(row=r, column=13, value=pnl_formula)
@@ -475,7 +475,7 @@ class TradingJournal:
 
         risk = target_entry - stop_loss
         reward = profit_target - target_entry
-        rr_val = (reward / risk) if risk > 0 else 2.0
+        rr_val = (reward / risk) if risk > 0 else 2.5
         rr_ratio_str = f"1:{rr_val:.1f}"
 
         ws.cell(row=row_idx, column=1, value=date_str)
@@ -549,7 +549,7 @@ class TradingJournal:
         slippage = buy_price - suggested_entry
         risk = buy_price - stop_loss
         reward = target - buy_price
-        rr_val = (reward / risk) if risk > 0 else 2.0
+        rr_val = (reward / risk) if risk > 0 else 2.5
         rr_ratio_str = f"1:{rr_val:.1f}"
 
         ws.cell(row=row_idx, column=1, value=symbol)

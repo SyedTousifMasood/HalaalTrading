@@ -18,6 +18,16 @@ class TechnicalScanner:
         }
         self.min_threshold = 80.0
         self._load_ai_weights()
+        
+        # Cache Nifty 30-day return for Relative Strength calculation
+        try:
+            nifty = yf.Ticker("^NSEI").history(period="2mo")
+            if not nifty.empty and len(nifty) >= 20:
+                self.nifty_return_30d = (nifty["Close"].iloc[-1] - nifty["Close"].iloc[-20]) / nifty["Close"].iloc[-20]
+            else:
+                self.nifty_return_30d = 0.0
+        except:
+            self.nifty_return_30d = 0.0
 
     def _load_ai_weights(self):
         import os, json
@@ -335,10 +345,27 @@ class TechnicalScanner:
             (levels_score * w_lvl)
         )
 
+        # Hard Gate 1: Volume Breakout Confirmation
+        vol_breakout = latest["Volume"] > (latest["Volume_SMA"] * 1.5)
+        
+        # Hard Gate 2: Relative Strength vs NIFTY
+        if len(df) >= 20:
+            stock_return_30d = (close - df["Close"].iloc[-20]) / df["Close"].iloc[-20]
+        else:
+            stock_return_30d = 0.0
+            
+        rs_positive = stock_return_30d > self.nifty_return_30d
+
         # Output Signal
-        if composite_score >= self.min_threshold:
+        if composite_score >= self.min_threshold and vol_breakout and rs_positive:
             signal = "BUY"
-            reason = f"AI-optimized indicator alignment (Score: {composite_score:.0f}/100)."
+            reason = f"AI-optimized indicator alignment (Score: {composite_score:.0f}/100) with Vol/RS Confirmation."
+        elif not vol_breakout and composite_score >= self.min_threshold:
+            signal = "WAIT"
+            reason = f"Score {composite_score:.0f} is high, but lacks 1.5x Volume confirmation."
+        elif not rs_positive and composite_score >= self.min_threshold:
+            signal = "WAIT"
+            reason = f"Score {composite_score:.0f} is high, but stock underperforms NIFTY (RS negative)."
         elif close < latest["EMA_21"]:
             signal = "SELL"
             reason = "Price closed below short-term 21 EMA support."
@@ -348,7 +375,7 @@ class TechnicalScanner:
 
         # Suggested Risk Levels
         stop_loss = close - (2 * atr)  # 2x ATR stop loss
-        target = close + (4 * atr)     # 1:2 Risk-to-Reward ratio
+        target = close + (5 * atr)     # 1:2.5 Risk-to-Reward ratio
 
         analysis = {
             "symbol": symbol,

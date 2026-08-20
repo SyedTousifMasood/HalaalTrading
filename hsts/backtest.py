@@ -20,7 +20,7 @@ class BacktestEngine:
         self.scanner = TechnicalScanner()
         self.risk_engine = RiskManagementEngine(
             max_portfolio_risk_per_trade=max_risk_per_trade,
-            min_risk_reward_ratio=2.0
+            min_risk_reward_ratio=2.5
         )
         
         self.open_trades = []
@@ -181,8 +181,9 @@ class BacktestEngine:
 
                         # Trigger Signal (Score >= 80)
                         if composite_score >= 80:
+                            # Suggest 2x ATR stop, 5x ATR target for 1:2.5 Risk/Reward
                             stop_loss = close - (2 * atr)
-                            target = close + (4 * atr)
+                            target = close + (5 * atr)
                             
                             pos = self.risk_engine.calculate_position_size(
                                 total_capital=self.current_capital,
