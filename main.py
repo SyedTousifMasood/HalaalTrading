@@ -180,6 +180,11 @@ def scan(capital, save_journal):
                 stop_loss_price=row["suggested_sl"],
                 max_allocation_pct=alloc_cap_pct
             )
+            # Calculate Risk-to-Reward
+            risk = row["close"] - row["suggested_sl"]
+            reward = row["suggested_target"] - row["close"]
+            rr_ratio = reward / risk if risk > 0 else 0
+
             buy_setups.append({
                 "Symbol": row["symbol"],
                 "Name": row["name"],
@@ -188,6 +193,7 @@ def scan(capital, save_journal):
                 "Signal": row["signal"],
                 "Stop Loss": row["suggested_sl"],
                 "Target": row["suggested_target"],
+                "Risk-to-Reward": f"1:{rr_ratio:.1f}",
                 "Qty": pos_size["quantity"] if pos_size else 0,
                 "Allocation": f"INR {pos_size['total_investment']:,.2f}" if pos_size else "INR 0.00"
             })
@@ -850,18 +856,14 @@ def evaluate_positions():
         print("\n[NOTE] These are read-only recommendations. No orders have been automatically placed.")
 
 @cli.command()
-@click.option("--user-id", envvar="ZERODHA_USER_ID", required=True, help="Zerodha User ID")
-@click.option("--password", envvar="ZERODHA_PASSWORD", required=True, help="Zerodha Password")
-@click.option("--totp-secret", envvar="ZERODHA_TOTP_SECRET", required=True, help="Zerodha TOTP Secret")
-def evaluate_btst(user_id, password, totp_secret):
-    """Evaluate Day 0/1 positions for BTST Invalidation and update GTTs."""
+def evaluate_btst():
+    """Evaluate Day 0/1 positions for BTST Invalidation and output recommendations."""
     print("\n=========================================")
     print("BTST INVALIDATION RULE (DAY 0/1)")
     print("=========================================\n")
     
     from hsts.evaluator import OpenPositionEvaluator
-    from hsts.broker.zerodha_free import ZerodhaFreeBroker
-    import yfinance as yf
+    import tabulate
     
     evaluator = OpenPositionEvaluator()
     invalidated_symbols = evaluator.evaluate_btst_invalidation()
@@ -870,62 +872,8 @@ def evaluate_btst(user_id, password, totp_secret):
         print("No recently opened positions have been invalidated.")
         return
         
-    print(f"Found {len(invalidated_symbols)} invalidated setups. Connecting to broker...")
-    
-    broker = ZerodhaFreeBroker(user_id=user_id, password=password, totp_secret=totp_secret)
-    if not broker.authenticate():
-        print("[ERROR] Failed to authenticate with Zerodha.")
-        return
-        
-    gtts = broker.get_gtts()
-    
-    for item in invalidated_symbols:
-        symbol = item["symbol"]
-        reason = item["reason"]
-        print(f"\nProcessing BTST Exit for {symbol}. Reason: {reason}")
-        
-        # Find active GTT for this symbol
-        target_gtt = None
-        for g in gtts or []:
-            if g.get("condition", {}).get("tradingsymbol") == f"{symbol}":
-                target_gtt = g
-                break
-                
-        if not target_gtt:
-            print(f"  [!] No active GTT found for {symbol}. Cannot update stop-loss.")
-            continue
-            
-        trigger_id = target_gtt["id"]
-        qty = target_gtt["orders"][0]["quantity"]
-        
-        # Fetch current market price to set tight SL
-        try:
-            latest = yf.Ticker(f"{symbol}.NS").history(period="1d")
-            if latest.empty:
-                print(f"  [!] Could not fetch live price for {symbol}.")
-                continue
-            current_close = latest["Close"].iloc[-1]
-            
-            # Set new trigger 0.5% below current close to act as pseudo market open
-            new_sl_trigger = round(current_close * 0.995, 2)
-            new_sl_price = round(current_close * 0.990, 2) # Slightly lower limit to guarantee execution
-            
-            print(f"  Deleting existing GTT (ID: {trigger_id})...")
-            if broker.delete_gtt(trigger_id):
-                print(f"  Placing new tight BTST Stop-Loss at {new_sl_trigger}...")
-                res = broker.place_gtt(
-                    symbol=f"{symbol}",
-                    qty=qty,
-                    trigger_type="single",
-                    trigger_values=[new_sl_trigger],
-                    limit_prices=[new_sl_price],
-                    last_price=current_close
-                )
-                print(f"  [SUCCESS] BTST GTT Update Result: {res}")
-            else:
-                print("  [ERROR] Failed to delete existing GTT.")
-        except Exception as e:
-            print(f"  [ERROR] Exception processing BTST for {symbol}: {e}")
+    print(tabulate.tabulate(invalidated_symbols, headers="keys", tablefmt="pipe"))
+    print("\n[NOTE] These are read-only recommendations. No GTT orders have been modified.")
 
 
 if __name__ == "__main__":
