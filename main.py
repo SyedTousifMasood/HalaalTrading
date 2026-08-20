@@ -10,6 +10,7 @@ from hsts.regime import MarketRegimeEngine
 from hsts.scanner import TechnicalScanner
 from hsts.risk import RiskManagementEngine
 from hsts.journal import TradingJournal
+from hsts.evaluator import OpenPositionEvaluator
 
 logger = logging.getLogger("hsts.main")
 
@@ -827,6 +828,26 @@ def rebuild_sharia_cache():
         sharia_engine.screen_stock(symbol)
         
     print("\n[SUCCESS] Sharia Compliance Cache rebuilt successfully at data/sharia_cache.json!")
+
+
+@cli.command()
+def evaluate_positions():
+    """Evaluate OPEN positions held for >= 5 days using technical indicators."""
+    print("\n=========================================")
+    print("5-DAY OPEN POSITION EVALUATION RULE")
+    print("=========================================\n")
+    
+    evaluator = OpenPositionEvaluator()
+    evaluations = evaluator.evaluate_5_day_rule()
+    
+    if not evaluations:
+        print("[INFO] No open positions currently require evaluation (none held >= 5 days or all missing data).")
+        return
+        
+    # Print the evaluations in a nice table
+    df = pd.DataFrame(evaluations)
+    print(df.to_markdown(index=False))
+    print("\n[NOTE] These are read-only recommendations. No orders have been automatically placed.")
 
 if __name__ == "__main__":
     cli()
