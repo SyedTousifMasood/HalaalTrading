@@ -87,15 +87,19 @@ class MarketRegimeEngine:
             if is_macro_bullish:
                 regime = "STATE 1: Macro Bullish"
                 allocation_cap = 0.20
+                min_threshold = 80.0
             elif is_relief_rally:
                 regime = "STATE 2: Bear Relief Rally"
                 allocation_cap = 0.10
+                min_threshold = 90.0
             elif is_oversold_bottom:
                 regime = "STATE 3: Capitulation Bottom"
                 allocation_cap = 0.10
+                min_threshold = 85.0
             else:
                 regime = "STATE 4: Cash Only"
                 allocation_cap = 0.00
+                min_threshold = 100.0 # No buys
 
             metrics = {
                 "latest_close": latest_close,
@@ -103,7 +107,8 @@ class MarketRegimeEngine:
                 "ema_200": ema_200,
                 "rsi_14": rsi_14,
                 "breadth": breadth,
-                "allocation_cap": allocation_cap
+                "allocation_cap": allocation_cap,
+                "min_threshold": min_threshold
             }
 
             logger.info(f"Market regime identified as {regime} (Close: {latest_close:.2f}, RSI: {rsi_14:.1f}, Breadth: {breadth:.1%})")

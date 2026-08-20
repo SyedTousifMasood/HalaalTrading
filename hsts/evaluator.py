@@ -14,11 +14,11 @@ class OpenPositionEvaluator:
     def evaluate_5_day_rule(self):
         """
         Scans all OPEN positions in the Trading Journal.
-        If a position has been held for >= 5 days, it fetches technical data
+        If a position has been held for >= 3 days, it fetches technical data
         and generates a recommendation.
         DOES NOT place orders. Read-only output.
         """
-        logger.info("Evaluating OPEN positions for the 5-Day Rule...")
+        logger.info("Evaluating OPEN positions for the 5-Day Rule (Threshold: >= 3 days)...")
         
         try:
             df = pd.read_excel(self.journal.file_path, sheet_name="Ledger")
@@ -54,7 +54,7 @@ class OpenPositionEvaluator:
             # Calculate days held
             days_held = (today - entry_date).days
             
-            if days_held >= 5:
+            if days_held >= 3:
                 # Need evaluation
                 buy_price = pd.to_numeric(row["Buy Price"], errors='coerce')
                 stop_loss = pd.to_numeric(row["Stop Loss"], errors='coerce')

@@ -832,7 +832,7 @@ def rebuild_sharia_cache():
 
 @cli.command()
 def evaluate_positions():
-    """Evaluate OPEN positions held for >= 5 days using technical indicators."""
+    """Evaluate OPEN positions held for >= 3 days using technical indicators."""
     print("\n=========================================")
     print("5-DAY OPEN POSITION EVALUATION RULE")
     print("=========================================\n")
@@ -841,7 +841,7 @@ def evaluate_positions():
     evaluations = evaluator.evaluate_5_day_rule()
     
     if not evaluations:
-        print("[INFO] No open positions currently require evaluation (none held >= 5 days or all missing data).")
+        print("[INFO] No open positions currently require evaluation (none held >= 3 days or all missing data).")
         return
         
     # Print the evaluations in a nice table

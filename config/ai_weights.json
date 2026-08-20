@@ -3,11 +3,11 @@
     "training_samples_count": 287,
     "win_rate_trained": 52.613240418118465,
     "category_weights": {
-        "trend": 0.2459,
-        "momentum": 0.2541,
-        "volatility": 0.1557,
-        "volume": 0.1639,
-        "levels": 0.1803
+        "trend": 0.35,
+        "momentum": 0.10,
+        "volatility": 0.20,
+        "volume": 0.25,
+        "levels": 0.10
     },
     "min_composite_threshold": 80.0
 }
