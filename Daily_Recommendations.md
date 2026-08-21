@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-20***
-*Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
+*Generated on: **2026-08-21***
+*Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
 
@@ -10,15 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **KFINTECH** | KFin Technologies Limited | 100/100 | `WAIT` | INR 961.00 | INR 910.74 | INR 1086.64 | 1:2.5 | 0 | INR 0.00 |
-| **BOROLTD** | Borosil Limited | 98/100 | `BUY` | INR 257.82 | INR 238.25 | INR 306.76 | 1:2.5 | 0 | INR 0.00 |
-| **GLENMARK** | Glenmark Pharmaceuticals Limited | 98/100 | `WAIT` | INR 2332.90 | INR 2228.21 | INR 2594.61 | 1:2.5 | 0 | INR 0.00 |
-| **DCMSHRIRAM** | DCM Shriram Limited | 98/100 | `WAIT` | INR 1079.70 | INR 1026.17 | INR 1213.52 | 1:2.5 | 0 | INR 0.00 |
-| **OBEROIRLTY** | Oberoi Realty Limited | 98/100 | `WAIT` | INR 1904.70 | INR 1796.33 | INR 2175.63 | 1:2.5 | 0 | INR 0.00 |
-
-> [Slim Warning]
-> **BROADER MARKET IS IN CASH ONLY REGIME.**
-> Under HSTS rules, taking new swing momentum entries is strictly not recommended to preserve capital.
+| **IOLCP** | IOL Chemicals and Pharmaceuticals Limited | 98/100 | `BUY` | INR 169.52 | INR 150.78 | INR 216.38 | 1:2.5 | 0 | INR 0.00 |
+| **AEROFLEX** | Aeroflex Industries Limited | 98/100 | `BUY` | INR 503.00 | INR 457.87 | INR 615.82 | 1:2.5 | 0 | INR 0.00 |
+| **ATL** | Allcargo Terminals Limited | 98/100 | `BUY` | INR 24.86 | INR 22.46 | INR 30.86 | 1:2.5 | 2 | INR 49.72 |
+| **HINDZINC** | Hindustan Zinc Limited | 98/100 | `BUY` | INR 594.90 | INR 556.41 | INR 691.11 | 1:2.5 | 0 | INR 0.00 |
+| **HINDCOPPER** | Hindustan Copper Limited | 98/100 | `WAIT` | INR 572.70 | INR 519.64 | INR 705.34 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -27,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HEROMOTOCO** | 100/100 | INR 5740.50 | INR 5685.60 | INR 5877.75 | 1:2.0 |
-| **MARUTI** | 100/100 | INR 13809.00 | INR 13719.90 | INR 14031.75 | 1:2.0 |
-| **BAJAJ-AUTO** | 100/100 | INR 11793.00 | INR 11713.50 | INR 11991.75 | 1:2.0 |
-| **COLPAL** | 100/100 | INR 1910.00 | INR 1872.85 | INR 2002.85 | 1:2.0 |
-| **GLENMARK** | 100/100 | INR 2332.90 | INR 2297.45 | INR 2421.55 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2640.00 | INR 2606.45 | INR 2723.90 | 1:2.0 |
+| **TATAELXSI** | 100/100 | INR 3708.00 | INR 3666.25 | INR 3812.40 | 1:2.0 |
+| **HAPPSTMNDS** | 100/100 | INR 448.00 | INR 435.00 | INR 480.55 | 1:2.0 |
+| **ADANIPOWER** | 100/100 | INR 205.50 | INR 203.50 | INR 210.55 | 1:2.0 |
+| **ADANIPORTS** | 97/100 | INR 1700.00 | INR 1689.75 | INR 1725.55 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
