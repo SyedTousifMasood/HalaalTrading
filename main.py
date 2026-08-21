@@ -876,5 +876,39 @@ def evaluate_btst():
     print("\n[NOTE] These are read-only recommendations. No GTT orders have been modified.")
 
 
+@cli.command()
+def update_mtm():
+    """Fetch the latest closing prices and update the Trading Journal MTM columns."""
+    try:
+        from hsts.journal import TradingJournal
+        journal = TradingJournal()
+        print("\n=========================================")
+        print("UPDATING MARK-TO-MARKET (MTM) PRICES")
+        print("=========================================")
+        count = journal.update_mtm()
+        if count > 0:
+            print(f"[SUCCESS] Updated MTM prices for {count} open trades.")
+        else:
+            print("[INFO] No open trades found to update.")
+    except Exception as e:
+        print(f"[ERROR] Exception while updating MTM prices: {e}")
+
+
+@cli.command()
+def update_dashboard():
+    """Update the Trading Journal Dashboard with live prices and metrics."""
+    try:
+        # Import the script logic dynamically
+        sys.path.append(os.path.join(os.path.dirname(__file__), "scratch"))
+        from update_dashboard_live import update_live_dashboard
+        print("\n=========================================")
+        print("UPDATING DASHBOARD SHEET")
+        print("=========================================")
+        update_live_dashboard()
+        print("[SUCCESS] Dashboard successfully updated with live metrics.")
+    except Exception as e:
+        print(f"[ERROR] Exception while updating Dashboard: {e}")
+
+
 if __name__ == "__main__":
     cli()

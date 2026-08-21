@@ -725,7 +725,6 @@
                 <ul class="nav-links">
                     <li><a href="#philosophy">Core Philosophy</a></li>
                     <li><a href="#regime-model">Regimes & Risk</a></li>
-                    <li><a href="#trade-management">Trade Management</a></li>
                     <li><a href="#comparison">Global Comparison</a></li>
                     <li><a href="#conclusion">Conclusion</a></li>
                 </ul>
@@ -829,26 +828,25 @@
                         <div class="card-right">
                             <p style="font-size: 0.85rem; font-weight: 700; color: #fff; text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 0.05em;">HSTS Scan Protocol</p>
                             
-                            <div class="metric-grid" style="grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                            <div class="metric-grid">
                                 <div class="metric-badge-card blue-metric">
-                                    <div class="metric-value">> 1.5x</div>
-                                    <div class="metric-label">Volume Breakout</div>
+                                    <div class="metric-value">01</div>
+                                    <div class="metric-label">Rising Trend</div>
                                 </div>
                                 <div class="metric-badge-card blue-metric">
-                                    <div class="metric-value">RS+</div>
-                                    <div class="metric-label">Beats NIFTY</div>
+                                    <div class="metric-value">&gt; 80</div>
+                                    <div class="metric-label">Strength Score</div>
                                 </div>
-                                <div class="metric-badge-card blue-metric" style="grid-column: span 2;">
-                                    <div class="metric-value">> 80/90</div>
-                                    <div class="metric-label">Dynamic Regime Score</div>
+                                <div class="metric-badge-card blue-metric">
+                                    <div class="metric-value">03</div>
+                                    <div class="metric-label">Safe Exit Plan</div>
                                 </div>
                             </div>
                             
                             <ul class="card-list" style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                                <li style="font-size: 0.8rem; color: var(--text-secondary);"><strong style="color:var(--accent-blue);">01. Volume Confirmation:</strong> Institutional backing is mandatory. The stock must have a daily volume 1.5x greater than its 20-day average.</li>
-                                <li style="font-size: 0.8rem; color: var(--text-secondary);"><strong style="color:var(--accent-blue);">02. Relative Strength (RS):</strong> The stock must be outperforming the broader NIFTY 50 index over a 30-day period.</li>
-                                <li style="font-size: 0.8rem; color: var(--text-secondary);"><strong style="color:var(--accent-blue);">03. Dynamic Score Threshold:</strong> The required AI Strength Score adapts to the market regime (e.g. 80 in Bull Markets, 90 in Bear Rallies).</li>
-                                <li style="font-size: 0.8rem; color: var(--text-secondary);"><strong style="color:var(--accent-blue);">04. Safe Exit Plan:</strong> The system automatically locks in a profit goal and a safety floor to cut losses.</li>
+                                <li style="font-size: 0.8rem; color: var(--text-secondary);"><strong style="color:var(--accent-blue);">01. Rising Trend:</strong> We check if the stock's price is steadily climbing over time, making sure buyers are in control before we buy.</li>
+                                <li style="font-size: 0.8rem; color: var(--text-secondary);"><strong style="color:var(--accent-blue);">02. Strength Score:</strong> We rank the stock's upward power from 0 to 100. We only invest in top setups (Score &gt; 80) showing strong price momentum.</li>
+                                <li style="font-size: 0.8rem; color: var(--text-secondary);"><strong style="color:var(--accent-blue);">03. Safe Exit Plan:</strong> The system automatically locks in a profit goal and a safety floor to cut losses, eliminating emotional guesswork.</li>
                             </ul>
                         </div>
                     </div>
@@ -950,44 +948,6 @@
                 </svg>
             </div>
 
-            <!-- Strategic Regime Playbook Selector (HSTS vs VTSS) -->
-            <div style="margin-top: 3rem; background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; backdrop-filter: blur(8px);">
-                <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; color: #fff; margin-bottom: 1.25rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                    🔄 HSTS vs. VTSS Regime Playbook Selection
-                </h3>
-                <p style="color: var(--text-secondary); text-align: center; font-size: 0.95rem; max-width: 700px; margin: 0 auto 2rem;">
-                    HSTS(Halal Trading System) dynamically shifts between two distinct execution models depending on the broader market state:
-                </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                    <div style="background: rgba(16, 185, 129, 0.02); border: 1px solid rgba(16, 185, 129, 0.12); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
-                        <span style="font-size: 0.75rem; font-weight: 700; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); padding: 0.25rem 0.75rem; border-radius: 9999px; display: inline-block; margin-bottom: 0.75rem; text-transform: uppercase; align-self: flex-start;">Bullish / Trending Markets</span>
-                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">Standard HSTS Swing Setup</h4>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.5;">
-                            Deployed during <strong>State 1 (Macro Bullish)</strong> to ride major, multi-week upward trends.
-                        </p>
-                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-primary); display: flex; flex-direction: column; gap: 0.4rem; margin-top: auto;">
-                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-emerald);">✓</span> <strong>Profit Target:</strong> 10% to 15%</li>
-                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-emerald);">✓</span> <strong>Stop-Loss:</strong> 5% to 7.5%</li>
-                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-emerald);">✓</span> <strong>Allocation Limit:</strong> Up to 20% per position</li>
-                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-emerald);">✓</span> <strong>Holding Rule:</strong> Long-term trend riding</li>
-                        </ul>
-                    </div>
-                    <div style="background: rgba(59, 130, 246, 0.02); border: 1px solid rgba(59, 130, 246, 0.12); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
-                        <span style="font-size: 0.75rem; font-weight: 700; background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); padding: 0.25rem 0.75rem; border-radius: 9999px; display: inline-block; margin-bottom: 0.75rem; text-transform: uppercase; align-self: flex-start;">Sideways / Choppy Markets</span>
-                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">Velocity-Tax Swing (VTSS)</h4>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.5;">
-                            Deployed during <strong>State 2 / 4 (Range-Bound / Chop)</strong> to extract returns from quick swings.
-                        </p>
-                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-primary); display: flex; flex-direction: column; gap: 0.4rem; margin-top: auto;">
-                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-blue);">✓</span> <strong>Profit Target:</strong> 5% to 7% (using 1.5 * ATR)</li>
-                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-blue);">✓</span> <strong>Stop-Loss:</strong> 2.5% to 3.5% (using 0.75 * ATR)</li>
-                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-blue);">✓</span> <strong>Allocation Limit:</strong> 3-4 trades (25%-33% each)</li>
-                            <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--accent-blue);">✓</span> <strong>Time-Stop:</strong> Day 5 Review / Day 7 Hard Exit</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
             <!-- Risk Protections -->
             <div class="risk-protection">
                 <div class="risk-item">
@@ -1004,48 +964,6 @@
                         <h4>Dynamic Cap Enforcement</h4>
                         <p>We restrict each stock position to fit within the regime's allocation cap. High-priced stocks are automatically skipped or limited to 1 share to prevent a single trade from consuming too much capital.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trade Management Section -->
-    <section class="pillars" id="trade-management" style="background: rgba(15, 23, 42, 0.2); border-top: 1px solid var(--border-color);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Trade Management & Active Position Monitoring</h2>
-                <p>Strict rules for evaluating and protecting ongoing trades.</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">1. Mandatory GTT Protection</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Every executed trade MUST have a corresponding GTT OCO order placed immediately. The system enforces <strong>100% post-placement verification</strong> to ensure the GTT is actively registered on exchange servers.</p>
-                </div>
-                
-                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">2. Advanced BTST Invalidation</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Overnight trades (Day 0/1) are scrutinized using Nifty market regime context and 15-minute intraday charts. If daily technicals fail and 15m support breaks, the system triggers an immediate <strong>Aggressive Cut</strong> to protect capital.</p>
-                </div>
-                
-                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">3. Intraday Shariah Rules</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;">All intraday trades must use <strong>CNC (Cash Delivery)</strong> to completely eliminate leverage/margin. High momentum setups are strictly monitored and must be manually squared off before 3:15 PM IST.</p>
-                </div>
-
-                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">4. The 5-Session Rule</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;">If a trade hasn't hit its target in 5 sessions, it undergoes review. Strong technicals warrant a <strong>Trailing Stop Loss</strong> to entry cost; weakening technicals trigger a <strong>Square Off</strong> to free up capital.</p>
-                </div>
-
-                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">5. Dynamic Risk/Reward Sizing</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Each trade generates a dynamic Risk-to-Reward ratio based on ATR volatility expansion. The system automatically restricts capital allocation if the R:R profile is mathematically unfavorable.</p>
-                </div>
-                
-                <div style="background: rgba(20, 24, 33, 0.4); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff;">6. Dual Evaluation Metrics</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;"><strong>Trade Health:</strong> (0-100) measures physical P&L progress from SL to Target.<br><br><strong>Composite Score:</strong> (0-100) measures raw underlying market momentum and trend strength.</p>
                 </div>
             </div>
         </div>

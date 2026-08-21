@@ -100,8 +100,14 @@ class OpenPositionEvaluator:
                 rsi = latest["RSI"]
                 ema20 = latest["EMA_21"]
                 
-                # Calculate return
+                # Calculate return and target reach
                 current_return = ((current_price - buy_price) / buy_price) * 100
+                target_reach = 0.0
+                if not pd.isna(target) and target > buy_price:
+                    target_reach = ((current_price - buy_price) / (target - buy_price)) * 100
+                    
+                # Calculate simple health score based on target reach (max 100, min 0)
+                health_score = max(0, min(100, int(target_reach)))
                 
                 # Determine Recommendation based on momentum
                 recommendation = "HOLD"
@@ -115,10 +121,10 @@ class OpenPositionEvaluator:
                     recommendation = "EXIT MANUALLY"
                     reason = "RSI dropped below 45. Weakness detected."
                 
-                # Rule 2: Approaching Target but stalling
-                elif not pd.isna(target) and current_price >= (buy_price + (target - buy_price) * 0.8):
+                # Rule 2: > 50% Target Reached - Trail Stop Loss
+                elif target_reach > 50:
                     recommendation = "TRAIL STOP LOSS"
-                    reason = "Close to target. Trail SL to lock in profits."
+                    reason = "Target reached > 50%. Trail SL to protect profits."
                     
                 # Rule 3: Very stagnant
                 elif current_return > -1.0 and current_return < 1.0 and days_held > 10:
@@ -127,6 +133,12 @@ class OpenPositionEvaluator:
 
                 evaluations.append({
                     "Symbol": symbol,
+                    "Entry Price": f"{buy_price:.2f}",
+                    "Stop Loss": f"{stop_loss:.2f}" if not pd.isna(stop_loss) else "-",
+                    "Target Price": f"{target:.2f}" if not pd.isna(target) else "-",
+                    "Current Price": f"{current_price:.2f}",
+                    "Health Score": f"{health_score}/100",
+                    "Target Reach": f"{target_reach:.1f}%",
                     "Days Held": days_held,
                     "Current Return": f"{current_return:.2f}%",
                     "RSI": f"{rsi:.1f}",

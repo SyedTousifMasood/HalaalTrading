@@ -257,6 +257,38 @@ class TradingJournal:
                 d += datetime.timedelta(days=1)
         avg_unique_holdings = sum(daily_counts) / len(daily_counts) if daily_counts else 0.0
 
+        win_pcts = []
+        loss_pcts = []
+        investments = []
+        for r in range(2, ws_ledg.max_row + 1):
+            status = ws_ledg.cell(row=r, column=14).value
+            if status in ["WIN", "LOSS", "OPEN"]:
+                try:
+                    qty = float(ws_ledg.cell(row=r, column=4).value or 0)
+                    buy = float(ws_ledg.cell(row=r, column=5).value or 0)
+                    invested = qty * buy
+                    if invested > 0:
+                        investments.append(invested)
+                    
+                    if status in ["WIN", "LOSS"] and invested > 0:
+                        pnl_val = ws_ledg.cell(row=r, column=13).value
+                        if isinstance(pnl_val, (int, float)):
+                            pnl = float(pnl_val)
+                        else:
+                            exit_p = float(ws_ledg.cell(row=r, column=12).value or buy)
+                            pnl = (exit_p - buy) * qty
+                        pct = pnl / invested
+                        if status == "WIN":
+                            win_pcts.append(pct)
+                        elif status == "LOSS":
+                            loss_pcts.append(pct)
+                except Exception:
+                    pass
+                    
+        avg_profit_pct = sum(win_pcts) / len(win_pcts) if win_pcts else 0.0
+        avg_loss_pct = sum(loss_pcts) / len(loss_pcts) if loss_pcts else 0.0
+        avg_trade_value = sum(investments) / len(investments) if investments else 0.0
+
         metrics = [
             ("Global Portfolio Metrics", None, "header"),
             ("Total Net Capital Deposited", '=SUMIF(Capital!B:B, "DEPOSIT", Capital!C:C)', "currency"),
@@ -285,6 +317,9 @@ class TradingJournal:
             ("Average Days to Exit a Trade", avg_exit_days, "float"),
             ("Average Trades per Day", avg_trades_per_day, "float"),
             ("Average Unique Holdings per Day", avg_unique_holdings, "float"),
+            ("Average Profit % per trade", avg_profit_pct, "percentage"),
+            ("Average Loss % per trade", avg_loss_pct, "percentage"),
+            ("Average Value per Trade", avg_trade_value, "currency"),
         ]
 
         # Colors for dynamic active trades value
@@ -331,7 +366,7 @@ class TradingJournal:
             "Symbol", "Name", "Entry Date", "Qty", "Buy Price", 
             "Suggested Entry", "Slippage/Deviation", "Target Price", 
             "Stop Loss", "Risk-to-Reward Ratio", "Exit Date", "Exit Price", 
-            "Realized PnL", "Status", "Notes", "Trade Type"
+            "Realized PnL", "Status", "Notes", "Trade Type", "Current Price", "Unrealized PnL", "Profit/Loss %"
         ]
 
         for col_idx, text in enumerate(headers, 1):
@@ -349,6 +384,9 @@ class TradingJournal:
         ws.column_dimensions["J"].width = 22
         ws.column_dimensions["O"].width = 30
         ws.column_dimensions["P"].width = 18
+        ws.column_dimensions["Q"].width = 16
+        ws.column_dimensions["R"].width = 16
+        ws.column_dimensions["S"].width = 16
 
     def _setup_recommendations(self, ws):
         ws.views.sheetView[0].showGridLines = True
@@ -570,6 +608,9 @@ class TradingJournal:
         ws.cell(row=row_idx, column=14, value="OPEN")
         ws.cell(row=row_idx, column=15, value=notes)
         ws.cell(row=row_idx, column=16, value=trade_type.upper())
+        
+        pct_formula = f'=IF(N{row_idx}="OPEN", IFERROR(R{row_idx}/(D{row_idx}*E{row_idx}), 0), IF(OR(N{row_idx}="WIN", N{row_idx}="LOSS"), IFERROR(M{row_idx}/(D{row_idx}*E{row_idx}), 0), 0))'
+        ws.cell(row=row_idx, column=19, value=pct_formula)
 
         ws.cell(row=row_idx, column=5).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=6).number_format = "INR #,##0.00"
@@ -577,6 +618,7 @@ class TradingJournal:
         ws.cell(row=row_idx, column=8).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=9).number_format = "INR #,##0.00"
         ws.cell(row=row_idx, column=13).number_format = "INR #,##0.00"
+        ws.cell(row=row_idx, column=19).number_format = "0.00%"
 
         wb.save(self.file_path)
         wb.close()
@@ -640,6 +682,62 @@ class TradingJournal:
         self.log_event(f"Closed trade: {symbol} exited at {exit_price} ({status})")
         return True
 
+    def update_mtm(self):
+        """Fetches the latest closing price for all OPEN trades and updates Current Price and Unrealized PnL."""
+        wb = openpyxl.load_workbook(self.file_path)
+        if "Ledger" not in wb.sheetnames:
+            wb.close()
+            return 0
+        ws = wb["Ledger"]
+        
+        # Check if columns exist
+        if ws.cell(row=1, column=17).value != "Current Price":
+            logger.info("Upgrading Ledger sheet: Adding MTM columns...")
+            font_header = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
+            fill_header = PatternFill(start_color="1B365D", end_color="1B365D", fill_type="solid")
+            
+            cell_q = ws.cell(row=1, column=17, value="Current Price")
+            cell_r = ws.cell(row=1, column=18, value="Unrealized PnL")
+            for cell in [cell_q, cell_r]:
+                cell.font = font_header
+                cell.fill = fill_header
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+            ws.column_dimensions["Q"].width = 16
+            ws.column_dimensions["R"].width = 16
+
+        true_max = self._get_true_max_row(ws)
+        import yfinance as yf
+        updated_count = 0
+        
+        for r in range(2, true_max + 1):
+            status = ws.cell(row=r, column=14).value
+            if status == "OPEN":
+                symbol = ws.cell(row=r, column=1).value
+                qty = float(ws.cell(row=r, column=4).value or 0.0)
+                buy_price = float(ws.cell(row=r, column=5).value or 0.0)
+                
+                try:
+                    ticker = yf.Ticker(f"{symbol}.NS")
+                    df = ticker.history(period="1d")
+                    if not df.empty:
+                        curr_price = float(df["Close"].iloc[-1])
+                        unrealized_pnl = (curr_price - buy_price) * qty
+                        
+                        ws.cell(row=r, column=17, value=curr_price)
+                        ws.cell(row=r, column=18, value=unrealized_pnl)
+                        
+                        ws.cell(row=r, column=17).number_format = "INR #,##0.00"
+                        ws.cell(row=r, column=18).number_format = "INR #,##0.00"
+                        updated_count += 1
+                except Exception as e:
+                    logger.error(f"Failed to fetch MTM price for {symbol}: {e}")
+                    
+        wb.save(self.file_path)
+        wb.close()
+        logger.info(f"Updated MTM prices for {updated_count} open trades.")
+        self.log_event(f"Updated MTM prices for {updated_count} open trades.")
+        return updated_count
+
     def apply_row_styling(self):
         """Color code completed Ledger rows based on Win/Loss status."""
         wb = openpyxl.load_workbook(self.file_path)
@@ -663,7 +761,7 @@ class TradingJournal:
                 row_fill = None
                 
             if row_fill:
-                for c in range(1, 17): # Columns A to P
+                for c in range(1, 19): # Columns A to R
                     ws.cell(row=r, column=c).fill = row_fill
         wb.save(self.file_path)
         wb.close()
