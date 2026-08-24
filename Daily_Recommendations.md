@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-21***
+*Generated on: **2026-08-24***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **IOLCP** | IOL Chemicals and Pharmaceuticals Limited | 98/100 | `BUY` | INR 169.52 | INR 150.78 | INR 216.38 | 1:2.5 | 0 | INR 0.00 |
-| **AEROFLEX** | Aeroflex Industries Limited | 98/100 | `BUY` | INR 503.00 | INR 457.87 | INR 615.82 | 1:2.5 | 0 | INR 0.00 |
-| **ATL** | Allcargo Terminals Limited | 98/100 | `BUY` | INR 24.86 | INR 22.46 | INR 30.86 | 1:2.5 | 2 | INR 49.72 |
-| **HINDZINC** | Hindustan Zinc Limited | 98/100 | `BUY` | INR 594.90 | INR 556.41 | INR 691.11 | 1:2.5 | 0 | INR 0.00 |
-| **HINDCOPPER** | Hindustan Copper Limited | 98/100 | `WAIT` | INR 572.70 | INR 519.64 | INR 705.34 | 1:2.5 | 0 | INR 0.00 |
+| **GAYAPROJ** | Gayatri Projects Limited | 100/100 | `BUY` | INR 22.34 | INR 20.13 | INR 27.87 | 1:2.5 | 2 | INR 44.68 |
+| **GARFIBRES** | Garware Technical Fibres Limited | 100/100 | `BUY` | INR 809.40 | INR 732.57 | INR 1001.47 | 1:2.5 | 0 | INR 0.00 |
+| **JSWSTEEL** | JSW Steel Limited | 98/100 | `BUY` | INR 1327.00 | INR 1274.79 | INR 1457.54 | 1:2.5 | 0 | INR 0.00 |
+| **BLUSPRING** | Bluspring Enterprises Limited | 98/100 | `BUY` | INR 133.01 | INR 118.50 | INR 169.28 | 1:2.5 | 0 | INR 0.00 |
+| **RATNAMANI** | Ratnamani Metals & Tubes Limited | 98/100 | `BUY` | INR 2697.00 | INR 2451.26 | INR 3311.34 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ASIANPAINT** | 100/100 | INR 2640.00 | INR 2606.45 | INR 2723.90 | 1:2.0 |
-| **TATAELXSI** | 100/100 | INR 3708.00 | INR 3666.25 | INR 3812.40 | 1:2.0 |
-| **HAPPSTMNDS** | 100/100 | INR 448.00 | INR 435.00 | INR 480.55 | 1:2.0 |
-| **ADANIPOWER** | 100/100 | INR 205.50 | INR 203.50 | INR 210.55 | 1:2.0 |
-| **ADANIPORTS** | 97/100 | INR 1700.00 | INR 1689.75 | INR 1725.55 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2640.80 | INR 2621.30 | INR 2689.55 | 1:2.0 |
+| **CIPLA** | 100/100 | INR 1437.90 | INR 1428.20 | INR 1462.20 | 1:2.0 |
+| **CGPOWER** | 100/100 | INR 877.50 | INR 865.75 | INR 906.90 | 1:2.0 |
+| **COCHINSHIP** | 100/100 | INR 1514.00 | INR 1496.35 | INR 1558.10 | 1:2.0 |
+| **DRREDDY** | 100/100 | INR 1190.00 | INR 1182.90 | INR 1207.70 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
