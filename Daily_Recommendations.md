@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-24***
-*Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
+*Generated on: **2026-08-25***
+*Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
 
 ---
 
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **GAYAPROJ** | Gayatri Projects Limited | 100/100 | `BUY` | INR 22.34 | INR 20.13 | INR 27.87 | 1:2.5 | 2 | INR 44.68 |
-| **GARFIBRES** | Garware Technical Fibres Limited | 100/100 | `BUY` | INR 809.40 | INR 732.57 | INR 1001.47 | 1:2.5 | 0 | INR 0.00 |
-| **JSWSTEEL** | JSW Steel Limited | 98/100 | `BUY` | INR 1327.00 | INR 1274.79 | INR 1457.54 | 1:2.5 | 0 | INR 0.00 |
-| **BLUSPRING** | Bluspring Enterprises Limited | 98/100 | `BUY` | INR 133.01 | INR 118.50 | INR 169.28 | 1:2.5 | 0 | INR 0.00 |
-| **RATNAMANI** | Ratnamani Metals & Tubes Limited | 98/100 | `BUY` | INR 2697.00 | INR 2451.26 | INR 3311.34 | 1:2.5 | 0 | INR 0.00 |
+| **SIEMENS** | Siemens Limited | 98/100 | `WAIT` | INR 4090.50 | INR 3895.81 | INR 4577.21 | 1:2.5 | 0 | INR 0.00 |
+| **HEIDELBERG** | HeidelbergCement India Limited | 98/100 | `BUY` | INR 161.72 | INR 156.59 | INR 174.55 | 1:2.5 | 0 | INR 0.00 |
+| **RATNAMANI** | Ratnamani Metals & Tubes Limited | 98/100 | `BUY` | INR 2711.50 | INR 2460.69 | INR 3338.52 | 1:2.5 | 0 | INR 0.00 |
+| **GLENMARK** | Glenmark Pharmaceuticals Limited | 98/100 | `WAIT` | INR 2400.00 | INR 2296.63 | INR 2658.43 | 1:2.5 | 0 | INR 0.00 |
+| **YATHARTH** | Yatharth Hospital & Trauma Care Services Limited | 98/100 | `BUY` | INR 923.05 | INR 864.58 | INR 1069.22 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ASIANPAINT** | 100/100 | INR 2640.80 | INR 2621.30 | INR 2689.55 | 1:2.0 |
-| **CIPLA** | 100/100 | INR 1437.90 | INR 1428.20 | INR 1462.20 | 1:2.0 |
-| **CGPOWER** | 100/100 | INR 877.50 | INR 865.75 | INR 906.90 | 1:2.0 |
-| **COCHINSHIP** | 100/100 | INR 1514.00 | INR 1496.35 | INR 1558.10 | 1:2.0 |
-| **DRREDDY** | 100/100 | INR 1190.00 | INR 1182.90 | INR 1207.70 | 1:2.0 |
+| **INFY** | 100/100 | INR 1144.00 | INR 1134.80 | INR 1167.00 | 1:2.0 |
+| **RELIANCE** | 100/100 | INR 1317.00 | INR 1311.00 | INR 1332.00 | 1:2.0 |
+| **SUNPHARMA** | 100/100 | INR 1922.00 | INR 1907.35 | INR 1958.70 | 1:2.0 |
+| **TECHM** | 100/100 | INR 1599.90 | INR 1585.50 | INR 1635.90 | 1:2.0 |
+| **GRASIM** | 100/100 | INR 3289.60 | INR 3253.65 | INR 3379.50 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
