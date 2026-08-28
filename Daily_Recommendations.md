@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-26***
+*Generated on: **2026-08-28***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **KFINTECH** | KFin Technologies Limited | 100/100 | `WAIT` | INR 976.50 | INR 923.35 | INR 1109.38 | 1:2.5 | 0 | INR 0.00 |
-| **IOLCP** | IOL Chemicals and Pharmaceuticals Limited | 98/100 | `BUY` | INR 186.01 | INR 166.02 | INR 235.98 | 1:2.5 | 0 | INR 0.00 |
+| **AHCL** | AHCL | 98/100 | `BUY` | INR 15.60 | INR 14.66 | INR 17.94 | 1:2.5 | 3 | INR 46.80 |
+| **BHEL** | Bharat Heavy Electricals Limited | 98/100 | `BUY` | INR 433.95 | INR 411.34 | INR 490.47 | 1:2.5 | 0 | INR 0.00 |
+| **DALBHARAT** | Dalmia Bharat Limited | 98/100 | `BUY` | INR 1898.00 | INR 1804.70 | INR 2131.25 | 1:2.5 | 0 | INR 0.00 |
+| **APARINDS** | APAR Industries Limited | 98/100 | `WAIT` | INR 17900.00 | INR 16339.86 | INR 21800.36 | 1:2.5 | 0 | INR 0.00 |
 | **JSWSTEEL** | JSW Steel Limited | 98/100 | `WAIT` | INR 1341.00 | INR 1293.11 | INR 1460.71 | 1:2.5 | 0 | INR 0.00 |
-| **COCHINSHIP** | Cochin Shipyard Limited | 98/100 | `BUY` | INR 1547.00 | INR 1477.70 | INR 1720.25 | 1:2.5 | 0 | INR 0.00 |
-| **HINDZINC** | Hindustan Zinc Limited | 98/100 | `BUY` | INR 626.50 | INR 587.14 | INR 724.89 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **JSWSTEEL** | 100/100 | INR 1341.00 | INR 1322.90 | INR 1386.30 | 1:2.0 |
-| **MOIL** | 100/100 | INR 268.45 | INR 263.00 | INR 282.05 | 1:2.0 |
-| **JSL** | 100/100 | INR 712.95 | INR 703.40 | INR 736.90 | 1:2.0 |
-| **DALBHARAT** | 100/100 | INR 1898.00 | INR 1854.55 | INR 2006.60 | 1:2.0 |
-| **ATUL** | 100/100 | INR 6564.50 | INR 6481.40 | INR 6772.25 | 1:2.0 |
+| **TATACHEM** | 100/100 | INR 644.40 | INR 637.45 | INR 661.80 | 1:2.0 |
+| **MANKIND** | 100/100 | INR 2417.50 | INR 2391.65 | INR 2482.15 | 1:2.0 |
+| **LAURUSLABS** | 100/100 | INR 1929.40 | INR 1887.40 | INR 2034.40 | 1:2.0 |
+| **SCHNEIDER** | 100/100 | INR 1207.00 | INR 1169.25 | INR 1301.45 | 1:2.0 |
+| **FINEORG** | 100/100 | INR 5258.20 | INR 5148.65 | INR 5532.10 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**

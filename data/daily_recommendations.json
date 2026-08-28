@@ -1,27 +1,51 @@
 {
-  "date": "2026-08-26",
+  "date": "2026-08-28",
   "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
     {
-      "symbol": "KFINTECH",
-      "name": "KFin Technologies Limited",
-      "close": 976.5,
-      "score": 100,
-      "signal": "WAIT",
-      "stop_loss": 923.3499930245536,
-      "target": 1109.3750174386162,
+      "symbol": "AHCL",
+      "name": "AHCL",
+      "close": 15.600000381469727,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 14.66428620474679,
+      "target": 17.939285823277064,
+      "qty": 3,
+      "allocation": 46.80000114440918,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "BHEL",
+      "name": "Bharat Heavy Electricals Limited",
+      "close": 433.95001220703125,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 411.3428649902344,
+      "target": 490.46788024902344,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "IOLCP",
-      "name": "IOL Chemicals and Pharmaceuticals Limited",
-      "close": 186.00999450683594,
+      "symbol": "DALBHARAT",
+      "name": "Dalmia Bharat Limited",
+      "close": 1898.0,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 166.02142551967077,
-      "target": 235.98141697474887,
+      "stop_loss": 1804.6999686104912,
+      "target": 2131.250078473772,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "APARINDS",
+      "name": "APAR Industries Limited",
+      "close": 17900.0,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 16339.857142857143,
+      "target": 21800.35714285714,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -37,71 +61,47 @@
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "COCHINSHIP",
-      "name": "Cochin Shipyard Limited",
-      "close": 1547.0,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 1477.699986049107,
-      "target": 1720.250034877232,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "HINDZINC",
-      "name": "Hindustan Zinc Limited",
-      "close": 626.5,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 587.1428484235491,
-      "target": 724.8928789411273,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
     }
   ],
   "intraday_recommendations": [
     {
-      "symbol": "JSWSTEEL",
+      "symbol": "TATACHEM",
       "score": 100,
-      "entry": 1341.0,
-      "stop_loss": 1322.9,
-      "target": 1386.3,
+      "entry": 644.4,
+      "stop_loss": 637.45,
+      "target": 661.8,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "MOIL",
+      "symbol": "MANKIND",
       "score": 100,
-      "entry": 268.45,
-      "stop_loss": 263.0,
-      "target": 282.05,
+      "entry": 2417.5,
+      "stop_loss": 2391.65,
+      "target": 2482.15,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "JSL",
+      "symbol": "LAURUSLABS",
       "score": 100,
-      "entry": 712.95,
-      "stop_loss": 703.4,
-      "target": 736.9,
+      "entry": 1929.4,
+      "stop_loss": 1887.4,
+      "target": 2034.4,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "DALBHARAT",
+      "symbol": "SCHNEIDER",
       "score": 100,
-      "entry": 1898.0,
-      "stop_loss": 1854.55,
-      "target": 2006.6,
+      "entry": 1207.0,
+      "stop_loss": 1169.25,
+      "target": 1301.45,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "ATUL",
+      "symbol": "FINEORG",
       "score": 100,
-      "entry": 6564.5,
-      "stop_loss": 6481.4,
-      "target": 6772.25,
+      "entry": 5258.2,
+      "stop_loss": 5148.65,
+      "target": 5532.1,
       "rr_ratio": "1:2.0"
     }
   ]
