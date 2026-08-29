@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-28***
+*Generated on: **2026-08-29***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **JAIBALAJI** | Jai Balaji Industries Limited | 100/100 | `BUY` | INR 70.16 | INR 62.67 | INR 88.88 | 1:2.5 | 0 | INR 0.00 |
+| **APARINDS** | APAR Industries Limited | 98/100 | `WAIT` | INR 17900.00 | INR 16339.86 | INR 21800.36 | 1:2.5 | 0 | INR 0.00 |
+| **SHYAMMETL** | Shyam Metalics and Energy Limited | 98/100 | `BUY` | INR 1042.40 | INR 994.99 | INR 1160.94 | 1:2.5 | 0 | INR 0.00 |
 | **AHCL** | AHCL | 98/100 | `BUY` | INR 15.60 | INR 14.66 | INR 17.94 | 1:2.5 | 3 | INR 46.80 |
 | **BHEL** | Bharat Heavy Electricals Limited | 98/100 | `BUY` | INR 433.95 | INR 411.34 | INR 490.47 | 1:2.5 | 0 | INR 0.00 |
-| **DALBHARAT** | Dalmia Bharat Limited | 98/100 | `BUY` | INR 1898.00 | INR 1804.70 | INR 2131.25 | 1:2.5 | 0 | INR 0.00 |
-| **APARINDS** | APAR Industries Limited | 98/100 | `WAIT` | INR 17900.00 | INR 16339.86 | INR 21800.36 | 1:2.5 | 0 | INR 0.00 |
-| **JSWSTEEL** | JSW Steel Limited | 98/100 | `WAIT` | INR 1341.00 | INR 1293.11 | INR 1460.71 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **TATACHEM** | 100/100 | INR 644.40 | INR 637.45 | INR 661.80 | 1:2.0 |
-| **MANKIND** | 100/100 | INR 2417.50 | INR 2391.65 | INR 2482.15 | 1:2.0 |
-| **LAURUSLABS** | 100/100 | INR 1929.40 | INR 1887.40 | INR 2034.40 | 1:2.0 |
-| **SCHNEIDER** | 100/100 | INR 1207.00 | INR 1169.25 | INR 1301.45 | 1:2.0 |
-| **FINEORG** | 100/100 | INR 5258.20 | INR 5148.65 | INR 5532.10 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1454.60 | INR 1442.50 | INR 1484.85 | 1:2.0 |
+| **CIPLA** | 100/100 | INR 1423.50 | INR 1411.60 | INR 1453.25 | 1:2.0 |
+| **ZYDUSLIFE** | 100/100 | INR 1191.00 | INR 1159.40 | INR 1270.00 | 1:2.0 |
+| **KEI** | 100/100 | INR 5570.00 | INR 5526.55 | INR 5678.60 | 1:2.0 |
+| **GLENMARK** | 100/100 | INR 2515.00 | INR 2442.65 | INR 2695.90 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**

@@ -1,7 +1,43 @@
 {
-  "date": "2026-08-28",
+  "date": "2026-08-29",
   "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
+    {
+      "symbol": "JAIBALAJI",
+      "name": "Jai Balaji Industries Limited",
+      "close": 70.16000366210938,
+      "score": 100,
+      "signal": "BUY",
+      "stop_loss": 62.67143249511719,
+      "target": 88.88143157958984,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "APARINDS",
+      "name": "APAR Industries Limited",
+      "close": 17900.0,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 16339.857142857143,
+      "target": 21800.35714285714,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "SHYAMMETL",
+      "name": "Shyam Metalics and Energy Limited",
+      "close": 1042.4000244140625,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 994.9857177734375,
+      "target": 1160.935791015625,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
     {
       "symbol": "AHCL",
       "name": "AHCL",
@@ -25,83 +61,47 @@
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "DALBHARAT",
-      "name": "Dalmia Bharat Limited",
-      "close": 1898.0,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 1804.6999686104912,
-      "target": 2131.250078473772,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "APARINDS",
-      "name": "APAR Industries Limited",
-      "close": 17900.0,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 16339.857142857143,
-      "target": 21800.35714285714,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "JSWSTEEL",
-      "name": "JSW Steel Limited",
-      "close": 1341.0,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 1293.1142752511162,
-      "target": 1460.71431187221,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
     }
   ],
   "intraday_recommendations": [
     {
-      "symbol": "TATACHEM",
+      "symbol": "NESTLEIND",
       "score": 100,
-      "entry": 644.4,
-      "stop_loss": 637.45,
-      "target": 661.8,
+      "entry": 1454.6,
+      "stop_loss": 1442.5,
+      "target": 1484.85,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "MANKIND",
+      "symbol": "CIPLA",
       "score": 100,
-      "entry": 2417.5,
-      "stop_loss": 2391.65,
-      "target": 2482.15,
+      "entry": 1423.5,
+      "stop_loss": 1411.6,
+      "target": 1453.25,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "LAURUSLABS",
+      "symbol": "ZYDUSLIFE",
       "score": 100,
-      "entry": 1929.4,
-      "stop_loss": 1887.4,
-      "target": 2034.4,
+      "entry": 1191.0,
+      "stop_loss": 1159.4,
+      "target": 1270.0,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "SCHNEIDER",
+      "symbol": "KEI",
       "score": 100,
-      "entry": 1207.0,
-      "stop_loss": 1169.25,
-      "target": 1301.45,
+      "entry": 5570.0,
+      "stop_loss": 5526.55,
+      "target": 5678.6,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "FINEORG",
+      "symbol": "GLENMARK",
       "score": 100,
-      "entry": 5258.2,
-      "stop_loss": 5148.65,
-      "target": 5532.1,
+      "entry": 2515.0,
+      "stop_loss": 2442.65,
+      "target": 2695.9,
       "rr_ratio": "1:2.0"
     }
   ]
