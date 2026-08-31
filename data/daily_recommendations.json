@@ -1,107 +1,107 @@
 {
-  "date": "2026-08-29",
+  "date": "2026-08-31",
   "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
     {
-      "symbol": "JAIBALAJI",
-      "name": "Jai Balaji Industries Limited",
-      "close": 70.16000366210938,
+      "symbol": "LAURUSLABS",
+      "name": "Laurus Labs Limited",
+      "close": 1938.5,
       "score": 100,
-      "signal": "BUY",
-      "stop_loss": 62.67143249511719,
-      "target": 88.88143157958984,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "APARINDS",
-      "name": "APAR Industries Limited",
-      "close": 17900.0,
-      "score": 98,
       "signal": "WAIT",
-      "stop_loss": 16339.857142857143,
-      "target": 21800.35714285714,
+      "stop_loss": 1859.0857107979912,
+      "target": 2137.035723005022,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "SHYAMMETL",
-      "name": "Shyam Metalics and Energy Limited",
-      "close": 1042.4000244140625,
+      "symbol": "GHCLTEXTIL",
+      "name": "GHCL Textiles Limited",
+      "close": 130.7899932861328,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 994.9857177734375,
-      "target": 1160.935791015625,
+      "stop_loss": 119.39856501988002,
+      "target": 159.26856395176478,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "AHCL",
-      "name": "AHCL",
-      "close": 15.600000381469727,
+      "symbol": "INOXINDIA",
+      "name": "INOX India Limited",
+      "close": 2126.199951171875,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 14.66428620474679,
-      "target": 17.939285823277064,
-      "qty": 3,
-      "allocation": 46.80000114440918,
+      "stop_loss": 1963.67138671875,
+      "target": 2532.5213623046875,
+      "qty": 0,
+      "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "BHEL",
-      "name": "Bharat Heavy Electricals Limited",
-      "close": 433.95001220703125,
+      "symbol": "PTCIL",
+      "name": "PTC Industries Limited",
+      "close": 22110.0,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 411.3428649902344,
-      "target": 490.46788024902344,
+      "stop_loss": 20406.285714285714,
+      "target": 26369.285714285714,
       "qty": 0,
       "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "SAGILITY",
+      "name": "Sagility Limited",
+      "close": 46.34000015258789,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 43.83428628104074,
+      "target": 52.60428483145578,
+      "qty": 1,
+      "allocation": 46.34000015258789,
       "rr_ratio": "1:2.5"
     }
   ],
   "intraday_recommendations": [
     {
+      "symbol": "TCS",
+      "score": 100,
+      "entry": 2399.3,
+      "stop_loss": 2352.75,
+      "target": 2515.7,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "score": 100,
+      "entry": 1984.8,
+      "stop_loss": 1958.65,
+      "target": 2050.2,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "score": 100,
+      "entry": 2653.6,
+      "stop_loss": 2620.2,
+      "target": 2737.15,
+      "rr_ratio": "1:2.0"
+    },
+    {
       "symbol": "NESTLEIND",
       "score": 100,
-      "entry": 1454.6,
-      "stop_loss": 1442.5,
-      "target": 1484.85,
+      "entry": 1496.5,
+      "stop_loss": 1475.95,
+      "target": 1547.9,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "CIPLA",
+      "symbol": "GRASIM",
       "score": 100,
-      "entry": 1423.5,
-      "stop_loss": 1411.6,
-      "target": 1453.25,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "ZYDUSLIFE",
-      "score": 100,
-      "entry": 1191.0,
-      "stop_loss": 1159.4,
-      "target": 1270.0,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "KEI",
-      "score": 100,
-      "entry": 5570.0,
-      "stop_loss": 5526.55,
-      "target": 5678.6,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "GLENMARK",
-      "score": 100,
-      "entry": 2515.0,
-      "stop_loss": 2442.65,
-      "target": 2695.9,
+      "entry": 3371.0,
+      "stop_loss": 3326.35,
+      "target": 3482.65,
       "rr_ratio": "1:2.0"
     }
   ]

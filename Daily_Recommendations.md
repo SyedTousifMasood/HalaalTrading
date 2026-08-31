@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-08-29***
+*Generated on: **2026-08-31***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **JAIBALAJI** | Jai Balaji Industries Limited | 100/100 | `BUY` | INR 70.16 | INR 62.67 | INR 88.88 | 1:2.5 | 0 | INR 0.00 |
-| **APARINDS** | APAR Industries Limited | 98/100 | `WAIT` | INR 17900.00 | INR 16339.86 | INR 21800.36 | 1:2.5 | 0 | INR 0.00 |
-| **SHYAMMETL** | Shyam Metalics and Energy Limited | 98/100 | `BUY` | INR 1042.40 | INR 994.99 | INR 1160.94 | 1:2.5 | 0 | INR 0.00 |
-| **AHCL** | AHCL | 98/100 | `BUY` | INR 15.60 | INR 14.66 | INR 17.94 | 1:2.5 | 3 | INR 46.80 |
-| **BHEL** | Bharat Heavy Electricals Limited | 98/100 | `BUY` | INR 433.95 | INR 411.34 | INR 490.47 | 1:2.5 | 0 | INR 0.00 |
+| **LAURUSLABS** | Laurus Labs Limited | 100/100 | `WAIT` | INR 1938.50 | INR 1859.09 | INR 2137.04 | 1:2.5 | 0 | INR 0.00 |
+| **GHCLTEXTIL** | GHCL Textiles Limited | 98/100 | `BUY` | INR 130.79 | INR 119.40 | INR 159.27 | 1:2.5 | 0 | INR 0.00 |
+| **INOXINDIA** | INOX India Limited | 98/100 | `BUY` | INR 2126.20 | INR 1963.67 | INR 2532.52 | 1:2.5 | 0 | INR 0.00 |
+| **PTCIL** | PTC Industries Limited | 98/100 | `BUY` | INR 22110.00 | INR 20406.29 | INR 26369.29 | 1:2.5 | 0 | INR 0.00 |
+| **SAGILITY** | Sagility Limited | 98/100 | `BUY` | INR 46.34 | INR 43.83 | INR 52.60 | 1:2.5 | 1 | INR 46.34 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **NESTLEIND** | 100/100 | INR 1454.60 | INR 1442.50 | INR 1484.85 | 1:2.0 |
-| **CIPLA** | 100/100 | INR 1423.50 | INR 1411.60 | INR 1453.25 | 1:2.0 |
-| **ZYDUSLIFE** | 100/100 | INR 1191.00 | INR 1159.40 | INR 1270.00 | 1:2.0 |
-| **KEI** | 100/100 | INR 5570.00 | INR 5526.55 | INR 5678.60 | 1:2.0 |
-| **GLENMARK** | 100/100 | INR 2515.00 | INR 2442.65 | INR 2695.90 | 1:2.0 |
+| **TCS** | 100/100 | INR 2399.30 | INR 2352.75 | INR 2515.70 | 1:2.0 |
+| **SUNPHARMA** | 100/100 | INR 1984.80 | INR 1958.65 | INR 2050.20 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2653.60 | INR 2620.20 | INR 2737.15 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1496.50 | INR 1475.95 | INR 1547.90 | 1:2.0 |
+| **GRASIM** | 100/100 | INR 3371.00 | INR 3326.35 | INR 3482.65 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
