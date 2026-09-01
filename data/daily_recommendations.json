@@ -1,15 +1,39 @@
 {
-  "date": "2026-08-31",
+  "date": "2026-09-01",
   "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
     {
-      "symbol": "LAURUSLABS",
-      "name": "Laurus Labs Limited",
-      "close": 1938.5,
+      "symbol": "JAIBALAJI",
+      "name": "Jai Balaji Industries Limited",
+      "close": 72.16000366210938,
       "score": 100,
-      "signal": "WAIT",
-      "stop_loss": 1859.0857107979912,
-      "target": 2137.035723005022,
+      "signal": "BUY",
+      "stop_loss": 65.01714651925224,
+      "target": 90.01714651925224,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "KPRMILL",
+      "name": "K.P.R. Mill Limited",
+      "close": 1177.5999755859375,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 1113.442836216518,
+      "target": 1337.9928240094866,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "ATLANTAELE",
+      "name": "ATLANTAELE",
+      "close": 1830.4000244140625,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 1636.614292689732,
+      "target": 2314.8643537248886,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -17,91 +41,59 @@
     {
       "symbol": "GHCLTEXTIL",
       "name": "GHCL Textiles Limited",
-      "close": 130.7899932861328,
+      "close": 134.77000427246094,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 119.39856501988002,
-      "target": 159.26856395176478,
+      "stop_loss": 123.00714656284877,
+      "target": 164.17714854649134,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "INOXINDIA",
-      "name": "INOX India Limited",
-      "close": 2126.199951171875,
+      "symbol": "EPL",
+      "name": "EPL Limited",
+      "close": 262.05999755859375,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 1963.67138671875,
-      "target": 2532.5213623046875,
+      "stop_loss": 237.76428004673548,
+      "target": 322.7992913382394,
       "qty": 0,
       "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "PTCIL",
-      "name": "PTC Industries Limited",
-      "close": 22110.0,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 20406.285714285714,
-      "target": 26369.285714285714,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "SAGILITY",
-      "name": "Sagility Limited",
-      "close": 46.34000015258789,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 43.83428628104074,
-      "target": 52.60428483145578,
-      "qty": 1,
-      "allocation": 46.34000015258789,
       "rr_ratio": "1:2.5"
     }
   ],
   "intraday_recommendations": [
     {
-      "symbol": "TCS",
+      "symbol": "ONGC",
       "score": 100,
-      "entry": 2399.3,
-      "stop_loss": 2352.75,
-      "target": 2515.7,
+      "entry": 236.45,
+      "stop_loss": 234.8,
+      "target": 240.6,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "SUNPHARMA",
+      "symbol": "ZENSARTECH",
       "score": 100,
-      "entry": 1984.8,
-      "stop_loss": 1958.65,
-      "target": 2050.2,
+      "entry": 472.95,
+      "stop_loss": 466.0,
+      "target": 490.25,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "ASIANPAINT",
+      "symbol": "PRESTIGE",
       "score": 100,
-      "entry": 2653.6,
-      "stop_loss": 2620.2,
-      "target": 2737.15,
+      "entry": 1570.0,
+      "stop_loss": 1538.45,
+      "target": 1648.9,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "NESTLEIND",
-      "score": 100,
-      "entry": 1496.5,
-      "stop_loss": 1475.95,
-      "target": 1547.9,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "GRASIM",
-      "score": 100,
-      "entry": 3371.0,
-      "stop_loss": 3326.35,
-      "target": 3482.65,
+      "symbol": "GRANULES",
+      "score": 88,
+      "entry": 837.2,
+      "stop_loss": 828.55,
+      "target": 858.8,
       "rr_ratio": "1:2.0"
     }
   ]
