@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-01***
+*Generated on: **2026-09-02***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **JAIBALAJI** | Jai Balaji Industries Limited | 100/100 | `BUY` | INR 72.16 | INR 65.02 | INR 90.02 | 1:2.5 | 0 | INR 0.00 |
-| **KPRMILL** | K.P.R. Mill Limited | 98/100 | `BUY` | INR 1177.60 | INR 1113.44 | INR 1337.99 | 1:2.5 | 0 | INR 0.00 |
-| **ATLANTAELE** | ATLANTAELE | 98/100 | `BUY` | INR 1830.40 | INR 1636.61 | INR 2314.86 | 1:2.5 | 0 | INR 0.00 |
-| **GHCLTEXTIL** | GHCL Textiles Limited | 98/100 | `BUY` | INR 134.77 | INR 123.01 | INR 164.18 | 1:2.5 | 0 | INR 0.00 |
-| **EPL** | EPL Limited | 98/100 | `BUY` | INR 262.06 | INR 237.76 | INR 322.80 | 1:2.5 | 0 | INR 0.00 |
+| **COHANCE** | COHANCE | 100/100 | `WAIT` | INR 460.00 | INR 424.90 | INR 547.75 | 1:2.5 | 0 | INR 0.00 |
+| **METROPOLIS** | Metropolis Healthcare Limited | 98/100 | `WAIT` | INR 582.25 | INR 551.14 | INR 660.02 | 1:2.5 | 0 | INR 0.00 |
+| **GARFIBRES** | Garware Technical Fibres Limited | 98/100 | `WAIT` | INR 842.70 | INR 781.55 | INR 995.58 | 1:2.5 | 0 | INR 0.00 |
+| **ANTHEM** | ANTHEM | 98/100 | `BUY` | INR 924.50 | INR 871.10 | INR 1058.00 | 1:2.5 | 0 | INR 0.00 |
+| **BHAGERIA** | Bhageria Industries Limited | 97/100 | `BUY` | INR 263.20 | INR 243.06 | INR 313.56 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,10 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ONGC** | 100/100 | INR 236.45 | INR 234.80 | INR 240.60 | 1:2.0 |
-| **ZENSARTECH** | 100/100 | INR 472.95 | INR 466.00 | INR 490.25 | 1:2.0 |
-| **PRESTIGE** | 100/100 | INR 1570.00 | INR 1538.45 | INR 1648.90 | 1:2.0 |
-| **GRANULES** | 88/100 | INR 837.20 | INR 828.55 | INR 858.80 | 1:2.0 |
+| **ULTRACEMCO** | 100/100 | INR 11393.00 | INR 11202.80 | INR 11868.50 | 1:2.0 |
+| **GRASIM** | 100/100 | INR 3294.90 | INR 3252.30 | INR 3401.40 | 1:2.0 |
+| **BRITANNIA** | 100/100 | INR 5154.00 | INR 5059.80 | INR 5389.50 | 1:2.0 |
+| **TITAN** | 100/100 | INR 5074.00 | INR 5011.70 | INR 5229.80 | 1:2.0 |
+| **TATAELXSI** | 100/100 | INR 3609.00 | INR 3557.20 | INR 3738.50 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
