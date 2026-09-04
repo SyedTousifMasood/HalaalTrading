@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-03***
+*Generated on: **2026-09-04***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **OIL** | Oil India Limited | 100/100 | `WAIT` | INR 498.15 | INR 473.05 | INR 560.90 | 1:2.5 | 0 | INR 0.00 |
-| **CAPLIPOINT** | Caplin Point Laboratories Limited | 100/100 | `BUY` | INR 2720.50 | INR 2553.93 | INR 3136.93 | 1:2.5 | 0 | INR 0.00 |
-| **CLEAN** | Clean Science and Technology Limited | 98/100 | `BUY` | INR 863.15 | INR 817.19 | INR 978.04 | 1:2.5 | 0 | INR 0.00 |
-| **ANTHEM** | ANTHEM | 98/100 | `BUY` | INR 934.50 | INR 878.81 | INR 1073.73 | 1:2.5 | 0 | INR 0.00 |
-| **BEML** | BEML Limited | 98/100 | `BUY` | INR 2032.40 | INR 1916.24 | INR 2322.79 | 1:2.5 | 0 | INR 0.00 |
+| **ATLANTAELE** | ATLANTAELE | 98/100 | `WAIT` | INR 1886.40 | INR 1701.26 | INR 2349.26 | 1:2.5 | 0 | INR 0.00 |
+| **CENTENKA** | Century Enka Limited | 98/100 | `BUY` | INR 616.65 | INR 577.21 | INR 715.24 | 1:2.5 | 0 | INR 0.00 |
+| **SOLARINDS** | Solar Industries India Limited | 98/100 | `BUY` | INR 21500.00 | INR 20424.29 | INR 24189.29 | 1:2.5 | 0 | INR 0.00 |
+| **BESTAGRO** | Best Agrolife Limited | 98/100 | `BUY` | INR 20.34 | INR 18.74 | INR 24.33 | 1:2.5 | 2 | INR 40.68 |
+| **AHCL** | AHCL | 98/100 | `BUY` | INR 15.60 | INR 14.36 | INR 18.69 | 1:2.5 | 3 | INR 46.80 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ASIANPAINT** | 100/100 | INR 2541.60 | INR 2498.75 | INR 2648.70 | 1:2.0 |
-| **TATACHEM** | 100/100 | INR 641.35 | INR 626.75 | INR 677.90 | 1:2.0 |
-| **MASTEK** | 100/100 | INR 1792.60 | INR 1697.45 | INR 2030.40 | 1:2.0 |
-| **BRIGADE** | 100/100 | INR 712.30 | INR 680.00 | INR 793.05 | 1:2.0 |
-| **UNOMINDA** | 94/100 | INR 1269.00 | INR 1245.60 | INR 1327.50 | 1:2.0 |
+| **SCHNEIDER** | 100/100 | INR 1232.40 | INR 1203.70 | INR 1304.10 | 1:2.0 |
+| **HEG** | 100/100 | INR 725.40 | INR 708.05 | INR 768.80 | 1:2.0 |
+| **SJVN** | 100/100 | INR 65.50 | INR 64.80 | INR 67.20 | 1:2.0 |
+| **KEC** | 98/100 | INR 410.10 | INR 402.65 | INR 428.70 | 1:2.0 |
+| **RATNAMANI** | 92/100 | INR 2727.00 | INR 2664.10 | INR 2884.20 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
