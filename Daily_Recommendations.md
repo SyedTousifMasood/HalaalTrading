@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-04***
+*Generated on: **2026-09-07***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **ATLANTAELE** | ATLANTAELE | 98/100 | `WAIT` | INR 1886.40 | INR 1701.26 | INR 2349.26 | 1:2.5 | 0 | INR 0.00 |
-| **CENTENKA** | Century Enka Limited | 98/100 | `BUY` | INR 616.65 | INR 577.21 | INR 715.24 | 1:2.5 | 0 | INR 0.00 |
-| **SOLARINDS** | Solar Industries India Limited | 98/100 | `BUY` | INR 21500.00 | INR 20424.29 | INR 24189.29 | 1:2.5 | 0 | INR 0.00 |
-| **BESTAGRO** | Best Agrolife Limited | 98/100 | `BUY` | INR 20.34 | INR 18.74 | INR 24.33 | 1:2.5 | 2 | INR 40.68 |
-| **AHCL** | AHCL | 98/100 | `BUY` | INR 15.60 | INR 14.36 | INR 18.69 | 1:2.5 | 3 | INR 46.80 |
+| **GSFC** | Gujarat State Fertilizers & Chemicals Limited | 100/100 | `WAIT` | INR 162.88 | INR 156.70 | INR 178.33 | 1:2.5 | 0 | INR 0.00 |
+| **GMMPFAUDLR** | GMM Pfaudler Limited | 98/100 | `BUY` | INR 1147.90 | INR 1062.79 | INR 1360.69 | 1:2.5 | 0 | INR 0.00 |
+| **GREENPLY** | Greenply Industries Limited | 98/100 | `BUY` | INR 304.70 | INR 285.94 | INR 351.59 | 1:2.5 | 0 | INR 0.00 |
+| **JINDALSTEL** | Jindal Steel & Power Limited | 98/100 | `WAIT` | INR 1165.00 | INR 1106.92 | INR 1310.20 | 1:2.5 | 0 | INR 0.00 |
+| **BLKASHYAP** | B.L. Kashyap and Sons Limited | 98/100 | `BUY` | INR 59.34 | INR 53.40 | INR 74.19 | 1:2.5 | 1 | INR 59.34 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **SCHNEIDER** | 100/100 | INR 1232.40 | INR 1203.70 | INR 1304.10 | 1:2.0 |
-| **HEG** | 100/100 | INR 725.40 | INR 708.05 | INR 768.80 | 1:2.0 |
-| **SJVN** | 100/100 | INR 65.50 | INR 64.80 | INR 67.20 | 1:2.0 |
-| **KEC** | 98/100 | INR 410.10 | INR 402.65 | INR 428.70 | 1:2.0 |
-| **RATNAMANI** | 92/100 | INR 2727.00 | INR 2664.10 | INR 2884.20 | 1:2.0 |
+| **HCLTECH** | 100/100 | INR 1282.80 | INR 1251.40 | INR 1361.35 | 1:2.0 |
+| **CIPLA** | 100/100 | INR 1395.00 | INR 1380.40 | INR 1431.45 | 1:2.0 |
+| **ALKEM** | 100/100 | INR 5242.50 | INR 5167.05 | INR 5431.10 | 1:2.0 |
+| **LAURUSLABS** | 100/100 | INR 1876.70 | INR 1852.60 | INR 1936.95 | 1:2.0 |
+| **EXIDEIND** | 100/100 | INR 425.75 | INR 417.40 | INR 446.65 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
