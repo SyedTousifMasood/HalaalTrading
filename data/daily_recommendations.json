@@ -1,51 +1,15 @@
 {
-  "date": "2026-09-07",
+  "date": "2026-09-08",
   "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
     {
-      "symbol": "GSFC",
-      "name": "Gujarat State Fertilizers & Chemicals Limited",
-      "close": 162.8800048828125,
-      "score": 100,
-      "signal": "WAIT",
-      "stop_loss": 156.70000784737724,
-      "target": 178.32999747140067,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "GMMPFAUDLR",
-      "name": "GMM Pfaudler Limited",
-      "close": 1147.9000244140625,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 1062.7857666015625,
-      "target": 1360.6856689453125,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "GREENPLY",
-      "name": "Greenply Industries Limited",
-      "close": 304.70001220703125,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 285.94287545340404,
-      "target": 351.59285409109935,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "JINDALSTEL",
-      "name": "Jindal Steel & Power Limited",
-      "close": 1165.0,
+      "symbol": "WSTCSTPAPR",
+      "name": "West Coast Paper Mills Limited",
+      "close": 687.5,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 1106.9203573354812,
-      "target": 1310.1991066612973,
+      "stop_loss": 633.5642700195312,
+      "target": 822.3393249511719,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -61,47 +25,83 @@
       "qty": 1,
       "allocation": 59.34000015258789,
       "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "JINDALSTEL",
+      "name": "Jindal Steel & Power Limited",
+      "close": 1165.0,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 1106.9203573354812,
+      "target": 1310.1991066612973,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "ANTELOPUS",
+      "name": "ANTELOPUS",
+      "close": 985.2999877929688,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 880.4285452706473,
+      "target": 1247.4785940987722,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "GPTHEALTH",
+      "name": "GPT Healthcare Limited",
+      "close": 161.3699951171875,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 153.6171395438058,
+      "target": 180.75213405064173,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
     }
   ],
   "intraday_recommendations": [
     {
-      "symbol": "HCLTECH",
+      "symbol": "BAJAJ-AUTO",
       "score": 100,
-      "entry": 1282.8,
-      "stop_loss": 1251.4,
-      "target": 1361.35,
+      "entry": 11880.0,
+      "stop_loss": 11717.4,
+      "target": 12286.5,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "CIPLA",
+      "symbol": "EICHERMOT",
       "score": 100,
-      "entry": 1395.0,
-      "stop_loss": 1380.4,
-      "target": 1431.45,
+      "entry": 7747.5,
+      "stop_loss": 7640.1,
+      "target": 8016.0,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "ALKEM",
+      "symbol": "COFORGE",
       "score": 100,
-      "entry": 5242.5,
-      "stop_loss": 5167.05,
-      "target": 5431.1,
+      "entry": 1950.0,
+      "stop_loss": 1926.4,
+      "target": 2008.95,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "LAURUSLABS",
+      "symbol": "LALPATHLAB",
       "score": 100,
-      "entry": 1876.7,
-      "stop_loss": 1852.6,
-      "target": 1936.95,
+      "entry": 1912.5,
+      "stop_loss": 1889.8,
+      "target": 1969.25,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "EXIDEIND",
+      "symbol": "SCHNEIDER",
       "score": 100,
-      "entry": 425.75,
-      "stop_loss": 417.4,
-      "target": 446.65,
+      "entry": 1229.7,
+      "stop_loss": 1204.0,
+      "target": 1293.95,
       "rr_ratio": "1:2.0"
     }
   ]

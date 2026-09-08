@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-07***
+*Generated on: **2026-09-08***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **GSFC** | Gujarat State Fertilizers & Chemicals Limited | 100/100 | `WAIT` | INR 162.88 | INR 156.70 | INR 178.33 | 1:2.5 | 0 | INR 0.00 |
-| **GMMPFAUDLR** | GMM Pfaudler Limited | 98/100 | `BUY` | INR 1147.90 | INR 1062.79 | INR 1360.69 | 1:2.5 | 0 | INR 0.00 |
-| **GREENPLY** | Greenply Industries Limited | 98/100 | `BUY` | INR 304.70 | INR 285.94 | INR 351.59 | 1:2.5 | 0 | INR 0.00 |
-| **JINDALSTEL** | Jindal Steel & Power Limited | 98/100 | `WAIT` | INR 1165.00 | INR 1106.92 | INR 1310.20 | 1:2.5 | 0 | INR 0.00 |
+| **WSTCSTPAPR** | West Coast Paper Mills Limited | 98/100 | `WAIT` | INR 687.50 | INR 633.56 | INR 822.34 | 1:2.5 | 0 | INR 0.00 |
 | **BLKASHYAP** | B.L. Kashyap and Sons Limited | 98/100 | `BUY` | INR 59.34 | INR 53.40 | INR 74.19 | 1:2.5 | 1 | INR 59.34 |
+| **JINDALSTEL** | Jindal Steel & Power Limited | 98/100 | `WAIT` | INR 1165.00 | INR 1106.92 | INR 1310.20 | 1:2.5 | 0 | INR 0.00 |
+| **ANTELOPUS** | ANTELOPUS | 98/100 | `WAIT` | INR 985.30 | INR 880.43 | INR 1247.48 | 1:2.5 | 0 | INR 0.00 |
+| **GPTHEALTH** | GPT Healthcare Limited | 98/100 | `BUY` | INR 161.37 | INR 153.62 | INR 180.75 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HCLTECH** | 100/100 | INR 1282.80 | INR 1251.40 | INR 1361.35 | 1:2.0 |
-| **CIPLA** | 100/100 | INR 1395.00 | INR 1380.40 | INR 1431.45 | 1:2.0 |
-| **ALKEM** | 100/100 | INR 5242.50 | INR 5167.05 | INR 5431.10 | 1:2.0 |
-| **LAURUSLABS** | 100/100 | INR 1876.70 | INR 1852.60 | INR 1936.95 | 1:2.0 |
-| **EXIDEIND** | 100/100 | INR 425.75 | INR 417.40 | INR 446.65 | 1:2.0 |
+| **BAJAJ-AUTO** | 100/100 | INR 11880.00 | INR 11717.40 | INR 12286.50 | 1:2.0 |
+| **EICHERMOT** | 100/100 | INR 7747.50 | INR 7640.10 | INR 8016.00 | 1:2.0 |
+| **COFORGE** | 100/100 | INR 1950.00 | INR 1926.40 | INR 2008.95 | 1:2.0 |
+| **LALPATHLAB** | 100/100 | INR 1912.50 | INR 1889.80 | INR 1969.25 | 1:2.0 |
+| **SCHNEIDER** | 100/100 | INR 1229.70 | INR 1204.00 | INR 1293.95 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
