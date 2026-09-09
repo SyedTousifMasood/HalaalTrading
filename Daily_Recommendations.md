@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-08***
+*Generated on: **2026-09-09***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **WSTCSTPAPR** | West Coast Paper Mills Limited | 98/100 | `WAIT` | INR 687.50 | INR 633.56 | INR 822.34 | 1:2.5 | 0 | INR 0.00 |
-| **BLKASHYAP** | B.L. Kashyap and Sons Limited | 98/100 | `BUY` | INR 59.34 | INR 53.40 | INR 74.19 | 1:2.5 | 1 | INR 59.34 |
-| **JINDALSTEL** | Jindal Steel & Power Limited | 98/100 | `WAIT` | INR 1165.00 | INR 1106.92 | INR 1310.20 | 1:2.5 | 0 | INR 0.00 |
-| **ANTELOPUS** | ANTELOPUS | 98/100 | `WAIT` | INR 985.30 | INR 880.43 | INR 1247.48 | 1:2.5 | 0 | INR 0.00 |
-| **GPTHEALTH** | GPT Healthcare Limited | 98/100 | `BUY` | INR 161.37 | INR 153.62 | INR 180.75 | 1:2.5 | 0 | INR 0.00 |
+| **HIKAL** | Hikal Limited | 100/100 | `BUY` | INR 246.01 | INR 220.00 | INR 311.03 | 1:2.5 | 0 | INR 0.00 |
+| **GAYAPROJ** | Gayatri Projects Limited | 98/100 | `BUY` | INR 23.26 | INR 20.88 | INR 29.21 | 1:2.5 | 2 | INR 46.52 |
+| **GRANULES** | Granules India Limited | 98/100 | `BUY` | INR 895.35 | INR 847.04 | INR 1016.14 | 1:2.5 | 0 | INR 0.00 |
+| **AEROFLEX** | Aeroflex Industries Limited | 98/100 | `WAIT` | INR 573.50 | INR 517.79 | INR 712.77 | 1:2.5 | 0 | INR 0.00 |
+| **BEPL** | Bhansali Engineering Polymers Limited | 98/100 | `BUY` | INR 133.84 | INR 123.40 | INR 159.94 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **BAJAJ-AUTO** | 100/100 | INR 11880.00 | INR 11717.40 | INR 12286.50 | 1:2.0 |
-| **EICHERMOT** | 100/100 | INR 7747.50 | INR 7640.10 | INR 8016.00 | 1:2.0 |
-| **COFORGE** | 100/100 | INR 1950.00 | INR 1926.40 | INR 2008.95 | 1:2.0 |
-| **LALPATHLAB** | 100/100 | INR 1912.50 | INR 1889.80 | INR 1969.25 | 1:2.0 |
-| **SCHNEIDER** | 100/100 | INR 1229.70 | INR 1204.00 | INR 1293.95 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2489.00 | INR 2460.55 | INR 2560.10 | 1:2.0 |
+| **METROPOLIS** | 100/100 | INR 602.10 | INR 592.95 | INR 625.00 | 1:2.0 |
+| **DALBHARAT** | 100/100 | INR 1733.60 | INR 1697.65 | INR 1823.55 | 1:2.0 |
+| **COROMANDEL** | 98/100 | INR 1962.70 | INR 1942.95 | INR 2012.05 | 1:2.0 |
+| **JSL** | 96/100 | INR 783.30 | INR 762.90 | INR 834.30 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
