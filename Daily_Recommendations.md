@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-09***
+*Generated on: **2026-09-10***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **HIKAL** | Hikal Limited | 100/100 | `BUY` | INR 246.01 | INR 220.00 | INR 311.03 | 1:2.5 | 0 | INR 0.00 |
-| **GAYAPROJ** | Gayatri Projects Limited | 98/100 | `BUY` | INR 23.26 | INR 20.88 | INR 29.21 | 1:2.5 | 2 | INR 46.52 |
-| **GRANULES** | Granules India Limited | 98/100 | `BUY` | INR 895.35 | INR 847.04 | INR 1016.14 | 1:2.5 | 0 | INR 0.00 |
-| **AEROFLEX** | Aeroflex Industries Limited | 98/100 | `WAIT` | INR 573.50 | INR 517.79 | INR 712.77 | 1:2.5 | 0 | INR 0.00 |
-| **BEPL** | Bhansali Engineering Polymers Limited | 98/100 | `BUY` | INR 133.84 | INR 123.40 | INR 159.94 | 1:2.5 | 0 | INR 0.00 |
+| **GAYAPROJ** | Gayatri Projects Limited | 98/100 | `BUY` | INR 23.64 | INR 21.28 | INR 29.54 | 1:2.5 | 2 | INR 47.28 |
+| **BEPL** | Bhansali Engineering Polymers Limited | 98/100 | `WAIT` | INR 133.56 | INR 123.18 | INR 159.50 | 1:2.5 | 0 | INR 0.00 |
+| **CGPOWER** | CG Power and Industrial Solutions Limited | 98/100 | `WAIT` | INR 926.95 | INR 883.10 | INR 1036.58 | 1:2.5 | 0 | INR 0.00 |
+| **SARDAEN** | Sarda Energy & Minerals Limited | 98/100 | `BUY` | INR 545.85 | INR 519.46 | INR 611.83 | 1:2.5 | 0 | INR 0.00 |
+| **AVL** | Aditya Vision Limited | 98/100 | `BUY` | INR 623.10 | INR 587.17 | INR 712.93 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ASIANPAINT** | 100/100 | INR 2489.00 | INR 2460.55 | INR 2560.10 | 1:2.0 |
-| **METROPOLIS** | 100/100 | INR 602.10 | INR 592.95 | INR 625.00 | 1:2.0 |
-| **DALBHARAT** | 100/100 | INR 1733.60 | INR 1697.65 | INR 1823.55 | 1:2.0 |
-| **COROMANDEL** | 98/100 | INR 1962.70 | INR 1942.95 | INR 2012.05 | 1:2.0 |
-| **JSL** | 96/100 | INR 783.30 | INR 762.90 | INR 834.30 | 1:2.0 |
+| **GRASIM** | 100/100 | INR 3319.00 | INR 3300.70 | INR 3364.75 | 1:2.0 |
+| **DABUR** | 100/100 | INR 376.45 | INR 371.90 | INR 387.80 | 1:2.0 |
+| **GRANULES** | 100/100 | INR 899.25 | INR 879.45 | INR 948.80 | 1:2.0 |
+| **ERIS** | 100/100 | INR 1358.00 | INR 1340.95 | INR 1400.70 | 1:2.0 |
+| **ATUL** | 100/100 | INR 6356.00 | INR 6263.00 | INR 6588.50 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
