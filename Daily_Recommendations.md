@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-10***
+*Generated on: **2026-09-11***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **GAYAPROJ** | Gayatri Projects Limited | 98/100 | `BUY` | INR 23.64 | INR 21.28 | INR 29.54 | 1:2.5 | 2 | INR 47.28 |
-| **BEPL** | Bhansali Engineering Polymers Limited | 98/100 | `WAIT` | INR 133.56 | INR 123.18 | INR 159.50 | 1:2.5 | 0 | INR 0.00 |
-| **CGPOWER** | CG Power and Industrial Solutions Limited | 98/100 | `WAIT` | INR 926.95 | INR 883.10 | INR 1036.58 | 1:2.5 | 0 | INR 0.00 |
-| **SARDAEN** | Sarda Energy & Minerals Limited | 98/100 | `BUY` | INR 545.85 | INR 519.46 | INR 611.83 | 1:2.5 | 0 | INR 0.00 |
-| **AVL** | Aditya Vision Limited | 98/100 | `BUY` | INR 623.10 | INR 587.17 | INR 712.93 | 1:2.5 | 0 | INR 0.00 |
+| **AARTIDRUGS** | Aarti Drugs Limited | 98/100 | `BUY` | INR 437.00 | INR 410.64 | INR 502.89 | 1:2.5 | 0 | INR 0.00 |
+| **GRANULES** | Granules India Limited | 98/100 | `BUY` | INR 899.25 | INR 848.83 | INR 1025.30 | 1:2.5 | 0 | INR 0.00 |
+| **JINDALSAW** | Jindal Saw Limited | 98/100 | `WAIT` | INR 317.50 | INR 294.33 | INR 375.43 | 1:2.5 | 0 | INR 0.00 |
+| **EMMVEE** | EMMVEE | 98/100 | `BUY` | INR 342.65 | INR 323.32 | INR 390.97 | 1:2.5 | 0 | INR 0.00 |
+| **FINCABLES** | Finolex Cables Limited | 98/100 | `BUY` | INR 1418.40 | INR 1303.50 | INR 1705.64 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **GRASIM** | 100/100 | INR 3319.00 | INR 3300.70 | INR 3364.75 | 1:2.0 |
-| **DABUR** | 100/100 | INR 376.45 | INR 371.90 | INR 387.80 | 1:2.0 |
-| **GRANULES** | 100/100 | INR 899.25 | INR 879.45 | INR 948.80 | 1:2.0 |
-| **ERIS** | 100/100 | INR 1358.00 | INR 1340.95 | INR 1400.70 | 1:2.0 |
-| **ATUL** | 100/100 | INR 6356.00 | INR 6263.00 | INR 6588.50 | 1:2.0 |
+| **ULTRACEMCO** | 100/100 | INR 11000.00 | INR 10830.50 | INR 11423.75 | 1:2.0 |
+| **PIDILITIND** | 100/100 | INR 1566.90 | INR 1540.60 | INR 1632.65 | 1:2.0 |
+| **SIEMENS** | 100/100 | INR 3957.00 | INR 3913.60 | INR 4065.45 | 1:2.0 |
+| **TATACHEM** | 100/100 | INR 612.45 | INR 604.70 | INR 631.90 | 1:2.0 |
+| **MANKIND** | 100/100 | INR 2280.00 | INR 2247.20 | INR 2362.00 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
