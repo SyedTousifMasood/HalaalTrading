@@ -1,15 +1,51 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-14",
   "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
     {
-      "symbol": "AARTIDRUGS",
-      "name": "Aarti Drugs Limited",
-      "close": 437.0,
+      "symbol": "EMMVEE",
+      "name": "EMMVEE",
+      "close": 346.0,
+      "score": 100,
+      "signal": "BUY",
+      "stop_loss": 325.3428519112723,
+      "target": 397.6428702218192,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "PTCIL",
+      "name": "PTC Industries Limited",
+      "close": 23630.0,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 21547.85714285714,
+      "target": 28835.357142857145,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "HERITGFOOD",
+      "name": "Heritage Foods Limited",
+      "close": 417.3999938964844,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 410.64285714285717,
-      "target": 502.8928571428571,
+      "stop_loss": 385.27142333984375,
+      "target": 497.72142028808594,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "BLUESTONE",
+      "name": "BLUESTONE",
+      "close": 890.3499755859375,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 817.9928240094866,
+      "target": 1071.2428545270648,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -17,47 +53,11 @@
     {
       "symbol": "GRANULES",
       "name": "Granules India Limited",
-      "close": 899.25,
+      "close": 909.2999877929688,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 848.8285609654018,
-      "target": 1025.3035975864955,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "JINDALSAW",
-      "name": "Jindal Saw Limited",
-      "close": 317.5,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 294.32857404436385,
-      "target": 375.4285648890904,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "EMMVEE",
-      "name": "EMMVEE",
-      "close": 342.6499938964844,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 323.3214198521205,
-      "target": 390.97142900739397,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "FINCABLES",
-      "name": "Finolex Cables Limited",
-      "close": 1418.4000244140625,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 1303.5034071763791,
-      "target": 1705.641567508271,
+      "stop_loss": 857.249982561384,
+      "target": 1039.4250008719307,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -68,16 +68,16 @@
       "symbol": "ULTRACEMCO",
       "score": 100,
       "entry": 11000.0,
-      "stop_loss": 10830.5,
-      "target": 11423.75,
+      "stop_loss": 10892.9,
+      "target": 11267.75,
       "rr_ratio": "1:2.0"
     },
     {
       "symbol": "PIDILITIND",
       "score": 100,
       "entry": 1566.9,
-      "stop_loss": 1540.6,
-      "target": 1632.65,
+      "stop_loss": 1551.3,
+      "target": 1605.9,
       "rr_ratio": "1:2.0"
     },
     {
@@ -92,16 +92,16 @@
       "symbol": "TATACHEM",
       "score": 100,
       "entry": 612.45,
-      "stop_loss": 604.7,
-      "target": 631.9,
+      "stop_loss": 607.4,
+      "target": 625.15,
       "rr_ratio": "1:2.0"
     },
     {
       "symbol": "MANKIND",
       "score": 100,
       "entry": 2280.0,
-      "stop_loss": 2247.2,
-      "target": 2362.0,
+      "stop_loss": 2247.45,
+      "target": 2361.4,
       "rr_ratio": "1:2.0"
     }
   ]

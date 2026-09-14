@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-11***
+*Generated on: **2026-09-14***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **AARTIDRUGS** | Aarti Drugs Limited | 98/100 | `BUY` | INR 437.00 | INR 410.64 | INR 502.89 | 1:2.5 | 0 | INR 0.00 |
-| **GRANULES** | Granules India Limited | 98/100 | `BUY` | INR 899.25 | INR 848.83 | INR 1025.30 | 1:2.5 | 0 | INR 0.00 |
-| **JINDALSAW** | Jindal Saw Limited | 98/100 | `WAIT` | INR 317.50 | INR 294.33 | INR 375.43 | 1:2.5 | 0 | INR 0.00 |
-| **EMMVEE** | EMMVEE | 98/100 | `BUY` | INR 342.65 | INR 323.32 | INR 390.97 | 1:2.5 | 0 | INR 0.00 |
-| **FINCABLES** | Finolex Cables Limited | 98/100 | `BUY` | INR 1418.40 | INR 1303.50 | INR 1705.64 | 1:2.5 | 0 | INR 0.00 |
+| **EMMVEE** | EMMVEE | 100/100 | `BUY` | INR 346.00 | INR 325.34 | INR 397.64 | 1:2.5 | 0 | INR 0.00 |
+| **PTCIL** | PTC Industries Limited | 98/100 | `WAIT` | INR 23630.00 | INR 21547.86 | INR 28835.36 | 1:2.5 | 0 | INR 0.00 |
+| **HERITGFOOD** | Heritage Foods Limited | 98/100 | `BUY` | INR 417.40 | INR 385.27 | INR 497.72 | 1:2.5 | 0 | INR 0.00 |
+| **BLUESTONE** | BLUESTONE | 98/100 | `BUY` | INR 890.35 | INR 817.99 | INR 1071.24 | 1:2.5 | 0 | INR 0.00 |
+| **GRANULES** | Granules India Limited | 98/100 | `BUY` | INR 909.30 | INR 857.25 | INR 1039.43 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ULTRACEMCO** | 100/100 | INR 11000.00 | INR 10830.50 | INR 11423.75 | 1:2.0 |
-| **PIDILITIND** | 100/100 | INR 1566.90 | INR 1540.60 | INR 1632.65 | 1:2.0 |
+| **ULTRACEMCO** | 100/100 | INR 11000.00 | INR 10892.90 | INR 11267.75 | 1:2.0 |
+| **PIDILITIND** | 100/100 | INR 1566.90 | INR 1551.30 | INR 1605.90 | 1:2.0 |
 | **SIEMENS** | 100/100 | INR 3957.00 | INR 3913.60 | INR 4065.45 | 1:2.0 |
-| **TATACHEM** | 100/100 | INR 612.45 | INR 604.70 | INR 631.90 | 1:2.0 |
-| **MANKIND** | 100/100 | INR 2280.00 | INR 2247.20 | INR 2362.00 | 1:2.0 |
+| **TATACHEM** | 100/100 | INR 612.45 | INR 607.40 | INR 625.15 | 1:2.0 |
+| **MANKIND** | 100/100 | INR 2280.00 | INR 2247.45 | INR 2361.40 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
