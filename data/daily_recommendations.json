@@ -1,67 +1,108 @@
 {
-  "date": "2026-09-15",
+  "date": "2026-09-16",
   "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
     {
-      "symbol": "EMMVEE",
-      "name": "EMMVEE",
-      "close": 346.0,
-      "score": 100,
-      "signal": "BUY",
-      "stop_loss": 325.3428519112723,
-      "target": 397.6428702218192,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "HERITGFOOD",
-      "name": "Heritage Foods Limited",
-      "close": 417.3999938964844,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 385.27142333984375,
-      "target": 497.72142028808594,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "REDINGTON",
-      "name": "Redington Limited",
-      "close": 393.70001220703125,
-      "score": 98,
+      "symbol": "WSTCSTPAPR",
+      "name": "West Coast Paper Mills Limited",
+      "close": 713.2999877929688,
+      "score": 95,
       "signal": "WAIT",
-      "stop_loss": 365.8214416503906,
-      "target": 463.3964385986328,
+      "stop_loss": 652.8213936941964,
+      "target": 864.4964730398996,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "GRANULES",
-      "name": "Granules India Limited",
-      "close": 909.2999877929688,
-      "score": 98,
+      "symbol": "EMCURE",
+      "name": "EMCURE",
+      "close": 1993.0,
+      "score": 95,
       "signal": "BUY",
-      "stop_loss": 857.249982561384,
-      "target": 1039.4250008719307,
+      "stop_loss": 1901.8712039197396,
+      "target": 2220.8219902006513,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "BLUESTONE",
-      "name": "BLUESTONE",
-      "close": 890.3499755859375,
-      "score": 98,
+      "symbol": "BALAJITELE",
+      "name": "Balaji Telefilms Limited",
+      "close": 95.4800033569336,
+      "score": 95,
       "signal": "BUY",
-      "stop_loss": 817.9928240094866,
-      "target": 1071.2428545270648,
+      "stop_loss": 89.01285879952567,
+      "target": 111.64786475045341,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "EMUDHRA",
+      "name": "eMudhra Limited",
+      "close": 592.8499755859375,
+      "score": 95,
+      "signal": "BUY",
+      "stop_loss": 545.5713980538504,
+      "target": 711.0464194161551,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "GMMPFAUDLR",
+      "name": "GMM Pfaudler Limited",
+      "close": 1348.0,
+      "score": 95,
+      "signal": "BUY",
+      "stop_loss": 1231.9071480887276,
+      "target": 1638.232129778181,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     }
   ],
-  "intraday_recommendations": []
+  "intraday_recommendations": [
+    {
+      "symbol": "ONGC",
+      "score": 100,
+      "entry": 236.8,
+      "stop_loss": 233.6,
+      "target": 244.75,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "score": 100,
+      "entry": 11593.0,
+      "stop_loss": 11461.9,
+      "target": 11920.75,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "MGL",
+      "score": 100,
+      "entry": 1077.0,
+      "stop_loss": 1059.05,
+      "target": 1121.95,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "CARBORUNIV",
+      "score": 100,
+      "entry": 1051.6,
+      "stop_loss": 1020.45,
+      "target": 1129.55,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "BRIGADE",
+      "score": 98,
+      "entry": 626.85,
+      "stop_loss": 607.1,
+      "target": 676.15,
+      "rr_ratio": "1:2.0"
+    }
+  ]
 }
