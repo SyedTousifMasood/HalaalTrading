@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-16***
+*Generated on: **2026-09-17***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **WSTCSTPAPR** | West Coast Paper Mills Limited | 95/100 | `WAIT` | INR 713.30 | INR 652.82 | INR 864.50 | 1:2.5 | 0 | INR 0.00 |
-| **EMCURE** | EMCURE | 95/100 | `BUY` | INR 1993.00 | INR 1901.87 | INR 2220.82 | 1:2.5 | 0 | INR 0.00 |
-| **BALAJITELE** | Balaji Telefilms Limited | 95/100 | `BUY` | INR 95.48 | INR 89.01 | INR 111.65 | 1:2.5 | 0 | INR 0.00 |
-| **EMUDHRA** | eMudhra Limited | 95/100 | `BUY` | INR 592.85 | INR 545.57 | INR 711.05 | 1:2.5 | 0 | INR 0.00 |
-| **GMMPFAUDLR** | GMM Pfaudler Limited | 95/100 | `BUY` | INR 1348.00 | INR 1231.91 | INR 1638.23 | 1:2.5 | 0 | INR 0.00 |
+| **EXCELSOFT** | EXCELSOFT | 98/100 | `BUY` | INR 80.17 | INR 72.63 | INR 99.02 | 1:2.5 | 0 | INR 0.00 |
+| **FILATEX** | Filatex India Limited | 98/100 | `WAIT` | INR 87.22 | INR 78.03 | INR 110.20 | 1:2.5 | 0 | INR 0.00 |
+| **HLEGLAS** | HLE Glascoat Limited | 95/100 | `BUY` | INR 416.85 | INR 376.60 | INR 517.48 | 1:2.5 | 0 | INR 0.00 |
+| **TATACOMM** | Tata Communications Limited | 95/100 | `WAIT` | INR 1799.30 | INR 1709.94 | INR 2022.69 | 1:2.5 | 0 | INR 0.00 |
+| **GPTHEALTH** | GPT Healthcare Limited | 95/100 | `WAIT` | INR 163.30 | INR 153.54 | INR 187.71 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ONGC** | 100/100 | INR 236.80 | INR 233.60 | INR 244.75 | 1:2.0 |
-| **BAJAJ-AUTO** | 100/100 | INR 11593.00 | INR 11461.90 | INR 11920.75 | 1:2.0 |
-| **MGL** | 100/100 | INR 1077.00 | INR 1059.05 | INR 1121.95 | 1:2.0 |
-| **CARBORUNIV** | 100/100 | INR 1051.60 | INR 1020.45 | INR 1129.55 | 1:2.0 |
-| **BRIGADE** | 98/100 | INR 626.85 | INR 607.10 | INR 676.15 | 1:2.0 |
+| **HCLTECH** | 100/100 | INR 1258.30 | INR 1230.20 | INR 1328.50 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2454.00 | INR 2431.65 | INR 2509.90 | 1:2.0 |
+| **ABB** | 100/100 | INR 7130.50 | INR 7004.95 | INR 7444.40 | 1:2.0 |
+| **COCHINSHIP** | 100/100 | INR 1334.30 | INR 1274.05 | INR 1485.00 | 1:2.0 |
+| **BIOCON** | 100/100 | INR 380.00 | INR 372.20 | INR 399.55 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
