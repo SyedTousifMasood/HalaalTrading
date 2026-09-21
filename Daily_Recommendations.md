@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-18***
+*Generated on: **2026-09-21***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **SYRMA** | Syrma SGS Technology Limited | 98/100 | `BUY` | INR 1617.70 | INR 1476.46 | INR 1970.81 | 1:2.5 | 0 | INR 0.00 |
-| **BALAJITELE** | Balaji Telefilms Limited | 98/100 | `WAIT` | INR 95.97 | INR 88.48 | INR 114.69 | 1:2.5 | 0 | INR 0.00 |
-| **FILATEX** | Filatex India Limited | 98/100 | `BUY` | INR 90.35 | INR 80.58 | INR 114.78 | 1:2.5 | 0 | INR 0.00 |
-| **REDINGTON** | Redington Limited | 98/100 | `WAIT` | INR 400.10 | INR 371.29 | INR 472.14 | 1:2.5 | 0 | INR 0.00 |
-| **YATHARTH** | Yatharth Hospital & Trauma Care Services Limited | 98/100 | `BUY` | INR 1072.40 | INR 998.44 | INR 1257.29 | 1:2.5 | 0 | INR 0.00 |
+| **BCG** | Brightcom Group Limited | 98/100 | `WAIT` | INR 10.26 | INR 9.34 | INR 12.55 | 1:2.5 | 5 | INR 51.30 |
+| **JAYKAY** | Jaykay Enterprises Limited | 98/100 | `BUY` | INR 167.18 | INR 146.37 | INR 219.21 | 1:2.5 | 0 | INR 0.00 |
+| **SCHAEFFLER** | Schaeffler India Limited | 98/100 | `BUY` | INR 4217.60 | INR 4022.14 | INR 4706.24 | 1:2.5 | 0 | INR 0.00 |
+| **CONFIPET** | Confidence Petroleum India Limited | 98/100 | `WAIT` | INR 91.95 | INR 82.90 | INR 114.58 | 1:2.5 | 0 | INR 0.00 |
+| **AXISCADES** | AXISCADES Technologies Limited | 98/100 | `WAIT` | INR 1811.20 | INR 1638.97 | INR 2241.77 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **CIPLA** | 100/100 | INR 1394.50 | INR 1379.65 | INR 1431.60 | 1:2.0 |
-| **GRASIM** | 100/100 | INR 3209.20 | INR 3175.30 | INR 3293.95 | 1:2.0 |
-| **WIPRO** | 100/100 | INR 166.83 | INR 163.85 | INR 174.25 | 1:2.0 |
-| **APOLLOHOSP** | 100/100 | INR 8944.50 | INR 8863.65 | INR 9146.60 | 1:2.0 |
-| **SIEMENS** | 100/100 | INR 3913.90 | INR 3832.40 | INR 4117.60 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1385.00 | INR 1366.30 | INR 1431.75 | 1:2.0 |
+| **TECHM** | 100/100 | INR 1558.50 | INR 1525.75 | INR 1640.40 | 1:2.0 |
+| **PERSISTENT** | 100/100 | INR 5449.00 | INR 5336.35 | INR 5730.60 | 1:2.0 |
+| **DIXON** | 100/100 | INR 13350.00 | INR 13133.10 | INR 13892.25 | 1:2.0 |
+| **AARTIIND** | 98/100 | INR 499.80 | INR 487.05 | INR 531.65 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
