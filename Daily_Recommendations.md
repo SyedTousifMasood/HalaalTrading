@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-21***
+*Generated on: **2026-09-22***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **BCG** | Brightcom Group Limited | 98/100 | `WAIT` | INR 10.26 | INR 9.34 | INR 12.55 | 1:2.5 | 5 | INR 51.30 |
-| **JAYKAY** | Jaykay Enterprises Limited | 98/100 | `BUY` | INR 167.18 | INR 146.37 | INR 219.21 | 1:2.5 | 0 | INR 0.00 |
-| **SCHAEFFLER** | Schaeffler India Limited | 98/100 | `BUY` | INR 4217.60 | INR 4022.14 | INR 4706.24 | 1:2.5 | 0 | INR 0.00 |
-| **CONFIPET** | Confidence Petroleum India Limited | 98/100 | `WAIT` | INR 91.95 | INR 82.90 | INR 114.58 | 1:2.5 | 0 | INR 0.00 |
-| **AXISCADES** | AXISCADES Technologies Limited | 98/100 | `WAIT` | INR 1811.20 | INR 1638.97 | INR 2241.77 | 1:2.5 | 0 | INR 0.00 |
+| **APLLTD** | Alembic Pharmaceuticals Limited | 98/100 | `WAIT` | INR 848.75 | INR 798.09 | INR 975.41 | 1:2.5 | 0 | INR 0.00 |
+| **ASHIANA** | Ashiana Housing Limited | 98/100 | `BUY` | INR 404.05 | INR 376.81 | INR 472.15 | 1:2.5 | 0 | INR 0.00 |
+| **CONCORDBIO** | Concord Biotech Limited | 98/100 | `BUY` | INR 1579.40 | INR 1480.66 | INR 1826.26 | 1:2.5 | 0 | INR 0.00 |
+| **EMMVEE** | EMMVEE | 98/100 | `BUY` | INR 340.60 | INR 315.58 | INR 403.16 | 1:2.5 | 0 | INR 0.00 |
+| **JYOTICNC** | Jyoti CNC Automation Limited | 98/100 | `BUY` | INR 1113.85 | INR 1020.96 | INR 1346.08 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **NESTLEIND** | 100/100 | INR 1385.00 | INR 1366.30 | INR 1431.75 | 1:2.0 |
-| **TECHM** | 100/100 | INR 1558.50 | INR 1525.75 | INR 1640.40 | 1:2.0 |
-| **PERSISTENT** | 100/100 | INR 5449.00 | INR 5336.35 | INR 5730.60 | 1:2.0 |
-| **DIXON** | 100/100 | INR 13350.00 | INR 13133.10 | INR 13892.25 | 1:2.0 |
-| **AARTIIND** | 98/100 | INR 499.80 | INR 487.05 | INR 531.65 | 1:2.0 |
+| **BOSCHLTD** | 100/100 | INR 48290.00 | INR 47757.50 | INR 49621.25 | 1:2.0 |
+| **DLF** | 100/100 | INR 669.50 | INR 651.40 | INR 714.75 | 1:2.0 |
+| **LUPIN** | 100/100 | INR 2135.00 | INR 2104.70 | INR 2210.75 | 1:2.0 |
+| **CYIENT** | 100/100 | INR 1074.70 | INR 1058.75 | INR 1114.50 | 1:2.0 |
+| **BRIGADE** | 100/100 | INR 616.55 | INR 605.55 | INR 644.00 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
