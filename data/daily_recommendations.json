@@ -1,63 +1,63 @@
 {
-  "date": "2026-09-23",
+  "date": "2026-09-24",
   "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
     {
-      "symbol": "MANKIND",
-      "name": "Mankind Pharma Limited",
-      "close": 2480.0,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 2372.8857073102677,
-      "target": 2747.78573172433,
+      "symbol": "JYOTICNC",
+      "name": "Jyoti CNC Automation Limited",
+      "close": 1100.800048828125,
+      "score": 100,
+      "signal": "WAIT",
+      "stop_loss": 1014.0429077148438,
+      "target": 1317.6929016113281,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "HARSHA",
-      "name": "Harsha Engineers International Limited",
-      "close": 465.1000061035156,
+      "symbol": "ICIL",
+      "name": "Indo Count Industries Limited",
+      "close": 476.54998779296875,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 435.9356951032366,
+      "target": 578.0857195172991,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "AXISCADES",
+      "name": "AXISCADES Technologies Limited",
+      "close": 1940.199951171875,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 433.8142874581473,
-      "target": 543.3143027169364,
+      "stop_loss": 1763.0142124720983,
+      "target": 2383.164297921317,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "IKS",
-      "name": "IKS",
-      "close": 1869.199951171875,
+      "symbol": "TIMKEN",
+      "name": "Timken India Limited",
+      "close": 3287.89990234375,
       "score": 98,
-      "signal": "BUY",
-      "stop_loss": 1761.785679408482,
-      "target": 2137.7356305803573,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "BLUESTONE",
-      "name": "BLUESTONE",
-      "close": 930.4000244140625,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 836.8357282366071,
-      "target": 1164.3107648577009,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "FINCABLES",
-      "name": "Finolex Cables Limited",
-      "close": 1468.0999755859375,
-      "score": 95,
       "signal": "WAIT",
-      "stop_loss": 1323.7751230861643,
-      "target": 1828.9121068353707,
+      "stop_loss": 3070.3856375558034,
+      "target": 3831.685564313616,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "3MINDIA",
+      "name": "3M India Limited",
+      "close": 34615.0,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 32787.857142857145,
+      "target": 39182.857142857145,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -65,43 +65,11 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "GRASIM",
+      "symbol": "ONGC",
       "score": 100,
-      "entry": 3188.5,
-      "stop_loss": 3160.8,
-      "target": 3257.75,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "APOLLOHOSP",
-      "score": 100,
-      "entry": 9069.0,
-      "stop_loss": 8954.4,
-      "target": 9355.5,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "DIVISLAB",
-      "score": 100,
-      "entry": 9624.0,
-      "stop_loss": 9479.4,
-      "target": 9985.5,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "HINDALCO",
-      "score": 100,
-      "entry": 1003.8,
-      "stop_loss": 992.8,
-      "target": 1031.35,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "TORNTPHARM",
-      "score": 100,
-      "entry": 4985.0,
-      "stop_loss": 4925.9,
-      "target": 5132.75,
+      "entry": 239.0,
+      "stop_loss": 236.85,
+      "target": 244.35,
       "rr_ratio": "1:2.0"
     }
   ]

@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-23***
+*Generated on: **2026-09-24***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **MANKIND** | Mankind Pharma Limited | 98/100 | `BUY` | INR 2480.00 | INR 2372.89 | INR 2747.79 | 1:2.5 | 0 | INR 0.00 |
-| **HARSHA** | Harsha Engineers International Limited | 98/100 | `WAIT` | INR 465.10 | INR 433.81 | INR 543.31 | 1:2.5 | 0 | INR 0.00 |
-| **IKS** | IKS | 98/100 | `BUY` | INR 1869.20 | INR 1761.79 | INR 2137.74 | 1:2.5 | 0 | INR 0.00 |
-| **BLUESTONE** | BLUESTONE | 98/100 | `BUY` | INR 930.40 | INR 836.84 | INR 1164.31 | 1:2.5 | 0 | INR 0.00 |
-| **FINCABLES** | Finolex Cables Limited | 95/100 | `WAIT` | INR 1468.10 | INR 1323.78 | INR 1828.91 | 1:2.5 | 0 | INR 0.00 |
+| **JYOTICNC** | Jyoti CNC Automation Limited | 100/100 | `WAIT` | INR 1100.80 | INR 1014.04 | INR 1317.69 | 1:2.5 | 0 | INR 0.00 |
+| **ICIL** | Indo Count Industries Limited | 98/100 | `BUY` | INR 476.55 | INR 435.94 | INR 578.09 | 1:2.5 | 0 | INR 0.00 |
+| **AXISCADES** | AXISCADES Technologies Limited | 98/100 | `WAIT` | INR 1940.20 | INR 1763.01 | INR 2383.16 | 1:2.5 | 0 | INR 0.00 |
+| **TIMKEN** | Timken India Limited | 98/100 | `WAIT` | INR 3287.90 | INR 3070.39 | INR 3831.69 | 1:2.5 | 0 | INR 0.00 |
+| **3MINDIA** | 3M India Limited | 98/100 | `WAIT` | INR 34615.00 | INR 32787.86 | INR 39182.86 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,7 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **GRASIM** | 100/100 | INR 3188.50 | INR 3160.80 | INR 3257.75 | 1:2.0 |
-| **APOLLOHOSP** | 100/100 | INR 9069.00 | INR 8954.40 | INR 9355.50 | 1:2.0 |
-| **DIVISLAB** | 100/100 | INR 9624.00 | INR 9479.40 | INR 9985.50 | 1:2.0 |
-| **HINDALCO** | 100/100 | INR 1003.80 | INR 992.80 | INR 1031.35 | 1:2.0 |
-| **TORNTPHARM** | 100/100 | INR 4985.00 | INR 4925.90 | INR 5132.75 | 1:2.0 |
+| **ONGC** | 100/100 | INR 239.00 | INR 236.85 | INR 244.35 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
