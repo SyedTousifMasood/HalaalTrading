@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-24***
+*Generated on: **2026-09-25***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **JYOTICNC** | Jyoti CNC Automation Limited | 100/100 | `WAIT` | INR 1100.80 | INR 1014.04 | INR 1317.69 | 1:2.5 | 0 | INR 0.00 |
-| **ICIL** | Indo Count Industries Limited | 98/100 | `BUY` | INR 476.55 | INR 435.94 | INR 578.09 | 1:2.5 | 0 | INR 0.00 |
-| **AXISCADES** | AXISCADES Technologies Limited | 98/100 | `WAIT` | INR 1940.20 | INR 1763.01 | INR 2383.16 | 1:2.5 | 0 | INR 0.00 |
-| **TIMKEN** | Timken India Limited | 98/100 | `WAIT` | INR 3287.90 | INR 3070.39 | INR 3831.69 | 1:2.5 | 0 | INR 0.00 |
-| **3MINDIA** | 3M India Limited | 98/100 | `WAIT` | INR 34615.00 | INR 32787.86 | INR 39182.86 | 1:2.5 | 0 | INR 0.00 |
+| **AARTIDRUGS** | Aarti Drugs Limited | 100/100 | `BUY` | INR 437.25 | INR 409.04 | INR 507.79 | 1:2.5 | 0 | INR 0.00 |
+| **OLAELEC** | OLAELEC | 98/100 | `BUY` | INR 42.52 | INR 39.05 | INR 51.21 | 1:2.5 | 1 | INR 42.52 |
+| **MANKIND** | Mankind Pharma Limited | 98/100 | `WAIT` | INR 2500.00 | INR 2394.67 | INR 2763.32 | 1:2.5 | 0 | INR 0.00 |
+| **BHAGERIA** | Bhageria Industries Limited | 98/100 | `WAIT` | INR 359.65 | INR 317.75 | INR 464.40 | 1:2.5 | 0 | INR 0.00 |
+| **CAPLIPOINT** | Caplin Point Laboratories Limited | 96/100 | `BUY` | INR 2867.40 | INR 2660.74 | INR 3384.05 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,7 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ONGC** | 100/100 | INR 239.00 | INR 236.85 | INR 244.35 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1362.60 | INR 1349.75 | INR 1394.80 | 1:2.0 |
+| **TITAN** | 100/100 | INR 4884.00 | INR 4823.70 | INR 5034.75 | 1:2.0 |
+| **SIEMENS** | 100/100 | INR 3877.00 | INR 3838.55 | INR 3973.10 | 1:2.0 |
+| **BERGEPAINT** | 100/100 | INR 458.35 | INR 453.10 | INR 471.45 | 1:2.0 |
+| **PERSISTENT** | 100/100 | INR 5372.00 | INR 5295.65 | INR 5562.90 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**

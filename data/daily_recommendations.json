@@ -1,63 +1,63 @@
 {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
     {
-      "symbol": "JYOTICNC",
-      "name": "Jyoti CNC Automation Limited",
-      "close": 1100.800048828125,
+      "symbol": "AARTIDRUGS",
+      "name": "Aarti Drugs Limited",
+      "close": 437.25,
       "score": 100,
-      "signal": "WAIT",
-      "stop_loss": 1014.0429077148438,
-      "target": 1317.6929016113281,
+      "signal": "BUY",
+      "stop_loss": 409.0357142857143,
+      "target": 507.7857142857143,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "ICIL",
-      "name": "Indo Count Industries Limited",
-      "close": 476.54998779296875,
+      "symbol": "OLAELEC",
+      "name": "OLAELEC",
+      "close": 42.52000045776367,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 435.9356951032366,
-      "target": 578.0857195172991,
+      "stop_loss": 39.045714787074495,
+      "target": 51.20571463448661,
+      "qty": 1,
+      "allocation": 42.52000045776367,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "MANKIND",
+      "name": "Mankind Pharma Limited",
+      "close": 2500.0,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 2394.671456473214,
+      "target": 2763.321358816964,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "AXISCADES",
-      "name": "AXISCADES Technologies Limited",
-      "close": 1940.199951171875,
+      "symbol": "BHAGERIA",
+      "name": "Bhageria Industries Limited",
+      "close": 359.6499938964844,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 1763.0142124720983,
-      "target": 2383.164297921317,
+      "stop_loss": 317.74999564034596,
+      "target": 464.3999895368304,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "TIMKEN",
-      "name": "Timken India Limited",
-      "close": 3287.89990234375,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 3070.3856375558034,
-      "target": 3831.685564313616,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "3MINDIA",
-      "name": "3M India Limited",
-      "close": 34615.0,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 32787.857142857145,
-      "target": 39182.857142857145,
+      "symbol": "CAPLIPOINT",
+      "name": "Caplin Point Laboratories Limited",
+      "close": 2867.39990234375,
+      "score": 96,
+      "signal": "BUY",
+      "stop_loss": 2660.7396026356046,
+      "target": 3384.0506516141136,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -65,11 +65,43 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "ONGC",
+      "symbol": "NESTLEIND",
       "score": 100,
-      "entry": 239.0,
-      "stop_loss": 236.85,
-      "target": 244.35,
+      "entry": 1362.6,
+      "stop_loss": 1349.75,
+      "target": 1394.8,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "TITAN",
+      "score": 100,
+      "entry": 4884.0,
+      "stop_loss": 4823.7,
+      "target": 5034.75,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "SIEMENS",
+      "score": 100,
+      "entry": 3877.0,
+      "stop_loss": 3838.55,
+      "target": 3973.1,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "BERGEPAINT",
+      "score": 100,
+      "entry": 458.35,
+      "stop_loss": 453.1,
+      "target": 471.45,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "PERSISTENT",
+      "score": 100,
+      "entry": 5372.0,
+      "stop_loss": 5295.65,
+      "target": 5562.9,
       "rr_ratio": "1:2.0"
     }
   ]
