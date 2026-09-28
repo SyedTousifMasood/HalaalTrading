@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-25***
+*Generated on: **2026-09-28***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **AARTIDRUGS** | Aarti Drugs Limited | 100/100 | `BUY` | INR 437.25 | INR 409.04 | INR 507.79 | 1:2.5 | 0 | INR 0.00 |
-| **OLAELEC** | OLAELEC | 98/100 | `BUY` | INR 42.52 | INR 39.05 | INR 51.21 | 1:2.5 | 1 | INR 42.52 |
-| **MANKIND** | Mankind Pharma Limited | 98/100 | `WAIT` | INR 2500.00 | INR 2394.67 | INR 2763.32 | 1:2.5 | 0 | INR 0.00 |
-| **BHAGERIA** | Bhageria Industries Limited | 98/100 | `WAIT` | INR 359.65 | INR 317.75 | INR 464.40 | 1:2.5 | 0 | INR 0.00 |
-| **CAPLIPOINT** | Caplin Point Laboratories Limited | 96/100 | `BUY` | INR 2867.40 | INR 2660.74 | INR 3384.05 | 1:2.5 | 0 | INR 0.00 |
+| **JAMNAAUTO** | Jamna Auto Industries Limited | 100/100 | `WAIT` | INR 138.20 | INR 126.76 | INR 166.81 | 1:2.5 | 0 | INR 0.00 |
+| **BOROLTD** | Borosil Limited | 98/100 | `BUY` | INR 264.80 | INR 244.98 | INR 314.36 | 1:2.5 | 0 | INR 0.00 |
+| **ANTELOPUS** | ANTELOPUS | 98/100 | `BUY` | INR 1261.70 | INR 1063.27 | INR 1757.77 | 1:2.5 | 0 | INR 0.00 |
+| **LALPATHLAB** | Dr. Lal PathLab Limited | 98/100 | `WAIT` | INR 1952.30 | INR 1841.53 | INR 2229.23 | 1:2.5 | 0 | INR 0.00 |
+| **APLLTD** | Alembic Pharmaceuticals Limited | 95/100 | `BUY` | INR 863.75 | INR 816.98 | INR 980.68 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **NESTLEIND** | 100/100 | INR 1362.60 | INR 1349.75 | INR 1394.80 | 1:2.0 |
-| **TITAN** | 100/100 | INR 4884.00 | INR 4823.70 | INR 5034.75 | 1:2.0 |
-| **SIEMENS** | 100/100 | INR 3877.00 | INR 3838.55 | INR 3973.10 | 1:2.0 |
-| **BERGEPAINT** | 100/100 | INR 458.35 | INR 453.10 | INR 471.45 | 1:2.0 |
-| **PERSISTENT** | 100/100 | INR 5372.00 | INR 5295.65 | INR 5562.90 | 1:2.0 |
+| **BRITANNIA** | 100/100 | INR 4915.00 | INR 4870.75 | INR 5025.60 | 1:2.0 |
+| **MOIL** | 100/100 | INR 245.00 | INR 240.90 | INR 255.20 | 1:2.0 |
+| **PRESTIGE** | 100/100 | INR 1470.80 | INR 1449.80 | INR 1523.30 | 1:2.0 |
+| **ENDURANCE** | 95/100 | INR 2700.40 | INR 2652.95 | INR 2819.00 | 1:2.0 |
+| **FINEORG** | 79/100 | INR 5124.00 | INR 5065.35 | INR 5270.60 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
