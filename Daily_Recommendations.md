@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-09-30***
+*Generated on: **2026-10-01***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **DATAMATICS** | Datamatics Global Services Limited | 98/100 | `BUY` | INR 821.40 | INR 753.72 | INR 990.60 | 1:2.5 | 0 | INR 0.00 |
-| **ADANIPORTS** | Adani Ports and Special Economic Zone Limited | 98/100 | `BUY` | INR 1822.00 | INR 1741.99 | INR 2022.04 | 1:2.5 | 0 | INR 0.00 |
-| **AXISCADES** | AXISCADES Technologies Limited | 98/100 | `BUY` | INR 2067.40 | INR 1876.66 | INR 2544.26 | 1:2.5 | 0 | INR 0.00 |
-| **LALPATHLAB** | Dr. Lal PathLab Limited | 98/100 | `WAIT` | INR 1950.40 | INR 1839.76 | INR 2227.01 | 1:2.5 | 0 | INR 0.00 |
-| **GANESHBE** | Ganesh Benzoplast Limited | 96/100 | `WAIT` | INR 137.83 | INR 123.66 | INR 173.25 | 1:2.5 | 0 | INR 0.00 |
+| **ADANIPORTS** | Adani Ports and Special Economic Zone Limited | 100/100 | `BUY` | INR 1798.30 | INR 1715.86 | INR 2004.41 | 1:2.5 | 0 | INR 0.00 |
+| **AZAD** | AZAD | 100/100 | `BUY` | INR 2963.20 | INR 2688.54 | INR 3649.84 | 1:2.5 | 0 | INR 0.00 |
+| **AXISCADES** | AXISCADES Technologies Limited | 98/100 | `BUY` | INR 2231.20 | INR 2021.63 | INR 2755.13 | 1:2.5 | 0 | INR 0.00 |
+| **ARIS** | Arisinfra Solutions Limited | 98/100 | `BUY` | INR 143.88 | INR 129.31 | INR 180.31 | 1:2.5 | 0 | INR 0.00 |
+| **BOROLTD** | Borosil Limited | 98/100 | `BUY` | INR 293.38 | INR 270.42 | INR 350.78 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **MGL** | 100/100 | INR 1059.00 | INR 1041.95 | INR 1101.70 | 1:2.0 |
-| **POLYMED** | 100/100 | INR 1675.00 | INR 1626.90 | INR 1795.25 | 1:2.0 |
-| **LALPATHLAB** | 100/100 | INR 1982.60 | INR 1943.95 | INR 2079.30 | 1:2.0 |
-| **PRESTIGE** | 100/100 | INR 1481.90 | INR 1458.40 | INR 1540.65 | 1:2.0 |
-| **SOBHA** | 100/100 | INR 1221.60 | INR 1205.35 | INR 1262.25 | 1:2.0 |
+| **INFY** | 100/100 | INR 1035.00 | INR 1018.60 | INR 1075.95 | 1:2.0 |
+| **TATACOMM** | 100/100 | INR 1685.80 | INR 1661.85 | INR 1745.65 | 1:2.0 |
+| **VINATIORGA** | 100/100 | INR 1208.10 | INR 1184.90 | INR 1266.15 | 1:2.0 |
+| **CLEAN** | 100/100 | INR 808.10 | INR 792.35 | INR 847.50 | 1:2.0 |
+| **CUMMINSIND** | 98/100 | INR 4860.00 | INR 4786.35 | INR 5044.10 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
