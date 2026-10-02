@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-01***
+*Generated on: **2026-10-02***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **ADANIPORTS** | Adani Ports and Special Economic Zone Limited | 100/100 | `BUY` | INR 1798.30 | INR 1715.86 | INR 2004.41 | 1:2.5 | 0 | INR 0.00 |
-| **AZAD** | AZAD | 100/100 | `BUY` | INR 2963.20 | INR 2688.54 | INR 3649.84 | 1:2.5 | 0 | INR 0.00 |
-| **AXISCADES** | AXISCADES Technologies Limited | 98/100 | `BUY` | INR 2231.20 | INR 2021.63 | INR 2755.13 | 1:2.5 | 0 | INR 0.00 |
-| **ARIS** | Arisinfra Solutions Limited | 98/100 | `BUY` | INR 143.88 | INR 129.31 | INR 180.31 | 1:2.5 | 0 | INR 0.00 |
-| **BOROLTD** | Borosil Limited | 98/100 | `BUY` | INR 293.38 | INR 270.42 | INR 350.78 | 1:2.5 | 0 | INR 0.00 |
+| **GKSL** | GKSL | 95/100 | `BUY` | INR 194.27 | INR 172.98 | INR 247.50 | 1:2.5 | 0 | INR 0.00 |
+| **LALPATHLAB** | Dr. Lal PathLab Limited | 95/100 | `BUY` | INR 2005.10 | INR 1873.94 | INR 2332.99 | 1:2.5 | 0 | INR 0.00 |
+| **LGEINDIA** | LG Electronics India Ltd. | 94/100 | `WAIT` | INR 1721.80 | INR 1639.66 | INR 1927.16 | 1:2.5 | 0 | INR 0.00 |
+| **AXISCADES** | AXISCADES Technologies Limited | 93/100 | `BUY` | INR 2307.30 | INR 2078.50 | INR 2879.30 | 1:2.5 | 0 | INR 0.00 |
+| **BOROLTD** | Borosil Limited | 92/100 | `WAIT` | INR 280.20 | INR 255.32 | INR 342.39 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -26,8 +26,8 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 | **INFY** | 100/100 | INR 1035.00 | INR 1018.60 | INR 1075.95 | 1:2.0 |
 | **TATACOMM** | 100/100 | INR 1685.80 | INR 1661.85 | INR 1745.65 | 1:2.0 |
 | **VINATIORGA** | 100/100 | INR 1208.10 | INR 1184.90 | INR 1266.15 | 1:2.0 |
-| **CLEAN** | 100/100 | INR 808.10 | INR 792.35 | INR 847.50 | 1:2.0 |
-| **CUMMINSIND** | 98/100 | INR 4860.00 | INR 4786.35 | INR 5044.10 | 1:2.0 |
+| **CLEAN** | 100/100 | INR 808.10 | INR 795.00 | INR 840.90 | 1:2.0 |
+| **CUMMINSIND** | 98/100 | INR 4860.00 | INR 4807.20 | INR 4992.00 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
