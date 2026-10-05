@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-02***
+*Generated on: **2026-10-05***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -14,7 +14,7 @@ Swing positions are momentum setups with holding periods ranging from a few days
 | **LALPATHLAB** | Dr. Lal PathLab Limited | 95/100 | `BUY` | INR 2005.10 | INR 1873.94 | INR 2332.99 | 1:2.5 | 0 | INR 0.00 |
 | **LGEINDIA** | LG Electronics India Ltd. | 94/100 | `WAIT` | INR 1721.80 | INR 1639.66 | INR 1927.16 | 1:2.5 | 0 | INR 0.00 |
 | **AXISCADES** | AXISCADES Technologies Limited | 93/100 | `BUY` | INR 2307.30 | INR 2078.50 | INR 2879.30 | 1:2.5 | 0 | INR 0.00 |
-| **BOROLTD** | Borosil Limited | 92/100 | `WAIT` | INR 280.20 | INR 255.32 | INR 342.39 | 1:2.5 | 0 | INR 0.00 |
+| **BHAGERIA** | Bhageria Industries Limited | 92/100 | `WAIT` | INR 382.05 | INR 330.58 | INR 510.73 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **INFY** | 100/100 | INR 1035.00 | INR 1018.60 | INR 1075.95 | 1:2.0 |
-| **TATACOMM** | 100/100 | INR 1685.80 | INR 1661.85 | INR 1745.65 | 1:2.0 |
-| **VINATIORGA** | 100/100 | INR 1208.10 | INR 1184.90 | INR 1266.15 | 1:2.0 |
-| **CLEAN** | 100/100 | INR 808.10 | INR 795.00 | INR 840.90 | 1:2.0 |
-| **CUMMINSIND** | 98/100 | INR 4860.00 | INR 4807.20 | INR 4992.00 | 1:2.0 |
+| **PIDILITIND** | 100/100 | INR 1487.70 | INR 1475.15 | INR 1519.05 | 1:2.0 |
+| **BEL** | 100/100 | INR 384.85 | INR 380.70 | INR 395.30 | 1:2.0 |
+| **ALKEM** | 100/100 | INR 5192.50 | INR 5134.60 | INR 5337.25 | 1:2.0 |
+| **DEVYANI** | 100/100 | INR 130.03 | INR 127.65 | INR 135.95 | 1:2.0 |
+| **AMBUJACEM** | 100/100 | INR 366.50 | INR 360.50 | INR 381.55 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
