@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-05***
+*Generated on: **2026-10-06***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **GKSL** | GKSL | 95/100 | `BUY` | INR 194.27 | INR 172.98 | INR 247.50 | 1:2.5 | 0 | INR 0.00 |
-| **LALPATHLAB** | Dr. Lal PathLab Limited | 95/100 | `BUY` | INR 2005.10 | INR 1873.94 | INR 2332.99 | 1:2.5 | 0 | INR 0.00 |
-| **LGEINDIA** | LG Electronics India Ltd. | 94/100 | `WAIT` | INR 1721.80 | INR 1639.66 | INR 1927.16 | 1:2.5 | 0 | INR 0.00 |
-| **AXISCADES** | AXISCADES Technologies Limited | 93/100 | `BUY` | INR 2307.30 | INR 2078.50 | INR 2879.30 | 1:2.5 | 0 | INR 0.00 |
-| **BHAGERIA** | Bhageria Industries Limited | 92/100 | `WAIT` | INR 382.05 | INR 330.58 | INR 510.73 | 1:2.5 | 0 | INR 0.00 |
+| **GPTINFRA** | GPT Infraprojects Limited | 98/100 | `WAIT` | INR 120.38 | INR 111.46 | INR 142.67 | 1:2.5 | 0 | INR 0.00 |
+| **GRINDWELL** | Grindwell Norton Limited | 98/100 | `BUY` | INR 2004.20 | INR 1880.46 | INR 2313.56 | 1:2.5 | 0 | INR 0.00 |
+| **HFCL** | HFCL Limited | 98/100 | `WAIT` | INR 250.27 | INR 230.11 | INR 300.66 | 1:2.5 | 0 | INR 0.00 |
+| **ADANIPORTS** | Adani Ports and Special Economic Zone Limited | 95/100 | `WAIT` | INR 1774.00 | INR 1688.01 | INR 1988.96 | 1:2.5 | 0 | INR 0.00 |
+| **AEROFLEX** | Aeroflex Industries Limited | 95/100 | `BUY` | INR 544.35 | INR 493.91 | INR 670.46 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **PIDILITIND** | 100/100 | INR 1487.70 | INR 1475.15 | INR 1519.05 | 1:2.0 |
-| **BEL** | 100/100 | INR 384.85 | INR 380.70 | INR 395.30 | 1:2.0 |
-| **ALKEM** | 100/100 | INR 5192.50 | INR 5134.60 | INR 5337.25 | 1:2.0 |
-| **DEVYANI** | 100/100 | INR 130.03 | INR 127.65 | INR 135.95 | 1:2.0 |
-| **AMBUJACEM** | 100/100 | INR 366.50 | INR 360.50 | INR 381.55 | 1:2.0 |
+| **HINDUNILVR** | 100/100 | INR 1895.20 | INR 1875.05 | INR 1945.60 | 1:2.0 |
+| **SUNPHARMA** | 100/100 | INR 1804.10 | INR 1776.65 | INR 1872.70 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2424.20 | INR 2396.20 | INR 2494.25 | 1:2.0 |
+| **SIEMENS** | 100/100 | INR 3854.00 | INR 3806.30 | INR 3973.25 | 1:2.0 |
+| **BERGEPAINT** | 100/100 | INR 473.00 | INR 464.40 | INR 494.50 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
