@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-06***
-*Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
+*Generated on: **2026-10-07***
+*Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
 
@@ -10,11 +10,15 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **GPTINFRA** | GPT Infraprojects Limited | 98/100 | `WAIT` | INR 120.38 | INR 111.46 | INR 142.67 | 1:2.5 | 0 | INR 0.00 |
-| **GRINDWELL** | Grindwell Norton Limited | 98/100 | `BUY` | INR 2004.20 | INR 1880.46 | INR 2313.56 | 1:2.5 | 0 | INR 0.00 |
-| **HFCL** | HFCL Limited | 98/100 | `WAIT` | INR 250.27 | INR 230.11 | INR 300.66 | 1:2.5 | 0 | INR 0.00 |
-| **ADANIPORTS** | Adani Ports and Special Economic Zone Limited | 95/100 | `WAIT` | INR 1774.00 | INR 1688.01 | INR 1988.96 | 1:2.5 | 0 | INR 0.00 |
-| **AEROFLEX** | Aeroflex Industries Limited | 95/100 | `BUY` | INR 544.35 | INR 493.91 | INR 670.46 | 1:2.5 | 0 | INR 0.00 |
+| **BHAGERIA** | Bhageria Industries Limited | 98/100 | `WAIT` | INR 393.55 | INR 339.22 | INR 529.37 | 1:2.5 | 0 | INR 0.00 |
+| **ARIS** | Arisinfra Solutions Limited | 98/100 | `WAIT` | INR 143.66 | INR 127.89 | INR 183.10 | 1:2.5 | 0 | INR 0.00 |
+| **AURUM** | Aurum PropTech Limited | 98/100 | `WAIT` | INR 231.14 | INR 216.57 | INR 267.57 | 1:2.5 | 0 | INR 0.00 |
+| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 97/100 | `WAIT` | INR 582.70 | INR 536.24 | INR 698.86 | 1:2.5 | 0 | INR 0.00 |
+| **HFCL** | HFCL Limited | 97/100 | `WAIT` | INR 262.78 | INR 242.42 | INR 313.68 | 1:2.5 | 0 | INR 0.00 |
+
+> [Slim Warning]
+> **BROADER MARKET IS IN CASH ONLY REGIME.**
+> Under HSTS rules, taking new swing momentum entries is strictly not recommended to preserve capital.
 
 ---
 
@@ -23,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HINDUNILVR** | 100/100 | INR 1895.20 | INR 1875.05 | INR 1945.60 | 1:2.0 |
-| **SUNPHARMA** | 100/100 | INR 1804.10 | INR 1776.65 | INR 1872.70 | 1:2.0 |
-| **ASIANPAINT** | 100/100 | INR 2424.20 | INR 2396.20 | INR 2494.25 | 1:2.0 |
-| **SIEMENS** | 100/100 | INR 3854.00 | INR 3806.30 | INR 3973.25 | 1:2.0 |
-| **BERGEPAINT** | 100/100 | INR 473.00 | INR 464.40 | INR 494.50 | 1:2.0 |
+| **POLYCAB** | 94/100 | INR 8310.00 | INR 8175.15 | INR 8647.10 | 1:2.0 |
+| **KEI** | 93/100 | INR 4677.70 | INR 4599.00 | INR 4874.50 | 1:2.0 |
+| **GRANULES** | 89/100 | INR 845.00 | INR 829.85 | INR 882.90 | 1:2.0 |
+| **IGL** | 87/100 | INR 146.35 | INR 143.90 | INR 152.45 | 1:2.0 |
+| **AARTIIND** | 87/100 | INR 492.05 | INR 482.05 | INR 517.05 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
