@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-07***
+*Generated on: **2026-10-08***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **BHAGERIA** | Bhageria Industries Limited | 98/100 | `WAIT` | INR 393.55 | INR 339.22 | INR 529.37 | 1:2.5 | 0 | INR 0.00 |
-| **ARIS** | Arisinfra Solutions Limited | 98/100 | `WAIT` | INR 143.66 | INR 127.89 | INR 183.10 | 1:2.5 | 0 | INR 0.00 |
-| **AURUM** | Aurum PropTech Limited | 98/100 | `WAIT` | INR 231.14 | INR 216.57 | INR 267.57 | 1:2.5 | 0 | INR 0.00 |
-| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 97/100 | `WAIT` | INR 582.70 | INR 536.24 | INR 698.86 | 1:2.5 | 0 | INR 0.00 |
-| **HFCL** | HFCL Limited | 97/100 | `WAIT` | INR 262.78 | INR 242.42 | INR 313.68 | 1:2.5 | 0 | INR 0.00 |
+| **AURUM** | Aurum PropTech Limited | 98/100 | `WAIT` | INR 231.20 | INR 216.21 | INR 268.67 | 1:2.5 | 0 | INR 0.00 |
+| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 95/100 | `BUY` | INR 602.45 | INR 556.47 | INR 717.40 | 1:2.5 | 0 | INR 0.00 |
+| **CYIENTDLM** | Cyient DLM Limited | 95/100 | `BUY` | INR 988.30 | INR 903.64 | INR 1199.94 | 1:2.5 | 0 | INR 0.00 |
+| **GPTINFRA** | GPT Infraprojects Limited | 93/100 | `BUY` | INR 130.06 | INR 119.68 | INR 156.00 | 1:2.5 | 0 | INR 0.00 |
+| **HFCL** | HFCL Limited | 93/100 | `BUY` | INR 271.90 | INR 251.22 | INR 323.60 | 1:2.5 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,11 +27,8 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **POLYCAB** | 94/100 | INR 8310.00 | INR 8175.15 | INR 8647.10 | 1:2.0 |
-| **KEI** | 93/100 | INR 4677.70 | INR 4599.00 | INR 4874.50 | 1:2.0 |
-| **GRANULES** | 89/100 | INR 845.00 | INR 829.85 | INR 882.90 | 1:2.0 |
-| **IGL** | 87/100 | INR 146.35 | INR 143.90 | INR 152.45 | 1:2.0 |
-| **AARTIIND** | 87/100 | INR 492.05 | INR 482.05 | INR 517.05 | 1:2.0 |
+| **MGL** | 82/100 | INR 1043.90 | INR 1034.70 | INR 1066.85 | 1:2.0 |
+| **TATACOMM** | 63/100 | INR 1685.00 | INR 1662.25 | INR 1741.95 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**

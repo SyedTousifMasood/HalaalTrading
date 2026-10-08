@@ -1,39 +1,15 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "market_regime": "STATE 4: Cash Only",
   "swing_recommendations": [
     {
-      "symbol": "BHAGERIA",
-      "name": "Bhageria Industries Limited",
-      "close": 393.54998779296875,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 339.2214137486049,
-      "target": 529.3714229038783,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "ARIS",
-      "name": "Arisinfra Solutions Limited",
-      "close": 143.66000366210938,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 127.88571493966239,
-      "target": 183.09572546822685,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
       "symbol": "AURUM",
       "name": "Aurum PropTech Limited",
-      "close": 231.13999938964844,
+      "close": 231.1999969482422,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 216.56714521135603,
-      "target": 267.5721348353795,
+      "stop_loss": 216.211430140904,
+      "target": 268.67141396658764,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -41,11 +17,35 @@
     {
       "symbol": "THELEELA",
       "name": "Leela Palaces Hotels & Resorts Limited",
-      "close": 582.7000122070312,
-      "score": 97,
-      "signal": "WAIT",
-      "stop_loss": 536.2357264927456,
-      "target": 698.8607264927456,
+      "close": 602.4500122070312,
+      "score": 95,
+      "signal": "BUY",
+      "stop_loss": 556.471435546875,
+      "target": 717.3964538574219,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "CYIENTDLM",
+      "name": "Cyient DLM Limited",
+      "close": 988.2999877929688,
+      "score": 95,
+      "signal": "BUY",
+      "stop_loss": 903.6428309849331,
+      "target": 1199.942879813058,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "GPTINFRA",
+      "name": "GPT Infraprojects Limited",
+      "close": 130.05999755859375,
+      "score": 93,
+      "signal": "BUY",
+      "stop_loss": 119.68428257533482,
+      "target": 155.99928501674108,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -53,11 +53,11 @@
     {
       "symbol": "HFCL",
       "name": "HFCL Limited",
-      "close": 262.7799987792969,
-      "score": 97,
-      "signal": "WAIT",
-      "stop_loss": 242.42110517916717,
-      "target": 313.67723277962114,
+      "close": 271.8999938964844,
+      "score": 93,
+      "signal": "BUY",
+      "stop_loss": 251.22107412619306,
+      "target": 323.59729332221264,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -65,43 +65,19 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "POLYCAB",
-      "score": 94,
-      "entry": 8310.0,
-      "stop_loss": 8175.15,
-      "target": 8647.1,
+      "symbol": "MGL",
+      "score": 82,
+      "entry": 1043.9,
+      "stop_loss": 1034.7,
+      "target": 1066.85,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "KEI",
-      "score": 93,
-      "entry": 4677.7,
-      "stop_loss": 4599.0,
-      "target": 4874.5,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "GRANULES",
-      "score": 89,
-      "entry": 845.0,
-      "stop_loss": 829.85,
-      "target": 882.9,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "IGL",
-      "score": 87,
-      "entry": 146.35,
-      "stop_loss": 143.9,
-      "target": 152.45,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "AARTIIND",
-      "score": 87,
-      "entry": 492.05,
-      "stop_loss": 482.05,
-      "target": 517.05,
+      "symbol": "TATACOMM",
+      "score": 63,
+      "entry": 1685.0,
+      "stop_loss": 1662.25,
+      "target": 1741.95,
       "rr_ratio": "1:2.0"
     }
   ]
