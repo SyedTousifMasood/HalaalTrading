@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-08***
-*Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
+*Generated on: **2026-10-09***
+*Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
 
@@ -10,15 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **AURUM** | Aurum PropTech Limited | 98/100 | `WAIT` | INR 231.20 | INR 216.21 | INR 268.67 | 1:2.5 | 0 | INR 0.00 |
-| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 95/100 | `BUY` | INR 602.45 | INR 556.47 | INR 717.40 | 1:2.5 | 0 | INR 0.00 |
-| **CYIENTDLM** | Cyient DLM Limited | 95/100 | `BUY` | INR 988.30 | INR 903.64 | INR 1199.94 | 1:2.5 | 0 | INR 0.00 |
-| **GPTINFRA** | GPT Infraprojects Limited | 93/100 | `BUY` | INR 130.06 | INR 119.68 | INR 156.00 | 1:2.5 | 0 | INR 0.00 |
-| **HFCL** | HFCL Limited | 93/100 | `BUY` | INR 271.90 | INR 251.22 | INR 323.60 | 1:2.5 | 0 | INR 0.00 |
-
-> [Slim Warning]
-> **BROADER MARKET IS IN CASH ONLY REGIME.**
-> Under HSTS rules, taking new swing momentum entries is strictly not recommended to preserve capital.
+| **CYIENTDLM** | Cyient DLM Limited | 95/100 | `WAIT` | INR 981.30 | INR 890.51 | INR 1208.26 | 1:2.5 | 0 | INR 0.00 |
+| **GPTINFRA** | GPT Infraprojects Limited | 92/100 | `WAIT` | INR 121.19 | INR 109.97 | INR 149.24 | 1:2.5 | 0 | INR 0.00 |
+| **GRINDWELL** | Grindwell Norton Limited | 92/100 | `BUY` | INR 2007.00 | INR 1879.33 | INR 2326.18 | 1:2.5 | 0 | INR 0.00 |
+| **ATLANTAELE** | ATLANTAELE | 92/100 | `BUY` | INR 1806.60 | INR 1622.51 | INR 2266.81 | 1:2.5 | 0 | INR 0.00 |
+| **BBOX** | Black Box Limited | 92/100 | `BUY` | INR 856.55 | INR 769.23 | INR 1074.85 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -27,8 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **MGL** | 82/100 | INR 1043.90 | INR 1034.70 | INR 1066.85 | 1:2.0 |
-| **TATACOMM** | 63/100 | INR 1685.00 | INR 1662.25 | INR 1741.95 | 1:2.0 |
+| **EICHERMOT** | 100/100 | INR 7050.00 | INR 6956.85 | INR 7282.90 | 1:2.0 |
+| **SRF** | 100/100 | INR 2519.50 | INR 2491.60 | INR 2589.25 | 1:2.0 |
+| **AUROPHARMA** | 100/100 | INR 1693.00 | INR 1674.05 | INR 1740.40 | 1:2.0 |
+| **FINEORG** | 100/100 | INR 5410.50 | INR 5247.15 | INR 5818.90 | 1:2.0 |
+| **SJVN** | 100/100 | INR 55.57 | INR 54.15 | INR 59.10 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**

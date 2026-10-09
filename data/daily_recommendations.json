@@ -1,39 +1,15 @@
 {
-  "date": "2026-10-08",
-  "market_regime": "STATE 4: Cash Only",
+  "date": "2026-10-09",
+  "market_regime": "STATE 3: Capitulation Bottom",
   "swing_recommendations": [
-    {
-      "symbol": "AURUM",
-      "name": "Aurum PropTech Limited",
-      "close": 231.1999969482422,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 216.211430140904,
-      "target": 268.67141396658764,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "THELEELA",
-      "name": "Leela Palaces Hotels & Resorts Limited",
-      "close": 602.4500122070312,
-      "score": 95,
-      "signal": "BUY",
-      "stop_loss": 556.471435546875,
-      "target": 717.3964538574219,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
     {
       "symbol": "CYIENTDLM",
       "name": "Cyient DLM Limited",
-      "close": 988.2999877929688,
+      "close": 981.2999877929688,
       "score": 95,
-      "signal": "BUY",
-      "stop_loss": 903.6428309849331,
-      "target": 1199.942879813058,
+      "signal": "WAIT",
+      "stop_loss": 890.5142560686384,
+      "target": 1208.2643171037946,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -41,23 +17,47 @@
     {
       "symbol": "GPTINFRA",
       "name": "GPT Infraprojects Limited",
-      "close": 130.05999755859375,
-      "score": 93,
-      "signal": "BUY",
-      "stop_loss": 119.68428257533482,
-      "target": 155.99928501674108,
+      "close": 121.19000244140625,
+      "score": 92,
+      "signal": "WAIT",
+      "stop_loss": 109.97143009730748,
+      "target": 149.2364333016532,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "HFCL",
-      "name": "HFCL Limited",
-      "close": 271.8999938964844,
-      "score": 93,
+      "symbol": "GRINDWELL",
+      "name": "Grindwell Norton Limited",
+      "close": 2007.0,
+      "score": 92,
       "signal": "BUY",
-      "stop_loss": 251.22107412619306,
-      "target": 323.59729332221264,
+      "stop_loss": 1879.3285435267858,
+      "target": 2326.178641183036,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "ATLANTAELE",
+      "name": "ATLANTAELE",
+      "close": 1806.5999755859375,
+      "score": 92,
+      "signal": "BUY",
+      "stop_loss": 1622.5142124720983,
+      "target": 2266.814383370536,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "BBOX",
+      "name": "Black Box Limited",
+      "close": 856.5499877929688,
+      "score": 92,
+      "signal": "BUY",
+      "stop_loss": 769.2285679408482,
+      "target": 1074.8535374232702,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -65,19 +65,43 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "MGL",
-      "score": 82,
-      "entry": 1043.9,
-      "stop_loss": 1034.7,
-      "target": 1066.85,
+      "symbol": "EICHERMOT",
+      "score": 100,
+      "entry": 7050.0,
+      "stop_loss": 6956.85,
+      "target": 7282.9,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "TATACOMM",
-      "score": 63,
-      "entry": 1685.0,
-      "stop_loss": 1662.25,
-      "target": 1741.95,
+      "symbol": "SRF",
+      "score": 100,
+      "entry": 2519.5,
+      "stop_loss": 2491.6,
+      "target": 2589.25,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "AUROPHARMA",
+      "score": 100,
+      "entry": 1693.0,
+      "stop_loss": 1674.05,
+      "target": 1740.4,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "FINEORG",
+      "score": 100,
+      "entry": 5410.5,
+      "stop_loss": 5247.15,
+      "target": 5818.9,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "SJVN",
+      "score": 100,
+      "entry": 55.57,
+      "stop_loss": 54.15,
+      "target": 59.1,
       "rr_ratio": "1:2.0"
     }
   ]
