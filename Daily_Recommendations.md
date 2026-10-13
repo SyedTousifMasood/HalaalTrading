@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-12***
+*Generated on: **2026-10-13***
 *Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **BLUSPRING** | Bluspring Enterprises Limited | 98/100 | `BUY` | INR 146.96 | INR 128.05 | INR 194.24 | 1:2.5 | 0 | INR 0.00 |
-| **BBOX** | Black Box Limited | 96/100 | `BUY` | INR 892.10 | INR 799.21 | INR 1124.33 | 1:2.5 | 0 | INR 0.00 |
-| **VMART** | V-Mart Retail Limited | 96/100 | `BUY` | INR 821.95 | INR 762.97 | INR 969.40 | 1:2.5 | 0 | INR 0.00 |
-| **ARIS** | Arisinfra Solutions Limited | 96/100 | `WAIT` | INR 140.31 | INR 125.01 | INR 178.56 | 1:2.5 | 0 | INR 0.00 |
-| **JAIBALAJI** | Jai Balaji Industries Limited | 96/100 | `WAIT` | INR 68.40 | INR 62.80 | INR 82.40 | 1:2.5 | 0 | INR 0.00 |
+| **COFFEEDAY** | Coffee Day Enterprises Limited | 98/100 | `BUY` | INR 31.70 | INR 28.49 | INR 39.73 | 1:2.5 | 1 | INR 31.70 |
+| **GPPL** | Gujarat Pipavav Port Limited | 98/100 | `WAIT` | INR 173.10 | INR 162.76 | INR 198.95 | 1:2.5 | 0 | INR 0.00 |
+| **BBOX** | Black Box Limited | 98/100 | `WAIT` | INR 924.60 | INR 832.20 | INR 1155.60 | 1:2.5 | 0 | INR 0.00 |
+| **BLUSPRING** | Bluspring Enterprises Limited | 95/100 | `BUY` | INR 157.01 | INR 135.58 | INR 210.60 | 1:2.5 | 0 | INR 0.00 |
+| **CPPLUS** | CPPLUS | 93/100 | `BUY` | INR 4134.10 | INR 3749.44 | INR 5095.74 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **DIVISLAB** | 100/100 | INR 9426.00 | INR 9277.80 | INR 9796.50 | 1:2.0 |
-| **POLYMED** | 100/100 | INR 1641.20 | INR 1610.05 | INR 1719.05 | 1:2.0 |
-| **TATACOMM** | 100/100 | INR 1662.70 | INR 1639.60 | INR 1720.45 | 1:2.0 |
-| **SONACOMS** | 100/100 | INR 798.00 | INR 782.75 | INR 836.15 | 1:2.0 |
-| **KALYANKJIL** | 100/100 | INR 567.15 | INR 555.80 | INR 595.50 | 1:2.0 |
+| **SUNPHARMA** | 100/100 | INR 1770.70 | INR 1753.20 | INR 1814.50 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2376.00 | INR 2351.00 | INR 2438.55 | 1:2.0 |
+| **ONGC** | 100/100 | INR 222.65 | INR 220.90 | INR 227.05 | 1:2.0 |
+| **HEROMOTOCO** | 100/100 | INR 4997.50 | INR 4922.95 | INR 5183.90 | 1:2.0 |
+| **SIEMENS** | 100/100 | INR 3742.00 | INR 3639.75 | INR 3997.70 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
