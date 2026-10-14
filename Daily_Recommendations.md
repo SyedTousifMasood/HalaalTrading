@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-13***
-*Broader Market Regime: **STATE 3: Capitulation Bottom** (Allocation Cap: **10%**)*
+*Generated on: **2026-10-14***
+*Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
 
@@ -10,11 +10,15 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **COFFEEDAY** | Coffee Day Enterprises Limited | 98/100 | `BUY` | INR 31.70 | INR 28.49 | INR 39.73 | 1:2.5 | 1 | INR 31.70 |
-| **GPPL** | Gujarat Pipavav Port Limited | 98/100 | `WAIT` | INR 173.10 | INR 162.76 | INR 198.95 | 1:2.5 | 0 | INR 0.00 |
-| **BBOX** | Black Box Limited | 98/100 | `WAIT` | INR 924.60 | INR 832.20 | INR 1155.60 | 1:2.5 | 0 | INR 0.00 |
-| **BLUSPRING** | Bluspring Enterprises Limited | 95/100 | `BUY` | INR 157.01 | INR 135.58 | INR 210.60 | 1:2.5 | 0 | INR 0.00 |
-| **CPPLUS** | CPPLUS | 93/100 | `BUY` | INR 4134.10 | INR 3749.44 | INR 5095.74 | 1:2.5 | 0 | INR 0.00 |
+| **DRREDDY** | Dr. Reddy's Laboratories Limited | 98/100 | `WAIT` | INR 1240.00 | INR 1185.71 | INR 1375.71 | 1:2.5 | 0 | INR 0.00 |
+| **COFORGE** | Coforge Limited | 98/100 | `BUY` | INR 1929.00 | INR 1804.50 | INR 2240.25 | 1:2.5 | 0 | INR 0.00 |
+| **CYIENTDLM** | Cyient DLM Limited | 98/100 | `WAIT` | INR 1011.25 | INR 916.80 | INR 1247.38 | 1:2.5 | 0 | INR 0.00 |
+| **AURUM** | Aurum PropTech Limited | 96/100 | `BUY` | INR 236.43 | INR 216.93 | INR 285.18 | 1:2.5 | 0 | INR 0.00 |
+| **CPPLUS** | CPPLUS | 95/100 | `WAIT` | INR 4376.50 | INR 3959.80 | INR 5418.25 | 1:2.5 | 0 | INR 0.00 |
+
+> [Slim Warning]
+> **BROADER MARKET IS IN CASH ONLY REGIME.**
+> Under HSTS rules, taking new swing momentum entries is strictly not recommended to preserve capital.
 
 ---
 
@@ -23,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **SUNPHARMA** | 100/100 | INR 1770.70 | INR 1753.20 | INR 1814.50 | 1:2.0 |
-| **ASIANPAINT** | 100/100 | INR 2376.00 | INR 2351.00 | INR 2438.55 | 1:2.0 |
-| **ONGC** | 100/100 | INR 222.65 | INR 220.90 | INR 227.05 | 1:2.0 |
-| **HEROMOTOCO** | 100/100 | INR 4997.50 | INR 4922.95 | INR 5183.90 | 1:2.0 |
-| **SIEMENS** | 100/100 | INR 3742.00 | INR 3639.75 | INR 3997.70 | 1:2.0 |
+| **BRITANNIA** | 100/100 | INR 4928.00 | INR 4873.30 | INR 5064.80 | 1:2.0 |
+| **IPCALAB** | 100/100 | INR 1922.00 | INR 1891.25 | INR 1998.90 | 1:2.0 |
+| **GRAPHITE** | 100/100 | INR 805.50 | INR 789.40 | INR 845.80 | 1:2.0 |
+| **RATNAMANI** | 100/100 | INR 2570.80 | INR 2526.85 | INR 2680.70 | 1:2.0 |
+| **AARTIIND** | 100/100 | INR 497.30 | INR 484.50 | INR 529.25 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
