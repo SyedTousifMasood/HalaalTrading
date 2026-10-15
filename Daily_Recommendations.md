@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-14***
+*Generated on: **2026-10-15***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **DRREDDY** | Dr. Reddy's Laboratories Limited | 98/100 | `WAIT` | INR 1240.00 | INR 1185.71 | INR 1375.71 | 1:2.5 | 0 | INR 0.00 |
-| **COFORGE** | Coforge Limited | 98/100 | `BUY` | INR 1929.00 | INR 1804.50 | INR 2240.25 | 1:2.5 | 0 | INR 0.00 |
-| **CYIENTDLM** | Cyient DLM Limited | 98/100 | `WAIT` | INR 1011.25 | INR 916.80 | INR 1247.38 | 1:2.5 | 0 | INR 0.00 |
-| **AURUM** | Aurum PropTech Limited | 96/100 | `BUY` | INR 236.43 | INR 216.93 | INR 285.18 | 1:2.5 | 0 | INR 0.00 |
-| **CPPLUS** | CPPLUS | 95/100 | `WAIT` | INR 4376.50 | INR 3959.80 | INR 5418.25 | 1:2.5 | 0 | INR 0.00 |
+| **HCLTECH** | HCL Technologies Limited | 98/100 | `BUY` | INR 1327.00 | INR 1251.17 | INR 1516.57 | 1:2.5 | 0 | INR 0.00 |
+| **ABINFRA** | ABINFRA | 98/100 | `BUY` | INR 13.35 | INR 12.02 | INR 16.67 | 1:2.5 | 0 | INR 0.00 |
+| **AEROENTER** | Aeroflex Enterprises Limited | 98/100 | `BUY` | INR 134.65 | INR 120.25 | INR 170.65 | 1:2.5 | 0 | INR 0.00 |
+| **COFORGE** | Coforge Limited | 98/100 | `WAIT` | INR 1928.00 | INR 1802.94 | INR 2240.64 | 1:2.5 | 0 | INR 0.00 |
+| **MRPL** | Mangalore Refinery and Petrochemicals Limited | 98/100 | `BUY` | INR 185.26 | INR 168.41 | INR 227.37 | 1:2.5 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **BRITANNIA** | 100/100 | INR 4928.00 | INR 4873.30 | INR 5064.80 | 1:2.0 |
-| **IPCALAB** | 100/100 | INR 1922.00 | INR 1891.25 | INR 1998.90 | 1:2.0 |
-| **GRAPHITE** | 100/100 | INR 805.50 | INR 789.40 | INR 845.80 | 1:2.0 |
-| **RATNAMANI** | 100/100 | INR 2570.80 | INR 2526.85 | INR 2680.70 | 1:2.0 |
-| **AARTIIND** | 100/100 | INR 497.30 | INR 484.50 | INR 529.25 | 1:2.0 |
+| **AARTIIND** | 100/100 | INR 506.20 | INR 491.80 | INR 542.25 | 1:2.0 |
+| **ATUL** | 99/100 | INR 6197.00 | INR 6066.65 | INR 6522.90 | 1:2.0 |
+| **JSL** | 74/100 | INR 724.65 | INR 716.00 | INR 746.25 | 1:2.0 |
+| **UNOMINDA** | 64/100 | INR 1117.70 | INR 1104.70 | INR 1150.20 | 1:2.0 |
+| **AJANTPHARM** | 50/100 | INR 3359.40 | INR 3297.60 | INR 3513.90 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
