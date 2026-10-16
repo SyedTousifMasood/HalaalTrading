@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-15***
-*Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
+*Generated on: **2026-10-16***
+*Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
 
 ---
 
@@ -10,15 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **HCLTECH** | HCL Technologies Limited | 98/100 | `BUY` | INR 1327.00 | INR 1251.17 | INR 1516.57 | 1:2.5 | 0 | INR 0.00 |
-| **ABINFRA** | ABINFRA | 98/100 | `BUY` | INR 13.35 | INR 12.02 | INR 16.67 | 1:2.5 | 0 | INR 0.00 |
-| **AEROENTER** | Aeroflex Enterprises Limited | 98/100 | `BUY` | INR 134.65 | INR 120.25 | INR 170.65 | 1:2.5 | 0 | INR 0.00 |
-| **COFORGE** | Coforge Limited | 98/100 | `WAIT` | INR 1928.00 | INR 1802.94 | INR 2240.64 | 1:2.5 | 0 | INR 0.00 |
-| **MRPL** | Mangalore Refinery and Petrochemicals Limited | 98/100 | `BUY` | INR 185.26 | INR 168.41 | INR 227.37 | 1:2.5 | 0 | INR 0.00 |
-
-> [Slim Warning]
-> **BROADER MARKET IS IN CASH ONLY REGIME.**
-> Under HSTS rules, taking new swing momentum entries is strictly not recommended to preserve capital.
+| **JINDALSAW** | Jindal Saw Limited | 100/100 | `BUY` | INR 299.20 | INR 278.26 | INR 351.54 | 1:2.5 | 0 | INR 0.00 |
+| **ELECON** | Elecon Engineering Company Limited | 98/100 | `WAIT` | INR 493.05 | INR 443.72 | INR 616.37 | 1:2.5 | 0 | INR 0.00 |
+| **JAIBALAJI** | Jai Balaji Industries Limited | 98/100 | `BUY` | INR 74.91 | INR 68.30 | INR 91.45 | 1:2.5 | 0 | INR 0.00 |
+| **HCLTECH** | HCL Technologies Limited | 96/100 | `BUY` | INR 1348.00 | INR 1268.82 | INR 1545.95 | 1:2.5 | 0 | INR 0.00 |
+| **ZENSARTECH** | Zensar Technologies Limited | 95/100 | `BUY` | INR 504.45 | INR 467.91 | INR 595.81 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -27,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **AARTIIND** | 100/100 | INR 506.20 | INR 491.80 | INR 542.25 | 1:2.0 |
-| **ATUL** | 99/100 | INR 6197.00 | INR 6066.65 | INR 6522.90 | 1:2.0 |
-| **JSL** | 74/100 | INR 724.65 | INR 716.00 | INR 746.25 | 1:2.0 |
-| **UNOMINDA** | 64/100 | INR 1117.70 | INR 1104.70 | INR 1150.20 | 1:2.0 |
-| **AJANTPHARM** | 50/100 | INR 3359.40 | INR 3297.60 | INR 3513.90 | 1:2.0 |
+| **HINDUNILVR** | 100/100 | INR 1893.80 | INR 1861.75 | INR 1973.90 | 1:2.0 |
+| **HAPPSTMNDS** | 100/100 | INR 338.00 | INR 325.25 | INR 369.85 | 1:2.0 |
+| **METROPOLIS** | 100/100 | INR 530.35 | INR 520.55 | INR 554.80 | 1:2.0 |
+| **BATAINDIA** | 100/100 | INR 638.65 | INR 627.85 | INR 665.70 | 1:2.0 |
+| **SUZLON** | 100/100 | INR 42.00 | INR 40.85 | INR 44.90 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
