@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-16***
+*Generated on: **2026-10-19***
 *Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **JINDALSAW** | Jindal Saw Limited | 100/100 | `BUY` | INR 299.20 | INR 278.26 | INR 351.54 | 1:2.5 | 0 | INR 0.00 |
-| **ELECON** | Elecon Engineering Company Limited | 98/100 | `WAIT` | INR 493.05 | INR 443.72 | INR 616.37 | 1:2.5 | 0 | INR 0.00 |
-| **JAIBALAJI** | Jai Balaji Industries Limited | 98/100 | `BUY` | INR 74.91 | INR 68.30 | INR 91.45 | 1:2.5 | 0 | INR 0.00 |
-| **HCLTECH** | HCL Technologies Limited | 96/100 | `BUY` | INR 1348.00 | INR 1268.82 | INR 1545.95 | 1:2.5 | 0 | INR 0.00 |
-| **ZENSARTECH** | Zensar Technologies Limited | 95/100 | `BUY` | INR 504.45 | INR 467.91 | INR 595.81 | 1:2.5 | 0 | INR 0.00 |
+| **HCLTECH** | HCL Technologies Limited | 98/100 | `WAIT` | INR 1380.00 | INR 1300.08 | INR 1579.80 | 1:2.5 | 0 | INR 0.00 |
+| **HFCL** | HFCL Limited | 98/100 | `WAIT` | INR 256.01 | INR 228.41 | INR 325.00 | 1:2.5 | 0 | INR 0.00 |
+| **HAL** | Hindustan Aeronautics Limited | 98/100 | `WAIT` | INR 4989.00 | INR 4749.53 | INR 5587.68 | 1:2.5 | 0 | INR 0.00 |
+| **JINDALSAW** | Jindal Saw Limited | 98/100 | `BUY` | INR 301.55 | INR 279.58 | INR 356.48 | 1:2.5 | 0 | INR 0.00 |
+| **INFY** | Infosys Limited | 95/100 | `BUY` | INR 1161.20 | INR 1094.41 | INR 1328.18 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,10 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HINDUNILVR** | 100/100 | INR 1893.80 | INR 1861.75 | INR 1973.90 | 1:2.0 |
-| **HAPPSTMNDS** | 100/100 | INR 338.00 | INR 325.25 | INR 369.85 | 1:2.0 |
-| **METROPOLIS** | 100/100 | INR 530.35 | INR 520.55 | INR 554.80 | 1:2.0 |
-| **BATAINDIA** | 100/100 | INR 638.65 | INR 627.85 | INR 665.70 | 1:2.0 |
-| **SUZLON** | 100/100 | INR 42.00 | INR 40.85 | INR 44.90 | 1:2.0 |
+| **SYNGENE** | 99/100 | INR 399.00 | INR 388.60 | INR 425.05 | 1:2.0 |
+| **NATCOPHARM** | 91/100 | INR 803.00 | INR 794.00 | INR 825.50 | 1:2.0 |
+| **TATACHEM** | 85/100 | INR 637.40 | INR 630.70 | INR 654.20 | 1:2.0 |
+| **ABB** | 75/100 | INR 6974.00 | INR 6863.00 | INR 7251.50 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
