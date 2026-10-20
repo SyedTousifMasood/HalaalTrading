@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-19***
-*Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
+*Generated on: **2026-10-20***
+*Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
 
@@ -10,11 +10,15 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **HCLTECH** | HCL Technologies Limited | 98/100 | `WAIT` | INR 1380.00 | INR 1300.08 | INR 1579.80 | 1:2.5 | 0 | INR 0.00 |
-| **HFCL** | HFCL Limited | 98/100 | `WAIT` | INR 256.01 | INR 228.41 | INR 325.00 | 1:2.5 | 0 | INR 0.00 |
-| **HAL** | Hindustan Aeronautics Limited | 98/100 | `WAIT` | INR 4989.00 | INR 4749.53 | INR 5587.68 | 1:2.5 | 0 | INR 0.00 |
-| **JINDALSAW** | Jindal Saw Limited | 98/100 | `BUY` | INR 301.55 | INR 279.58 | INR 356.48 | 1:2.5 | 0 | INR 0.00 |
-| **INFY** | Infosys Limited | 95/100 | `BUY` | INR 1161.20 | INR 1094.41 | INR 1328.18 | 1:2.5 | 0 | INR 0.00 |
+| **JAYBARMARU** | Jay Bharat Maruti Limited | 98/100 | `BUY` | INR 129.58 | INR 115.37 | INR 165.10 | 1:2.5 | 0 | INR 0.00 |
+| **MPHASIS** | Mphasis Limited | 97/100 | `WAIT` | INR 2500.00 | INR 2341.03 | INR 2897.43 | 1:2.5 | 0 | INR 0.00 |
+| **PERSISTENT** | Persistent Systems Limited | 96/100 | `BUY` | INR 5690.00 | INR 5281.00 | INR 6712.50 | 1:2.5 | 0 | INR 0.00 |
+| **PTCIL** | PTC Industries Limited | 95/100 | `WAIT` | INR 25045.00 | INR 23112.86 | INR 29875.36 | 1:2.5 | 0 | INR 0.00 |
+| **TCS** | Tata Consultancy Services | 95/100 | `BUY` | INR 2460.90 | INR 2304.80 | INR 2851.15 | 1:2.5 | 0 | INR 0.00 |
+
+> [Slim Warning]
+> **BROADER MARKET IS IN CASH ONLY REGIME.**
+> Under HSTS rules, taking new swing momentum entries is strictly not recommended to preserve capital.
 
 ---
 
