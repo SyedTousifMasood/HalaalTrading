@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-20***
+*Generated on: **2026-10-21***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -13,8 +13,8 @@ Swing positions are momentum setups with holding periods ranging from a few days
 | **JAYBARMARU** | Jay Bharat Maruti Limited | 98/100 | `BUY` | INR 129.58 | INR 115.37 | INR 165.10 | 1:2.5 | 0 | INR 0.00 |
 | **MPHASIS** | Mphasis Limited | 97/100 | `WAIT` | INR 2500.00 | INR 2341.03 | INR 2897.43 | 1:2.5 | 0 | INR 0.00 |
 | **PERSISTENT** | Persistent Systems Limited | 96/100 | `BUY` | INR 5690.00 | INR 5281.00 | INR 6712.50 | 1:2.5 | 0 | INR 0.00 |
-| **PTCIL** | PTC Industries Limited | 95/100 | `WAIT` | INR 25045.00 | INR 23112.86 | INR 29875.36 | 1:2.5 | 0 | INR 0.00 |
 | **TCS** | Tata Consultancy Services | 95/100 | `BUY` | INR 2460.90 | INR 2304.80 | INR 2851.15 | 1:2.5 | 0 | INR 0.00 |
+| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 95/100 | `WAIT` | INR 622.75 | INR 555.56 | INR 790.73 | 1:2.5 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,10 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **SYNGENE** | 99/100 | INR 399.00 | INR 388.60 | INR 425.05 | 1:2.0 |
-| **NATCOPHARM** | 91/100 | INR 803.00 | INR 794.00 | INR 825.50 | 1:2.0 |
-| **TATACHEM** | 85/100 | INR 637.40 | INR 630.70 | INR 654.20 | 1:2.0 |
-| **ABB** | 75/100 | INR 6974.00 | INR 6863.00 | INR 7251.50 | 1:2.0 |
+| **HCLTECH** | 100/100 | INR 1424.20 | INR 1392.95 | INR 1502.35 | 1:2.0 |
+| **BERGEPAINT** | 100/100 | INR 475.20 | INR 469.90 | INR 488.50 | 1:2.0 |
+| **LUPIN** | 100/100 | INR 1964.00 | INR 1945.80 | INR 2009.55 | 1:2.0 |
+| **MANKIND** | 100/100 | INR 2285.50 | INR 2246.85 | INR 2382.15 | 1:2.0 |
+| **COROMANDEL** | 100/100 | INR 1791.70 | INR 1749.05 | INR 1898.25 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
