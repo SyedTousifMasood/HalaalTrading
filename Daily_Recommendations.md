@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-21***
+*Generated on: **2026-10-22***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **JAYBARMARU** | Jay Bharat Maruti Limited | 98/100 | `BUY` | INR 129.58 | INR 115.37 | INR 165.10 | 1:2.5 | 0 | INR 0.00 |
-| **MPHASIS** | Mphasis Limited | 97/100 | `WAIT` | INR 2500.00 | INR 2341.03 | INR 2897.43 | 1:2.5 | 0 | INR 0.00 |
-| **PERSISTENT** | Persistent Systems Limited | 96/100 | `BUY` | INR 5690.00 | INR 5281.00 | INR 6712.50 | 1:2.5 | 0 | INR 0.00 |
-| **TCS** | Tata Consultancy Services | 95/100 | `BUY` | INR 2460.90 | INR 2304.80 | INR 2851.15 | 1:2.5 | 0 | INR 0.00 |
-| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 95/100 | `WAIT` | INR 622.75 | INR 555.56 | INR 790.73 | 1:2.5 | 0 | INR 0.00 |
+| **PTCIL** | PTC Industries Limited | 97/100 | `BUY` | INR 25115.00 | INR 23192.86 | INR 29920.36 | 1:2.5 | 0 | INR 0.00 |
+| **TCS** | Tata Consultancy Services | 95/100 | `WAIT` | INR 2529.00 | INR 2370.05 | INR 2926.39 | 1:2.5 | 0 | INR 0.00 |
+| **MPHASIS** | Mphasis Limited | 95/100 | `BUY` | INR 2575.00 | INR 2415.39 | INR 2974.04 | 1:2.5 | 0 | INR 0.00 |
+| **INFY** | Infosys Limited | 95/100 | `WAIT` | INR 1168.00 | INR 1098.58 | INR 1341.55 | 1:2.5 | 0 | INR 0.00 |
+| **COFORGE** | Coforge Limited | 95/100 | `WAIT` | INR 1951.00 | INR 1824.97 | INR 2266.07 | 1:2.5 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HCLTECH** | 100/100 | INR 1424.20 | INR 1392.95 | INR 1502.35 | 1:2.0 |
-| **BERGEPAINT** | 100/100 | INR 475.20 | INR 469.90 | INR 488.50 | 1:2.0 |
-| **LUPIN** | 100/100 | INR 1964.00 | INR 1945.80 | INR 2009.55 | 1:2.0 |
-| **MANKIND** | 100/100 | INR 2285.50 | INR 2246.85 | INR 2382.15 | 1:2.0 |
-| **COROMANDEL** | 100/100 | INR 1791.70 | INR 1749.05 | INR 1898.25 | 1:2.0 |
+| **CIPLA** | 100/100 | INR 1330.90 | INR 1318.50 | INR 1361.95 | 1:2.0 |
+| **GRASIM** | 100/100 | INR 2894.40 | INR 2856.40 | INR 2989.35 | 1:2.0 |
+| **DEVYANI** | 100/100 | INR 119.35 | INR 116.25 | INR 127.15 | 1:2.0 |
+| **GRINDWELL** | 100/100 | INR 1877.50 | INR 1829.85 | INR 1996.60 | 1:2.0 |
+| **GRANULES** | 97/100 | INR 817.00 | INR 804.70 | INR 847.75 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
