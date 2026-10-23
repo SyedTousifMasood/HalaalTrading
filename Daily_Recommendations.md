@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-22***
+*Generated on: **2026-10-23***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **PTCIL** | PTC Industries Limited | 97/100 | `BUY` | INR 25115.00 | INR 23192.86 | INR 29920.36 | 1:2.5 | 0 | INR 0.00 |
-| **TCS** | Tata Consultancy Services | 95/100 | `WAIT` | INR 2529.00 | INR 2370.05 | INR 2926.39 | 1:2.5 | 0 | INR 0.00 |
-| **MPHASIS** | Mphasis Limited | 95/100 | `BUY` | INR 2575.00 | INR 2415.39 | INR 2974.04 | 1:2.5 | 0 | INR 0.00 |
-| **INFY** | Infosys Limited | 95/100 | `WAIT` | INR 1168.00 | INR 1098.58 | INR 1341.55 | 1:2.5 | 0 | INR 0.00 |
-| **COFORGE** | Coforge Limited | 95/100 | `WAIT` | INR 1951.00 | INR 1824.97 | INR 2266.07 | 1:2.5 | 0 | INR 0.00 |
+| **INDHOTEL** | The Indian Hotels Company Limited | 98/100 | `BUY` | INR 782.30 | INR 740.40 | INR 887.05 | 1:2.5 | 0 | INR 0.00 |
+| **WIPRO** | Wipro Limited | 97/100 | `BUY` | INR 190.41 | INR 179.95 | INR 216.57 | 1:2.5 | 0 | INR 0.00 |
+| **PVRINOX** | PVR INOX Limited | 95/100 | `WAIT` | INR 1419.90 | INR 1318.17 | INR 1674.22 | 1:2.5 | 0 | INR 0.00 |
+| **TECHM** | Tech Mahindra Limited | 95/100 | `WAIT` | INR 1814.10 | INR 1699.38 | INR 2100.91 | 1:2.5 | 0 | INR 0.00 |
+| **PERSISTENT** | Persistent Systems Limited | 92/100 | `WAIT` | INR 5740.50 | INR 5341.57 | INR 6737.82 | 1:2.5 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **CIPLA** | 100/100 | INR 1330.90 | INR 1318.50 | INR 1361.95 | 1:2.0 |
-| **GRASIM** | 100/100 | INR 2894.40 | INR 2856.40 | INR 2989.35 | 1:2.0 |
-| **DEVYANI** | 100/100 | INR 119.35 | INR 116.25 | INR 127.15 | 1:2.0 |
-| **GRINDWELL** | 100/100 | INR 1877.50 | INR 1829.85 | INR 1996.60 | 1:2.0 |
-| **GRANULES** | 97/100 | INR 817.00 | INR 804.70 | INR 847.75 | 1:2.0 |
+| **PIDILITIND** | 100/100 | INR 1487.70 | INR 1469.20 | INR 1533.90 | 1:2.0 |
+| **IPCALAB** | 100/100 | INR 1953.30 | INR 1901.45 | INR 2083.00 | 1:2.0 |
+| **SHREECEM** | 99/100 | INR 22735.00 | INR 22388.50 | INR 23601.25 | 1:2.0 |
+| **ULTRACEMCO** | 96/100 | INR 11050.00 | INR 10851.40 | INR 11546.50 | 1:2.0 |
+| **LALPATHLAB** | 95/100 | INR 1838.20 | INR 1806.50 | INR 1917.45 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
