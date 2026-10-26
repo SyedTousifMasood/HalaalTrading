@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-23***
+*Generated on: **2026-10-26***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **INDHOTEL** | The Indian Hotels Company Limited | 98/100 | `BUY` | INR 782.30 | INR 740.40 | INR 887.05 | 1:2.5 | 0 | INR 0.00 |
-| **WIPRO** | Wipro Limited | 97/100 | `BUY` | INR 190.41 | INR 179.95 | INR 216.57 | 1:2.5 | 0 | INR 0.00 |
-| **PVRINOX** | PVR INOX Limited | 95/100 | `WAIT` | INR 1419.90 | INR 1318.17 | INR 1674.22 | 1:2.5 | 0 | INR 0.00 |
-| **TECHM** | Tech Mahindra Limited | 95/100 | `WAIT` | INR 1814.10 | INR 1699.38 | INR 2100.91 | 1:2.5 | 0 | INR 0.00 |
-| **PERSISTENT** | Persistent Systems Limited | 92/100 | `WAIT` | INR 5740.50 | INR 5341.57 | INR 6737.82 | 1:2.5 | 0 | INR 0.00 |
+| **INDHOTEL** | The Indian Hotels Company Limited | 98/100 | `BUY` | INR 781.75 | INR 738.58 | INR 889.68 | 1:2.5 | 0 | INR 0.00 |
+| **CYIENT** | Cyient Limited | 98/100 | `BUY` | INR 1233.00 | INR 1119.99 | INR 1515.54 | 1:2.5 | 0 | INR 0.00 |
+| **INFY** | Infosys Limited | 94/100 | `BUY` | INR 1153.80 | INR 1067.59 | INR 1369.32 | 1:2.5 | 0 | INR 0.00 |
+| **TCS** | Tata Consultancy Services | 93/100 | `WAIT` | INR 2530.00 | INR 2363.14 | INR 2947.14 | 1:2.5 | 0 | INR 0.00 |
+| **PERSISTENT** | Persistent Systems Limited | 92/100 | `BUY` | INR 5727.50 | INR 5315.07 | INR 6758.57 | 1:2.5 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **PIDILITIND** | 100/100 | INR 1487.70 | INR 1469.20 | INR 1533.90 | 1:2.0 |
-| **IPCALAB** | 100/100 | INR 1953.30 | INR 1901.45 | INR 2083.00 | 1:2.0 |
-| **SHREECEM** | 99/100 | INR 22735.00 | INR 22388.50 | INR 23601.25 | 1:2.0 |
-| **ULTRACEMCO** | 96/100 | INR 11050.00 | INR 10851.40 | INR 11546.50 | 1:2.0 |
-| **LALPATHLAB** | 95/100 | INR 1838.20 | INR 1806.50 | INR 1917.45 | 1:2.0 |
+| **HINDUNILVR** | 100/100 | INR 1818.60 | INR 1786.55 | INR 1898.80 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2322.00 | INR 2287.45 | INR 2408.30 | 1:2.0 |
+| **GRASIM** | 100/100 | INR 2950.00 | INR 2912.00 | INR 3044.95 | 1:2.0 |
+| **HEROMOTOCO** | 100/100 | INR 5199.00 | INR 5095.65 | INR 5457.40 | 1:2.0 |
+| **JSWSTEEL** | 100/100 | INR 1260.00 | INR 1236.35 | INR 1319.20 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
