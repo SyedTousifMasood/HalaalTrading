@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-27***
+*Generated on: **2026-10-28***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **MRPL** | Mangalore Refinery and Petrochemicals Limited | 98/100 | `BUY` | INR 182.61 | INR 163.99 | INR 229.15 | 1:2.5 | 0 | INR 0.00 |
-| **INFY** | Infosys Limited | 95/100 | `BUY` | INR 1166.00 | INR 1077.41 | INR 1387.48 | 1:2.5 | 0 | INR 0.00 |
-| **ANTELOPUS** | ANTELOPUS | 95/100 | `WAIT` | INR 1188.80 | INR 1054.00 | INR 1525.80 | 1:2.5 | 0 | INR 0.00 |
-| **INDHOTEL** | The Indian Hotels Company Limited | 95/100 | `WAIT` | INR 795.50 | INR 749.81 | INR 909.71 | 1:2.5 | 0 | INR 0.00 |
-| **INDUSTOWER** | Indus Towers Limited | 89/100 | `BUY` | INR 389.00 | INR 369.19 | INR 438.52 | 1:2.5 | 0 | INR 0.00 |
+| **PERSISTENT** | Persistent Systems Limited | 100/100 | `WAIT` | INR 5832.50 | INR 5405.57 | INR 6899.82 | 1:2.5 | 0 | INR 0.00 |
+| **MRPL** | Mangalore Refinery and Petrochemicals Limited | 98/100 | `BUY` | INR 189.44 | INR 170.08 | INR 237.83 | 1:2.5 | 0 | INR 0.00 |
+| **INFY** | Infosys Limited | 97/100 | `WAIT` | INR 1163.00 | INR 1071.64 | INR 1391.39 | 1:2.5 | 0 | INR 0.00 |
+| **GANDHAR** | Gandhar Oil Refinery (India) Limited | 95/100 | `BUY` | INR 314.90 | INR 281.10 | INR 399.40 | 1:2.5 | 0 | INR 0.00 |
+| **INDHOTEL** | The Indian Hotels Company Limited | 95/100 | `WAIT` | INR 812.85 | INR 766.16 | INR 929.58 | 1:2.5 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HCLTECH** | 100/100 | INR 1420.00 | INR 1396.85 | INR 1477.90 | 1:2.0 |
-| **ONGC** | 100/100 | INR 229.85 | INR 228.00 | INR 234.45 | 1:2.0 |
-| **TECHM** | 100/100 | INR 1811.40 | INR 1786.25 | INR 1874.35 | 1:2.0 |
-| **MPHASIS** | 100/100 | INR 2618.40 | INR 2563.60 | INR 2755.35 | 1:2.0 |
-| **SUPREMEIND** | 100/100 | INR 3298.40 | INR 3156.85 | INR 3652.25 | 1:2.0 |
+| **EICHERMOT** | 100/100 | INR 7300.00 | INR 7185.40 | INR 7586.50 | 1:2.0 |
+| **BOSCHLTD** | 100/100 | INR 47625.00 | INR 46432.50 | INR 50606.25 | 1:2.0 |
+| **UPL** | 100/100 | INR 536.40 | INR 523.25 | INR 569.30 | 1:2.0 |
+| **SYNGENE** | 100/100 | INR 410.85 | INR 392.80 | INR 456.00 | 1:2.0 |
+| **AJANTPHARM** | 100/100 | INR 3459.80 | INR 3361.15 | INR 3706.50 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**

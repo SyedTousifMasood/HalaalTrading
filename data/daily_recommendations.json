@@ -1,15 +1,27 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "market_regime": "STATE 4: Cash Only",
   "swing_recommendations": [
     {
+      "symbol": "PERSISTENT",
+      "name": "Persistent Systems Limited",
+      "close": 5832.5,
+      "score": 100,
+      "signal": "WAIT",
+      "stop_loss": 5405.571428571428,
+      "target": 6899.821428571428,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
       "symbol": "MRPL",
       "name": "Mangalore Refinery and Petrochemicals Limited",
-      "close": 182.61000061035156,
+      "close": 189.44000244140625,
       "score": 98,
       "signal": "BUY",
-      "stop_loss": 163.99335349931147,
-      "target": 229.15161838795177,
+      "stop_loss": 170.08323335334774,
+      "target": 237.83192516155253,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -17,23 +29,23 @@
     {
       "symbol": "INFY",
       "name": "Infosys Limited",
-      "close": 1166.0,
-      "score": 95,
-      "signal": "BUY",
-      "stop_loss": 1077.4071393694196,
-      "target": 1387.4821515764509,
+      "close": 1163.0,
+      "score": 97,
+      "signal": "WAIT",
+      "stop_loss": 1071.642857142857,
+      "target": 1391.392857142857,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "ANTELOPUS",
-      "name": "ANTELOPUS",
-      "close": 1188.800048828125,
+      "symbol": "GANDHAR",
+      "name": "Gandhar Oil Refinery (India) Limited",
+      "close": 314.8999938964844,
       "score": 95,
-      "signal": "WAIT",
-      "stop_loss": 1054.0000261579241,
-      "target": 1525.8001055036273,
+      "signal": "BUY",
+      "stop_loss": 281.1000017438616,
+      "target": 399.3999742780413,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -41,23 +53,11 @@
     {
       "symbol": "INDHOTEL",
       "name": "The Indian Hotels Company Limited",
-      "close": 795.5,
+      "close": 812.8499755859375,
       "score": 95,
       "signal": "WAIT",
-      "stop_loss": 749.8142787388393,
-      "target": 909.7143031529018,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "INDUSTOWER",
-      "name": "Indus Towers Limited",
-      "close": 389.0,
-      "score": 89,
-      "signal": "BUY",
-      "stop_loss": 369.1928492954799,
-      "target": 438.5178767613002,
+      "stop_loss": 766.1571132114956,
+      "target": 929.5821315220425,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -65,43 +65,43 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "HCLTECH",
+      "symbol": "EICHERMOT",
       "score": 100,
-      "entry": 1420.0,
-      "stop_loss": 1396.85,
-      "target": 1477.9,
+      "entry": 7300.0,
+      "stop_loss": 7185.4,
+      "target": 7586.5,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "ONGC",
+      "symbol": "BOSCHLTD",
       "score": 100,
-      "entry": 229.85,
-      "stop_loss": 228.0,
-      "target": 234.45,
+      "entry": 47625.0,
+      "stop_loss": 46432.5,
+      "target": 50606.25,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "TECHM",
+      "symbol": "UPL",
       "score": 100,
-      "entry": 1811.4,
-      "stop_loss": 1786.25,
-      "target": 1874.35,
+      "entry": 536.4,
+      "stop_loss": 523.25,
+      "target": 569.3,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "MPHASIS",
+      "symbol": "SYNGENE",
       "score": 100,
-      "entry": 2618.4,
-      "stop_loss": 2563.6,
-      "target": 2755.35,
+      "entry": 410.85,
+      "stop_loss": 392.8,
+      "target": 456.0,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "SUPREMEIND",
+      "symbol": "AJANTPHARM",
       "score": 100,
-      "entry": 3298.4,
-      "stop_loss": 3156.85,
-      "target": 3652.25,
+      "entry": 3459.8,
+      "stop_loss": 3361.15,
+      "target": 3706.5,
       "rr_ratio": "1:2.0"
     }
   ]
