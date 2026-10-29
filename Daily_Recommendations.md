@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-28***
+*Generated on: **2026-10-29***
 *Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **PERSISTENT** | Persistent Systems Limited | 100/100 | `WAIT` | INR 5832.50 | INR 5405.57 | INR 6899.82 | 1:2.5 | 0 | INR 0.00 |
-| **MRPL** | Mangalore Refinery and Petrochemicals Limited | 98/100 | `BUY` | INR 189.44 | INR 170.08 | INR 237.83 | 1:2.5 | 0 | INR 0.00 |
-| **INFY** | Infosys Limited | 97/100 | `WAIT` | INR 1163.00 | INR 1071.64 | INR 1391.39 | 1:2.5 | 0 | INR 0.00 |
-| **GANDHAR** | Gandhar Oil Refinery (India) Limited | 95/100 | `BUY` | INR 314.90 | INR 281.10 | INR 399.40 | 1:2.5 | 0 | INR 0.00 |
-| **INDHOTEL** | The Indian Hotels Company Limited | 95/100 | `WAIT` | INR 812.85 | INR 766.16 | INR 929.58 | 1:2.5 | 0 | INR 0.00 |
+| **ACUTAAS** | Acutaas Chemicals Limited | 96/100 | `BUY` | INR 3710.00 | INR 3361.67 | INR 4580.82 | 1:2.5 | 0 | INR 0.00 |
+| **AJMERA** | Ajmera Realty & Infra India Limited | 95/100 | `BUY` | INR 133.80 | INR 122.18 | INR 162.86 | 1:2.5 | 0 | INR 0.00 |
+| **PPLPHARMA** | Piramal Pharma Limited | 95/100 | `BUY` | INR 232.80 | INR 215.02 | INR 277.25 | 1:2.5 | 0 | INR 0.00 |
+| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 95/100 | `WAIT` | INR 605.20 | INR 541.46 | INR 764.56 | 1:2.5 | 0 | INR 0.00 |
+| **FDC** | FDC Limited | 95/100 | `BUY` | INR 376.55 | INR 347.31 | INR 449.64 | 1:2.5 | 0 | INR 0.00 |
 
 > [Slim Warning]
 > **BROADER MARKET IS IN CASH ONLY REGIME.**
@@ -27,11 +27,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **EICHERMOT** | 100/100 | INR 7300.00 | INR 7185.40 | INR 7586.50 | 1:2.0 |
-| **BOSCHLTD** | 100/100 | INR 47625.00 | INR 46432.50 | INR 50606.25 | 1:2.0 |
-| **UPL** | 100/100 | INR 536.40 | INR 523.25 | INR 569.30 | 1:2.0 |
-| **SYNGENE** | 100/100 | INR 410.85 | INR 392.80 | INR 456.00 | 1:2.0 |
-| **AJANTPHARM** | 100/100 | INR 3459.80 | INR 3361.15 | INR 3706.50 | 1:2.0 |
+| **PIDILITIND** | 100/100 | INR 1422.00 | INR 1378.45 | INR 1530.90 | 1:2.0 |
+| **DLF** | 100/100 | INR 694.35 | INR 679.85 | INR 730.65 | 1:2.0 |
+| **AUROPHARMA** | 100/100 | INR 1659.90 | INR 1626.50 | INR 1743.45 | 1:2.0 |
+| **TATACOMM** | 100/100 | INR 1709.40 | INR 1671.95 | INR 1803.10 | 1:2.0 |
+| **TIINDIA** | 100/100 | INR 2177.00 | INR 2125.45 | INR 2305.85 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
