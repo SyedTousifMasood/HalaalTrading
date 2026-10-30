@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-29***
-*Broader Market Regime: **STATE 4: Cash Only** (Allocation Cap: **0%**)*
+*Generated on: **2026-10-30***
+*Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
 
 ---
 
@@ -10,15 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **ACUTAAS** | Acutaas Chemicals Limited | 96/100 | `BUY` | INR 3710.00 | INR 3361.67 | INR 4580.82 | 1:2.5 | 0 | INR 0.00 |
-| **AJMERA** | Ajmera Realty & Infra India Limited | 95/100 | `BUY` | INR 133.80 | INR 122.18 | INR 162.86 | 1:2.5 | 0 | INR 0.00 |
-| **PPLPHARMA** | Piramal Pharma Limited | 95/100 | `BUY` | INR 232.80 | INR 215.02 | INR 277.25 | 1:2.5 | 0 | INR 0.00 |
-| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 95/100 | `WAIT` | INR 605.20 | INR 541.46 | INR 764.56 | 1:2.5 | 0 | INR 0.00 |
-| **FDC** | FDC Limited | 95/100 | `BUY` | INR 376.55 | INR 347.31 | INR 449.64 | 1:2.5 | 0 | INR 0.00 |
-
-> [Slim Warning]
-> **BROADER MARKET IS IN CASH ONLY REGIME.**
-> Under HSTS rules, taking new swing momentum entries is strictly not recommended to preserve capital.
+| **ETERNAL** | Eternal Limited | 98/100 | `WAIT` | INR 337.85 | INR 316.36 | INR 391.56 | 1:2.5 | 0 | INR 0.00 |
+| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 98/100 | `BUY` | INR 639.90 | INR 573.81 | INR 805.11 | 1:2.5 | 0 | INR 0.00 |
+| **AARTIDRUGS** | Aarti Drugs Limited | 98/100 | `WAIT` | INR 449.00 | INR 414.82 | INR 534.45 | 1:2.5 | 0 | INR 0.00 |
+| **PPLPHARMA** | Piramal Pharma Limited | 97/100 | `BUY` | INR 230.78 | INR 212.09 | INR 277.52 | 1:2.5 | 0 | INR 0.00 |
+| **BOSCHLTD** | Bosch Limited | 97/100 | `WAIT` | INR 47565.00 | INR 45456.43 | INR 52836.43 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -27,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **PIDILITIND** | 100/100 | INR 1422.00 | INR 1378.45 | INR 1530.90 | 1:2.0 |
-| **DLF** | 100/100 | INR 694.35 | INR 679.85 | INR 730.65 | 1:2.0 |
-| **AUROPHARMA** | 100/100 | INR 1659.90 | INR 1626.50 | INR 1743.45 | 1:2.0 |
-| **TATACOMM** | 100/100 | INR 1709.40 | INR 1671.95 | INR 1803.10 | 1:2.0 |
-| **TIINDIA** | 100/100 | INR 2177.00 | INR 2125.45 | INR 2305.85 | 1:2.0 |
+| **GRASIM** | 100/100 | INR 2981.40 | INR 2944.40 | INR 3073.95 | 1:2.0 |
+| **APOLLOHOSP** | 100/100 | INR 8448.00 | INR 8206.20 | INR 9052.50 | 1:2.0 |
+| **SJVN** | 100/100 | INR 53.35 | INR 51.10 | INR 59.00 | 1:2.0 |
+| **NAVINFLUOR** | 92/100 | INR 8680.00 | INR 8310.40 | INR 9604.00 | 1:2.0 |
+| **POLYCAB** | 79/100 | INR 7787.00 | INR 7619.00 | INR 8207.00 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
