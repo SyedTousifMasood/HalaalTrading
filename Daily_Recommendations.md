@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-10-30***
+*Generated on: **2026-11-02***
 *Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **ETERNAL** | Eternal Limited | 98/100 | `WAIT` | INR 337.85 | INR 316.36 | INR 391.56 | 1:2.5 | 0 | INR 0.00 |
-| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 98/100 | `BUY` | INR 639.90 | INR 573.81 | INR 805.11 | 1:2.5 | 0 | INR 0.00 |
-| **AARTIDRUGS** | Aarti Drugs Limited | 98/100 | `WAIT` | INR 449.00 | INR 414.82 | INR 534.45 | 1:2.5 | 0 | INR 0.00 |
-| **PPLPHARMA** | Piramal Pharma Limited | 97/100 | `BUY` | INR 230.78 | INR 212.09 | INR 277.52 | 1:2.5 | 0 | INR 0.00 |
-| **BOSCHLTD** | Bosch Limited | 97/100 | `WAIT` | INR 47565.00 | INR 45456.43 | INR 52836.43 | 1:2.5 | 0 | INR 0.00 |
+| **PERSISTENT** | Persistent Systems Limited | 98/100 | `WAIT` | INR 6048.00 | INR 5636.07 | INR 7077.82 | 1:2.5 | 0 | INR 0.00 |
+| **COFORGE** | Coforge Limited | 98/100 | `BUY` | INR 2045.00 | INR 1895.99 | INR 2417.54 | 1:2.5 | 0 | INR 0.00 |
+| **ETERNAL** | Eternal Limited | 98/100 | `WAIT` | INR 343.65 | INR 321.74 | INR 398.44 | 1:2.5 | 0 | INR 0.00 |
+| **ZENSARTECH** | Zensar Technologies Limited | 97/100 | `WAIT` | INR 535.50 | INR 490.32 | INR 648.45 | 1:2.5 | 0 | INR 0.00 |
+| **ALIVUS** | Alivus Life Sciences Limited | 96/100 | `BUY` | INR 1415.30 | INR 1295.56 | INR 1714.66 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **GRASIM** | 100/100 | INR 2981.40 | INR 2944.40 | INR 3073.95 | 1:2.0 |
-| **APOLLOHOSP** | 100/100 | INR 8448.00 | INR 8206.20 | INR 9052.50 | 1:2.0 |
-| **SJVN** | 100/100 | INR 53.35 | INR 51.10 | INR 59.00 | 1:2.0 |
-| **NAVINFLUOR** | 92/100 | INR 8680.00 | INR 8310.40 | INR 9604.00 | 1:2.0 |
-| **POLYCAB** | 79/100 | INR 7787.00 | INR 7619.00 | INR 8207.00 | 1:2.0 |
+| **RELIANCE** | 100/100 | INR 1300.00 | INR 1255.80 | INR 1410.55 | 1:2.0 |
+| **ONGC** | 100/100 | INR 234.83 | INR 231.30 | INR 243.65 | 1:2.0 |
+| **SIEMENS** | 100/100 | INR 3404.90 | INR 3364.60 | INR 3505.65 | 1:2.0 |
+| **SRF** | 100/100 | INR 2409.00 | INR 2376.40 | INR 2490.45 | 1:2.0 |
+| **TATACOMM** | 100/100 | INR 1755.50 | INR 1720.50 | INR 1842.95 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
