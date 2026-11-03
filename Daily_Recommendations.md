@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-02***
+*Generated on: **2026-11-03***
 *Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **PERSISTENT** | Persistent Systems Limited | 98/100 | `WAIT` | INR 6048.00 | INR 5636.07 | INR 7077.82 | 1:2.5 | 0 | INR 0.00 |
-| **COFORGE** | Coforge Limited | 98/100 | `BUY` | INR 2045.00 | INR 1895.99 | INR 2417.54 | 1:2.5 | 0 | INR 0.00 |
-| **ETERNAL** | Eternal Limited | 98/100 | `WAIT` | INR 343.65 | INR 321.74 | INR 398.44 | 1:2.5 | 0 | INR 0.00 |
-| **ZENSARTECH** | Zensar Technologies Limited | 97/100 | `WAIT` | INR 535.50 | INR 490.32 | INR 648.45 | 1:2.5 | 0 | INR 0.00 |
-| **ALIVUS** | Alivus Life Sciences Limited | 96/100 | `BUY` | INR 1415.30 | INR 1295.56 | INR 1714.66 | 1:2.5 | 0 | INR 0.00 |
+| **SHYAMMETL** | Shyam Metalics and Energy Limited | 98/100 | `BUY` | INR 1191.00 | INR 1090.09 | INR 1443.29 | 1:2.5 | 0 | INR 0.00 |
+| **BOROLTD** | Borosil Limited | 98/100 | `BUY` | INR 312.35 | INR 277.56 | INR 399.31 | 1:2.5 | 0 | INR 0.00 |
+| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 98/100 | `BUY` | INR 671.05 | INR 602.77 | INR 841.75 | 1:2.5 | 0 | INR 0.00 |
+| **PERSISTENT** | Persistent Systems Limited | 98/100 | `WAIT` | INR 6051.00 | INR 5630.71 | INR 7101.71 | 1:2.5 | 0 | INR 0.00 |
+| **WELSPUNLIV** | Welspun Living Limited | 98/100 | `BUY` | INR 242.34 | INR 217.65 | INR 304.07 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **RELIANCE** | 100/100 | INR 1300.00 | INR 1255.80 | INR 1410.55 | 1:2.0 |
-| **ONGC** | 100/100 | INR 234.83 | INR 231.30 | INR 243.65 | 1:2.0 |
-| **SIEMENS** | 100/100 | INR 3404.90 | INR 3364.60 | INR 3505.65 | 1:2.0 |
-| **SRF** | 100/100 | INR 2409.00 | INR 2376.40 | INR 2490.45 | 1:2.0 |
-| **TATACOMM** | 100/100 | INR 1755.50 | INR 1720.50 | INR 1842.95 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1248.40 | INR 1218.30 | INR 1323.70 | 1:2.0 |
+| **BRITANNIA** | 100/100 | INR 4930.00 | INR 4801.00 | INR 5252.50 | 1:2.0 |
+| **TITAN** | 100/100 | INR 4562.00 | INR 4474.60 | INR 4780.55 | 1:2.0 |
+| **BAJAJ-AUTO** | 100/100 | INR 10540.00 | INR 10381.00 | INR 10937.50 | 1:2.0 |
+| **EICHERMOT** | 100/100 | INR 7440.00 | INR 7345.50 | INR 7676.25 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
