@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-04***
+*Generated on: **2026-11-05***
 *Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **ADANIPORTS** | Adani Ports and Special Economic Zone Limited | 100/100 | `WAIT` | INR 1866.90 | INR 1768.33 | INR 2113.33 | 1:2.5 | 0 | INR 0.00 |
-| **METROPOLIS** | Metropolis Healthcare Limited | 100/100 | `WAIT` | INR 568.70 | INR 525.16 | INR 677.54 | 1:2.5 | 0 | INR 0.00 |
-| **WELSPUNLIV** | Welspun Living Limited | 98/100 | `BUY` | INR 253.09 | INR 226.71 | INR 319.05 | 1:2.5 | 0 | INR 0.00 |
-| **GLENMARK** | Glenmark Pharmaceuticals Limited | 98/100 | `WAIT` | INR 2408.00 | INR 2276.80 | INR 2736.00 | 1:2.5 | 0 | INR 0.00 |
-| **HEROMOTOCO** | Hero MotoCorp Limited | 98/100 | `WAIT` | INR 5300.00 | INR 4965.36 | INR 6136.61 | 1:2.5 | 0 | INR 0.00 |
+| **LALPATHLAB** | Dr. Lal PathLab Limited | 98/100 | `WAIT` | INR 2029.40 | INR 1897.34 | INR 2359.54 | 1:2.5 | 0 | INR 0.00 |
+| **UNOMINDA** | Uno Minda Limited | 98/100 | `BUY` | INR 1196.90 | INR 1124.63 | INR 1377.58 | 1:2.5 | 0 | INR 0.00 |
+| **SHYAMMETL** | Shyam Metalics and Energy Limited | 98/100 | `WAIT` | INR 1231.40 | INR 1126.20 | INR 1494.40 | 1:2.5 | 0 | INR 0.00 |
+| **MEDANTA** | Global Health Limited | 98/100 | `BUY` | INR 1402.00 | INR 1302.11 | INR 1651.71 | 1:2.5 | 0 | INR 0.00 |
+| **WELSPUNLIV** | Welspun Living Limited | 98/100 | `BUY` | INR 264.57 | INR 237.44 | INR 332.41 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HEROMOTOCO** | 100/100 | INR 5399.50 | INR 5292.55 | INR 5666.90 | 1:2.0 |
-| **TATASTEEL** | 100/100 | INR 179.93 | INR 176.15 | INR 189.40 | 1:2.0 |
-| **TRENT** | 100/100 | INR 3060.00 | INR 2991.00 | INR 3232.50 | 1:2.0 |
-| **TORNTPHARM** | 100/100 | INR 4738.50 | INR 4677.50 | INR 4891.05 | 1:2.0 |
-| **CGPOWER** | 100/100 | INR 841.45 | INR 825.70 | INR 880.80 | 1:2.0 |
+| **LAURUSLABS** | 100/100 | INR 2346.00 | INR 2276.75 | INR 2519.10 | 1:2.0 |
+| **UNOMINDA** | 100/100 | INR 1335.00 | INR 1256.40 | INR 1531.50 | 1:2.0 |
+| **AUROPHARMA** | 99/100 | INR 1785.00 | INR 1740.10 | INR 1897.20 | 1:2.0 |
+| **BOSCHLTD** | 94/100 | INR 52475.00 | INR 50802.50 | INR 56656.25 | 1:2.0 |
+| **TATAELXSI** | 87/100 | INR 3920.00 | INR 3845.30 | INR 4106.75 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
