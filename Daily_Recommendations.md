@@ -1,7 +1,7 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-05***
-*Broader Market Regime: **STATE 2: Bear Relief Rally** (Allocation Cap: **10%**)*
+*Generated on: **2026-11-06***
+*Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
 
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **LALPATHLAB** | Dr. Lal PathLab Limited | 98/100 | `WAIT` | INR 2029.40 | INR 1897.34 | INR 2359.54 | 1:2.5 | 0 | INR 0.00 |
-| **UNOMINDA** | Uno Minda Limited | 98/100 | `BUY` | INR 1196.90 | INR 1124.63 | INR 1377.58 | 1:2.5 | 0 | INR 0.00 |
-| **SHYAMMETL** | Shyam Metalics and Energy Limited | 98/100 | `WAIT` | INR 1231.40 | INR 1126.20 | INR 1494.40 | 1:2.5 | 0 | INR 0.00 |
-| **MEDANTA** | Global Health Limited | 98/100 | `BUY` | INR 1402.00 | INR 1302.11 | INR 1651.71 | 1:2.5 | 0 | INR 0.00 |
-| **WELSPUNLIV** | Welspun Living Limited | 98/100 | `BUY` | INR 264.57 | INR 237.44 | INR 332.41 | 1:2.5 | 0 | INR 0.00 |
+| **ASAHIINDIA** | Asahi India Glass Limited | 100/100 | `WAIT` | INR 1020.80 | INR 949.20 | INR 1199.80 | 1:2.5 | 0 | INR 0.00 |
+| **RKFORGE** | Ramkrishna Forgings Limited | 100/100 | `WAIT` | INR 722.65 | INR 652.40 | INR 898.27 | 1:2.5 | 0 | INR 0.00 |
+| **HARSHA** | Harsha Engineers International Limited | 98/100 | `WAIT` | INR 468.45 | INR 428.76 | INR 567.68 | 1:2.5 | 0 | INR 0.00 |
+| **AUROPHARMA** | Aurobindo Pharma Limited | 98/100 | `WAIT` | INR 1785.00 | INR 1687.19 | INR 2029.54 | 1:2.5 | 0 | INR 0.00 |
+| **APLAPOLLO** | APL Apollo Tubes Limited | 98/100 | `WAIT` | INR 2194.20 | INR 2069.03 | INR 2507.13 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **LAURUSLABS** | 100/100 | INR 2346.00 | INR 2276.75 | INR 2519.10 | 1:2.0 |
-| **UNOMINDA** | 100/100 | INR 1335.00 | INR 1256.40 | INR 1531.50 | 1:2.0 |
-| **AUROPHARMA** | 99/100 | INR 1785.00 | INR 1740.10 | INR 1897.20 | 1:2.0 |
-| **BOSCHLTD** | 94/100 | INR 52475.00 | INR 50802.50 | INR 56656.25 | 1:2.0 |
-| **TATAELXSI** | 87/100 | INR 3920.00 | INR 3845.30 | INR 4106.75 | 1:2.0 |
+| **RELIANCE** | 100/100 | INR 1320.00 | INR 1286.90 | INR 1402.80 | 1:2.0 |
+| **HINDUNILVR** | 100/100 | INR 1998.40 | INR 1954.20 | INR 2108.90 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2546.00 | INR 2471.65 | INR 2731.95 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1282.10 | INR 1249.75 | INR 1362.95 | 1:2.0 |
+| **HINDALCO** | 100/100 | INR 958.40 | INR 936.40 | INR 1013.45 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
