@@ -1,63 +1,63 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-10",
   "market_regime": "STATE 1: Macro Bullish",
   "swing_recommendations": [
     {
-      "symbol": "ASAHIINDIA",
-      "name": "Asahi India Glass Limited",
-      "close": 1020.7999877929688,
-      "score": 100,
-      "signal": "WAIT",
-      "stop_loss": 949.1999773297991,
-      "target": 1199.800013950893,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "RKFORGE",
-      "name": "Ramkrishna Forgings Limited",
-      "close": 722.6500244140625,
-      "score": 100,
-      "signal": "WAIT",
-      "stop_loss": 652.4015668730093,
-      "target": 898.2711682666954,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "HARSHA",
-      "name": "Harsha Engineers International Limited",
-      "close": 468.45001220703125,
+      "symbol": "LGEINDIA",
+      "name": "LG Electronics India Ltd.",
+      "close": 1793.800048828125,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 428.7571454729353,
-      "target": 567.6821790422712,
+      "stop_loss": 1683.771484375,
+      "target": 2068.8714599609375,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "AUROPHARMA",
-      "name": "Aurobindo Pharma Limited",
-      "close": 1785.0,
+      "symbol": "BHAGERIA",
+      "name": "Bhageria Industries Limited",
+      "close": 396.1000061035156,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 1687.1856689453125,
-      "target": 2029.5358276367188,
+      "stop_loss": 332.3071550641741,
+      "target": 555.5821337018695,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "APLAPOLLO",
-      "name": "APL Apollo Tubes Limited",
-      "close": 2194.199951171875,
+      "symbol": "KALYANKJIL",
+      "name": "Kalyan Jewellers India Limited",
+      "close": 611.0,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 2069.028581891741,
-      "target": 2507.1283743722097,
+      "stop_loss": 563.7642778669085,
+      "target": 729.0893053327288,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "GRINDWELL",
+      "name": "Grindwell Norton Limited",
+      "close": 1961.699951171875,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 1800.757080078125,
+      "target": 2364.05712890625,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "name": "Oberoi Realty Limited",
+      "close": 1775.0,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 1678.5479904920041,
+      "target": 2016.1300237699897,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -65,43 +65,43 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "RELIANCE",
-      "score": 100,
-      "entry": 1320.0,
-      "stop_loss": 1286.9,
-      "target": 1402.8,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "HINDUNILVR",
-      "score": 100,
-      "entry": 1998.4,
-      "stop_loss": 1954.2,
-      "target": 2108.9,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "ASIANPAINT",
-      "score": 100,
-      "entry": 2546.0,
-      "stop_loss": 2471.65,
-      "target": 2731.95,
-      "rr_ratio": "1:2.0"
-    },
-    {
       "symbol": "NESTLEIND",
       "score": 100,
-      "entry": 1282.1,
-      "stop_loss": 1249.75,
-      "target": 1362.95,
+      "entry": 1297.8,
+      "stop_loss": 1268.7,
+      "target": 1370.55,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "HINDALCO",
+      "symbol": "WIPRO",
       "score": 100,
-      "entry": 958.4,
-      "stop_loss": 936.4,
-      "target": 1013.45,
+      "entry": 199.0,
+      "stop_loss": 196.25,
+      "target": 205.9,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "PIDILITIND",
+      "score": 100,
+      "entry": 1587.5,
+      "stop_loss": 1560.7,
+      "target": 1654.55,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "SOLARINDS",
+      "score": 100,
+      "entry": 19024.0,
+      "stop_loss": 18090.4,
+      "target": 21358.0,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "POLYMED",
+      "score": 100,
+      "entry": 1620.0,
+      "stop_loss": 1563.4,
+      "target": 1761.5,
       "rr_ratio": "1:2.0"
     }
   ]

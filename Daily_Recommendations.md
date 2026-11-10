@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-06***
+*Generated on: **2026-11-10***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **ASAHIINDIA** | Asahi India Glass Limited | 100/100 | `WAIT` | INR 1020.80 | INR 949.20 | INR 1199.80 | 1:2.5 | 0 | INR 0.00 |
-| **RKFORGE** | Ramkrishna Forgings Limited | 100/100 | `WAIT` | INR 722.65 | INR 652.40 | INR 898.27 | 1:2.5 | 0 | INR 0.00 |
-| **HARSHA** | Harsha Engineers International Limited | 98/100 | `WAIT` | INR 468.45 | INR 428.76 | INR 567.68 | 1:2.5 | 0 | INR 0.00 |
-| **AUROPHARMA** | Aurobindo Pharma Limited | 98/100 | `WAIT` | INR 1785.00 | INR 1687.19 | INR 2029.54 | 1:2.5 | 0 | INR 0.00 |
-| **APLAPOLLO** | APL Apollo Tubes Limited | 98/100 | `WAIT` | INR 2194.20 | INR 2069.03 | INR 2507.13 | 1:2.5 | 0 | INR 0.00 |
+| **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1793.80 | INR 1683.77 | INR 2068.87 | 1:2.5 | 0 | INR 0.00 |
+| **BHAGERIA** | Bhageria Industries Limited | 98/100 | `WAIT` | INR 396.10 | INR 332.31 | INR 555.58 | 1:2.5 | 0 | INR 0.00 |
+| **KALYANKJIL** | Kalyan Jewellers India Limited | 98/100 | `WAIT` | INR 611.00 | INR 563.76 | INR 729.09 | 1:2.5 | 0 | INR 0.00 |
+| **GRINDWELL** | Grindwell Norton Limited | 98/100 | `WAIT` | INR 1961.70 | INR 1800.76 | INR 2364.06 | 1:2.5 | 0 | INR 0.00 |
+| **OBEROIRLTY** | Oberoi Realty Limited | 98/100 | `WAIT` | INR 1775.00 | INR 1678.55 | INR 2016.13 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **RELIANCE** | 100/100 | INR 1320.00 | INR 1286.90 | INR 1402.80 | 1:2.0 |
-| **HINDUNILVR** | 100/100 | INR 1998.40 | INR 1954.20 | INR 2108.90 | 1:2.0 |
-| **ASIANPAINT** | 100/100 | INR 2546.00 | INR 2471.65 | INR 2731.95 | 1:2.0 |
-| **NESTLEIND** | 100/100 | INR 1282.10 | INR 1249.75 | INR 1362.95 | 1:2.0 |
-| **HINDALCO** | 100/100 | INR 958.40 | INR 936.40 | INR 1013.45 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1297.80 | INR 1268.70 | INR 1370.55 | 1:2.0 |
+| **WIPRO** | 100/100 | INR 199.00 | INR 196.25 | INR 205.90 | 1:2.0 |
+| **PIDILITIND** | 100/100 | INR 1587.50 | INR 1560.70 | INR 1654.55 | 1:2.0 |
+| **SOLARINDS** | 100/100 | INR 19024.00 | INR 18090.40 | INR 21358.00 | 1:2.0 |
+| **POLYMED** | 100/100 | INR 1620.00 | INR 1563.40 | INR 1761.50 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
