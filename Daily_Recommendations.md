@@ -11,10 +11,10 @@ Swing positions are momentum setups with holding periods ranging from a few days
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1793.80 | INR 1683.77 | INR 2068.87 | 1:2.5 | 0 | INR 0.00 |
-| **BHAGERIA** | Bhageria Industries Limited | 98/100 | `WAIT` | INR 396.10 | INR 332.31 | INR 555.58 | 1:2.5 | 0 | INR 0.00 |
 | **KALYANKJIL** | Kalyan Jewellers India Limited | 98/100 | `WAIT` | INR 611.00 | INR 563.76 | INR 729.09 | 1:2.5 | 0 | INR 0.00 |
-| **GRINDWELL** | Grindwell Norton Limited | 98/100 | `WAIT` | INR 1961.70 | INR 1800.76 | INR 2364.06 | 1:2.5 | 0 | INR 0.00 |
 | **OBEROIRLTY** | Oberoi Realty Limited | 98/100 | `WAIT` | INR 1775.00 | INR 1678.55 | INR 2016.13 | 1:2.5 | 0 | INR 0.00 |
+| **GRINDWELL** | Grindwell Norton Limited | 98/100 | `WAIT` | INR 1961.70 | INR 1800.76 | INR 2364.06 | 1:2.5 | 0 | INR 0.00 |
+| **BHAGERIA** | Bhageria Industries Limited | 98/100 | `WAIT` | INR 396.10 | INR 332.31 | INR 555.58 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 

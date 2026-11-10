@@ -15,18 +15,6 @@
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "BHAGERIA",
-      "name": "Bhageria Industries Limited",
-      "close": 396.1000061035156,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 332.3071550641741,
-      "target": 555.5821337018695,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
       "symbol": "KALYANKJIL",
       "name": "Kalyan Jewellers India Limited",
       "close": 611.0,
@@ -34,6 +22,18 @@
       "signal": "WAIT",
       "stop_loss": 563.7642778669085,
       "target": 729.0893053327288,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "name": "Oberoi Realty Limited",
+      "close": 1775.0,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 1678.5479904920041,
+      "target": 2016.1300237699897,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -51,13 +51,13 @@
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "OBEROIRLTY",
-      "name": "Oberoi Realty Limited",
-      "close": 1775.0,
+      "symbol": "BHAGERIA",
+      "name": "Bhageria Industries Limited",
+      "close": 396.1000061035156,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 1678.5479904920041,
-      "target": 2016.1300237699897,
+      "stop_loss": 332.3071550641741,
+      "target": 555.5821337018695,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
