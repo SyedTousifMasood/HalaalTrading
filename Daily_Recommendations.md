@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-10***
+*Generated on: **2026-11-11***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -11,10 +11,10 @@ Swing positions are momentum setups with holding periods ranging from a few days
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1793.80 | INR 1683.77 | INR 2068.87 | 1:2.5 | 0 | INR 0.00 |
-| **KALYANKJIL** | Kalyan Jewellers India Limited | 98/100 | `WAIT` | INR 611.00 | INR 563.76 | INR 729.09 | 1:2.5 | 0 | INR 0.00 |
-| **OBEROIRLTY** | Oberoi Realty Limited | 98/100 | `WAIT` | INR 1775.00 | INR 1678.55 | INR 2016.13 | 1:2.5 | 0 | INR 0.00 |
 | **GRINDWELL** | Grindwell Norton Limited | 98/100 | `WAIT` | INR 1961.70 | INR 1800.76 | INR 2364.06 | 1:2.5 | 0 | INR 0.00 |
 | **BHAGERIA** | Bhageria Industries Limited | 98/100 | `WAIT` | INR 396.10 | INR 332.31 | INR 555.58 | 1:2.5 | 0 | INR 0.00 |
+| **TMCV** | TMCV | 98/100 | `WAIT` | INR 436.65 | INR 404.55 | INR 516.90 | 1:2.5 | 0 | INR 0.00 |
+| **KALYANKJIL** | Kalyan Jewellers India Limited | 98/100 | `WAIT` | INR 611.00 | INR 563.76 | INR 729.09 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **NESTLEIND** | 100/100 | INR 1297.80 | INR 1268.70 | INR 1370.55 | 1:2.0 |
-| **WIPRO** | 100/100 | INR 199.00 | INR 196.25 | INR 205.90 | 1:2.0 |
-| **PIDILITIND** | 100/100 | INR 1587.50 | INR 1560.70 | INR 1654.55 | 1:2.0 |
-| **SOLARINDS** | 100/100 | INR 19024.00 | INR 18090.40 | INR 21358.00 | 1:2.0 |
-| **POLYMED** | 100/100 | INR 1620.00 | INR 1563.40 | INR 1761.50 | 1:2.0 |
+| **APOLLOHOSP** | 100/100 | INR 8604.00 | INR 8485.80 | INR 8899.50 | 1:2.0 |
+| **POLYMED** | 100/100 | INR 1680.00 | INR 1619.50 | INR 1831.20 | 1:2.0 |
+| **MOTHERSON** | 100/100 | INR 169.69 | INR 164.65 | INR 182.35 | 1:2.0 |
+| **MARICO** | 100/100 | INR 925.00 | INR 908.55 | INR 966.20 | 1:2.0 |
+| **RATNAMANI** | 100/100 | INR 2500.00 | INR 2427.55 | INR 2681.10 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
