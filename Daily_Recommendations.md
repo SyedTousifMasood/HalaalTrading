@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-12***
+*Generated on: **2026-11-13***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **PAGEIND** | Page Industries Limited | 100/100 | `WAIT` | INR 36570.00 | INR 34626.43 | INR 41428.93 | 1:2.5 | 0 | INR 0.00 |
-| **IZMO** | IZMO Limited | 98/100 | `WAIT` | INR 860.85 | INR 753.26 | INR 1129.81 | 1:2.5 | 0 | INR 0.00 |
-| **GREAVESCOT** | Greaves Cotton Limited | 98/100 | `WAIT` | INR 220.62 | INR 198.80 | INR 275.18 | 1:2.5 | 0 | INR 0.00 |
-| **TMCV** | TMCV | 98/100 | `WAIT` | INR 446.05 | INR 413.84 | INR 526.57 | 1:2.5 | 0 | INR 0.00 |
-| **RKFORGE** | Ramkrishna Forgings Limited | 98/100 | `WAIT` | INR 764.70 | INR 691.04 | INR 948.85 | 1:2.5 | 0 | INR 0.00 |
+| **EPL** | EPL Limited | 100/100 | `WAIT` | INR 238.72 | INR 220.35 | INR 284.66 | 1:2.5 | 0 | INR 0.00 |
+| **HINDOILEXP** | Hindustan Oil Exploration Company Limited | 98/100 | `WAIT` | INR 188.79 | INR 172.55 | INR 229.40 | 1:2.5 | 0 | INR 0.00 |
+| **GRAPHITE** | Graphite India Limited | 98/100 | `WAIT` | INR 798.70 | INR 734.04 | INR 960.34 | 1:2.5 | 0 | INR 0.00 |
+| **ELGIEQUIP** | Elgi Equipments Limited | 98/100 | `WAIT` | INR 578.45 | INR 534.14 | INR 689.24 | 1:2.5 | 0 | INR 0.00 |
+| **IZMO** | IZMO Limited | 98/100 | `WAIT` | INR 901.70 | INR 794.27 | INR 1170.27 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **PIDILITIND** | 100/100 | INR 1579.70 | INR 1557.00 | INR 1636.40 | 1:2.0 |
-| **GRANULES** | 100/100 | INR 840.50 | INR 815.00 | INR 904.25 | 1:2.0 |
-| **AIAENG** | 100/100 | INR 3205.70 | INR 3160.15 | INR 3319.55 | 1:2.0 |
-| **GRAPHITE** | 100/100 | INR 798.50 | INR 772.85 | INR 862.60 | 1:2.0 |
-| **VINATIORGA** | 100/100 | INR 1140.35 | INR 1096.55 | INR 1249.80 | 1:2.0 |
+| **ASIANPAINT** | 100/100 | INR 2550.00 | INR 2512.45 | INR 2643.85 | 1:2.0 |
+| **CYIENT** | 100/100 | INR 1104.90 | INR 1084.65 | INR 1155.55 | 1:2.0 |
+| **JSL** | 100/100 | INR 712.55 | INR 696.30 | INR 753.10 | 1:2.0 |
+| **DALBHARAT** | 100/100 | INR 1500.00 | INR 1479.90 | INR 1550.25 | 1:2.0 |
+| **CLEAN** | 100/100 | INR 719.60 | INR 699.45 | INR 770.00 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**

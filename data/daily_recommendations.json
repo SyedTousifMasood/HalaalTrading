@@ -1,15 +1,51 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "market_regime": "STATE 1: Macro Bullish",
   "swing_recommendations": [
     {
-      "symbol": "PAGEIND",
-      "name": "Page Industries Limited",
-      "close": 36570.0,
+      "symbol": "EPL",
+      "name": "EPL Limited",
+      "close": 238.72000122070312,
       "score": 100,
       "signal": "WAIT",
-      "stop_loss": 34626.42857142857,
-      "target": 41428.92857142857,
+      "stop_loss": 220.34571838378906,
+      "target": 284.6557083129883,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "HINDOILEXP",
+      "name": "Hindustan Oil Exploration Company Limited",
+      "close": 188.7899932861328,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 172.54570879255022,
+      "target": 229.40070452008928,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "GRAPHITE",
+      "name": "Graphite India Limited",
+      "close": 798.7000122070312,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 734.0428466796875,
+      "target": 960.3429260253906,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "ELGIEQUIP",
+      "name": "Elgi Equipments Limited",
+      "close": 578.4500122070312,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 534.135724748884,
+      "target": 689.2357308523996,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -17,47 +53,11 @@
     {
       "symbol": "IZMO",
       "name": "IZMO Limited",
-      "close": 860.8499755859375,
+      "close": 901.7000122070312,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 753.2642560686384,
-      "target": 1129.8142743791852,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "GREAVESCOT",
-      "name": "Greaves Cotton Limited",
-      "close": 220.6199951171875,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 198.79713875906808,
-      "target": 275.1771360124861,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "TMCV",
-      "name": "TMCV",
-      "close": 446.04998779296875,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 413.8428475516183,
-      "target": 526.5678383963449,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "RKFORGE",
-      "name": "Ramkrishna Forgings Limited",
-      "close": 764.7000122070312,
-      "score": 98,
-      "signal": "WAIT",
-      "stop_loss": 691.0411948022651,
-      "target": 948.8470557189468,
+      "stop_loss": 794.2714320591518,
+      "target": 1170.2714625767298,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -65,43 +65,43 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "PIDILITIND",
+      "symbol": "ASIANPAINT",
       "score": 100,
-      "entry": 1579.7,
-      "stop_loss": 1557.0,
-      "target": 1636.4,
+      "entry": 2550.0,
+      "stop_loss": 2512.45,
+      "target": 2643.85,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "GRANULES",
+      "symbol": "CYIENT",
       "score": 100,
-      "entry": 840.5,
-      "stop_loss": 815.0,
-      "target": 904.25,
+      "entry": 1104.9,
+      "stop_loss": 1084.65,
+      "target": 1155.55,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "AIAENG",
+      "symbol": "JSL",
       "score": 100,
-      "entry": 3205.7,
-      "stop_loss": 3160.15,
-      "target": 3319.55,
+      "entry": 712.55,
+      "stop_loss": 696.3,
+      "target": 753.1,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "GRAPHITE",
+      "symbol": "DALBHARAT",
       "score": 100,
-      "entry": 798.5,
-      "stop_loss": 772.85,
-      "target": 862.6,
+      "entry": 1500.0,
+      "stop_loss": 1479.9,
+      "target": 1550.25,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "VINATIORGA",
+      "symbol": "CLEAN",
       "score": 100,
-      "entry": 1140.35,
-      "stop_loss": 1096.55,
-      "target": 1249.8,
+      "entry": 719.6,
+      "stop_loss": 699.45,
+      "target": 770.0,
       "rr_ratio": "1:2.0"
     }
   ]
