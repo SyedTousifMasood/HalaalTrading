@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1745.40 | INR 1636.41 | INR 2017.86 | 1:2.5 | 0 | INR 0.00 |
-| **KAJARIACER** | Kajaria Ceramics Limited | 98/100 | `WAIT` | INR 1201.90 | INR 1129.18 | INR 1383.70 | 1:2.5 | 0 | INR 0.00 |
-| **INDGN** | INDGN | 97/100 | `BUY` | INR 666.20 | INR 618.90 | INR 784.45 | 1:2.5 | 0 | INR 0.00 |
-| **BBOX** | Black Box Limited | 96/100 | `WAIT` | INR 900.70 | INR 819.51 | INR 1103.66 | 1:2.5 | 0 | INR 0.00 |
-| **HINDOILEXP** | Hindustan Oil Exploration Company Limited | 95/100 | `BUY` | INR 192.40 | INR 175.49 | INR 234.68 | 1:2.5 | 0 | INR 0.00 |
+| **FILATEX** | Filatex India Limited | 98/100 | `WAIT` | INR 103.47 | INR 92.63 | INR 130.57 | 1:2.5 | 0 | INR 0.00 |
+| **TATACOMM** | Tata Communications Limited | 98/100 | `WAIT` | INR 1850.50 | INR 1743.01 | INR 2119.21 | 1:2.5 | 0 | INR 0.00 |
+| **METROPOLIS** | Metropolis Healthcare Limited | 98/100 | `WAIT` | INR 574.15 | INR 535.47 | INR 670.85 | 1:2.5 | 0 | INR 0.00 |
+| **GRASIM** | Grasim Industries Limited | 98/100 | `WAIT` | INR 3084.40 | INR 2933.87 | INR 3460.72 | 1:2.5 | 0 | INR 0.00 |
+| **LENSKART** | LENSKART | 97/100 | `WAIT` | INR 734.70 | INR 682.15 | INR 866.08 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **NESTLEIND** | 100/100 | INR 1297.00 | INR 1280.50 | INR 1338.25 | 1:2.0 |
-| **MARICO** | 100/100 | INR 913.65 | INR 903.50 | INR 939.10 | 1:2.0 |
-| **IGL** | 98/100 | INR 147.40 | INR 144.95 | INR 153.50 | 1:2.0 |
-| **ONGC** | 95/100 | INR 226.99 | INR 222.90 | INR 237.20 | 1:2.0 |
-| **VOLTAS** | 94/100 | INR 1152.60 | INR 1111.30 | INR 1255.80 | 1:2.0 |
+| **MPHASIS** | 100/100 | INR 2445.00 | INR 2413.60 | INR 2523.50 | 1:2.0 |
+| **IGL** | 100/100 | INR 148.24 | INR 145.80 | INR 154.35 | 1:2.0 |
+| **MARICO** | 100/100 | INR 924.00 | INR 915.50 | INR 945.20 | 1:2.0 |
+| **JSL** | 100/100 | INR 733.90 | INR 721.90 | INR 763.90 | 1:2.0 |
+| **ADANIENT** | 100/100 | INR 2745.10 | INR 2704.95 | INR 2845.50 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
