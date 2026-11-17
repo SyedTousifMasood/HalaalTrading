@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-13***
+*Generated on: **2026-11-17***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **EPL** | EPL Limited | 100/100 | `WAIT` | INR 238.72 | INR 220.35 | INR 284.66 | 1:2.5 | 0 | INR 0.00 |
-| **HINDOILEXP** | Hindustan Oil Exploration Company Limited | 98/100 | `WAIT` | INR 188.79 | INR 172.55 | INR 229.40 | 1:2.5 | 0 | INR 0.00 |
-| **GRAPHITE** | Graphite India Limited | 98/100 | `WAIT` | INR 798.70 | INR 734.04 | INR 960.34 | 1:2.5 | 0 | INR 0.00 |
-| **ELGIEQUIP** | Elgi Equipments Limited | 98/100 | `WAIT` | INR 578.45 | INR 534.14 | INR 689.24 | 1:2.5 | 0 | INR 0.00 |
-| **IZMO** | IZMO Limited | 98/100 | `WAIT` | INR 901.70 | INR 794.27 | INR 1170.27 | 1:2.5 | 0 | INR 0.00 |
+| **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1745.40 | INR 1636.41 | INR 2017.86 | 1:2.5 | 0 | INR 0.00 |
+| **KAJARIACER** | Kajaria Ceramics Limited | 98/100 | `WAIT` | INR 1201.90 | INR 1129.18 | INR 1383.70 | 1:2.5 | 0 | INR 0.00 |
+| **INDGN** | INDGN | 97/100 | `BUY` | INR 666.20 | INR 618.90 | INR 784.45 | 1:2.5 | 0 | INR 0.00 |
+| **BBOX** | Black Box Limited | 96/100 | `WAIT` | INR 900.70 | INR 819.51 | INR 1103.66 | 1:2.5 | 0 | INR 0.00 |
+| **HINDOILEXP** | Hindustan Oil Exploration Company Limited | 95/100 | `BUY` | INR 192.40 | INR 175.49 | INR 234.68 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ASIANPAINT** | 100/100 | INR 2550.00 | INR 2512.45 | INR 2643.85 | 1:2.0 |
-| **CYIENT** | 100/100 | INR 1104.90 | INR 1084.65 | INR 1155.55 | 1:2.0 |
-| **JSL** | 100/100 | INR 712.55 | INR 696.30 | INR 753.10 | 1:2.0 |
-| **DALBHARAT** | 100/100 | INR 1500.00 | INR 1479.90 | INR 1550.25 | 1:2.0 |
-| **CLEAN** | 100/100 | INR 719.60 | INR 699.45 | INR 770.00 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1297.00 | INR 1280.50 | INR 1338.25 | 1:2.0 |
+| **MARICO** | 100/100 | INR 913.65 | INR 903.50 | INR 939.10 | 1:2.0 |
+| **IGL** | 98/100 | INR 147.40 | INR 144.95 | INR 153.50 | 1:2.0 |
+| **ONGC** | 95/100 | INR 226.99 | INR 222.90 | INR 237.20 | 1:2.0 |
+| **VOLTAS** | 94/100 | INR 1152.60 | INR 1111.30 | INR 1255.80 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
