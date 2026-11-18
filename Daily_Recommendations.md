@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-17***
+*Generated on: **2026-11-18***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **FILATEX** | Filatex India Limited | 98/100 | `WAIT` | INR 103.47 | INR 92.63 | INR 130.57 | 1:2.5 | 0 | INR 0.00 |
-| **TATACOMM** | Tata Communications Limited | 98/100 | `WAIT` | INR 1850.50 | INR 1743.01 | INR 2119.21 | 1:2.5 | 0 | INR 0.00 |
-| **METROPOLIS** | Metropolis Healthcare Limited | 98/100 | `WAIT` | INR 574.15 | INR 535.47 | INR 670.85 | 1:2.5 | 0 | INR 0.00 |
-| **GRASIM** | Grasim Industries Limited | 98/100 | `WAIT` | INR 3084.40 | INR 2933.87 | INR 3460.72 | 1:2.5 | 0 | INR 0.00 |
-| **LENSKART** | LENSKART | 97/100 | `WAIT` | INR 734.70 | INR 682.15 | INR 866.08 | 1:2.5 | 0 | INR 0.00 |
+| **BELRISE** | BELRISE | 100/100 | `WAIT` | INR 235.66 | INR 219.22 | INR 276.75 | 1:2.5 | 0 | INR 0.00 |
+| **GHCLTEXTIL** | GHCL Textiles Limited | 98/100 | `WAIT` | INR 136.22 | INR 123.62 | INR 167.72 | 1:2.5 | 0 | INR 0.00 |
+| **ITCHOTELS** | ITCHOTELS | 98/100 | `BUY` | INR 177.81 | INR 167.97 | INR 202.40 | 1:2.5 | 0 | INR 0.00 |
+| **WELSPUNLIV** | Welspun Living Limited | 98/100 | `WAIT` | INR 265.62 | INR 236.66 | INR 338.02 | 1:2.5 | 0 | INR 0.00 |
+| **NEULANDLAB** | Neuland Laboratories Limited | 97/100 | `WAIT` | INR 21445.00 | INR 19737.86 | INR 25712.86 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **MPHASIS** | 100/100 | INR 2445.00 | INR 2413.60 | INR 2523.50 | 1:2.0 |
-| **IGL** | 100/100 | INR 148.24 | INR 145.80 | INR 154.35 | 1:2.0 |
-| **MARICO** | 100/100 | INR 924.00 | INR 915.50 | INR 945.20 | 1:2.0 |
-| **JSL** | 100/100 | INR 733.90 | INR 721.90 | INR 763.90 | 1:2.0 |
-| **ADANIENT** | 100/100 | INR 2745.10 | INR 2704.95 | INR 2845.50 | 1:2.0 |
+| **IGL** | 100/100 | INR 149.39 | INR 146.65 | INR 156.20 | 1:2.0 |
+| **CYIENT** | 100/100 | INR 1099.00 | INR 1085.25 | INR 1133.45 | 1:2.0 |
+| **CARBORUNIV** | 100/100 | INR 1020.00 | INR 987.30 | INR 1101.75 | 1:2.0 |
+| **NAVINFLUOR** | 97/100 | INR 10278.00 | INR 10105.05 | INR 10710.40 | 1:2.0 |
+| **GODREJCP** | 86/100 | INR 896.45 | INR 883.75 | INR 928.25 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
