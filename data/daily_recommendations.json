@@ -1,63 +1,63 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "market_regime": "STATE 1: Macro Bullish",
   "swing_recommendations": [
     {
-      "symbol": "BELRISE",
-      "name": "BELRISE",
-      "close": 235.66000366210938,
+      "symbol": "CEMPRO",
+      "name": "Cemindia Projects Limited",
+      "close": 1354.4000244140625,
       "score": 100,
       "signal": "WAIT",
-      "stop_loss": 219.22429547991072,
-      "target": 276.74927411760603,
+      "stop_loss": 1237.228550502232,
+      "target": 1647.3287091936384,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "GHCLTEXTIL",
-      "name": "GHCL Textiles Limited",
-      "close": 136.22000122070312,
+      "symbol": "BALAJITELE",
+      "name": "Balaji Telefilms Limited",
+      "close": 95.41999816894531,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 123.62000383649554,
-      "target": 167.7199946812221,
+      "stop_loss": 84.83714076450893,
+      "target": 121.87714168003627,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "ITCHOTELS",
-      "name": "ITCHOTELS",
-      "close": 177.80999755859375,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 167.9728524344308,
-      "target": 202.4028603690011,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "WELSPUNLIV",
-      "name": "Welspun Living Limited",
-      "close": 265.6199951171875,
+      "symbol": "MGL",
+      "name": "Mahanagar Gas Limited",
+      "close": 1115.5,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 236.6585693359375,
-      "target": 338.0235595703125,
+      "stop_loss": 1043.6428397042412,
+      "target": 1295.1429007393974,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "NEULANDLAB",
-      "name": "Neuland Laboratories Limited",
-      "close": 21445.0,
-      "score": 97,
+      "symbol": "ARVSMART",
+      "name": "Arvind SmartSpaces Limited",
+      "close": 633.5499877929688,
+      "score": 98,
       "signal": "WAIT",
-      "stop_loss": 19737.85714285714,
-      "target": 25712.857142857145,
+      "stop_loss": 596.5999843052456,
+      "target": 725.9249965122768,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "EXIDEIND",
+      "name": "Exide Industries Limited",
+      "close": 389.04998779296875,
+      "score": 98,
+      "signal": "WAIT",
+      "stop_loss": 358.1642804827009,
+      "target": 466.26425606863836,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -65,43 +65,43 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "IGL",
+      "symbol": "ADANIPORTS",
       "score": 100,
-      "entry": 149.39,
-      "stop_loss": 146.65,
-      "target": 156.2,
+      "entry": 1917.1,
+      "stop_loss": 1900.15,
+      "target": 1959.45,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "ASTRAL",
+      "score": 100,
+      "entry": 1254.4,
+      "stop_loss": 1239.5,
+      "target": 1291.6,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "CUMMINSIND",
+      "score": 100,
+      "entry": 4141.5,
+      "stop_loss": 4003.85,
+      "target": 4485.6,
+      "rr_ratio": "1:2.0"
+    },
+    {
+      "symbol": "NATCOPHARM",
+      "score": 100,
+      "entry": 822.0,
+      "stop_loss": 791.5,
+      "target": 898.2,
       "rr_ratio": "1:2.0"
     },
     {
       "symbol": "CYIENT",
       "score": 100,
-      "entry": 1099.0,
-      "stop_loss": 1085.25,
-      "target": 1133.45,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "CARBORUNIV",
-      "score": 100,
-      "entry": 1020.0,
-      "stop_loss": 987.3,
-      "target": 1101.75,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "NAVINFLUOR",
-      "score": 97,
-      "entry": 10278.0,
-      "stop_loss": 10105.05,
-      "target": 10710.4,
-      "rr_ratio": "1:2.0"
-    },
-    {
-      "symbol": "GODREJCP",
-      "score": 86,
-      "entry": 896.45,
-      "stop_loss": 883.75,
-      "target": 928.25,
+      "entry": 1111.0,
+      "stop_loss": 1094.15,
+      "target": 1153.15,
       "rr_ratio": "1:2.0"
     }
   ]

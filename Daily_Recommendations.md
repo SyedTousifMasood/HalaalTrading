@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-18***
+*Generated on: **2026-11-19***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **BELRISE** | BELRISE | 100/100 | `WAIT` | INR 235.66 | INR 219.22 | INR 276.75 | 1:2.5 | 0 | INR 0.00 |
-| **GHCLTEXTIL** | GHCL Textiles Limited | 98/100 | `WAIT` | INR 136.22 | INR 123.62 | INR 167.72 | 1:2.5 | 0 | INR 0.00 |
-| **ITCHOTELS** | ITCHOTELS | 98/100 | `BUY` | INR 177.81 | INR 167.97 | INR 202.40 | 1:2.5 | 0 | INR 0.00 |
-| **WELSPUNLIV** | Welspun Living Limited | 98/100 | `WAIT` | INR 265.62 | INR 236.66 | INR 338.02 | 1:2.5 | 0 | INR 0.00 |
-| **NEULANDLAB** | Neuland Laboratories Limited | 97/100 | `WAIT` | INR 21445.00 | INR 19737.86 | INR 25712.86 | 1:2.5 | 0 | INR 0.00 |
+| **CEMPRO** | Cemindia Projects Limited | 100/100 | `WAIT` | INR 1354.40 | INR 1237.23 | INR 1647.33 | 1:2.5 | 0 | INR 0.00 |
+| **BALAJITELE** | Balaji Telefilms Limited | 98/100 | `WAIT` | INR 95.42 | INR 84.84 | INR 121.88 | 1:2.5 | 0 | INR 0.00 |
+| **MGL** | Mahanagar Gas Limited | 98/100 | `WAIT` | INR 1115.50 | INR 1043.64 | INR 1295.14 | 1:2.5 | 0 | INR 0.00 |
+| **ARVSMART** | Arvind SmartSpaces Limited | 98/100 | `WAIT` | INR 633.55 | INR 596.60 | INR 725.92 | 1:2.5 | 0 | INR 0.00 |
+| **EXIDEIND** | Exide Industries Limited | 98/100 | `WAIT` | INR 389.05 | INR 358.16 | INR 466.26 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **IGL** | 100/100 | INR 149.39 | INR 146.65 | INR 156.20 | 1:2.0 |
-| **CYIENT** | 100/100 | INR 1099.00 | INR 1085.25 | INR 1133.45 | 1:2.0 |
-| **CARBORUNIV** | 100/100 | INR 1020.00 | INR 987.30 | INR 1101.75 | 1:2.0 |
-| **NAVINFLUOR** | 97/100 | INR 10278.00 | INR 10105.05 | INR 10710.40 | 1:2.0 |
-| **GODREJCP** | 86/100 | INR 896.45 | INR 883.75 | INR 928.25 | 1:2.0 |
+| **ADANIPORTS** | 100/100 | INR 1917.10 | INR 1900.15 | INR 1959.45 | 1:2.0 |
+| **ASTRAL** | 100/100 | INR 1254.40 | INR 1239.50 | INR 1291.60 | 1:2.0 |
+| **CUMMINSIND** | 100/100 | INR 4141.50 | INR 4003.85 | INR 4485.60 | 1:2.0 |
+| **NATCOPHARM** | 100/100 | INR 822.00 | INR 791.50 | INR 898.20 | 1:2.0 |
+| **CYIENT** | 100/100 | INR 1111.00 | INR 1094.15 | INR 1153.15 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
