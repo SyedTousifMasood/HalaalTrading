@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-19***
+*Generated on: **2026-11-20***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **CEMPRO** | Cemindia Projects Limited | 100/100 | `WAIT` | INR 1354.40 | INR 1237.23 | INR 1647.33 | 1:2.5 | 0 | INR 0.00 |
-| **BALAJITELE** | Balaji Telefilms Limited | 98/100 | `WAIT` | INR 95.42 | INR 84.84 | INR 121.88 | 1:2.5 | 0 | INR 0.00 |
-| **MGL** | Mahanagar Gas Limited | 98/100 | `WAIT` | INR 1115.50 | INR 1043.64 | INR 1295.14 | 1:2.5 | 0 | INR 0.00 |
-| **ARVSMART** | Arvind SmartSpaces Limited | 98/100 | `WAIT` | INR 633.55 | INR 596.60 | INR 725.92 | 1:2.5 | 0 | INR 0.00 |
-| **EXIDEIND** | Exide Industries Limited | 98/100 | `WAIT` | INR 389.05 | INR 358.16 | INR 466.26 | 1:2.5 | 0 | INR 0.00 |
+| **JAYBARMARU** | Jay Bharat Maruti Limited | 100/100 | `WAIT` | INR 124.62 | INR 111.17 | INR 158.23 | 1:2.5 | 0 | INR 0.00 |
+| **BBOX** | Black Box Limited | 98/100 | `WAIT` | INR 907.40 | INR 818.82 | INR 1128.85 | 1:2.5 | 0 | INR 0.00 |
+| **BLKASHYAP** | B.L. Kashyap and Sons Limited | 98/100 | `WAIT` | INR 58.82 | INR 52.70 | INR 74.11 | 1:2.5 | 0 | INR 0.00 |
+| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 98/100 | `WAIT` | INR 695.65 | INR 639.76 | INR 835.36 | 1:2.5 | 0 | INR 0.00 |
+| **HARSHA** | Harsha Engineers International Limited | 98/100 | `WAIT` | INR 451.25 | INR 415.86 | INR 539.71 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **ADANIPORTS** | 100/100 | INR 1917.10 | INR 1900.15 | INR 1959.45 | 1:2.0 |
-| **ASTRAL** | 100/100 | INR 1254.40 | INR 1239.50 | INR 1291.60 | 1:2.0 |
-| **CUMMINSIND** | 100/100 | INR 4141.50 | INR 4003.85 | INR 4485.60 | 1:2.0 |
-| **NATCOPHARM** | 100/100 | INR 822.00 | INR 791.50 | INR 898.20 | 1:2.0 |
-| **CYIENT** | 100/100 | INR 1111.00 | INR 1094.15 | INR 1153.15 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1325.00 | INR 1306.90 | INR 1370.25 | 1:2.0 |
+| **JSWSTEEL** | 100/100 | INR 1337.00 | INR 1318.25 | INR 1383.90 | 1:2.0 |
+| **SYNGENE** | 100/100 | INR 453.00 | INR 445.25 | INR 472.40 | 1:2.0 |
+| **BALKRISIND** | 100/100 | INR 2363.80 | INR 2332.35 | INR 2442.50 | 1:2.0 |
+| **EXIDEIND** | 100/100 | INR 410.85 | INR 396.30 | INR 447.25 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
