@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-20***
+*Generated on: **2026-11-24***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **JAYBARMARU** | Jay Bharat Maruti Limited | 100/100 | `WAIT` | INR 124.62 | INR 111.17 | INR 158.23 | 1:2.5 | 0 | INR 0.00 |
-| **BBOX** | Black Box Limited | 98/100 | `WAIT` | INR 907.40 | INR 818.82 | INR 1128.85 | 1:2.5 | 0 | INR 0.00 |
-| **BLKASHYAP** | B.L. Kashyap and Sons Limited | 98/100 | `WAIT` | INR 58.82 | INR 52.70 | INR 74.11 | 1:2.5 | 0 | INR 0.00 |
-| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 98/100 | `WAIT` | INR 695.65 | INR 639.76 | INR 835.36 | 1:2.5 | 0 | INR 0.00 |
-| **HARSHA** | Harsha Engineers International Limited | 98/100 | `WAIT` | INR 451.25 | INR 415.86 | INR 539.71 | 1:2.5 | 0 | INR 0.00 |
+| **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1777.50 | INR 1653.57 | INR 2087.32 | 1:2.5 | 0 | INR 0.00 |
+| **TORNTPHARM** | Torrent Pharmaceuticals Limited | 98/100 | `WAIT` | INR 4763.70 | INR 4581.81 | INR 5218.41 | 1:2.5 | 0 | INR 0.00 |
+| **ASHOKA** | Ashoka Buildcon Limited | 98/100 | `BUY` | INR 116.58 | INR 105.24 | INR 144.93 | 1:2.5 | 0 | INR 0.00 |
+| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 98/100 | `WAIT` | INR 698.10 | INR 642.79 | INR 836.39 | 1:2.5 | 0 | INR 0.00 |
+| **ITI** | ITI Limited | 98/100 | `BUY` | INR 276.21 | INR 252.26 | INR 336.09 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **NESTLEIND** | 100/100 | INR 1325.00 | INR 1306.90 | INR 1370.25 | 1:2.0 |
-| **JSWSTEEL** | 100/100 | INR 1337.00 | INR 1318.25 | INR 1383.90 | 1:2.0 |
-| **SYNGENE** | 100/100 | INR 453.00 | INR 445.25 | INR 472.40 | 1:2.0 |
-| **BALKRISIND** | 100/100 | INR 2363.80 | INR 2332.35 | INR 2442.50 | 1:2.0 |
-| **EXIDEIND** | 100/100 | INR 410.85 | INR 396.30 | INR 447.25 | 1:2.0 |
+| **BRIGADE** | 100/100 | INR 583.00 | INR 569.15 | INR 617.60 | 1:2.0 |
+| **FINEORG** | 92/100 | INR 5598.00 | INR 5476.20 | INR 5902.50 | 1:2.0 |
+| **LAURUSLABS** | 91/100 | INR 2370.70 | INR 2323.20 | INR 2489.45 | 1:2.0 |
+| **TITAN** | 90/100 | INR 4680.00 | INR 4555.50 | INR 4991.25 | 1:2.0 |
+| **GRANULES** | 75/100 | INR 835.00 | INR 819.15 | INR 874.65 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
