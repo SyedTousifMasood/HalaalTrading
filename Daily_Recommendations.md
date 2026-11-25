@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-24***
+*Generated on: **2026-11-25***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -11,10 +11,10 @@ Swing positions are momentum setups with holding periods ranging from a few days
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1777.50 | INR 1653.57 | INR 2087.32 | 1:2.5 | 0 | INR 0.00 |
-| **TORNTPHARM** | Torrent Pharmaceuticals Limited | 98/100 | `WAIT` | INR 4763.70 | INR 4581.81 | INR 5218.41 | 1:2.5 | 0 | INR 0.00 |
+| **LALPATHLAB** | Dr. Lal PathLab Limited | 98/100 | `WAIT` | INR 2040.50 | INR 1897.82 | INR 2397.19 | 1:2.5 | 0 | INR 0.00 |
+| **VIJAYA** | Vijaya Diagnostic Centre Limited | 98/100 | `BUY` | INR 1572.60 | INR 1437.19 | INR 1911.14 | 1:2.5 | 0 | INR 0.00 |
 | **ASHOKA** | Ashoka Buildcon Limited | 98/100 | `BUY` | INR 116.58 | INR 105.24 | INR 144.93 | 1:2.5 | 0 | INR 0.00 |
-| **THELEELA** | Leela Palaces Hotels & Resorts Limited | 98/100 | `WAIT` | INR 698.10 | INR 642.79 | INR 836.39 | 1:2.5 | 0 | INR 0.00 |
-| **ITI** | ITI Limited | 98/100 | `BUY` | INR 276.21 | INR 252.26 | INR 336.09 | 1:2.5 | 0 | INR 0.00 |
+| **TORNTPHARM** | Torrent Pharmaceuticals Limited | 98/100 | `WAIT` | INR 4763.70 | INR 4581.81 | INR 5218.41 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 

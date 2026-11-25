@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "market_regime": "STATE 1: Macro Bullish",
   "swing_recommendations": [
     {
@@ -15,13 +15,25 @@
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "TORNTPHARM",
-      "name": "Torrent Pharmaceuticals Limited",
-      "close": 4763.7001953125,
+      "symbol": "LALPATHLAB",
+      "name": "Dr. Lal PathLab Limited",
+      "close": 2040.5,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 4581.814522879465,
-      "target": 5218.41437639509,
+      "stop_loss": 1897.8232006436017,
+      "target": 2397.1919983909956,
+      "qty": 0,
+      "allocation": 0.0,
+      "rr_ratio": "1:2.5"
+    },
+    {
+      "symbol": "VIJAYA",
+      "name": "Vijaya Diagnostic Centre Limited",
+      "close": 1572.5999755859375,
+      "score": 98,
+      "signal": "BUY",
+      "stop_loss": 1437.1856863839287,
+      "target": 1911.1356985909597,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
@@ -39,25 +51,13 @@
       "rr_ratio": "1:2.5"
     },
     {
-      "symbol": "THELEELA",
-      "name": "Leela Palaces Hotels & Resorts Limited",
-      "close": 698.0999755859375,
+      "symbol": "TORNTPHARM",
+      "name": "Torrent Pharmaceuticals Limited",
+      "close": 4763.7001953125,
       "score": 98,
       "signal": "WAIT",
-      "stop_loss": 642.7856706891741,
-      "target": 836.385737827846,
-      "qty": 0,
-      "allocation": 0.0,
-      "rr_ratio": "1:2.5"
-    },
-    {
-      "symbol": "ITI",
-      "name": "ITI Limited",
-      "close": 276.2099914550781,
-      "score": 98,
-      "signal": "BUY",
-      "stop_loss": 252.25713239397322,
-      "target": 336.0921391078404,
+      "stop_loss": 4581.814522879465,
+      "target": 5218.41437639509,
       "qty": 0,
       "allocation": 0.0,
       "rr_ratio": "1:2.5"
