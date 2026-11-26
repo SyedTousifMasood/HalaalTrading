@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "market_regime": "STATE 1: Macro Bullish",
   "swing_recommendations": [
     {
@@ -65,43 +65,43 @@
   ],
   "intraday_recommendations": [
     {
-      "symbol": "BRIGADE",
+      "symbol": "HINDUNILVR",
       "score": 100,
-      "entry": 583.0,
-      "stop_loss": 569.15,
-      "target": 617.6,
+      "entry": 2141.8,
+      "stop_loss": 2092.65,
+      "target": 2264.65,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "FINEORG",
-      "score": 92,
-      "entry": 5598.0,
-      "stop_loss": 5476.2,
-      "target": 5902.5,
+      "symbol": "NESTLEIND",
+      "score": 100,
+      "entry": 1358.5,
+      "stop_loss": 1333.2,
+      "target": 1421.75,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "LAURUSLABS",
-      "score": 91,
-      "entry": 2370.7,
-      "stop_loss": 2323.2,
-      "target": 2489.45,
+      "symbol": "BRITANNIA",
+      "score": 100,
+      "entry": 5076.2,
+      "stop_loss": 4955.3,
+      "target": 5378.45,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "TITAN",
-      "score": 90,
-      "entry": 4680.0,
-      "stop_loss": 4555.5,
-      "target": 4991.25,
+      "symbol": "DIVISLAB",
+      "score": 100,
+      "entry": 11716.5,
+      "stop_loss": 11492.55,
+      "target": 12276.4,
       "rr_ratio": "1:2.0"
     },
     {
-      "symbol": "GRANULES",
-      "score": 75,
-      "entry": 835.0,
-      "stop_loss": 819.15,
-      "target": 874.65,
+      "symbol": "MARICO",
+      "score": 100,
+      "entry": 935.2,
+      "stop_loss": 925.7,
+      "target": 959.0,
       "rr_ratio": "1:2.0"
     }
   ]

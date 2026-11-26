@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-25***
+*Generated on: **2026-11-26***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **BRIGADE** | 100/100 | INR 583.00 | INR 569.15 | INR 617.60 | 1:2.0 |
-| **FINEORG** | 92/100 | INR 5598.00 | INR 5476.20 | INR 5902.50 | 1:2.0 |
-| **LAURUSLABS** | 91/100 | INR 2370.70 | INR 2323.20 | INR 2489.45 | 1:2.0 |
-| **TITAN** | 90/100 | INR 4680.00 | INR 4555.50 | INR 4991.25 | 1:2.0 |
-| **GRANULES** | 75/100 | INR 835.00 | INR 819.15 | INR 874.65 | 1:2.0 |
+| **HINDUNILVR** | 100/100 | INR 2141.80 | INR 2092.65 | INR 2264.65 | 1:2.0 |
+| **NESTLEIND** | 100/100 | INR 1358.50 | INR 1333.20 | INR 1421.75 | 1:2.0 |
+| **BRITANNIA** | 100/100 | INR 5076.20 | INR 4955.30 | INR 5378.45 | 1:2.0 |
+| **DIVISLAB** | 100/100 | INR 11716.50 | INR 11492.55 | INR 12276.40 | 1:2.0 |
+| **MARICO** | 100/100 | INR 935.20 | INR 925.70 | INR 959.00 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
