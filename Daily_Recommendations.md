@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-26***
+*Generated on: **2026-11-27***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1777.50 | INR 1653.57 | INR 2087.32 | 1:2.5 | 0 | INR 0.00 |
-| **LALPATHLAB** | Dr. Lal PathLab Limited | 98/100 | `WAIT` | INR 2040.50 | INR 1897.82 | INR 2397.19 | 1:2.5 | 0 | INR 0.00 |
-| **VIJAYA** | Vijaya Diagnostic Centre Limited | 98/100 | `BUY` | INR 1572.60 | INR 1437.19 | INR 1911.14 | 1:2.5 | 0 | INR 0.00 |
-| **ASHOKA** | Ashoka Buildcon Limited | 98/100 | `BUY` | INR 116.58 | INR 105.24 | INR 144.93 | 1:2.5 | 0 | INR 0.00 |
-| **TORNTPHARM** | Torrent Pharmaceuticals Limited | 98/100 | `WAIT` | INR 4763.70 | INR 4581.81 | INR 5218.41 | 1:2.5 | 0 | INR 0.00 |
+| **KAJARIACER** | Kajaria Ceramics Limited | 100/100 | `WAIT` | INR 1206.00 | INR 1139.61 | INR 1371.96 | 1:2.5 | 0 | INR 0.00 |
+| **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1818.40 | INR 1691.49 | INR 2135.69 | 1:2.5 | 0 | INR 0.00 |
+| **EPL** | EPL Limited | 98/100 | `WAIT` | INR 235.90 | INR 218.41 | INR 279.64 | 1:2.5 | 0 | INR 0.00 |
+| **TORNTPHARM** | Torrent Pharmaceuticals Limited | 98/100 | `WAIT` | INR 4895.50 | INR 4705.31 | INR 5370.96 | 1:2.5 | 0 | INR 0.00 |
+| **HUBTOWN** | Hubtown Limited | 98/100 | `BUY` | INR 194.20 | INR 172.36 | INR 248.81 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HINDUNILVR** | 100/100 | INR 2141.80 | INR 2092.65 | INR 2264.65 | 1:2.0 |
-| **NESTLEIND** | 100/100 | INR 1358.50 | INR 1333.20 | INR 1421.75 | 1:2.0 |
-| **BRITANNIA** | 100/100 | INR 5076.20 | INR 4955.30 | INR 5378.45 | 1:2.0 |
-| **DIVISLAB** | 100/100 | INR 11716.50 | INR 11492.55 | INR 12276.40 | 1:2.0 |
-| **MARICO** | 100/100 | INR 935.20 | INR 925.70 | INR 959.00 | 1:2.0 |
+| **TCS** | 100/100 | INR 2640.30 | INR 2543.40 | INR 2882.55 | 1:2.0 |
+| **HCLTECH** | 100/100 | INR 1468.60 | INR 1421.00 | INR 1587.55 | 1:2.0 |
+| **DEEPAKNTR** | 100/100 | INR 1527.90 | INR 1501.30 | INR 1594.35 | 1:2.0 |
+| **DEVYANI** | 100/100 | INR 126.11 | INR 123.60 | INR 132.35 | 1:2.0 |
+| **SOBHA** | 100/100 | INR 1289.80 | INR 1271.15 | INR 1336.35 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
