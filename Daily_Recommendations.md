@@ -1,6 +1,6 @@
 # Daily Trading Recommendations & Scanner Report
 
-*Generated on: **2026-11-27***
+*Generated on: **2026-11-28***
 *Broader Market Regime: **STATE 1: Macro Bullish** (Allocation Cap: **20%**)*
 
 ---
@@ -10,11 +10,11 @@ Swing positions are momentum setups with holding periods ranging from a few days
 
 | Symbol | Company Name | Momentum Score | Signal | Entry Price | Stop Loss | Profit Target | Risk/Reward | Est. Qty | Est. Allocation |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **KAJARIACER** | Kajaria Ceramics Limited | 100/100 | `WAIT` | INR 1206.00 | INR 1139.61 | INR 1371.96 | 1:2.5 | 0 | INR 0.00 |
-| **LGEINDIA** | LG Electronics India Ltd. | 98/100 | `WAIT` | INR 1818.40 | INR 1691.49 | INR 2135.69 | 1:2.5 | 0 | INR 0.00 |
-| **EPL** | EPL Limited | 98/100 | `WAIT` | INR 235.90 | INR 218.41 | INR 279.64 | 1:2.5 | 0 | INR 0.00 |
-| **TORNTPHARM** | Torrent Pharmaceuticals Limited | 98/100 | `WAIT` | INR 4895.50 | INR 4705.31 | INR 5370.96 | 1:2.5 | 0 | INR 0.00 |
-| **HUBTOWN** | Hubtown Limited | 98/100 | `BUY` | INR 194.20 | INR 172.36 | INR 248.81 | 1:2.5 | 0 | INR 0.00 |
+| **HEROMOTOCO** | Hero MotoCorp Limited | 100/100 | `WAIT` | INR 5789.00 | INR 5509.50 | INR 6487.75 | 1:2.5 | 0 | INR 0.00 |
+| **CIPLA** | Cipla Limited | 98/100 | `WAIT` | INR 1450.00 | INR 1394.97 | INR 1587.57 | 1:2.5 | 0 | INR 0.00 |
+| **BALAJITELE** | Balaji Telefilms Limited | 98/100 | `WAIT` | INR 101.41 | INR 89.80 | INR 130.43 | 1:2.5 | 0 | INR 0.00 |
+| **METROPOLIS** | Metropolis Healthcare Limited | 98/100 | `WAIT` | INR 580.30 | INR 543.44 | INR 672.46 | 1:2.5 | 0 | INR 0.00 |
+| **LAURUSLABS** | Laurus Labs Limited | 98/100 | `WAIT` | INR 2505.00 | INR 2335.50 | INR 2928.74 | 1:2.5 | 0 | INR 0.00 |
 
 ---
 
@@ -23,11 +23,11 @@ Intraday positions are breakout setups that must be closed before 3:15 PM IST.
 
 | Symbol | Composite Score | Target Entry | Stop Loss | Profit Target | Risk/Reward |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **TCS** | 100/100 | INR 2640.30 | INR 2543.40 | INR 2882.55 | 1:2.0 |
-| **HCLTECH** | 100/100 | INR 1468.60 | INR 1421.00 | INR 1587.55 | 1:2.0 |
-| **DEEPAKNTR** | 100/100 | INR 1527.90 | INR 1501.30 | INR 1594.35 | 1:2.0 |
-| **DEVYANI** | 100/100 | INR 126.11 | INR 123.60 | INR 132.35 | 1:2.0 |
-| **SOBHA** | 100/100 | INR 1289.80 | INR 1271.15 | INR 1336.35 | 1:2.0 |
+| **PERSISTENT** | 100/100 | INR 6320.00 | INR 6151.55 | INR 6741.10 | 1:2.0 |
+| **FACT** | 100/100 | INR 788.50 | INR 765.60 | INR 845.80 | 1:2.0 |
+| **HAPPSTMNDS** | 100/100 | INR 290.75 | INR 282.90 | INR 310.35 | 1:2.0 |
+| **EXIDEIND** | 100/100 | INR 400.80 | INR 391.15 | INR 424.90 | 1:2.0 |
+| **MOIL** | 100/100 | INR 223.20 | INR 218.75 | INR 234.30 | 1:2.0 |
 
 > [Slim Important]
 > **AAOIFI Shariah Compliance Rules for Intraday Trading:**
